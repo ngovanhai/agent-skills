@@ -1,0 +1,5285 @@
+{
+  "tieu-phong": {
+    "name": "Tiêu Phong",
+    "truyen": "Thiên Long Bát Bộ",
+    "note": "đại hán Khiết Đan, khăn đỏ, râu ngắn",
+    "look": {
+      "skin": "#FBD3B0",
+      "robe": "#3E5C8A",
+      "robe2": "#E8E2D0",
+      "pants": "#2B2D42",
+      "belt": "#C9A227",
+      "hair": {
+        "style": "bui-toi",
+        "color": "#1E1A1A"
+      },
+      "beard": "rau-de",
+      "eyes": "#5A3A2A",
+      "band": "#B8322C",
+      "weapon": "none"
+    }
+  },
+  "lao-ma": {
+    "name": "Lão ma đầu",
+    "truyen": "chung",
+    "note": "phản diện già áo tím",
+    "look": {
+      "preset": "lao-quai",
+      "weapon": "none",
+      "eyes": "#7A2A8A"
+    }
+  },
+  "doan-du": {
+    "name": "Đoàn Dự",
+    "truyen": "Thiên Long Bát Bộ",
+    "note": "công tử Đại Lý áo trắng viền lục",
+    "look": {
+      "preset": "cong-tu",
+      "robe": "#EEF3EA",
+      "robe2": "#9CC8A8",
+      "belt": "#3E8E5A",
+      "weapon": "none",
+      "eyes": "#3A6A4A"
+    }
+  },
+  "cuu-ma-tri": {
+    "name": "Cưu Ma Trí",
+    "truyen": "Thiên Long Bát Bộ",
+    "note": "quốc sư Thổ Phồn, cà sa đỏ",
+    "look": {
+      "preset": "tang",
+      "robe": "#C8372D",
+      "sash": "#E3A21A",
+      "belt": "#E3A21A",
+      "eyes": "#8A2A1E"
+    }
+  },
+  "nham-nga-hanh": {
+    "name": "Nhậm Ngã Hành",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "giáo chủ Nhật Nguyệt, râu dài đen, áo lục thẫm",
+    "look": {
+      "robe": "#1F3A2E",
+      "robe2": "#8FBF9F",
+      "pants": "#14241C",
+      "belt": "#C9A227",
+      "hair": {
+        "style": "bui-cao",
+        "color": "#1A1A1A"
+      },
+      "beard": "rau-dai",
+      "beardColor": "#2A2A2A",
+      "eyes": "#2E8A5A",
+      "weapon": "none"
+    }
+  },
+  "cao-thu": {
+    "name": "Cao thủ",
+    "truyen": "chung",
+    "note": "đối thủ áo đen",
+    "look": {
+      "preset": "cao-thu",
+      "weapon": "none"
+    }
+  },
+  "vi-nhat-tieu": {
+    "name": "Vi Nhất Tiếu",
+    "truyen": "Ỷ Thiên Đồ Long Ký",
+    "note": "Thanh Dực Bức Vương, da tái, áo lam băng",
+    "look": {
+      "robe": "#D8E6F2",
+      "robe2": "#7FA8CC",
+      "pants": "#3A5A78",
+      "belt": "#2E6FB7",
+      "hair": {
+        "style": "re-ngoi",
+        "color": "#2A3442"
+      },
+      "skin": "#FFE3CF",
+      "eyes": "#4A8BE0",
+      "weapon": "none"
+    }
+  },
+  "hiep-khach": {
+    "name": "Hiệp khách",
+    "truyen": "chung",
+    "note": "đối thủ áo nâu đỏ",
+    "look": {
+      "preset": "hiep-khach",
+      "robe": "#8A3A2A",
+      "weapon": "none"
+    }
+  },
+  "truong-vo-ky": {
+    "name": "Trương Vô Kỵ",
+    "truyen": "Ỷ Thiên Đồ Long Ký",
+    "note": "giáo chủ Minh giáo trẻ, áo trắng viền lam ngọc",
+    "look": {
+      "robe": "#F2EEE4",
+      "robe2": "#2E9A9A",
+      "pants": "#24485A",
+      "belt": "#2E9A9A",
+      "hair": {
+        "style": "bui-toi",
+        "color": "#1E1A1A"
+      },
+      "eyes": "#2E8A9A",
+      "weapon": "none"
+    }
+  },
+  "thanh-con": {
+    "name": "Thành Côn",
+    "truyen": "Ỷ Thiên Đồ Long Ký",
+    "note": "Viên Chân, sư trọc áo xám, mắt đỏ gian",
+    "look": {
+      "preset": "tang",
+      "robe": "#6E6878",
+      "sash": "#8A1E2A",
+      "belt": "#8A1E2A",
+      "eyes": "#B02A3A",
+      "beard": "rau-de",
+      "beardColor": "#5A5050"
+    }
+  },
+  "diet-tuyet": {
+    "name": "Diệt Tuyệt sư thái",
+    "truyen": "Ỷ Thiên Đồ Long Ký",
+    "note": "chưởng môn Nga Mi, ni cô già, mũ ni xám, mặt lạnh, Ỷ Thiên Kiếm",
+    "look": {
+      "preset": "nu-hiep",
+      "robe": "#C9CCD2",
+      "robe2": "#3A3D48",
+      "pants": "#4A4D58",
+      "belt": "#2A2C34",
+      "boots": "#2A2C34",
+      "hair": {
+        "style": "troc",
+        "color": "#8A8A8A"
+      },
+      "hat": "khan",
+      "hatColor": "#5E626C",
+      "eyes": "#34466E",
+      "age": "gia",
+      "weapon": "kiem",
+      "fem": true
+    }
+  },
+  "lenh-ho-xung": {
+    "name": "Lệnh Hồ Xung",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "đại đệ tử Hoa Sơn, tóc xoã phóng khoáng, áo lam ngọc, dây đỏ đeo hồ lô",
+    "look": {
+      "skin": "#FBD3B0",
+      "robe": "#2F6F8F",
+      "robe2": "#E8E2D0",
+      "pants": "#1E2B36",
+      "belt": "#B8322C",
+      "hair": {
+        "style": "re-ngoi",
+        "color": "#1A1414"
+      },
+      "eyes": "#5A3A2A",
+      "weapon": "none",
+      "band": "#B8322C"
+    }
+  },
+  "dien-ba-quang": {
+    "name": "Điền Bá Quang",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "tay đao khinh công, áo đỏ sẫm, ria mép, da rám",
+    "look": {
+      "skin": "#E2A578",
+      "robe": "#6B2A2A",
+      "robe2": "#D9C9A8",
+      "pants": "#2A1A1A",
+      "belt": "#1E1A1A",
+      "hair": {
+        "style": "bui-toi",
+        "color": "#1E1A1A"
+      },
+      "beard": "ria",
+      "eyes": "#8A3A2A",
+      "weapon": "none"
+    }
+  },
+  "teo-tieu-nhi": {
+    "name": "Tèo (tiểu nhị)",
+    "truyen": "Tèo Kể",
+    "note": "Tèo làm tiểu nhị quán rượu: khăn đầu, áo vải mộc, thắt lưng nâu",
+    "look": {
+      "preset": "teo",
+      "hat": "khan",
+      "robe": "#E8DCC0",
+      "robe2": "#8A5A2A",
+      "pants": "#5A4030",
+      "belt": "#8A5A2A",
+      "weapon": "none"
+    }
+  },
+  "nghi-lam": {
+    "name": "Nghi Lâm",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "tiểu ni cô Hằng Sơn, đầu trọc, áo xám, hiền",
+    "look": {
+      "preset": "nu-hiep",
+      "hair": {
+        "style": "troc",
+        "color": "#1A1414"
+      },
+      "hat": "troc",
+      "robe": "#9A9A98",
+      "robe2": "#E8E6E0",
+      "pants": "#6A6A68",
+      "belt": "#7A7A78",
+      "skirt": true,
+      "eyes": "#5A4A3A",
+      "weapon": "none"
+    }
+  },
+  "nhac-bat-quan": {
+    "name": "Nhạc Bất Quần",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "chưởng môn Hoa Sơn, Quân Tử Kiếm, búi cao cài trâm, râu dài đen, áo lam đá",
+    "look": {
+      "skin": "#FBD3B0",
+      "robe": "#3D4E6E",
+      "robe2": "#E8E2D0",
+      "pants": "#232C3E",
+      "belt": "#C9A227",
+      "hair": {
+        "style": "bui-cao",
+        "color": "#1A1A1A"
+      },
+      "hat": "tram",
+      "beard": "rau-dai",
+      "beardColor": "#2A2A2A",
+      "eyes": "#4A3A5A",
+      "weapon": "none"
+    }
+  },
+  "phong-thanh-duong": {
+    "name": "Phong Thanh Dương",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "thái sư thúc Kiếm tông ẩn cư, áo xám, râu trắng dài, gầy",
+    "look": {
+      "preset": "su-phu",
+      "robe": "#8A8A86",
+      "robe2": "#D8D6CE",
+      "pants": "#5A5A56",
+      "age": "gia",
+      "hair": {
+        "style": "tien-ong",
+        "color": "#DADADA"
+      },
+      "beard": "rau-dai",
+      "beardColor": "#DADADA",
+      "eyes": "#4A6A8A",
+      "weapon": "none"
+    }
+  },
+  "doanh-doanh": {
+    "name": "Nhậm Doanh Doanh",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "Thánh cô Nhật Nguyệt, tóc dài thẳng, áo chàm tím, đai đỏ",
+    "look": {
+      "preset": "nu-hiep",
+      "robe": "#2B2B4B",
+      "robe2": "#C9A0DC",
+      "pants": "#1A1A30",
+      "belt": "#D7263D",
+      "hair": {
+        "style": "dai-thang",
+        "color": "#1A1414"
+      },
+      "eyes": "#3A2A4A",
+      "skin": "#FFE3CF",
+      "weapon": "none"
+    }
+  },
+  "luu-chinh-phong": {
+    "name": "Lưu Chính Phong",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "cao thủ Hành Sơn thổi tiêu, áo lục rêu, râu chòm",
+    "look": {
+      "robe": "#3E6E5A",
+      "robe2": "#E8E2D0",
+      "pants": "#24402F",
+      "belt": "#8A6A44",
+      "hair": {
+        "style": "bui-cao",
+        "color": "#2A2A2A"
+      },
+      "beard": "rau-de",
+      "beardColor": "#3A3A3A",
+      "eyes": "#5A3A2A",
+      "weapon": "none"
+    }
+  },
+  "khuc-duong": {
+    "name": "Khúc Dương",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "trưởng lão Nhật Nguyệt chơi cầm, già, áo nâu đỏ, râu xám",
+    "look": {
+      "robe": "#4A2E2E",
+      "robe2": "#D9C9A8",
+      "pants": "#2A1A1A",
+      "belt": "#C9A227",
+      "age": "gia",
+      "hair": {
+        "style": "bui-toi",
+        "color": "#9A9A9A"
+      },
+      "beard": "rau-dai",
+      "beardColor": "#9A9A9A",
+      "eyes": "#6A4A2A",
+      "weapon": "none"
+    }
+  },
+  "nhac-linh-san": {
+    "name": "Nhạc Linh San",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "tiểu sư muội Hoa Sơn, tóc đuôi ngựa, áo hồng",
+    "look": {
+      "preset": "nu-hiep",
+      "robe": "#E89AA8",
+      "robe2": "#FFF2F4",
+      "pants": "#8A4A5A",
+      "belt": "#3D4E6E",
+      "hair": {
+        "style": "duoi-ngua",
+        "color": "#1A1414"
+      },
+      "eyes": "#5A3A2A",
+      "weapon": "none"
+    }
+  },
+  "lam-binh-chi": {
+    "name": "Lâm Bình Chi",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "thiếu gia tiêu cục Phúc Uy, công tử áo trắng cổ chàm",
+    "look": {
+      "preset": "cong-tu",
+      "robe": "#F4F1EA",
+      "robe2": "#3A3A6A",
+      "pants": "#2A2A4A",
+      "belt": "#3A3A6A",
+      "eyes": "#3A2A5A",
+      "weapon": "none"
+    }
+  },
+  "bat-gioi": {
+    "name": "Bất Giới",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "hoà thượng to xác, cha Nghi Lâm, cà sa nâu bạc, râu chòm",
+    "look": {
+      "preset": "tang",
+      "robe": "#8A6A44",
+      "skin": "#E2A578",
+      "beard": "rau-de",
+      "beardColor": "#2A2A2A",
+      "eyes": "#5A3A2A",
+      "weapon": "none"
+    }
+  },
+  "luc-truc-ong": {
+    "name": "Lục Trúc Ông",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "ông già sành nhạc ngõ trúc Lạc Dương, áo lục trúc, râu trắng",
+    "look": {
+      "preset": "su-phu",
+      "robe": "#4E7A4A",
+      "robe2": "#E8E2D0",
+      "pants": "#2E4A2C",
+      "age": "gia",
+      "beard": "rau-de",
+      "beardColor": "#DADADA",
+      "eyes": "#5A4A2A",
+      "weapon": "none"
+    }
+  },
+  "huong-van-thien": {
+    "name": "Hướng Vấn Thiên",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "hảo hán Nhật Nguyệt, râu dài đen, áo nâu đất, khăn trán vàng",
+    "look": {
+      "skin": "#E2A578",
+      "robe": "#5A3A1E",
+      "robe2": "#D9C9A8",
+      "pants": "#2A1A0E",
+      "belt": "#C9A227",
+      "hair": {
+        "style": "bui-toi",
+        "color": "#1E1A1A"
+      },
+      "beard": "rau-dai",
+      "beardColor": "#1E1A1A",
+      "band": "#C9A227",
+      "eyes": "#4A2A1A",
+      "weapon": "none"
+    }
+  },
+  "phuong-chung": {
+    "name": "Phương Chứng",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "phương trượng Thiếu Lâm, già hiền, cà sa vàng, râu trắng",
+    "look": {
+      "preset": "tang",
+      "robe": "#E3A21A",
+      "age": "gia",
+      "beard": "rau-dai",
+      "beardColor": "#DADADA",
+      "eyes": "#5A4A2A",
+      "weapon": "none"
+    }
+  },
+  "dong-phuong-bat-bai": {
+    "name": "Đông Phương Bất Bại",
+    "truyen": "Tiếu Ngạo Giang Hồ",
+    "note": "giáo chủ nhanh như bóng ma, áo đỏ hồng, tóc dài, mắt đỏ",
+    "look": {
+      "skin": "#FFE3CF",
+      "robe": "#C2185B",
+      "robe2": "#F4C6D8",
+      "pants": "#5A0A2A",
+      "belt": "#1A1A1A",
+      "hair": {
+        "style": "dai-thang",
+        "color": "#1A1414"
+      },
+      "eyes": "#B02A3A",
+      "weapon": "none"
+    }
+  },
+  "teo-the-thao": {
+    "name": "Tèo (Thể Thao)",
+    "truyen": "Tèo Thể Thao",
+    "note": "MC kênh bóng đá: tóc đen mái bằng, da rám nắng, mắt nâu, không kính, không khăn; áo đấu xanh coban cổ trắng số 10, quần xanh than, giày trắng",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "mai-bang"
+      },
+      "eyes": "#7A4A22",
+      "glasses": false,
+      "robe": "#2563EB",
+      "robe2": "#FFFFFF",
+      "pants": "#0F1B3D",
+      "belt": "#0F1B3D",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-mbappe": {
+    "name": "Mbappé",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Real: da nâu đậm, đầu cạo sát, áo trắng viền xanh than",
+    "look": {
+      "skin": "#A86B45",
+      "hair": {
+        "color": "#151515",
+        "style": "troc"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F7F7F7",
+      "belt": "#1C2B5A",
+      "pants": "#F7F7F7",
+      "robe2": "#1C2B5A",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-bellingham": {
+    "name": "Bellingham",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Real: da nâu, tóc đen ngắn, áo trắng",
+    "look": {
+      "skin": "#B5805A",
+      "hair": {
+        "color": "#151515",
+        "style": "ngan"
+      },
+      "eyes": "#2E1C12",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F7F7F7",
+      "belt": "#1C2B5A",
+      "pants": "#F7F7F7",
+      "robe2": "#1C2B5A",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-camavinga": {
+    "name": "Camavinga",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Real: da nâu đậm, tóc đen xoăn dựng, áo trắng",
+    "look": {
+      "skin": "#6E4127",
+      "hair": {
+        "color": "#151515",
+        "style": "bom-gai"
+      },
+      "eyes": "#2E1C12",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F7F7F7",
+      "belt": "#1C2B5A",
+      "pants": "#F7F7F7",
+      "robe2": "#1C2B5A",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-diomande": {
+    "name": "Diomande",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "cầu thủ chạy cánh Real: da nâu đậm, tóc đen ngắn xoăn, áo trắng",
+    "look": {
+      "skin": "#7A4A2E",
+      "hair": {
+        "color": "#151515",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2E1C12",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F7F7F7",
+      "belt": "#1C2B5A",
+      "pants": "#F7F7F7",
+      "robe2": "#1C2B5A",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-lunin": {
+    "name": "Lunin",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn Real: da sáng, tóc vàng ngắn, áo thủ môn xanh lá",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#C9A86A",
+        "style": "ngan"
+      },
+      "eyes": "#4A7AB0",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#2FB36E",
+      "belt": "#1B1B1F",
+      "pants": "#1B1B1F",
+      "robe2": "#1B1B1F",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-raphinha": {
+    "name": "Raphinha",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "cầu thủ chạy cánh Barca: da nâu nhạt, tóc đen buộc, áo đỏ sẫm cổ xanh",
+    "look": {
+      "skin": "#E2A578",
+      "hair": {
+        "color": "#1B1410",
+        "style": "bui-toi"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#A2003B",
+      "belt": "#0A3A8C",
+      "pants": "#0A3A8C",
+      "robe2": "#0A3A8C",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-yamal": {
+    "name": "Lamine Yamal",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "cầu thủ trẻ Barca: da nâu, tóc đen xoăn dựng, áo đỏ sẫm cổ xanh",
+    "look": {
+      "skin": "#B87A4E",
+      "hair": {
+        "color": "#14100E",
+        "style": "bom-gai"
+      },
+      "eyes": "#2E1C12",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#A2003B",
+      "belt": "#0A3A8C",
+      "pants": "#0A3A8C",
+      "robe2": "#0A3A8C",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-pedri": {
+    "name": "Pedri",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Barca: da sáng ngăm, tóc nâu đen rẽ ngôi, áo đỏ sẫm cổ xanh",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#2A1A12",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#A2003B",
+      "belt": "#0A3A8C",
+      "pants": "#0A3A8C",
+      "robe2": "#0A3A8C",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-gmartin": {
+    "name": "Gerard Martín",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "trung vệ Barca: da sáng, tóc đen ngắn, áo đỏ sẫm cổ xanh",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#2A1A12",
+        "style": "mai-bang"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#A2003B",
+      "belt": "#0A3A8C",
+      "pants": "#0A3A8C",
+      "robe2": "#0A3A8C",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-garcia": {
+    "name": "Joan García",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn Barca: da sáng, tóc nâu, áo thủ môn vàng",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#4A3020",
+        "style": "re-ngoi"
+      },
+      "eyes": "#4A6A40",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F2C230",
+      "belt": "#1B1B1F",
+      "pants": "#1B1B1F",
+      "robe2": "#1B1B1F",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-mourinho": {
+    "name": "Mourinho",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Real: da sáng ngăm, tóc muối tiêu, áo khoác tối",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#8A8A8A",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe2": "#E8E8E8",
+      "pants": "#2B2D35",
+      "robe": "#2B2D35",
+      "boots": "#1B1B1F",
+      "belt": "#2B2D35",
+      "age": "gia"
+    }
+  },
+  "bd-flick": {
+    "name": "Hansi Flick",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Barca: da sáng, đầu hói, áo khoác tối",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#8A7A6A",
+        "style": "troc"
+      },
+      "eyes": "#4A6A8A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E1E28",
+      "belt": "#1E1E28",
+      "pants": "#1E1E28",
+      "robe2": "#A2003B",
+      "boots": "#1B1B1F",
+      "age": "gia"
+    }
+  },
+  "bd-gerrard": {
+    "name": "Gerrard",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "đội trưởng Liverpool 2005: tóc nâu nhạt cắt ngắn, mắt xanh, áo đỏ số 8",
+    "look": {
+      "robe": "#C8102E",
+      "robe2": "#FFFFFF",
+      "pants": "#C8102E",
+      "belt": "#FFFFFF",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#B8874E",
+        "style": "ngan"
+      },
+      "eyes": "#4A7AB0"
+    }
+  },
+  "bd-smicer": {
+    "name": "Šmicer",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Liverpool 2005: tóc đen ngắn, áo đỏ số 7",
+    "look": {
+      "robe": "#C8102E",
+      "robe2": "#FFFFFF",
+      "pants": "#C8102E",
+      "belt": "#FFFFFF",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#2A2018",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418"
+    }
+  },
+  "bd-alonso": {
+    "name": "Xabi Alonso",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Liverpool 2005: tóc đen, râu cằm, áo đỏ số 14",
+    "look": {
+      "robe": "#C8102E",
+      "robe2": "#FFFFFF",
+      "pants": "#C8102E",
+      "belt": "#FFFFFF",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "ngan"
+      },
+      "beard": "rau-de",
+      "beardColor": "#1E1B22",
+      "eyes": "#3A2418"
+    }
+  },
+  "bd-hamann": {
+    "name": "Hamann",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Liverpool 2005: tóc nâu xám ngắn, áo đỏ số 16",
+    "look": {
+      "robe": "#C8102E",
+      "robe2": "#FFFFFF",
+      "pants": "#C8102E",
+      "belt": "#FFFFFF",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#7A6650",
+        "style": "ngan"
+      },
+      "eyes": "#5A7A9A"
+    }
+  },
+  "bd-dudek": {
+    "name": "Dudek",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn Liverpool 2005: tóc nâu sẫm ngắn, áo thủ môn vàng chanh viền đen",
+    "look": {
+      "robe": "#E3D21A",
+      "robe2": "#1B1B1F",
+      "pants": "#1B1B1F",
+      "belt": "#1B1B1F",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#3A2A1E",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418"
+    }
+  },
+  "bd-shevchenko": {
+    "name": "Shevchenko",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Milan 2005: tóc nâu nhạt ngắn, mắt xanh, áo trắng số 7",
+    "look": {
+      "robe": "#F7F7F7",
+      "robe2": "#1B1B1F",
+      "pants": "#F7F7F7",
+      "belt": "#B01E2A",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#9C7B52",
+        "style": "ngan"
+      },
+      "eyes": "#4A7AB0"
+    }
+  },
+  "bd-maldini": {
+    "name": "Maldini",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "đội trưởng Milan 2005: tóc đen dài ngang vai, áo trắng số 3",
+    "look": {
+      "robe": "#F7F7F7",
+      "robe2": "#1B1B1F",
+      "pants": "#F7F7F7",
+      "belt": "#B01E2A",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#2A1E16",
+        "style": "dai-thang"
+      },
+      "eyes": "#3A6A8A"
+    }
+  },
+  "bd-crespo": {
+    "name": "Crespo",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Milan 2005: tóc đen ngắn, áo trắng số 11",
+    "look": {
+      "robe": "#F7F7F7",
+      "robe2": "#1B1B1F",
+      "pants": "#F7F7F7",
+      "belt": "#B01E2A",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#E2A578",
+      "hair": {
+        "color": "#241A14",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418"
+    }
+  },
+  "bd-kaka": {
+    "name": "Kaká",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Milan 2005: tóc đen ngắn, da nâu sáng, áo trắng số 22",
+    "look": {
+      "robe": "#F7F7F7",
+      "robe2": "#1B1B1F",
+      "pants": "#F7F7F7",
+      "belt": "#B01E2A",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#E2A578",
+      "hair": {
+        "color": "#2A1C12",
+        "style": "mai-bang"
+      },
+      "eyes": "#3A2418"
+    }
+  },
+  "bd-dida": {
+    "name": "Dida",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn Milan 2005: đầu cạo, da nâu đậm, áo thủ môn xám xanh",
+    "look": {
+      "robe": "#5B7FA8",
+      "robe2": "#1B1B1F",
+      "pants": "#1B1B1F",
+      "belt": "#1B1B1F",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#A86B45",
+      "hair": {
+        "color": "#151515",
+        "style": "troc"
+      },
+      "eyes": "#2E1C12"
+    }
+  },
+  "bd-benitez": {
+    "name": "Benítez",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Liverpool 2005: tóc đen ngắn, râu cằm, áo khoác xám than, cà vạt đỏ",
+    "look": {
+      "robe": "#3A3F4A",
+      "robe2": "#C8102E",
+      "pants": "#2B2D35",
+      "belt": "#2B2D35",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#2A2018",
+        "style": "ngan"
+      },
+      "beard": "rau-de",
+      "beardColor": "#2A2018",
+      "eyes": "#3A2418"
+    }
+  },
+  "bd-teo-quan": {
+    "name": "Tèo chủ quán nước",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo đóng vai chủ quán nước: giữ tóc đen mái bằng, da rám nắng; áo thun kem cổ vàng, quần nâu, dép",
+    "look": {
+      "robe": "#EFE6CF",
+      "robe2": "#D9B74A",
+      "pants": "#5B4A3A",
+      "belt": "#5B4A3A",
+      "boots": "#C9C2B0",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "mai-bang"
+      },
+      "eyes": "#7A4A22",
+      "glasses": false
+    }
+  },
+  "bd-park": {
+    "name": "Park Hang-seo",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV U23 Việt Nam 2018: tóc ngắn bạc, mặt hiền, áo khoác thể thao xanh than viền đỏ",
+    "look": {
+      "robe": "#1F2A44",
+      "robe2": "#D62828",
+      "pants": "#161C30",
+      "belt": "#161C30",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#9A9A9A",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18",
+      "age": "gia"
+    }
+  },
+  "bd-quanghai": {
+    "name": "Quang Hải",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ U23 Việt Nam: tóc đen ngắn, áo đỏ cổ vàng, chân trái",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1A1414",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-congphuong": {
+    "name": "Công Phượng",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo U23 Việt Nam: tóc đen xù, da rám, áo đỏ cổ vàng",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#E2A578",
+      "hair": {
+        "color": "#2A1B14",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-vanduc": {
+    "name": "Văn Đức",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ U23 Việt Nam: tóc nâu ngắn, áo đỏ cổ vàng, quần đỏ",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#3A281C",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-duchinh": {
+    "name": "Hà Đức Chinh",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo U23 Việt Nam: da rám, tóc đen buộc đuôi, áo đỏ cổ vàng",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#E2A578",
+      "hair": {
+        "style": "ngan",
+        "color": "#151515"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-vanthanh": {
+    "name": "Văn Thanh",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "hậu vệ U23 Việt Nam: tóc đen bồng, da vàng, áo đỏ cổ vàng",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1A1414",
+        "style": "bom-gai"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-tiendung": {
+    "name": "Bùi Tiến Dũng",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn U23 Việt Nam: áo thủ môn xanh lá viền đen, tóc đen ngắn",
+    "look": {
+      "robe": "#2FA84F",
+      "robe2": "#1B1B1F",
+      "pants": "#1B1B1F",
+      "belt": "#1B1B1F",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1A1414",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-iraq": {
+    "name": "Cầu thủ Iraq",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Iraq (Hussein/Mhawi): da rám, ria mép, áo trắng viền xanh lục",
+    "look": {
+      "robe": "#F7F7F7",
+      "robe2": "#007A3D",
+      "pants": "#F7F7F7",
+      "belt": "#F7F7F7",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#E2A578",
+      "hair": {
+        "color": "#151515",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18",
+      "beard": "ria",
+      "beardColor": "#151515"
+    }
+  },
+  "bd-qatar": {
+    "name": "Cầu thủ Qatar",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Qatar (Afif/Almoez Ali): da nâu, tóc đen ngắn, áo đỏ rượu cổ trắng",
+    "look": {
+      "robe": "#8A1538",
+      "robe2": "#FFFFFF",
+      "pants": "#8A1538",
+      "belt": "#8A1538",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#C98B5E",
+      "hair": {
+        "color": "#151515",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-uzbek": {
+    "name": "Cầu thủ Uzbekistan",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Uzbekistan (Ashurmatov/Sidorov): da sáng, tóc vàng nâu, áo trắng viền xanh",
+    "look": {
+      "robe": "#F7F7F7",
+      "robe2": "#1E50A0",
+      "pants": "#1E50A0",
+      "belt": "#1E50A0",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#B8874E",
+        "style": "ngan"
+      },
+      "eyes": "#4A6A8A"
+    }
+  },
+  "bd-kane": {
+    "name": "Harry Kane",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Bayern và tuyển Anh: tóc vàng cát rẽ ngôi, da sáng, mắt xanh biển, râu quai nón ngắn; áo trắng viền đỏ số 9, quần đỏ",
+    "look": {
+      "skin": "#FDE0C5",
+      "hair": {
+        "color": "#C69C6D",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2B547E",
+      "beard": "rau-de",
+      "beardColor": "#A07850",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F7F7F7",
+      "belt": "#DC052D",
+      "pants": "#DC052D",
+      "robe2": "#DC052D",
+      "boots": "#FFFFFF"
+    }
+  },
+  "bd-busby": {
+    "name": "Matt Busby",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV huyền thoại Manchester United: tóc bạc rẽ ngôi, da sáng, mắt xám xanh, áo măng tô xám cổ đỏ",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#B8B8B8",
+        "style": "re-ngoi"
+      },
+      "eyes": "#4A6A8A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#374151",
+      "robe2": "#C8102E",
+      "pants": "#1F2937",
+      "belt": "#1F2937",
+      "boots": "#111827",
+      "age": "gia"
+    }
+  },
+  "bd-charlton": {
+    "name": "Bobby Charlton",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "huyền thoại Manchester United: tóc nâu thưa chải lệch, da sáng, mắt xanh; áo đỏ số 9 cổ trắng, quần trắng",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#7A5A3A",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3A6A9A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C8102E",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-best": {
+    "name": "George Best",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "phù thuỷ chạy cánh Manchester United: tóc đen kiểu mái bằng phủ trán cuối thập niên 60, da sáng, mắt nâu; áo đỏ số 7 cổ trắng, quần trắng",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#1C1917",
+        "style": "mai-bang"
+      },
+      "eyes": "#3D2B1F",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C8102E",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-edwards": {
+    "name": "Duncan Edwards",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "ngôi sao Busby Babes: tóc nâu cắt ngắn vạm vỡ, da rám, mắt nâu đậm; áo đỏ số 6 cổ trắng, quần trắng",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#3B2618",
+        "style": "ngan"
+      },
+      "eyes": "#2B1D0F",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C8102E",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-law": {
+    "name": "Denis Law",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Manchester United thập niên 60: tóc vàng nhạt dựng ngược, da sáng, mắt xanh; áo đỏ số 10 cổ trắng, quần trắng",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#D8B868",
+        "style": "bom-gai"
+      },
+      "eyes": "#3A6A9A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C8102E",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-kidd": {
+    "name": "Brian Kidd",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo trẻ Manchester United 1968: tóc nâu sẫm ngắn, da sáng, mắt nâu; áo đỏ số 8 cổ trắng, quần trắng",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#3B2A1E",
+        "style": "ngan"
+      },
+      "eyes": "#3D2B1F",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C8102E",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-benfica-gk": {
+    "name": "Thủ môn Benfica 1968",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn Benfica chung kết 1968 (vẽ chung, không theo ảnh): tóc đen ngắn, da ngăm sáng; áo thủ môn xám đậm, quần đen",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1C1917",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3D2B1F",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#3F4650",
+      "robe2": "#1B1B1F",
+      "pants": "#1B1B1F",
+      "belt": "#1B1B1F",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-benfica": {
+    "name": "Cầu thủ Benfica 1968",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "cầu thủ Benfica chung (không phải một người cụ thể): tóc đen, da ngăm sáng; áo trắng cổ đỏ, quần trắng",
+    "look": {
+      "skin": "#E2A578",
+      "hair": {
+        "color": "#1C1917",
+        "style": "ngan"
+      },
+      "eyes": "#3D2B1F",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F2F2F2",
+      "robe2": "#C8102E",
+      "pants": "#F2F2F2",
+      "belt": "#C8102E",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-ronaldo": {
+    "name": "Cristiano Ronaldo",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "siêu sao Bồ Đào Nha thời MU: da sáng nâu nhẹ, tóc đen ngắn vuốt, mắt nâu sẫm, áo đấu đỏ thắm viền trắng số 7, quần trắng, giày đen",
+    "look": {
+      "skin": "#E8BA93",
+      "hair": {
+        "color": "#1A181B",
+        "style": "bom-gai"
+      },
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#D0142C",
+      "belt": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "robe2": "#FFFFFF",
+      "boots": "#111111"
+    }
+  },
+  "bd-ronaldo-sporting": {
+    "name": "Cristiano Ronaldo (Sporting)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Ronaldo thời Sporting CP: da sáng nâu nhẹ, tóc đen ngắn vuốt, mắt nâu sẫm, áo sọc xanh lá trắng số 28, quần đen, tất trắng",
+    "look": {
+      "skin": "#E8BA93",
+      "hair": {
+        "color": "#1A181B",
+        "style": "bom-gai"
+      },
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#008040",
+      "belt": "#008040",
+      "pants": "#111111",
+      "robe2": "#FFFFFF",
+      "boots": "#FFFFFF"
+    }
+  },
+  "bd-ferguson": {
+    "name": "Alex Ferguson",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Man United: tóc bạc xám rẽ ngôi, da sáng hồng, kính trắng gọng mảnh, áo khoác than viền đỏ, quần âu đen",
+    "look": {
+      "skin": "#FAD5BD",
+      "hair": {
+        "color": "#B0B0B0",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3A4B5C",
+      "glasses": true,
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1A2332",
+      "belt": "#D0142C",
+      "pants": "#111111",
+      "robe2": "#D0142C",
+      "boots": "#111111"
+    }
+  },
+  "bd-ronaldo-nhi": {
+    "name": "Ronaldo lúc nhỏ",
+    "note": "Ronaldo 8–12 tuổi ở Madeira: tóc đen ngắn, áo thun trắng, quần xanh lam, giày trắng",
+    "look": {
+      "skin": "#E8BA93",
+      "hair": {
+        "color": "#1A181B",
+        "style": "ngan"
+      },
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F4F4F4",
+      "robe2": "#2F6FB3",
+      "pants": "#2F6FB3",
+      "belt": "#2F6FB3",
+      "boots": "#FFFFFF"
+    },
+    "truyen": "Tèo Thể Thao (bóng đá)"
+  },
+  "bd-oshea": {
+    "name": "John O'Shea",
+    "note": "hậu vệ MU 2003: tóc nâu sẫm ngắn, da sáng, áo đỏ số 22, quần trắng",
+    "look": {
+      "skin": "#FBD8C2",
+      "hair": {
+        "color": "#3B2A20",
+        "style": "ngan"
+      },
+      "eyes": "#3A4B5C",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#D0142C",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#D0142C",
+      "boots": "#111111"
+    },
+    "truyen": "Tèo Thể Thao (bóng đá)"
+  },
+  "bd-cech": {
+    "name": "Petr Čech",
+    "note": "thủ môn Chelsea 2008: tóc nâu, mũ bảo hộ đen (vẽ như tóc đen phủ), áo thủ môn xám bạc, găng trắng",
+    "look": {
+      "skin": "#FAD9C4",
+      "hair": {
+        "color": "#141414",
+        "style": "troc"
+      },
+      "eyes": "#3D2B1F",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#9AA3AE",
+      "robe2": "#1B1B1F",
+      "pants": "#1B1B1F",
+      "belt": "#1B1B1F",
+      "boots": "#1B1B1F"
+    },
+    "truyen": "Tèo Thể Thao (bóng đá)"
+  },
+  "bd-terry": {
+    "name": "John Terry",
+    "note": "đội trưởng Chelsea 2008: tóc nâu sẫm ngắn, áo xanh hoàng gia số 26, quần xanh, băng đội trưởng",
+    "look": {
+      "skin": "#F8D3B8",
+      "hair": {
+        "color": "#2E2018",
+        "style": "ngan"
+      },
+      "eyes": "#3A4B5C",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E3FA8",
+      "robe2": "#FFFFFF",
+      "pants": "#1E3FA8",
+      "belt": "#1E3FA8",
+      "boots": "#111111"
+    },
+    "truyen": "Tèo Thể Thao (bóng đá)"
+  },
+  "bd-vdsar": {
+    "name": "Edwin van der Sar",
+    "note": "thủ môn MU 2008: tóc vàng nâu cắt sát, da sáng, áo thủ môn xanh lá đậm",
+    "look": {
+      "skin": "#FAD9C4",
+      "hair": {
+        "color": "#B08A5A",
+        "style": "troc"
+      },
+      "eyes": "#2B547E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1F7A3A",
+      "robe2": "#111111",
+      "pants": "#111111",
+      "belt": "#111111",
+      "boots": "#111111"
+    },
+    "truyen": "Tèo Thể Thao (bóng đá)"
+  },
+  "bd-park-tre": {
+    "name": "Park Hang-seo (trẻ)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Lucky-Goldstar và trợ lý tuyển Hàn Quốc 2002: tóc đen ngắn, áo đấu đỏ phối vàng",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#F3C93E",
+      "pants": "#161C30",
+      "belt": "#161C30",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#1A1414",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-hiddink": {
+    "name": "Guus Hiddink",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV tuyển Hàn Quốc World Cup 2002: tóc hoa râm ngắn, dáng cao lớn, áo khoác đỏ thể thao",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFFFFF",
+      "pants": "#1F2A44",
+      "belt": "#1F2A44",
+      "boots": "#1B1B1F",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE5D4",
+      "hair": {
+        "color": "#B8B8B8",
+        "style": "ngan"
+      },
+      "eyes": "#2B4C7E",
+      "age": "gia"
+    }
+  },
+  "bd-anhduc": {
+    "name": "Anh Đức",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo số 11 ĐT Việt Nam: tóc đen cắt ngắn, áo đỏ sao vàng số 11",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#F0C49E",
+      "hair": {
+        "color": "#1A1414",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-malaysia": {
+    "name": "Malaysia",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "cầu thủ ĐT Malaysia: áo vàng sọc đen, quần đen, tóc đen",
+    "look": {
+      "robe": "#FDB813",
+      "robe2": "#1A1414",
+      "pants": "#1A1414",
+      "belt": "#1A1414",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#DEB887",
+      "hair": {
+        "color": "#1A1414",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-hoanganhtuan": {
+    "name": "Hoàng Anh Tuấn",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV trưởng U15 Việt Nam: tóc đen rẽ ngôi điểm bạc, áo polo đỏ có cổ, quần đen",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFFFFF",
+      "pants": "#1E1B22",
+      "belt": "#1E1B22",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#E8B896",
+      "hair": {
+        "color": "#2A2525",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-xuanvinh": {
+    "name": "Xuân Vinh",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo U15 Việt Nam: tóc đen ngắn, áo đỏ số 9, quần đỏ, tất đỏ",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#FFFFFF",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#F5CBA7",
+      "hair": {
+        "color": "#1A1414",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-vantai": {
+    "name": "Văn Tài",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo U15 Việt Nam: tóc đen ngắn, áo đỏ số 11, quần đỏ, tất đỏ",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#FFFFFF",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#F0C49E",
+      "hair": {
+        "color": "#1A1414",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-azerbaijan": {
+    "name": "Azerbaijan",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "cầu thủ U15 Azerbaijan: áo xanh lam cờ Azerbaijan, viền đỏ, quần trắng, tóc nâu sẫm",
+    "look": {
+      "robe": "#0092BC",
+      "robe2": "#E03838",
+      "pants": "#FFFFFF",
+      "belt": "#0092BC",
+      "boots": "#1A1414",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FADBD8",
+      "hair": {
+        "color": "#2C1B18",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-hungary": {
+    "name": "Hungary",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "cầu thủ U15 Hungary: áo đỏ sọc xanh lá cờ Hungary, quần trắng, tóc nâu sáng",
+    "look": {
+      "robe": "#CE2939",
+      "robe2": "#477050",
+      "pants": "#FFFFFF",
+      "belt": "#CE2939",
+      "boots": "#1A1414",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FDEDEC",
+      "hair": {
+        "color": "#4A3525",
+        "style": "ngan"
+      },
+      "eyes": "#3A4A38"
+    }
+  },
+  "bd-messi": {
+    "name": "Lionel Messi",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "siêu sao Barcelona năm 2012: da sáng, tóc nâu rẽ ngôi, không râu, áo sọc xanh đỏ thẫm số 10, quần xanh than, giày cam",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#3E271E",
+        "style": "re-ngoi"
+      },
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#A2003B",
+      "robe2": "#152A68",
+      "pants": "#152A68",
+      "belt": "#152A68",
+      "boots": "#FF7A18"
+    }
+  },
+  "bd-lampard": {
+    "name": "Frank Lampard",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Chelsea năm 2008: da sáng, tóc nâu ngắn, áo xanh Chelsea số 8, quần xanh, giày đen",
+    "look": {
+      "skin": "#FAD9C4",
+      "hair": {
+        "color": "#3A271B",
+        "style": "ngan"
+      },
+      "eyes": "#3D2B1F",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#034694",
+      "robe2": "#FFFFFF",
+      "pants": "#034694",
+      "belt": "#034694",
+      "boots": "#111111"
+    }
+  },
+  "bd-wesbrown": {
+    "name": "Wes Brown",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "hậu vệ Man United năm 2008: da ngăm, đầu cạo trọc, áo đỏ MU số 6, quần trắng, giày đen",
+    "look": {
+      "skin": "#B87A4E",
+      "hair": {
+        "color": "#1A181B",
+        "style": "troc"
+      },
+      "eyes": "#2E1C12",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#D0142C",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#111111"
+    }
+  },
+  "bd-muller": {
+    "name": "Gerd Müller",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "huyền thoại dội bom Đức năm 1972: da sáng, tóc nâu dày, áo trắng số 13, quần đen, giày đen",
+    "look": {
+      "skin": "#FAD9C4",
+      "hair": {
+        "color": "#2C1B12",
+        "style": "bom-gai"
+      },
+      "eyes": "#3D2B1F",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F5F5F5",
+      "robe2": "#111111",
+      "pants": "#111111",
+      "belt": "#111111",
+      "boots": "#111111"
+    }
+  },
+  "bd-havertz": {
+    "name": "Kai Havertz",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Arsenal: tóc nâu sáng vuốt bồng, da sáng, mắt xanh biển; áo đỏ tay trắng số 29, quần trắng",
+    "look": {
+      "skin": "#FCE0CC",
+      "hair": {
+        "color": "#8E6B4B",
+        "style": "bom-gai"
+      },
+      "eyes": "#3B6998",
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#DC2626",
+      "boots": "#1E293B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-rice": {
+    "name": "Declan Rice",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Arsenal: tóc đen ngắn vuốt gọn, da sáng, mắt nâu, râu quai nón ngắn; áo đỏ tay trắng số 41, quần trắng",
+    "look": {
+      "skin": "#FCD8B8",
+      "hair": {
+        "color": "#221C18",
+        "style": "ngan"
+      },
+      "eyes": "#4A3222",
+      "beard": "rau-de",
+      "beardColor": "#221C18",
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#DC2626",
+      "boots": "#FFFFFF",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-arteta": {
+    "name": "Mikel Arteta",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Arsenal: tóc đen nhánh rẽ ngôi chỉn chu, da sáng, mắt đen; áo len đen cổ lọ, quần âu xám than",
+    "look": {
+      "skin": "#F9CFAD",
+      "hair": {
+        "color": "#111111",
+        "style": "re-ngoi"
+      },
+      "eyes": "#1A1A1A",
+      "robe": "#18181B",
+      "robe2": "#27272A",
+      "pants": "#27272A",
+      "belt": "#09090B",
+      "boots": "#09090B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-iraola": {
+    "name": "Andoni Iraola",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Liverpool: tóc đen ngắn rẽ ngôi, da sáng, mắt nâu sẫm, râu ngắn; áo khoác đen viền đỏ, quần đen",
+    "look": {
+      "skin": "#F7CFA8",
+      "hair": {
+        "color": "#1E1815",
+        "style": "ngan"
+      },
+      "eyes": "#332218",
+      "beard": "rau-de",
+      "beardColor": "#1E1815",
+      "robe": "#1F1F23",
+      "robe2": "#C8102E",
+      "pants": "#18181B",
+      "belt": "#111113",
+      "boots": "#111113",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-wirtz": {
+    "name": "Florian Wirtz",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Liverpool: tóc nâu ngắn rẽ ngôi, da sáng, mắt xanh; áo đỏ Liverpool số 7, quần đỏ",
+    "look": {
+      "skin": "#FCE2CC",
+      "hair": {
+        "color": "#7B5A3C",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2B5277",
+      "robe": "#C8102E",
+      "robe2": "#E5383B",
+      "pants": "#C8102E",
+      "belt": "#8B0000",
+      "boots": "#FFFFFF",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-alisson": {
+    "name": "Alisson Becker",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn Liverpool: tóc đen rẽ ngôi, da sáng, râu rậm quai nón; áo thủ môn xanh lá số 1, quần xanh lá",
+    "look": {
+      "skin": "#FCD8B8",
+      "hair": {
+        "color": "#1B1716",
+        "style": "re-ngoi"
+      },
+      "eyes": "#352219",
+      "beard": "rau-de",
+      "beardColor": "#1B1716",
+      "robe": "#10B981",
+      "robe2": "#059669",
+      "pants": "#10B981",
+      "belt": "#047857",
+      "boots": "#111827",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-timber": {
+    "name": "Jurriën Timber",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "hậu vệ Arsenal: tóc xoăn ngắn, da ngăm đen, mắt nâu; áo đỏ tay trắng số 12, quần trắng",
+    "look": {
+      "skin": "#784728",
+      "hair": {
+        "color": "#151515",
+        "style": "ngan"
+      },
+      "eyes": "#1F140E",
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#DC2626",
+      "boots": "#1E293B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-isak": {
+    "name": "Alexander Isak",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Liverpool: tóc đen cắt sát, da nâu, mắt nâu sẫm, dáng cao; áo đỏ Liverpool, quần đỏ",
+    "look": {
+      "skin": "#8A5534",
+      "hair": {
+        "color": "#141414",
+        "style": "ngan"
+      },
+      "eyes": "#1F140E",
+      "robe": "#C8102E",
+      "robe2": "#E5383B",
+      "pants": "#C8102E",
+      "belt": "#8B0000",
+      "boots": "#FFFFFF",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-raya": {
+    "name": "David Raya",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn Arsenal: tóc đen ngắn, da sáng ngăm, mắt nâu; áo thủ môn xanh ngọc, quần xanh ngọc",
+    "look": {
+      "skin": "#E8B992",
+      "hair": {
+        "color": "#1A1410",
+        "style": "ngan"
+      },
+      "eyes": "#3A2618",
+      "robe": "#14B8A6",
+      "robe2": "#0F766E",
+      "pants": "#0F766E",
+      "belt": "#0F766E",
+      "boots": "#1E293B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-kim-sang-sik": {
+    "name": "Kim Sang-sik",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV trưởng tuyển Việt Nam: tóc đen rẽ ngôi ngắn, mắt một mí kiên nghị, áo khoác thể thao xanh than viền đỏ sao vàng",
+    "look": {
+      "robe": "#1B2838",
+      "robe2": "#D62828",
+      "pants": "#121A24",
+      "belt": "#121A24",
+      "boots": "#222222",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#1C1C1E",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-ronaldo-real": {
+    "name": "Cristiano Ronaldo (Real Madrid)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Ronaldo thời Real 2009–2018: da sáng nâu nhẹ, tóc đen vuốt dựng, mắt nâu sẫm, áo trắng cổ đen, quần trắng, giày đen (số 9 mùa đầu, số 7 từ 2010 — vẽ số ngoài thân)",
+    "look": {
+      "skin": "#E8BA93",
+      "hair": {
+        "color": "#1A181B",
+        "style": "bom-gai"
+      },
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F7F7F7",
+      "robe2": "#1B1B1F",
+      "belt": "#C9A227",
+      "pants": "#F7F7F7",
+      "boots": "#111111"
+    }
+  },
+  "bd-ramos": {
+    "name": "Sergio Ramos",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "trung vệ Real 2014–2016: da nâu sáng, tóc đen ngắn, râu cằm, áo trắng",
+    "look": {
+      "skin": "#E2A578",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "ngan"
+      },
+      "beard": "rau-de",
+      "beardColor": "#1E1B22",
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F7F7F7",
+      "robe2": "#1B1B1F",
+      "belt": "#C9A227",
+      "pants": "#F7F7F7",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-bale": {
+    "name": "Gareth Bale",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo cánh Real: da sáng, tóc nâu búi sau, râu cằm nâu, áo trắng",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#5A3B24",
+        "style": "bui-toi"
+      },
+      "beard": "rau-de",
+      "beardColor": "#5A3B24",
+      "eyes": "#4A6A8A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F7F7F7",
+      "robe2": "#1B1B1F",
+      "belt": "#C9A227",
+      "pants": "#F7F7F7",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-zidane-hlv": {
+    "name": "Zidane (HLV Real)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Real 2016–2018: đầu cạo sát, da sáng ngăm, râu lún phún, áo khoác xám than cổ trắng",
+    "look": {
+      "skin": "#E8BA93",
+      "hair": {
+        "color": "#3A3A3A",
+        "style": "troc"
+      },
+      "beard": "rau-de",
+      "beardColor": "#4A4A4A",
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#33363F",
+      "robe2": "#F2F2F2",
+      "belt": "#33363F",
+      "pants": "#33363F",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-thu-mon-tu-do": {
+    "name": "Thủ môn đội chủ nhà",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn chung (không theo người thật): tóc đen ngắn, da sáng, áo thủ môn vàng đất, quần đen",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#2A2420",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#D9A21B",
+      "robe2": "#1B1B1F",
+      "belt": "#1B1B1F",
+      "pants": "#1B1B1F",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-hau-ve-den-trang": {
+    "name": "Hậu vệ áo đen trắng",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "hậu vệ chung đội áo đen trắng (không theo người thật): tóc nâu ngắn, da sáng, áo đen cổ trắng, quần trắng",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#4A3426",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#24242A",
+      "robe2": "#F5F5F5",
+      "belt": "#F5F5F5",
+      "pants": "#F5F5F5",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-barca-hv": {
+    "name": "Hậu vệ áo xanh đỏ",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "hậu vệ chung đội áo xanh đỏ thẫm (không theo người thật): tóc đen, da nâu sáng",
+    "look": {
+      "skin": "#E2A578",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#152A68",
+      "robe2": "#A2003B",
+      "belt": "#A2003B",
+      "pants": "#152A68",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-polking": {
+    "name": "Mano Polking",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV CAHN: tóc nâu rẽ ngôi ngắn, da sáng, râu tỉa ngắn gọn gàng, áo polo đỏ sẫm cổ đen, quần đen",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#4A3426",
+        "style": "re-ngoi"
+      },
+      "beard": "ria",
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#8B1818",
+      "robe2": "#1E1B22",
+      "belt": "#1E1B22",
+      "pants": "#1E1B22",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-perea": {
+    "name": "Brayan Perea",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo CAHN số 9: da sẫm, tóc cắt ngắn, thể hình vạm vỡ, áo đỏ số 9 viền vàng, quần đỏ",
+    "look": {
+      "skin": "#8C5835",
+      "hair": {
+        "color": "#151515",
+        "style": "ngan"
+      },
+      "eyes": "#1E1510",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#D32F2F",
+      "robe2": "#FFD54F",
+      "belt": "#D32F2F",
+      "pants": "#D32F2F",
+      "boots": "#F5F5F5"
+    }
+  },
+  "bd-leo-artur": {
+    "name": "Leo Artur",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo CAHN số 10 Brazil: da bánh mật, tóc ngắn vuốt bồng, áo đỏ số 10 viền vàng, quần đỏ",
+    "look": {
+      "skin": "#C68652",
+      "hair": {
+        "color": "#221A16",
+        "style": "bom-gai"
+      },
+      "beard": "rau-de",
+      "eyes": "#2A1810",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#D32F2F",
+      "robe2": "#FFD54F",
+      "belt": "#D32F2F",
+      "pants": "#D32F2F",
+      "boots": "#FFEB3B"
+    }
+  },
+  "bd-filip-nguyen": {
+    "name": "Nguyễn Filip",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn CAHN số 1: tóc đen rẽ ngôi vuốt lệch, da sáng, áo thủ môn vàng neon phối xanh, quần vàng",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#E6D020",
+      "robe2": "#1E40AF",
+      "belt": "#1E40AF",
+      "pants": "#E6D020",
+      "boots": "#F5F5F5"
+    }
+  },
+  "bd-quang-vinh": {
+    "name": "Cao Pendant Quang Vinh",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "hậu vệ cánh CAHN số 7: da rám, tóc đen ngắn, áo đỏ viền vàng, quần đỏ",
+    "look": {
+      "skin": "#DDA070",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#D32F2F",
+      "robe2": "#FFD54F",
+      "belt": "#D32F2F",
+      "pants": "#D32F2F",
+      "boots": "#FFFFFF"
+    }
+  },
+  "bd-popovic": {
+    "name": "Ranko Popovic",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Kyoto Sanga: tóc hoa râm, da sáng, áo khoác thể thao tím than, quần tối màu",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#B0B0B8",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3A3540",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#311B92",
+      "robe2": "#FFFFFF",
+      "belt": "#1E1B22",
+      "pants": "#1E1B22",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-carrick": {
+    "name": "Michael Carrick",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Man United: tóc nâu rẽ ngôi ngắn, da sáng, mắt nâu; áo khoác dài đen HLV, quần xám than, giày đen",
+    "look": {
+      "skin": "#F9CFAD",
+      "hair": {
+        "color": "#4A3324",
+        "style": "re-ngoi"
+      },
+      "eyes": "#4A3324",
+      "robe": "#1C1917",
+      "robe2": "#292524",
+      "pants": "#292524",
+      "belt": "#0C0A09",
+      "boots": "#0C0A09",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-bruno": {
+    "name": "Bruno Fernandes",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "đội trưởng Man United số 8: tóc đen vuốt phồng, râu quai nón ngắn, mắt nâu đen; áo đỏ MU số 8, quần trắng",
+    "look": {
+      "skin": "#F8CCA9",
+      "hair": {
+        "color": "#1C1917",
+        "style": "bom-gai"
+      },
+      "eyes": "#292524",
+      "beard": "rau-de",
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#DC2626",
+      "boots": "#1E293B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-cunha": {
+    "name": "Matheus Cunha",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Man United số 10: da bánh mật nâu, tóc xoăn ngắn đen, mắt đen kiên quyết; áo đỏ MU, quần trắng",
+    "look": {
+      "skin": "#D49B72",
+      "hair": {
+        "color": "#18181B",
+        "style": "ngan"
+      },
+      "eyes": "#18181B",
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#DC2626",
+      "boots": "#09090B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-soule": {
+    "name": "Matías Soulé",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo AS Roma số 18: da sáng, tóc đen ngắn vuốt nhẹ, mắt nâu; áo vàng cam viền đỏ bã trầu Roma số 18, quần đỏ bã trầu",
+    "look": {
+      "skin": "#FCE0CC",
+      "hair": {
+        "color": "#1F2937",
+        "style": "re-ngoi"
+      },
+      "eyes": "#374151",
+      "robe": "#EAB308",
+      "robe2": "#881337",
+      "pants": "#881337",
+      "belt": "#EAB308",
+      "boots": "#111827",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-malen": {
+    "name": "Donyell Malen",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo AS Roma số 14: da ngăm sẫm, đầu cạo sát, mắt đen; áo vàng cam viền đỏ Roma số 14, quần đỏ bã trầu",
+    "look": {
+      "skin": "#B47854",
+      "hair": {
+        "color": "#18181B",
+        "style": "ngan"
+      },
+      "eyes": "#18181B",
+      "robe": "#EAB308",
+      "robe2": "#881337",
+      "pants": "#881337",
+      "belt": "#EAB308",
+      "boots": "#18181B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-cristante": {
+    "name": "Bryan Cristante",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "đội trưởng AS Roma số 4: da sáng, tóc nâu ngắn rẽ ngôi, râu quai nón ngắn; áo vàng cam viền đỏ Roma số 4, quần đỏ bã trầu",
+    "look": {
+      "skin": "#F9CFAD",
+      "hair": {
+        "color": "#452C1E",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3E2723",
+      "beard": "rau-de",
+      "robe": "#EAB308",
+      "robe2": "#881337",
+      "pants": "#881337",
+      "belt": "#EAB308",
+      "boots": "#18181B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-balerdi": {
+    "name": "Leonardo Balerdi",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "trung vệ AS Roma số 5: da sáng, tóc đen vuốt nhẹ; áo vàng cam viền đỏ Roma số 5, quần đỏ bã trầu",
+    "look": {
+      "skin": "#FCE0CC",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "re-ngoi"
+      },
+      "eyes": "#292524",
+      "robe": "#EAB308",
+      "robe2": "#881337",
+      "pants": "#881337",
+      "belt": "#EAB308",
+      "boots": "#111827",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-lacey": {
+    "name": "Shea Lacey",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "cầu thủ trẻ Man United số 47: da sáng, tóc nâu sáng bồng bềnh, dáng trẻ trung; áo đỏ MU, quần trắng",
+    "look": {
+      "skin": "#FDE6D2",
+      "hair": {
+        "color": "#8E6B4B",
+        "style": "mai-bang"
+      },
+      "eyes": "#4A3324",
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#DC2626",
+      "boots": "#1E293B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-vasquez": {
+    "name": "Devis Vásquez",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn AS Roma: áo thủ môn màu xanh lá neon số 77, găng tay vàng, quần xanh lá neon",
+    "look": {
+      "skin": "#D49B72",
+      "hair": {
+        "color": "#18181B",
+        "style": "ngan"
+      },
+      "eyes": "#18181B",
+      "robe": "#84CC16",
+      "robe2": "#166534",
+      "pants": "#84CC16",
+      "belt": "#166534",
+      "boots": "#18181B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-roland": {
+    "name": "Cristiano Roland",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV trưởng U17 Việt Nam: cựu trung vệ người Bồ Đào Nha, mắt sáng kiên nghị, áo khoác thể thao xanh than viền đỏ",
+    "look": {
+      "robe": "#1B2838",
+      "robe2": "#D62828",
+      "pants": "#121A24",
+      "belt": "#121A24",
+      "boots": "#222222",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#2B1D1D",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-nguyen-luc": {
+    "name": "Chu Ngọc Nguyễn Lực",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ nhạc trưởng số 10 U17 Việt Nam: tóc ngắn đen trẻ trung, áo đỏ sao vàng số 10, quần đỏ",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1A1414",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-manh-cuong": {
+    "name": "Nguyễn Mạnh Cường",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "trung vệ U17 Việt Nam: dáng cao ráo rắn rỏi, áo đỏ số 5, quần đỏ, đánh đầu dũng mãnh",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#F5CBA7",
+      "hair": {
+        "color": "#111111",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-van-duong": {
+    "name": "Nguyễn Văn Dương",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo U17 Việt Nam: tóc rẽ ngôi trẻ trung, áo đỏ số 9, quần đỏ, nhanh nhẹn chớp thời cơ",
+    "look": {
+      "robe": "#D62828",
+      "robe2": "#FFD60A",
+      "pants": "#D62828",
+      "belt": "#D62828",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1A1414",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-u17-bi": {
+    "name": "Cầu thủ U17 Bỉ",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "đại diện U17 Bỉ: da sáng, tóc nâu vuốt phồng, áo đỏ phối đen số 10, quần đen",
+    "look": {
+      "robe": "#C8102E",
+      "robe2": "#111111",
+      "pants": "#111111",
+      "belt": "#111111",
+      "boots": "#EF3340",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE5D9",
+      "hair": {
+        "color": "#5C3A21",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2B4C6F"
+    }
+  },
+  "bd-u17-mali": {
+    "name": "Cầu thủ U17 Mali",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "đại diện U17 Mali: da ngăm đen, tóc cạo sát, áo xanh lá viền vàng số 7, quần xanh lá",
+    "look": {
+      "robe": "#14B53A",
+      "robe2": "#FCD116",
+      "pants": "#14B53A",
+      "belt": "#14B53A",
+      "boots": "#CE1126",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#5C3A21",
+      "hair": {
+        "color": "#111111",
+        "style": "ngan"
+      },
+      "eyes": "#111111"
+    }
+  },
+  "bd-u17-newzealand": {
+    "name": "Cầu thủ U17 New Zealand",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "đại diện U17 New Zealand: da sáng, tóc vàng nâu ngắn, thể hình cao to, áo đen toàn bộ viền trắng số 9, quần đen",
+    "look": {
+      "robe": "#111111",
+      "robe2": "#FFFFFF",
+      "pants": "#111111",
+      "belt": "#111111",
+      "boots": "#F5F5F5",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#FFE5D9",
+      "hair": {
+        "color": "#8B6538",
+        "style": "ngan"
+      },
+      "eyes": "#3B5360"
+    }
+  },
+  "bd-u17-uae": {
+    "name": "Cầu thủ U17 UAE",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "đại diện U17 UAE: da bánh mật, tóc đen ngắn, áo trắng viền đỏ số 11, quần trắng",
+    "look": {
+      "robe": "#FFFFFF",
+      "robe2": "#CE1126",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#111111",
+      "weapon": "none",
+      "flaps": false,
+      "skin": "#E0AC69",
+      "hair": {
+        "color": "#111111",
+        "style": "ngan"
+      },
+      "eyes": "#2A1E18"
+    }
+  },
+  "bd-haaland": {
+    "name": "Erling Haaland",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Na Uy tuổi 19: da trắng hồng, tóc vàng búi, áo vàng quần đen (chỉ màu, không logo)",
+    "look": {
+      "skin": "#F6D2BC",
+      "hair": {
+        "color": "#E2C06A",
+        "style": "bui-toi"
+      },
+      "eyes": "#3A5A7A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F5D21B",
+      "belt": "#1B1B1F",
+      "pants": "#1B1B1F",
+      "robe2": "#1B1B1F",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-ansu-fati": {
+    "name": "Ansu Fati",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Ansu Fati 17 tuổi ở Barca: da nâu đậm, tóc đen ngắn, áo đỏ sẫm cổ xanh",
+    "look": {
+      "skin": "#7A4A2E",
+      "hair": {
+        "color": "#141010",
+        "style": "ngan"
+      },
+      "eyes": "#2A1A12",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#A2003B",
+      "belt": "#0A3A8C",
+      "pants": "#0A3A8C",
+      "robe2": "#0A3A8C",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-dowman": {
+    "name": "Max Dowman",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Max Dowman 15 tuổi: da trắng, tóc nâu ngắn, áo đỏ tay trắng quần trắng",
+    "look": {
+      "skin": "#F7D6BE",
+      "hair": {
+        "color": "#5A3A22",
+        "style": "ngan"
+      },
+      "eyes": "#3A2A1E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#D81E2A",
+      "belt": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "robe2": "#FFFFFF",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-fabregas": {
+    "name": "Cesc Fàbregas",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Como: tóc đen rẽ ngôi ngắn, da sáng Địa Trung Hải, râu ngắn; áo khoác xanh thẫm HLV Como, quần xám đen",
+    "look": {
+      "skin": "#F5CCA5",
+      "hair": {
+        "color": "#1A1715",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3B2519",
+      "beard": "rau-de",
+      "robe": "#1A365D",
+      "robe2": "#FFFFFF",
+      "pants": "#1E293B",
+      "belt": "#0F172A",
+      "boots": "#0F172A",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-douvikas": {
+    "name": "Anastasios Douvikas",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Como số 9: da sáng Hy Lạp, tóc vuốt phồng, râu dê ngắn; áo xanh hoàng gia Como số 9, quần trắng",
+    "look": {
+      "skin": "#F8CFB0",
+      "hair": {
+        "color": "#3B261A",
+        "style": "bom-gai"
+      },
+      "eyes": "#332014",
+      "beard": "rau-de",
+      "robe": "#1E40AF",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#1E40AF",
+      "boots": "#1E293B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-nicopaz": {
+    "name": "Nico Paz",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ công Como số 79: da sáng bánh mật, tóc nâu rẽ ngôi bồng bềnh, mắt sáng; áo xanh hoàng gia Como, quần trắng",
+    "look": {
+      "skin": "#F7CEAD",
+      "hair": {
+        "color": "#543825",
+        "style": "re-ngoi"
+      },
+      "eyes": "#422818",
+      "robe": "#1E40AF",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#1E40AF",
+      "boots": "#F59E0B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-lens-aguilar": {
+    "name": "Ruben Aguilar",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "hậu vệ Lens số 2: da sáng, tóc nâu ngắn, râu dê ngắn; áo vàng viền đỏ Lens, quần đen",
+    "look": {
+      "skin": "#F6C8A4",
+      "hair": {
+        "color": "#2E1F16",
+        "style": "ngan"
+      },
+      "eyes": "#332014",
+      "beard": "rau-de",
+      "robe": "#EAB308",
+      "robe2": "#DC2626",
+      "pants": "#18181B",
+      "belt": "#DC2626",
+      "boots": "#09090B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-messi-arg": {
+    "name": "Lionel Messi (Argentina 2026)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "đội trưởng Argentina 2026: da sáng, tóc nâu ngắn rẽ ngôi, râu nâu, áo xanh da trời nhạt cổ trắng (sọc vẽ ngoài), quần đen, băng đội trưởng",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#4A3020",
+        "style": "re-ngoi"
+      },
+      "beard": "rau-de",
+      "beardColor": "#4A3020",
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#8EC5EE",
+      "robe2": "#FFFFFF",
+      "pants": "#111827",
+      "belt": "#111827",
+      "boots": "#F5F5F5"
+    }
+  },
+  "bd-yamal-esp": {
+    "name": "Lamine Yamal (Tây Ban Nha)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Yamal ở tuyển Tây Ban Nha: da nâu, tóc đen xoăn dựng, áo đỏ cổ vàng, quần xanh than",
+    "look": {
+      "skin": "#B87A4E",
+      "hair": {
+        "color": "#14100E",
+        "style": "bom-gai"
+      },
+      "eyes": "#2E1C12",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C60B1E",
+      "robe2": "#F1BF00",
+      "pants": "#1B2A4A",
+      "belt": "#1B2A4A",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-ferran": {
+    "name": "Ferran Torres",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Tây Ban Nha: da sáng, tóc đen ngắn vuốt, áo đỏ cổ vàng, quần xanh than",
+    "look": {
+      "skin": "#F2C9A6",
+      "hair": {
+        "color": "#1E1610",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C60B1E",
+      "robe2": "#F1BF00",
+      "pants": "#1B2A4A",
+      "belt": "#1B2A4A",
+      "boots": "#F5F5F5"
+    }
+  },
+  "bd-nhiep-anh": {
+    "name": "Nhiếp ảnh gia (vẽ chung)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "nhiếp ảnh gia chung (không vẽ theo ảnh người thật): tóc nâu xám ngắn, áo khoác be, quần nâu",
+    "look": {
+      "skin": "#F6D2BC",
+      "hair": {
+        "color": "#6B5A4A",
+        "style": "ngan"
+      },
+      "eyes": "#3A2A1E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C8B08A",
+      "robe2": "#5A4632",
+      "pants": "#4A3426",
+      "belt": "#4A3426",
+      "boots": "#2A1E16"
+    }
+  },
+  "bd-teo-kho": {
+    "name": "Tèo giữ kho đồ cũ",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo đóng vai người giữ kho: giữ tóc đen mái bằng, da rám nắng, mắt nâu; tạp dề nâu trên áo kem, quần xanh than",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "mai-bang"
+      },
+      "eyes": "#7A4A22",
+      "glasses": false,
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#8B5E3C",
+      "robe2": "#F3E9D2",
+      "pants": "#0F1B3D",
+      "belt": "#F3E9D2",
+      "boots": "#F5F5F5"
+    }
+  },
+  "bd-villa": {
+    "name": "Cầu thủ Aston Villa (vẽ chung)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "hậu vệ chung áo đỏ rượu tay xanh nhạt (không theo người thật): da sáng, tóc nâu ngắn",
+    "look": {
+      "skin": "#F2C9A6",
+      "hair": {
+        "color": "#5A3A22",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#6E1335",
+      "robe2": "#95BFE5",
+      "pants": "#FFFFFF",
+      "belt": "#6E1335",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-teo-boiban": {
+    "name": "Tèo bồi bàn",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo đóng vai bồi bàn nhà hàng CLB quần vợt 2000: tóc đen mái bằng, da rám nắng, mắt nâu; gi-lê đen cổ áo sơ mi trắng, quần đen, thắt lưng đỏ rượu",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "mai-bang"
+      },
+      "eyes": "#7A4A22",
+      "glasses": false,
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E1E24",
+      "robe2": "#FFFFFF",
+      "pants": "#1E1E24",
+      "belt": "#7A1F2B",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-messi-nho": {
+    "name": "Messi nhí (Newell's)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Messi 10-12 tuổi ở Newell's (vẽ chung): da sáng, tóc nâu rẽ ngôi, không râu, áo đỏ cổ đen, quần đen",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#4A2E20",
+        "style": "re-ngoi"
+      },
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#D62828",
+      "robe2": "#151515",
+      "pants": "#151515",
+      "belt": "#151515",
+      "boots": "#F5F5F5"
+    }
+  },
+  "bd-messi-miami": {
+    "name": "Messi (Inter Miami 2026)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Messi 39 tuổi ở Mỹ: da sáng, tóc nâu rẽ ngôi, râu nâu, áo hồng cổ đen, quần đen",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#4A3020",
+        "style": "re-ngoi"
+      },
+      "beard": "rau-de",
+      "beardColor": "#4A3020",
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F4A7C0",
+      "robe2": "#151515",
+      "pants": "#151515",
+      "belt": "#151515",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-ronaldinho": {
+    "name": "Ronaldinho",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Ronaldinho ở Barca 2005: da nâu đậm, tóc đen dài thẳng, khăn trán trắng, áo sọc xanh đỏ thẫm, quần xanh than",
+    "look": {
+      "skin": "#8A5A3C",
+      "hair": {
+        "color": "#151515",
+        "style": "dai-thang"
+      },
+      "band": "#FFFFFF",
+      "eyes": "#2E1C12",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#A2003B",
+      "robe2": "#152A68",
+      "pants": "#152A68",
+      "belt": "#152A68",
+      "boots": "#F5F5F5"
+    }
+  },
+  "bd-rexach": {
+    "name": "Carles Rexach",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "giám đốc thể thao Barca năm 2000 (vẽ chung): tóc bạc ngắn, da sáng, áo vest xám than, cổ trắng",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#C8C8C8",
+        "style": "ngan"
+      },
+      "age": "gia",
+      "eyes": "#3D2B1F",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#3A3A48",
+      "robe2": "#FFFFFF",
+      "pants": "#2A2A33",
+      "belt": "#2A2A33",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-moi-gioi": {
+    "name": "Người môi giới",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "người môi giới năm 2000 (vẽ chung, không theo ai): tóc đen rẽ ngôi, ria mép, vest nâu, cổ kem",
+    "look": {
+      "skin": "#E2A578",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "re-ngoi"
+      },
+      "beard": "ria",
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#5A4632",
+      "robe2": "#F3E9D2",
+      "pants": "#3A2E22",
+      "belt": "#3A2E22",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-ba-celia": {
+    "name": "Bà ngoại Celia",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "bà ngoại của Messi (vẽ chung): tóc xám búi thấp, váy tím nhạt, da sáng",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#9A9A9A",
+        "style": "bui-toi"
+      },
+      "age": "gia",
+      "fem": true,
+      "skirt": true,
+      "eyes": "#5A3A2A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#8E6FA8",
+      "robe2": "#F3E9D2",
+      "pants": "#5B4A6A",
+      "belt": "#5B4A6A",
+      "boots": "#5B4A3A"
+    }
+  },
+  "bd-hv-navy": {
+    "name": "Hậu vệ áo xanh navy",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "hậu vệ chung áo xanh navy cổ đỏ (không theo ai): da nâu sáng, tóc đen ngắn",
+    "look": {
+      "skin": "#E2A578",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#0A2240",
+      "robe2": "#C8102E",
+      "pants": "#0A2240",
+      "belt": "#C8102E",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-asano": {
+    "name": "Takuma Asano",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Nhật Bản: da sáng, tóc nâu vàng cắt cao gai nhẹ; áo xanh Samurai Blue số 18, quần xanh đậm, giày cam",
+    "look": {
+      "skin": "#F5CCA5",
+      "hair": {
+        "color": "#8B5A2B",
+        "style": "bom-gai"
+      },
+      "eyes": "#3B2519",
+      "robe": "#002B7F",
+      "robe2": "#FFFFFF",
+      "pants": "#001F5C",
+      "belt": "#001F5C",
+      "boots": "#F97316",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-doan": {
+    "name": "Ritsu Doan",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ công Nhật Bản: da sáng, tóc vàng bạch kim nhuộm cắt ngắn rẽ ngôi; áo xanh Samurai Blue số 8, quần xanh, giày vàng",
+    "look": {
+      "skin": "#F5CCA5",
+      "hair": {
+        "color": "#E5C158",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3B2519",
+      "robe": "#002B7F",
+      "robe2": "#FFFFFF",
+      "pants": "#001F5C",
+      "belt": "#001F5C",
+      "boots": "#EAB308",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-moriyasu": {
+    "name": "Hajime Moriyasu",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV trưởng tuyển Nhật Bản: tóc đen rẽ ngôi gọn gàng, da trung tính, gương mặt điềm tĩnh; áo vest xanh than, sơ mi trắng cà vạt xanh navy, quần tây",
+    "look": {
+      "skin": "#F2C49B",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3A2418",
+      "robe": "#1E293B",
+      "robe2": "#FFFFFF",
+      "pants": "#1E293B",
+      "belt": "#0F172A",
+      "boots": "#0F172A",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-neuer": {
+    "name": "Manuel Neuer",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn Đức: dáng cao, tóc vàng cát ngắn, da sáng châu Âu; áo thủ môn đen vàng số 1, găng tay trắng, giày đen",
+    "look": {
+      "skin": "#F8D7BE",
+      "hair": {
+        "color": "#C8A468",
+        "style": "ngan"
+      },
+      "eyes": "#4A6E82",
+      "robe": "#18181B",
+      "robe2": "#EAB308",
+      "pants": "#18181B",
+      "belt": "#EAB308",
+      "boots": "#000000",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-tsubasa": {
+    "name": "Ozora Tsubasa",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "nhân vật manga Captain Tsubasa: tóc đen gai bù xù đặc trưng anime, mắt to sáng, nụ cười rạng rỡ; áo đấu trắng sọc xanh lam số 10 Nankatsu",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#111827",
+        "style": "bom-gai"
+      },
+      "eyes": "#1F2937",
+      "robe": "#FFFFFF",
+      "robe2": "#0284C7",
+      "pants": "#0284C7",
+      "belt": "#0284C7",
+      "boots": "#EF4444",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-kawabuchi": {
+    "name": "Saburo Kawabuchi",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Chủ tịch sáng lập J.League và kiến trúc sư Kế hoạch 100 năm: tóc xám hoa râm ngắn, đeo kính gọng đen, vest xám đen trang trọng cà vạt đỏ đô",
+    "look": {
+      "skin": "#EFC8A6",
+      "hair": {
+        "color": "#8E8E93",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418",
+      "glasses": true,
+      "robe": "#374151",
+      "robe2": "#991B1B",
+      "pants": "#1F2937",
+      "belt": "#111827",
+      "boots": "#111827",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-teo-giu-do": {
+    "name": "Tèo (người giữ đồ đội tuyển)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo vai người giữ đồ (kit man) đội tuyển: giữ tóc/da/mắt của teo-the-thao, áo khoác nhân viên xanh rêu sẫm, quần đen",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "mai-bang"
+      },
+      "eyes": "#7A4A22",
+      "glasses": false,
+      "robe": "#1F4A3A",
+      "robe2": "#E9E2CF",
+      "pants": "#1E1E22",
+      "belt": "#E9E2CF",
+      "boots": "#F2F2F2",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-ronaldo-bdn": {
+    "name": "Cristiano Ronaldo (Bồ Đào Nha)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Ronaldo áo đội tuyển Bồ Đào Nha: da sáng nâu nhẹ, tóc đen vuốt, áo đỏ tía số 7, quần xanh rêu, giày đen (không logo)",
+    "look": {
+      "skin": "#E8BA93",
+      "hair": {
+        "color": "#1A181B",
+        "style": "bom-gai"
+      },
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#B0102A",
+      "belt": "#0E5A36",
+      "pants": "#0E5A36",
+      "robe2": "#0E5A36",
+      "boots": "#111111"
+    }
+  },
+  "bd-eder": {
+    "name": "Éder (Bồ Đào Nha 2016)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Bồ Đào Nha 2016: da nâu sẫm, tóc đen cắt sát, áo đỏ số 9, quần xanh rêu",
+    "look": {
+      "skin": "#7A4E34",
+      "hair": {
+        "color": "#141214",
+        "style": "ngan"
+      },
+      "eyes": "#2A1A12",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#B0102A",
+      "belt": "#0E5A36",
+      "pants": "#0E5A36",
+      "robe2": "#0E5A36",
+      "boots": "#111111"
+    }
+  },
+  "bd-phap-hv": {
+    "name": "Hậu vệ áo xanh lam đậm",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "cầu thủ chung đội áo xanh lam đậm (không theo người thật): tóc nâu ngắn, áo xanh lam đậm, quần trắng",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#4A3426",
+        "style": "ngan"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1B2A6B",
+      "robe2": "#F5F5F5",
+      "belt": "#F5F5F5",
+      "pants": "#F5F5F5",
+      "boots": "#1B1B1F"
+    }
+  },
+  "bd-amorim": {
+    "name": "Rúben Amorim",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV AC Milan: tóc đen cắt ngắn gọn gàng, râu quai nón ngắn cắt tỉa kỹ, da sáng Bồ Đào Nha; áo vest đen HLV sọc đỏ viền mỏng, quần đen, giày da đen",
+    "look": {
+      "skin": "#F5CCA5",
+      "hair": "@{color=#1A1715; style=ngan}",
+      "eyes": "#2C1B10",
+      "beard": "rau-de",
+      "robe": "#18181B",
+      "robe2": "#DC2626",
+      "pants": "#18181B",
+      "belt": "#09090B",
+      "boots": "#09090B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-lenny-joseph": {
+    "name": "Lenny Joseph",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Ferencváros số 7: da nâu Pháp/Caribbean, tóc tết bím ngắn sát đầu, không râu; áo sọc xanh lá - trắng Ferencváros số 7, quần trắng",
+    "look": {
+      "skin": "#8D5524",
+      "hair": "@{color=#1A1715; style=dinh}",
+      "eyes": "#1A1715",
+      "robe": "#00875A",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#00875A",
+      "boots": "#18181B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-torriani": {
+    "name": "Lorenzo Torriani",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn AC Milan số 96: da sáng Ý, tóc nâu bồng bềnh, trẻ trung hoang mang; áo thủ môn vàng cam số 96, quần đen, găng tay vàng cam",
+    "look": {
+      "skin": "#F8D5B8",
+      "hair": "@{color=#4A301E; style=re-ngoi}",
+      "eyes": "#3E2718",
+      "robe": "#F59E0B",
+      "robe2": "#D97706",
+      "pants": "#18181B",
+      "belt": "#B45309",
+      "boots": "#F59E0B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-yusuf": {
+    "name": "Bamidele Yusuf",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo cánh Ferencváros: da đen Nigeria, tóc húi cua sát đầu; áo sọc xanh lá - trắng Ferencváros số 11, quần trắng",
+    "look": {
+      "skin": "#5C381E",
+      "hair": "@{color=#0F0D0C; style=dinh}",
+      "eyes": "#0F0D0C",
+      "robe": "#00875A",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#00875A",
+      "boots": "#0F0D0C",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-di-stefano": {
+    "name": "Alfredo Di Stéfano",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Mũi tên bạc huyền thoại Real Madrid thập niên 50: da sáng, tóc vàng hung hói trán nhẹ, mắt hổ phách, áo trắng số 9",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#B88E3E",
+        "style": "re-ngoi"
+      },
+      "eyes": "#6B4E2E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FFFFFF",
+      "robe2": "#E5E7EB",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#111111"
+    }
+  },
+  "bd-bernabeu": {
+    "name": "Santiago Bernabéu",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Chủ tịch huyền thoại Real Madrid: tóc bạc rẽ ngôi, da sáng, vest xanh đen thẫm lịch lãm",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#D1D5DB",
+        "style": "re-ngoi"
+      },
+      "eyes": "#374151",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E293B",
+      "robe2": "#FFFFFF",
+      "pants": "#0F172A",
+      "belt": "#0F172A",
+      "boots": "#020617",
+      "age": "gia"
+    }
+  },
+  "bd-puskas": {
+    "name": "Ferenc Puskás",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Khẩu pháo cơ động huyền thoại Hungary và Real Madrid: da sáng, tóc đen rẽ ngôi, áo trắng số 10",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "re-ngoi"
+      },
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FFFFFF",
+      "robe2": "#E5E7EB",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#111111"
+    }
+  },
+  "bd-gento": {
+    "name": "Paco Gento",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Huyền thoại cánh trái Real Madrid 6 cúp C1: da sáng, tóc nâu rẽ ngôi, áo trắng số 11",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#4A3525",
+        "style": "re-ngoi"
+      },
+      "eyes": "#4A3525",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FFFFFF",
+      "robe2": "#E5E7EB",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#111111"
+    }
+  },
+  "bd-kopa": {
+    "name": "Raymond Kopa",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Quả bóng vàng 1958, nhạc trưởng Pháp: da sáng, tóc nâu rẽ ngôi, áo trắng số 7",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#6B5035",
+        "style": "re-ngoi"
+      },
+      "eyes": "#4B6B8B",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FFFFFF",
+      "robe2": "#E5E7EB",
+      "pants": "#FFFFFF",
+      "belt": "#FFFFFF",
+      "boots": "#111111"
+    }
+  },
+  "bd-teo-baotang": {
+    "name": "Tèo Thể Thao (bảo tàng)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo hướng dẫn viên bảo tàng Bernabéu: vest xanh navy, sơ mi trắng, cà vạt vàng",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#1F2937",
+        "style": "re-ngoi"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E3A8A",
+      "robe2": "#FFFFFF",
+      "pants": "#1E293B",
+      "belt": "#D97706",
+      "boots": "#111827"
+    }
+  },
+  "bd-delap": {
+    "name": "Liam Delap",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Nottingham Forest: da trắng hồng, tóc nâu ngắn cắt gọn, áo đỏ Garibaldi quần trắng số 9",
+    "look": {
+      "skin": "#F5D0B5",
+      "hair": {
+        "color": "#4A3525",
+        "style": "ngan"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C91D24",
+      "robe2": "#FFFFFF",
+      "belt": "#C91D24",
+      "pants": "#FFFFFF",
+      "boots": "#C91D24"
+    }
+  },
+  "bd-gvardiol": {
+    "name": "Josko Gvardiol",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "trung vệ Man City: da trắng, râu quai nón rậm, tóc đen rẽ ngôi, áo xanh da trời quần trắng số 24",
+    "look": {
+      "skin": "#F6D2BC",
+      "hair": {
+        "color": "#1E1E24",
+        "style": "re-ngoi"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#6CABDD",
+      "robe2": "#FFFFFF",
+      "belt": "#6CABDD",
+      "pants": "#FFFFFF",
+      "boots": "#1E1E24"
+    }
+  },
+  "bd-jair-cunha": {
+    "name": "Jair Cunha",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Nottingham Forest: da nâu, tóc đen ngắn, áo đỏ Garibaldi quần trắng số 7",
+    "look": {
+      "skin": "#A06A42",
+      "hair": {
+        "color": "#111827",
+        "style": "ngan"
+      },
+      "eyes": "#111827",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C91D24",
+      "robe2": "#FFFFFF",
+      "belt": "#C91D24",
+      "pants": "#FFFFFF",
+      "boots": "#111827"
+    }
+  },
+  "bd-cherki": {
+    "name": "Rayan Cherki",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Man City: da trắng hồng, tóc đen vuốt nhẹ, áo xanh da trời quần trắng số 10",
+    "look": {
+      "skin": "#F3CEB6",
+      "hair": {
+        "color": "#18181B",
+        "style": "re-ngoi"
+      },
+      "eyes": "#18181B",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#6CABDD",
+      "robe2": "#FFFFFF",
+      "belt": "#6CABDD",
+      "pants": "#FFFFFF",
+      "boots": "#18181B"
+    }
+  },
+  "bd-teo-data": {
+    "name": "Tèo Thể Thao (dữ liệu)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo chuyên viên phân tích dữ liệu trận đấu City Ground: tóc đen mái bằng, áo polo xám cổ bẻ",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#1F2937",
+        "style": "mai-bang"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#4B5563",
+      "robe2": "#FFFFFF",
+      "pants": "#1F2937",
+      "belt": "#1F2937",
+      "boots": "#111827"
+    }
+  },
+  "bd-teo-kiemtoan": {
+    "name": "Tèo Thể Thao (kiểm toán)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo chuyên viên kiểm toán tài chính bóng đá: tóc đen mái bằng, kính gọng vuông mỏng, vest xanh đen, cà vạt đỏ đô",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#1F2937",
+        "style": "mai-bang"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E293B",
+      "robe2": "#FFFFFF",
+      "pants": "#1E293B",
+      "belt": "#A50044",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-messi-vest": {
+    "name": "Lionel Messi (họp báo 2021)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Messi tại buổi họp báo chia tay Camp Nou 2021: tóc nâu rẽ ngôi, râu quai nón ngắn, vest đen lịch lãm, sơ mi trắng",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#3E271E",
+        "style": "re-ngoi"
+      },
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#18181B",
+      "robe2": "#FFFFFF",
+      "pants": "#18181B",
+      "belt": "#27272A",
+      "boots": "#09090B"
+    }
+  },
+  "bd-laporta": {
+    "name": "Joan Laporta",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Chủ tịch Joan Laporta: tóc đen hoa râm, khuôn mặt tròn trịa, vest xám ghi, sơ mi trắng, cà vạt đỏ",
+    "look": {
+      "skin": "#FCD5B5",
+      "hair": {
+        "color": "#374151",
+        "style": "ngan"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#4B5563",
+      "robe2": "#FFFFFF",
+      "pants": "#374151",
+      "belt": "#991B1B",
+      "boots": "#111827"
+    }
+  },
+  "bd-tebas": {
+    "name": "Javier Tebas",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Chủ tịch La Liga Javier Tebas: tóc muối tiêu cắt gọn, mắt kính gọng đen, vest đen, cà vạt xanh navy",
+    "look": {
+      "skin": "#FAD2B0",
+      "hair": {
+        "color": "#4B5563",
+        "style": "ngan"
+      },
+      "eyes": "#111827",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#111827",
+      "robe2": "#FFFFFF",
+      "pants": "#111827",
+      "belt": "#1E3A8A",
+      "boots": "#000000"
+    }
+  },
+  "bd-antonela": {
+    "name": "Antonela Roccuzzo",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Antonela vợ Messi: tóc nâu sẫm dài gợn sóng, trang phục đen trang nhã, biểu cảm xúc động",
+    "look": {
+      "skin": "#FCD7B8",
+      "hair": {
+        "color": "#4A2E1B",
+        "style": "dai-thang"
+      },
+      "eyes": "#3E271E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#18181B",
+      "robe2": "#27272A",
+      "pants": "#18181B",
+      "belt": "#18181B",
+      "boots": "#111827"
+    }
+  },
+  "bd-teo-dongho": {
+    "name": "Tèo (Gác đồng hồ)",
+    "truyen": "Tèo Thể Thao",
+    "note": "người gác đồng hồ Old Trafford: tóc đen mái bằng, da rám nắng, mắt nâu; gile len đỏ sẫm viền vàng, sơ mi trắng nơ cổ đen, quần đen, giày da đen",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "mai-bang"
+      },
+      "eyes": "#7A4A22",
+      "glasses": false,
+      "robe": "#991B1B",
+      "robe2": "#F59E0B",
+      "pants": "#18181B",
+      "belt": "#18181B",
+      "boots": "#09090B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-dorgu": {
+    "name": "Patrick Dorgu",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "hậu vệ cánh người hùng Man United số 13: da đen sẫm, mắt đen, tóc cạo sát; áo đỏ MU số 13, quần trắng",
+    "look": {
+      "skin": "#5A3825",
+      "hair": {
+        "color": "#1C1917",
+        "style": "ngan"
+      },
+      "eyes": "#1C1917",
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#DC2626",
+      "boots": "#1E293B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-zirkzee": {
+    "name": "Joshua Zirkzee",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Man United số 11: da nâu, tóc xù bồng bềnh afro nâu đen, râu quai nón mỏng; áo đỏ MU số 11, quần trắng",
+    "look": {
+      "skin": "#B87A4F",
+      "hair": {
+        "color": "#292524",
+        "style": "bom-gai"
+      },
+      "eyes": "#292524",
+      "beard": "rau-de",
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "belt": "#DC2626",
+      "boots": "#1E293B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-lammens": {
+    "name": "Senne Lammens",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn Man United số 1: da sáng, tóc vàng nhạt rẽ ngôi; áo thủ môn vàng neon số 1, quần đen",
+    "look": {
+      "skin": "#FEEBC8",
+      "hair": {
+        "color": "#D4AF37",
+        "style": "re-ngoi"
+      },
+      "eyes": "#4A3324",
+      "robe": "#EAB308",
+      "robe2": "#000000",
+      "pants": "#18181B",
+      "belt": "#18181B",
+      "boots": "#EAB308",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-mcginn": {
+    "name": "John McGinn",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "đội trưởng Aston Villa số 7: da sáng, tóc nâu ngắn cắt cao, mắt xanh xám; áo tím claret tay xanh sky số 7, quần trắng",
+    "look": {
+      "skin": "#F8CCA9",
+      "hair": {
+        "color": "#4A3324",
+        "style": "ngan"
+      },
+      "eyes": "#3B82F6",
+      "robe": "#670E36",
+      "robe2": "#95BFE5",
+      "pants": "#FFFFFF",
+      "belt": "#670E36",
+      "boots": "#3B82F6",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-jackson": {
+    "name": "Nicolas Jackson",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Aston Villa số 15: da đen sẫm, mắt đen, tóc ngắn xoăn tít; áo tím claret tay xanh sky số 15, quần trắng",
+    "look": {
+      "skin": "#452616",
+      "hair": {
+        "color": "#1C1917",
+        "style": "ngan"
+      },
+      "eyes": "#1C1917",
+      "robe": "#670E36",
+      "robe2": "#95BFE5",
+      "pants": "#FFFFFF",
+      "belt": "#670E36",
+      "boots": "#1E293B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-teo-sound": {
+    "name": "Tèo Thể Thao (âm thanh)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo kỹ thuật viên âm thanh phòng thu: tóc đen mái bằng, áo gilê kỹ thuật xanh than, sơ mi đen",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#1F2937",
+        "style": "mai-bang"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E293B",
+      "robe2": "#111827",
+      "pants": "#0F172A",
+      "belt": "#38BDF8",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-ten-hag": {
+    "name": "Erik ten Hag",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Man United: đầu trọc râu quai nón ngắn, vest xám than sơ mi đen",
+    "look": {
+      "skin": "#F3D2B8",
+      "hair": {
+        "color": "#E5E7EB",
+        "style": "troc"
+      },
+      "eyes": "#374151",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#374151",
+      "robe2": "#111827",
+      "pants": "#1F2937",
+      "belt": "#111827",
+      "boots": "#111827"
+    }
+  },
+  "bd-piers-morgan": {
+    "name": "Piers Morgan",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Nhà báo truyền hình TalkTV: tóc xám tro rẽ ngôi, vest xanh tím than sơ mi trắng",
+    "look": {
+      "skin": "#F8D7C0",
+      "hair": {
+        "color": "#6B7280",
+        "style": "re-ngoi"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E3A8A",
+      "robe2": "#FFFFFF",
+      "pants": "#1E293B",
+      "belt": "#2563EB",
+      "boots": "#111827"
+    }
+  },
+  "bd-ronaldo-vest": {
+    "name": "Cristiano Ronaldo (vest đen)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Ronaldo phỏng vấn TalkTV: tóc đen chải chuốt, vest đen sơ mi đen",
+    "look": {
+      "skin": "#E8BA93",
+      "hair": {
+        "color": "#1A181B",
+        "style": "bom-gai"
+      },
+      "eyes": "#42281D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#18181B",
+      "robe2": "#27272A",
+      "pants": "#18181B",
+      "belt": "#EAB308",
+      "boots": "#111111"
+    }
+  },
+  "bd-fermin": {
+    "name": "Fermín López",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ người hùng Barca: da sáng, tóc nâu ngắn cắt gọn, áo đỏ lam Barca số 16",
+    "look": {
+      "skin": "#FFE1CC",
+      "hair": {
+        "color": "#4A3222",
+        "style": "ngan"
+      },
+      "eyes": "#3A2A1A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#A2003B",
+      "belt": "#0A3A8C",
+      "pants": "#0A3A8C",
+      "robe2": "#0A3A8C",
+      "boots": "#FFCC00"
+    }
+  },
+  "bd-simeone": {
+    "name": "Diego Simeone",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Atletico Madrid: vest đen toàn bộ, tóc đen vuốt ngược gợn sóng, gương mặt nghiêm nghị",
+    "look": {
+      "skin": "#EDCBB0",
+      "hair": {
+        "color": "#1C1C1E",
+        "style": "re-ngoi"
+      },
+      "eyes": "#1C1C1E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#18181B",
+      "belt": "#18181B",
+      "pants": "#18181B",
+      "robe2": "#27272A",
+      "boots": "#09090B",
+      "age": "gia"
+    }
+  },
+  "bd-giuliano": {
+    "name": "Giuliano Simeone",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Atletico Madrid, con trai Simeone: da hơi ngăm, tóc đen cạo sát hai bên, áo sọc đỏ trắng Atletico",
+    "look": {
+      "skin": "#E8C2A0",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "ngan"
+      },
+      "eyes": "#2A2A2A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#CB3524",
+      "belt": "#FFFFFF",
+      "pants": "#1E3A8A",
+      "robe2": "#FFFFFF",
+      "boots": "#E11D48"
+    }
+  },
+  "bd-oblak": {
+    "name": "Jan Oblak",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn kỳ cựu Atletico Madrid: da sáng, tóc nâu vuốt lệch, áo thủ môn vàng viền đen",
+    "look": {
+      "skin": "#FEE2D5",
+      "hair": {
+        "color": "#523C2A",
+        "style": "ngan"
+      },
+      "eyes": "#3B4252",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#EAB308",
+      "belt": "#CA8A04",
+      "pants": "#18181B",
+      "robe2": "#18181B",
+      "boots": "#22C55E"
+    }
+  },
+  "bd-teo-saban": {
+    "name": "Tèo Sa Bàn",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo chuyên viên chiến thuật sa bàn Metropolitano: áo vest gile xanh navy, cà vạt đỏ, kính gọng tròn, tay cầm bút chiến thuật",
+    "look": {
+      "skin": "#FFE1CC",
+      "hair": {
+        "color": "#1E1E28",
+        "style": "bom-gai"
+      },
+      "eyes": "#1E1E28",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E3A8A",
+      "belt": "#DC2626",
+      "pants": "#1E293B",
+      "robe2": "#FFFFFF",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-teo-duthuyen": {
+    "name": "Tèo (Du thuyền Monaco)",
+    "truyen": "Tèo Thể Thao",
+    "note": "Tèo phục vụ bàn du thuyền Monaco: tóc đen mái bằng, da rám nắng, mắt nâu; sơ mi trắng nơ cổ đen gile ghi xám, quần xanh đen, giày đen",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "mai-bang"
+      },
+      "eyes": "#7A4A22",
+      "glasses": false,
+      "robe": "#FFFFFF",
+      "robe2": "#475569",
+      "pants": "#0F172A",
+      "belt": "#0F172A",
+      "boots": "#020617",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-pochettino": {
+    "name": "Mauricio Pochettino",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Mauricio Pochettino: tóc nâu sẫm rẽ ngôi vuốt lệch, da sáng, mắt nâu, cằm kiên nghị; vest đen lịch lãm, sơ mi trắng, quần âu tối màu",
+    "look": {
+      "skin": "#F5D0A9",
+      "hair": {
+        "color": "#2B231F",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3A2E2B",
+      "robe": "#0F172A",
+      "robe2": "#FFFFFF",
+      "pants": "#1E293B",
+      "belt": "#0F172A",
+      "boots": "#020617",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-ratcliffe": {
+    "name": "Sir Jim Ratcliffe",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tỷ phú Sir Jim Ratcliffe (INEOS): tóc bạc rẽ ngôi, da sáng, mắt xám xanh, nét mặt già dặn quyết đoán; áo khoác blazer xanh navy, sơ mi xanh nhạt, quần xám",
+    "look": {
+      "skin": "#F7D6B5",
+      "hair": {
+        "color": "#E2E8F0",
+        "style": "re-ngoi"
+      },
+      "eyes": "#475569",
+      "robe": "#1E3A8A",
+      "robe2": "#BAE6FD",
+      "pants": "#334155",
+      "belt": "#0F172A",
+      "boots": "#0F172A",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-berrada": {
+    "name": "Omar Berrada",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "CEO Omar Berrada (Man United): tóc đen cắt ngắn sát, da ngăm Địa Trung Hải, mắt đen, vẻ sắc sảo; vest xanh đậm công sở, cà vạt đỏ sẫm",
+    "look": {
+      "skin": "#E5B887",
+      "hair": {
+        "color": "#111827",
+        "style": "ngan"
+      },
+      "eyes": "#111827",
+      "robe": "#1E293B",
+      "robe2": "#991B1B",
+      "pants": "#0F172A",
+      "belt": "#0F172A",
+      "boots": "#020617",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-teo-kygia": {
+    "name": "Tèo (Ký giả San Siro)",
+    "truyen": "Tèo Thể Thao",
+    "note": "Tèo ký giả San Siro: tóc đen mái bằng, da sáng rám nắng, mắt nâu; áo gile kaki túi hộp xanh rêu, sơ mi trắng, quần xanh than, giày thể thao",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#1E1B22",
+        "style": "mai-bang"
+      },
+      "eyes": "#7A4A22",
+      "glasses": false,
+      "robe": "#FFFFFF",
+      "robe2": "#3B533A",
+      "pants": "#1E293B",
+      "belt": "#0F172A",
+      "boots": "#020617",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-olise": {
+    "name": "Michael Olise",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo cánh tuyển Pháp: da ngăm, tóc ngắn đen, mắt nâu; áo đấu xanh lam tuyển Pháp viền đỏ trắng, quần xanh lam, giày trắng",
+    "look": {
+      "skin": "#8C5A3C",
+      "hair": {
+        "color": "#151515",
+        "style": "ngan"
+      },
+      "eyes": "#2B1810",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#002395",
+      "robe2": "#ED2939",
+      "pants": "#002395",
+      "belt": "#FFFFFF",
+      "boots": "#FFFFFF"
+    }
+  },
+  "bd-esposito": {
+    "name": "Francesco Pio Esposito",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo tuyển Italia: da sáng Địa Trung Hải, tóc ngắn nâu sẫm, mắt nâu; áo đấu xanh thiên thanh Azzurri viền trắng, quần xanh thiên thanh, giày xanh",
+    "look": {
+      "skin": "#F3C59D",
+      "hair": {
+        "color": "#2E1C14",
+        "style": "ngan"
+      },
+      "eyes": "#3B2215",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#0064AA",
+      "robe2": "#FFFFFF",
+      "pants": "#0064AA",
+      "belt": "#004B87",
+      "boots": "#002F6C"
+    }
+  },
+  "bd-frattesi": {
+    "name": "Davide Frattesi",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ tuyển Italia: da sáng, tóc ngắn vuốt nhọn, mắt nâu; áo đấu xanh thiên thanh Azzurri, quần xanh thiên thanh, giày trắng",
+    "look": {
+      "skin": "#F5CCA5",
+      "hair": {
+        "color": "#362217",
+        "style": "bom-gai"
+      },
+      "eyes": "#2A1810",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#0064AA",
+      "robe2": "#FFFFFF",
+      "pants": "#0064AA",
+      "belt": "#004B87",
+      "boots": "#F8FAFC"
+    }
+  },
+  "bd-donnarumma": {
+    "name": "Gianluigi Donnarumma",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn tuyển Italia: thể hình cao lớn, da sáng, râu quai nón tỉa ngắn, áo thủ môn vàng neon viền đen, giày đen",
+    "look": {
+      "skin": "#F3C59D",
+      "hair": {
+        "color": "#2E1C14",
+        "style": "ngan"
+      },
+      "beard": "rau-de",
+      "eyes": "#331E12",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#EAB308",
+      "robe2": "#18181B",
+      "pants": "#EAB308",
+      "belt": "#18181B",
+      "boots": "#18181B"
+    }
+  },
+  "bd-maradona": {
+    "name": "Diego Maradona",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Cậu bé vàng Argentina: da rám nắng nhẹ, tóc đen xù bồng bềnh, áo sọc trắng xanh số 10 Argentina",
+    "look": {
+      "skin": "#F0C8A0",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "bom-gai"
+      },
+      "eyes": "#1E1E1E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#75AADB",
+      "robe2": "#FFFFFF",
+      "pants": "#111827",
+      "belt": "#75AADB",
+      "boots": "#111111"
+    }
+  },
+  "bd-shilton": {
+    "name": "Peter Shilton",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Thủ môn huyền thoại tuyển Anh: da sáng, tóc nâu ngắn rẽ ngôi, áo thủ môn vàng chanh số 1",
+    "look": {
+      "skin": "#FFE0BD",
+      "hair": {
+        "color": "#5C3A21",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3B4252",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#EAB308",
+      "robe2": "#CA8A04",
+      "pants": "#111827",
+      "belt": "#EAB308",
+      "boots": "#111111"
+    }
+  },
+  "bd-trong-tai-ali": {
+    "name": "Ali Bin Nasser",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Trọng tài chính FIFA người Tunisia: da ngăm, tóc đen ngắn, áo trọng tài đen cổ trắng",
+    "look": {
+      "skin": "#D29B72",
+      "hair": {
+        "color": "#111111",
+        "style": "ngan"
+      },
+      "eyes": "#1A1A1A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#18181B",
+      "robe2": "#27272A",
+      "pants": "#18181B",
+      "belt": "#3F3F46",
+      "boots": "#000000"
+    }
+  },
+  "bd-teo-bangtu": {
+    "name": "Tèo Phục Dựng Băng Từ",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo kỹ thuật viên phục dựng băng tư liệu World Cup 1986: tóc đen mái bằng, da rám nắng, áo xanh coban gile xám",
+    "look": {
+      "skin": "#E5A672",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "mai-bang"
+      },
+      "eyes": "#4A2E18",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#2563EB",
+      "robe2": "#475569",
+      "pants": "#1E293B",
+      "belt": "#0F172A",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-nico-williams": {
+    "name": "Nico Williams",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo cánh Tây Ban Nha: da nâu sẫm, tóc tết bím ngắn, áo đỏ số 11, quần xanh than",
+    "look": {
+      "skin": "#8C5835",
+      "hair": {
+        "color": "#1A1512",
+        "style": "ngan"
+      },
+      "eyes": "#1F1510",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C60B1E",
+      "robe2": "#F1BF00",
+      "pants": "#1B2A4A",
+      "belt": "#1B2A4A",
+      "boots": "#FFFFFF"
+    }
+  },
+  "bd-tuchel": {
+    "name": "Thomas Tuchel",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV trưởng tuyển Anh: da sáng, tóc nâu rẽ ngôi ngắn, áo khoác thể thao xanh navy tuyển Anh",
+    "look": {
+      "skin": "#FDE0C5",
+      "hair": {
+        "color": "#5A4535",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3B4A54",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E293B",
+      "robe2": "#E2E8F0",
+      "pants": "#0F172A",
+      "belt": "#0F172A",
+      "boots": "#1E293B"
+    }
+  },
+  "bd-teo-luutru": {
+    "name": "Tèo Lưu Trữ (FIFA Archive)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo chuyên viên lưu trữ hồ sơ kỷ luật FIFA: tóc đen mái bằng, da rám nắng, mắt nâu, vest xám than lịch lãm, cà vạt đỏ rượu",
+    "look": {
+      "skin": "#C8956A",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "mai-bang"
+      },
+      "eyes": "#4A2E18",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#2C3437",
+      "robe2": "#C41E3A",
+      "belt": "#1A1D20",
+      "pants": "#22252A",
+      "boots": "#111215"
+    }
+  },
+  "bd-zidane-2006": {
+    "name": "Zinedine Zidane (World Cup 2006)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Zidane chung kết World Cup 2006: áo trắng số 10 tuyển Pháp, đầu trọc hói đặc trưng, da sáng, quần trắng",
+    "look": {
+      "skin": "#E8BA93",
+      "hair": {
+        "color": "#3A3A3A",
+        "style": "troc"
+      },
+      "beard": "rau-de",
+      "beardColor": "#4A4A4A",
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#F4F5F7",
+      "robe2": "#1E3B70",
+      "belt": "#E2E5EA",
+      "pants": "#FFFFFF",
+      "boots": "#C59B27"
+    }
+  },
+  "bd-materazzi": {
+    "name": "Marco Materazzi (Ý 2006)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Materazzi chung kết World Cup 2006: áo xanh thiên thanh số 23 tuyển Ý, râu quai nón, tóc nâu vuốt sau",
+    "look": {
+      "skin": "#E2B288",
+      "hair": {
+        "color": "#3B2616",
+        "style": "ngan"
+      },
+      "beard": "rau-de",
+      "beardColor": "#3B2616",
+      "eyes": "#2B1A0E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1D4ED8",
+      "robe2": "#1E293B",
+      "belt": "#0F172A",
+      "pants": "#FFFFFF",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-buffon-2006": {
+    "name": "Gianluigi Buffon (Ý 2006)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Buffon thủ môn số 1 tuyển Ý World Cup 2006: áo vàng kim thủ môn, tóc dài lãng tử vuốt băng đô",
+    "look": {
+      "skin": "#E4B891",
+      "hair": {
+        "color": "#221A15",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2B1A0E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#EAB308",
+      "robe2": "#1E293B",
+      "belt": "#1E293B",
+      "pants": "#1E293B",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-elizondo": {
+    "name": "Horacio Elizondo (Trọng tài 2006)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Trọng tài chung kết World Cup 2006: áo đỏ trọng tài FIFA, quần đen, đầu trọc tóc đen sát",
+    "look": {
+      "skin": "#E0AF84",
+      "hair": {
+        "color": "#222222",
+        "style": "troc"
+      },
+      "eyes": "#2B1A0E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#DC2626",
+      "robe2": "#18181B",
+      "belt": "#18181B",
+      "pants": "#18181B",
+      "boots": "#18181B"
+    }
+  },
+  "bd-klopp": {
+    "name": "Jürgen Klopp",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV trưởng tuyển Đức: tóc vàng hoa râm, râu quai nón ngắn, áo khoác thể thao đen viền trắng",
+    "look": {
+      "skin": "#FCE2CC",
+      "hair": {
+        "color": "#BDB76B",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2B5277",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#18181B",
+      "robe2": "#FFFFFF",
+      "pants": "#09090B",
+      "belt": "#09090B",
+      "boots": "#FFFFFF"
+    }
+  },
+  "bd-scherhant": {
+    "name": "Derry Scherhant",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo tuyển Đức số 11: da sáng, tóc đen vuốt nhẹ, áo trắng số 11 tuyển Đức",
+    "look": {
+      "skin": "#E8C39E",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "ngan"
+      },
+      "eyes": "#1A1A1A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FFFFFF",
+      "robe2": "#18181B",
+      "pants": "#18181B",
+      "belt": "#000000",
+      "boots": "#E11D48"
+    }
+  },
+  "bd-schlotterbeck": {
+    "name": "Nico Schlotterbeck",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "trung vệ tuyển Đức số 15: da sáng, tóc vàng ngắn, áo trắng số 15 tuyển Đức",
+    "look": {
+      "skin": "#FCE2CC",
+      "hair": {
+        "color": "#D4AF37",
+        "style": "ngan"
+      },
+      "eyes": "#2B5277",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FFFFFF",
+      "robe2": "#18181B",
+      "pants": "#18181B",
+      "belt": "#000000",
+      "boots": "#3B82F6"
+    }
+  },
+  "bd-kimmich": {
+    "name": "Joshua Kimmich",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ quân tuyển Đức số 6: da sáng, tóc nâu ngắn, áo trắng số 6, băng đội trưởng vàng",
+    "look": {
+      "skin": "#FCE2CC",
+      "hair": {
+        "color": "#8B5A2B",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3B4A54",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FFFFFF",
+      "robe2": "#EAB308",
+      "pants": "#18181B",
+      "belt": "#EAB308",
+      "boots": "#FFFFFF"
+    }
+  },
+  "bd-xavi": {
+    "name": "Xavi Hernández",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV tuyển Hà Lan: tóc đen ngắn vuốt ngược, áo khoác đen chỉ đạo",
+    "look": {
+      "skin": "#FDE0C5",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "re-ngoi"
+      },
+      "eyes": "#1A1A1A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E293B",
+      "robe2": "#EA580C",
+      "pants": "#0F172A",
+      "belt": "#0F172A",
+      "boots": "#1E293B"
+    }
+  },
+  "bd-verbruggen": {
+    "name": "Bart Verbruggen",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn tuyển Hà Lan số 1: da sáng, tóc vàng, áo thủ môn xanh lá",
+    "look": {
+      "skin": "#FCE2CC",
+      "hair": {
+        "color": "#D4AF37",
+        "style": "ngan"
+      },
+      "eyes": "#2B5277",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#16A34A",
+      "robe2": "#22C55E",
+      "pants": "#16A34A",
+      "belt": "#15803D",
+      "boots": "#F59E0B"
+    }
+  },
+  "bd-teo-sensor": {
+    "name": "Tèo cảm biến sân Berlin",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo chuyên viên cảm biến sân vận động Berlin: tóc đen mái bằng, áo khoác nỉ xám than viền vàng",
+    "look": {
+      "skin": "#F0C896",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "mai-bang"
+      },
+      "eyes": "#4A2C11",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#334155",
+      "robe2": "#F59E0B",
+      "pants": "#1E293B",
+      "belt": "#F59E0B",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-teo-emirates": {
+    "name": "Tèo Hướng Dẫn Viên Emirates",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo hướng dẫn viên phòng truyền thống bảo tàng Arsenal: áo vest đỏ pháo thủ, sơ mi trắng, cà vạt vàng kim, quần xanh navy",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#1F2937",
+        "style": "re-ngoi"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#1E293B",
+      "belt": "#F59E0B",
+      "boots": "#111827"
+    }
+  },
+  "bd-wenger": {
+    "name": "Arsène Wenger",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Arsène Wenger giáo sư: tóc xám bạc rẽ ngôi, da sáng hồng, áo măng tô vest than viền đỏ, cà vạt đỏ thắm",
+    "look": {
+      "skin": "#FAD5BD",
+      "hair": {
+        "color": "#D1D5DB",
+        "style": "re-ngoi"
+      },
+      "eyes": "#374151",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E293B",
+      "robe2": "#DC2626",
+      "pants": "#111827",
+      "belt": "#DC2626",
+      "boots": "#111111"
+    }
+  },
+  "bd-henry": {
+    "name": "Thierry Henry",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tiền đạo Thierry Henry Đứa con của Thần Gió: da ngăm, đầu cạo trọc, áo đấu đỏ pháo thủ tay trắng số 14, quần trắng",
+    "look": {
+      "skin": "#8D5524",
+      "hair": {
+        "color": "#1F2937",
+        "style": "troc"
+      },
+      "eyes": "#26170D",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#F3F4F6",
+      "belt": "#F59E0B",
+      "boots": "#111827"
+    }
+  },
+  "bd-bergkamp": {
+    "name": "Dennis Bergkamp",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tiền đạo Dennis Bergkamp Người Hà Lan bay: da trắng hồng, tóc vàng hạt dẻ rẽ ngôi, áo đỏ tay trắng số 10",
+    "look": {
+      "skin": "#FFE3CF",
+      "hair": {
+        "color": "#D4AF37",
+        "style": "re-ngoi"
+      },
+      "eyes": "#2563EB",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#F3F4F6",
+      "belt": "#1E293B",
+      "boots": "#111827"
+    }
+  },
+  "bd-vieira": {
+    "name": "Patrick Vieira",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Đội trưởng Patrick Vieira quái vật tuyến giữa: da sẫm, đầu trọc, băng đội trưởng vàng kim, áo đỏ tay trắng số 4",
+    "look": {
+      "skin": "#5C381E",
+      "hair": {
+        "color": "#1F2937",
+        "style": "troc"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#DC2626",
+      "robe2": "#FFFFFF",
+      "pants": "#F3F4F6",
+      "belt": "#F59E0B",
+      "boots": "#111827"
+    }
+  },
+  "bd-nistelrooy": {
+    "name": "Ruud van Nistelrooy",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Sát thủ vòng cấm Ruud van Nistelrooy: da sáng, tóc nâu dài vuốt ngược, áo đỏ Man United số 10",
+    "look": {
+      "skin": "#FAD5BD",
+      "hair": {
+        "color": "#3E2723",
+        "style": "dai-thang"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#B91C1C",
+      "robe2": "#111827",
+      "pants": "#111827",
+      "belt": "#F3F4F6",
+      "boots": "#111827"
+    }
+  },
+  "bd-teo-mixer": {
+    "name": "Tèo Đạo Diễn Hình Ảnh",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo đạo diễn hình ảnh tháp phát sóng Cardiff: áo khoác gió thể thao có mũ màu đỏ than, đeo tai nghe bộ đàm",
+    "look": {
+      "skin": "#F8CCA9",
+      "hair": {
+        "color": "#1C1917",
+        "style": "mai-bang"
+      },
+      "eyes": "#292524",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#991B1B",
+      "robe2": "#1E293B",
+      "pants": "#1E293B",
+      "belt": "#334155",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-neto": {
+    "name": "Pedro Neto",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo cánh Bồ Đào Nha: tóc đen ngắn vuốt lệch, râu quai nón mỏng, áo đỏ Bồ Đào Nha số 7, quần xanh rêu sẫm",
+    "look": {
+      "skin": "#F8CCA9",
+      "hair": {
+        "color": "#1C1917",
+        "style": "bom-gai"
+      },
+      "eyes": "#292524",
+      "beard": "rau-de",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#DC2626",
+      "robe2": "#15803D",
+      "pants": "#15803D",
+      "belt": "#DC2626",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-brooks": {
+    "name": "David Brooks",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Xứ Wales: tóc nâu ngắn, da sáng, áo đỏ rực Xứ Wales số 8, quần trắng",
+    "look": {
+      "skin": "#FDE2D0",
+      "hair": {
+        "color": "#44403C",
+        "style": "re-ngoi"
+      },
+      "eyes": "#1C1917",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#B91C1C",
+      "robe2": "#FACC15",
+      "pants": "#FFFFFF",
+      "belt": "#B91C1C",
+      "boots": "#1E293B"
+    }
+  },
+  "bd-thomas": {
+    "name": "Sorba Thomas",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ cánh Xứ Wales: tóc đen búi ngắn, da ngăm, áo đỏ Xứ Wales số 11, quần trắng",
+    "look": {
+      "skin": "#C68642",
+      "hair": {
+        "color": "#18181B",
+        "style": "bui-cao"
+      },
+      "eyes": "#18181B",
+      "beard": "rau-de",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#B91C1C",
+      "robe2": "#FACC15",
+      "pants": "#FFFFFF",
+      "belt": "#B91C1C",
+      "boots": "#1E293B"
+    }
+  },
+  "bd-bellamy": {
+    "name": "Craig Bellamy",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV trưởng Xứ Wales: tóc nâu xám ngắn vuốt cao, áo khoác thể thao đen đỏ",
+    "look": {
+      "skin": "#F8CCA9",
+      "hair": {
+        "color": "#57534E",
+        "style": "ngan"
+      },
+      "eyes": "#292524",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#18181B",
+      "robe2": "#DC2626",
+      "pants": "#18181B",
+      "belt": "#27272A",
+      "boots": "#09090B"
+    }
+  },
+  "bd-martinez": {
+    "name": "Roberto Martínez",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV trưởng Bồ Đào Nha: đầu hói trán cao, áo vest đen lịch lãm cà vạt đỏ rượu",
+    "look": {
+      "skin": "#F8CCA9",
+      "hair": {
+        "color": "#78716C",
+        "style": "troc"
+      },
+      "eyes": "#292524",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E293B",
+      "robe2": "#7F1D1D",
+      "pants": "#1E293B",
+      "belt": "#0F172A",
+      "boots": "#020617"
+    }
+  },
+  "bd-forbs": {
+    "name": "Carlos Forbs",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thần đồng chạy cánh Bồ Đào Nha áo số 7: da sẫm, tóc đen vuốt gai, áo đỏ Bồ Đào Nha số 7",
+    "look": {
+      "skin": "#5C381E",
+      "hair": {
+        "color": "#18181B",
+        "style": "bom-gai"
+      },
+      "eyes": "#18181B",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#DC2626",
+      "robe2": "#15803D",
+      "pants": "#15803D",
+      "belt": "#DC2626",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-teo-spidercam": {
+    "name": "Tèo Điều Khiển Spidercam",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo điều khiển spidercam sân La Bombonera: áo gile xanh ngọc số 10, đeo tai nghe chuyên dụng và găng tay điều khiển bay",
+    "look": {
+      "skin": "#F8CCA9",
+      "hair": {
+        "color": "#1C1917",
+        "style": "mai-bang"
+      },
+      "eyes": "#292524",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#0D9488",
+      "robe2": "#1E293B",
+      "pants": "#1E293B",
+      "belt": "#F59E0B",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-lautaro": {
+    "name": "Lautaro Martínez (El Toro)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tiền đạo số 22 Argentina: da rám nắng nhẹ, tóc đen undercut vuốt dựng chỏm, thân hình cơ bắp vạm vỡ, áo xanh sọc trắng số 22, quần đen",
+    "look": {
+      "skin": "#E8BA91",
+      "hair": {
+        "color": "#18181B",
+        "style": "bom-gai"
+      },
+      "eyes": "#27272A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#75AADB",
+      "robe2": "#FFFFFF",
+      "pants": "#18181B",
+      "belt": "#75AADB",
+      "boots": "#F43F5E"
+    }
+  },
+  "bd-scaloni": {
+    "name": "Lionel Scaloni",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV trưởng Argentina: da sáng, tóc nâu ngắn rẽ ngôi vuốt gọn, áo khoác thể thao đen viền trắng logo AFA",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#3F2C22",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3F2C22",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#18181B",
+      "robe2": "#75AADB",
+      "pants": "#18181B",
+      "belt": "#3F3F46",
+      "boots": "#18181B"
+    }
+  },
+  "bd-gallese": {
+    "name": "Pedro Gallese",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Thủ môn đội trưởng Peru: da ngăm đen, tóc ngắn sát đầu, áo thủ môn vàng dạ quang số 1, găng tay đen",
+    "look": {
+      "skin": "#A3704C",
+      "hair": {
+        "color": "#18181B",
+        "style": "ngan"
+      },
+      "eyes": "#18181B",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FACC15",
+      "robe2": "#18181B",
+      "pants": "#18181B",
+      "belt": "#CA8A04",
+      "boots": "#18181B"
+    }
+  },
+  "bd-zambrano": {
+    "name": "Carlos Zambrano",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Trung vệ Peru: da ngăm, tóc đen ngắn, áo trắng sọc chéo đỏ đặc trưng của Peru số 5",
+    "look": {
+      "skin": "#B8835A",
+      "hair": {
+        "color": "#18181B",
+        "style": "ngan"
+      },
+      "eyes": "#18181B",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FFFFFF",
+      "robe2": "#DC2626",
+      "pants": "#FFFFFF",
+      "belt": "#DC2626",
+      "boots": "#18181B"
+    }
+  },
+  "bd-teo-cpi": {
+    "name": "Tèo Điều Tra Viên CPI",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo chuyên viên điều tra hồ sơ lưu trữ Quốc hội Brazil CPI: áo vest xám ghi lịch lãm, cà vạt xanh tím than, đeo thẻ chuyên viên",
+    "look": {
+      "skin": "#C8956A",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "mai-bang"
+      },
+      "eyes": "#4A2E18",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#334155",
+      "robe2": "#1E3A8A",
+      "belt": "#1E293B",
+      "pants": "#1E293B",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-ronaldo-98": {
+    "name": "Ronaldo R9 (Brazil 1998)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Ronaldo Người ngoài hành tinh chung kết 1998: áo vàng Brazil số 9 cổ xanh lá, đầu cua cạo sát, da nâu đồng",
+    "look": {
+      "skin": "#BA8659",
+      "hair": {
+        "color": "#1E1A17",
+        "style": "troc"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FACC15",
+      "robe2": "#15803D",
+      "belt": "#15803D",
+      "pants": "#1E3A8A",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-rcarlos": {
+    "name": "Roberto Carlos (Brazil 1998)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Roberto Carlos hậu vệ trái huyền thoại 1998: áo vàng Brazil số 6, đầu trọc lốc, da nâu đậm",
+    "look": {
+      "skin": "#A87346",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "troc"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FACC15",
+      "robe2": "#15803D",
+      "belt": "#15803D",
+      "pants": "#1E3A8A",
+      "boots": "#FFFFFF"
+    }
+  },
+  "bd-edmundo": {
+    "name": "Edmundo (Brazil 1998)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Edmundo tiền đạo O Animal: áo vàng Brazil số 20, tóc đen ngắn, da nâu, mắt xếch",
+    "look": {
+      "skin": "#B88358",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FACC15",
+      "robe2": "#15803D",
+      "belt": "#15803D",
+      "pants": "#1E3A8A",
+      "boots": "#000000"
+    }
+  },
+  "bd-zagallo": {
+    "name": "Mário Zagallo (HLV Brazil 1998)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV Mário Zagallo 1998: áo khoác gió xanh lá sọc vàng, tóc bạc trắng, da sáng, phong thái lão làng",
+    "look": {
+      "skin": "#E5BC96",
+      "hair": {
+        "color": "#D1D5DB",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3B271A",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#15803D",
+      "robe2": "#FACC15",
+      "belt": "#166534",
+      "pants": "#1E293B",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-zidane-98": {
+    "name": "Zinedine Zidane (Pháp 1998)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Zinedine Zidane chung kết 1998: áo lam số 10 tuyển Pháp sọc đỏ trắng, đầu trọc hói đỉnh, da sáng",
+    "look": {
+      "skin": "#E8BA93",
+      "hair": {
+        "color": "#3A3A3A",
+        "style": "troc"
+      },
+      "eyes": "#3A2418",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1D4ED8",
+      "robe2": "#DC2626",
+      "belt": "#FFFFFF",
+      "pants": "#FFFFFF",
+      "boots": "#111827"
+    }
+  },
+  "bd-barthez": {
+    "name": "Fabien Barthez (Pháp 1998)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Fabien Barthez thủ môn tuyển Pháp 1998: áo thủ môn xanh tím than số 16, đầu trọc nhẵn bóng",
+    "look": {
+      "skin": "#E8BA93",
+      "hair": {
+        "color": "#3A3A3A",
+        "style": "troc"
+      },
+      "eyes": "#2B1A0E",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#4338CA",
+      "robe2": "#E0E7FF",
+      "belt": "#312E81",
+      "pants": "#1E1B4B",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-demba-ba": {
+    "name": "Demba Ba",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền đạo Chelsea 2014: áo xanh số 19, da đen, đầu trọc vạm vỡ",
+    "look": {
+      "skin": "#4B2E1E",
+      "hair": {
+        "color": "#1B1B1F",
+        "style": "troc"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#034694",
+      "robe2": "#FFFFFF",
+      "pants": "#034694",
+      "boots": "#1B1B1F",
+      "belt": "#034694"
+    }
+  },
+  "bd-sakho": {
+    "name": "Mamadou Sakho",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "trung vệ Liverpool 2014: áo đỏ số 17, da đen, tóc ngắn",
+    "look": {
+      "skin": "#3D2517",
+      "hair": {
+        "color": "#1B1B1F",
+        "style": "ngan"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#C8102E",
+      "robe2": "#FFFFFF",
+      "pants": "#C8102E",
+      "boots": "#1B1B1F",
+      "belt": "#FFFFFF"
+    }
+  },
+  "bd-schwarzer": {
+    "name": "Mark Schwarzer",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ môn Chelsea 41 tuổi: áo vàng thủ môn số 23, da sáng, tóc hoa râm",
+    "look": {
+      "skin": "#FBD3B0",
+      "hair": {
+        "color": "#9CA3AF",
+        "style": "ngan"
+      },
+      "eyes": "#374151",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#EAB308",
+      "robe2": "#1F2937",
+      "pants": "#1F2937",
+      "boots": "#1B1B1F",
+      "belt": "#1F2937",
+      "age": "gia"
+    }
+  },
+  "bd-willian": {
+    "name": "Willian",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ Chelsea 2014: áo xanh số 22, da nâu sẫm, tóc xù",
+    "look": {
+      "skin": "#5C3A21",
+      "hair": {
+        "color": "#1B1B1F",
+        "style": "ngan"
+      },
+      "eyes": "#1F2937",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#034694",
+      "robe2": "#FFFFFF",
+      "pants": "#034694",
+      "boots": "#1B1B1F",
+      "belt": "#034694"
+    }
+  },
+  "bd-teo-anfield": {
+    "name": "Tèo Bảo Tàng Anfield",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "giám định viên hiện vật bảo tàng Anfield: tóc mái bằng, da rám nắng, áo gile xám than thêu Liver bird",
+    "look": {
+      "skin": "#E8B896",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "mai-bang"
+      },
+      "eyes": "#3E2723",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#374151",
+      "robe2": "#FFFFFF",
+      "pants": "#1F2937",
+      "boots": "#111827",
+      "belt": "#DC2626"
+    }
+  },
+  "bd-teo-decibel": {
+    "name": "Tèo Chuyên Viên Âm Thanh Salvador",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tèo chuyên viên đo âm thanh và áp lực khán đài Salvador: tai nghe chống ồn vàng rực, áo gile phản quang vàng xanh số 10, quần than",
+    "look": {
+      "skin": "#F8CCA9",
+      "hair": {
+        "color": "#1C1917",
+        "style": "mai-bang"
+      },
+      "eyes": "#292524",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FACC15",
+      "robe2": "#16A34A",
+      "pants": "#1E293B",
+      "belt": "#15803D",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-vinicius": {
+    "name": "Vinícius Júnior",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tiền đạo số 7 Brazil: da ngăm đen, tóc tết bím dreadlocks, áo vàng cổ xanh số 7, quần xanh lam, tất trắng",
+    "look": {
+      "skin": "#784528",
+      "hair": {
+        "color": "#18181B",
+        "style": "bui-toi"
+      },
+      "eyes": "#18181B",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FACC15",
+      "robe2": "#15803D",
+      "pants": "#1D4ED8",
+      "belt": "#15803D",
+      "boots": "#F97316"
+    }
+  },
+  "bd-valverde": {
+    "name": "Federico Valverde (El Halcón)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tiền vệ số 15 Uruguay: da trắng sáng, tóc vàng vuốt undercut ngắn, áo xanh da trời Celeste số 15, quần đen, tất đen",
+    "look": {
+      "skin": "#F8D7BE",
+      "hair": {
+        "color": "#D4A373",
+        "style": "bom-gai"
+      },
+      "eyes": "#1E293B",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#38BDF8",
+      "robe2": "#0284C7",
+      "pants": "#18181B",
+      "belt": "#0284C7",
+      "boots": "#FFFFFF"
+    }
+  },
+  "bd-gerson": {
+    "name": "Gerson (Coringa)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "Tiền vệ số 21 Brazil: da đen, râu quai nón ngắn gọn gàng, tóc húi cua xoăn tít, áo vàng số 21, quần xanh lam",
+    "look": {
+      "skin": "#5C3317",
+      "hair": {
+        "color": "#18181B",
+        "style": "ngan"
+      },
+      "eyes": "#18181B",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#FACC15",
+      "robe2": "#15803D",
+      "pants": "#1D4ED8",
+      "belt": "#15803D",
+      "boots": "#A3E635"
+    }
+  },
+  "bd-bielsa": {
+    "name": "Marcelo Bielsa (El Loco)",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV tuyển Uruguay: tóc bạc xám chải lệch, đeo kính cận gọng mảnh, áo khoác nỉ xanh đậm/đen, phong thái ngồi xổm trứ danh",
+    "look": {
+      "skin": "#F5D0B0",
+      "hair": {
+        "color": "#94A3B8",
+        "style": "re-ngoi"
+      },
+      "eyes": "#334155",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E293B",
+      "robe2": "#38BDF8",
+      "pants": "#0F172A",
+      "belt": "#38BDF8",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-dorival": {
+    "name": "Dorival Júnior",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "HLV tuyển Brazil: tóc bạc trắng cắt ngắn, đeo kính gọng đen, áo polo thể thao xanh đậm Brazil số hiệu HLV",
+    "look": {
+      "skin": "#F5CBA7",
+      "hair": {
+        "color": "#CBD5E1",
+        "style": "ngan"
+      },
+      "eyes": "#1E293B",
+      "weapon": "none",
+      "flaps": false,
+      "robe": "#1E3A8A",
+      "robe2": "#FACC15",
+      "pants": "#1E293B",
+      "belt": "#FACC15",
+      "boots": "#0F172A"
+    }
+  },
+  "bd-beckham": {
+    "name": "David Beckham",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ số 7 tuyển Anh 1998: tóc vàng óng rẽ ngôi bổ luống bồng bềnh, mắt xanh lơ, áo trắng tuyển Anh viền xanh navy số 7, quần xanh navy",
+    "look": {
+      "skin": "#FFE5D4",
+      "hair": {
+        "color": "#F0C05A",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3B82F6",
+      "robe": "#FFFFFF",
+      "robe2": "#1E3A8A",
+      "belt": "#DC2626",
+      "pants": "#1E3A8A",
+      "boots": "#111827",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-beckham-mu": {
+    "name": "David Beckham MU",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "David Beckham số 7 Manchester United 1999: tóc vàng rẽ ngôi, áo đỏ Man United, quần trắng, tất đen",
+    "look": {
+      "skin": "#FFE5D4",
+      "hair": {
+        "color": "#F0C05A",
+        "style": "re-ngoi"
+      },
+      "eyes": "#3B82F6",
+      "robe": "#DA291C",
+      "robe2": "#FFFFFF",
+      "belt": "#111111",
+      "pants": "#FFFFFF",
+      "boots": "#111827",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-simeone-98": {
+    "name": "Diego Simeone 1998",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "tiền vệ số 14 Argentina World Cup 1998: tóc đen vuốt ngược gợn sóng, mắt đen sắc lạnh, áo sọc xanh trắng Argentina số 14, quần đen",
+    "look": {
+      "skin": "#EDCBB0",
+      "hair": {
+        "color": "#1C1C1E",
+        "style": "ngan"
+      },
+      "eyes": "#1C1C1E",
+      "robe": "#74ACDF",
+      "robe2": "#FFFFFF",
+      "belt": "#111111",
+      "pants": "#18181B",
+      "boots": "#09090B",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-nielsen": {
+    "name": "Kim Milton Nielsen",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "trọng tài Đan Mạch điều khiển trận Anh - Argentina 1998: dáng cao, tóc nâu cắt ngắn sát, áo trọng tài xanh lục neon viền đen, quần đen, tay cầm thẻ phạt",
+    "look": {
+      "skin": "#FFE8D6",
+      "hair": {
+        "color": "#5C4033",
+        "style": "ngan"
+      },
+      "eyes": "#2B2D42",
+      "robe": "#10B981",
+      "robe2": "#111827",
+      "belt": "#111827",
+      "pants": "#111827",
+      "boots": "#111827",
+      "weapon": "none",
+      "flaps": false
+    }
+  },
+  "bd-teo-fleet": {
+    "name": "Tèo Lưu Trữ Fleet Street",
+    "truyen": "Tèo Thể Thao (bóng đá)",
+    "note": "thủ thư lưu trữ báo chí thể thao phố Fleet Street: tóc đen mái bằng, da rám nắng, mắt nâu, áo gile xám kẻ ô tweed cổ điển, nơ cổ đỏ bordeaux",
+    "look": {
+      "skin": "#E8B896",
+      "hair": {
+        "color": "#1A1A1A",
+        "style": "mai-bang"
+      },
+      "eyes": "#3E2723",
+      "robe": "#4B5563",
+      "robe2": "#F3F4F6",
+      "belt": "#991B1B",
+      "pants": "#1F2937",
+      "boots": "#111827",
+      "weapon": "none",
+      "flaps": false
+    }
+  }
+}

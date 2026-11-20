@@ -1,0 +1,22 @@
+{
+  "_ghi_chu": "Kênh nhiều view để học công thức rồi biến tấu cho Cọng Tóc Cuối. do-kenh.mjs đo lại. Thêm kênh mới khi --tim thấy kênh có trung vị cao và hợp chất kênh. 'theo': true = đáng học, false = đã đo, view thấp hoặc không hợp.",
+  "kenh": [
+    { "ten": "Lạnh Vcl", "url": "https://www.youtube.com/channel/UCx22jLvTBWMrcI7PE2DH3-g", "nuoc": "VN", "theo": true, "cong_thuc": "mẫu gốc: \"Tại sao thật tệ khi…\", ngôi Bạn, hoạt hình nét đơn" },
+    { "ten": "Rùa Tài Chính", "url": "https://www.youtube.com/@ruataichinh68", "nuoc": "VN", "theo": true, "cong_thuc": "tài chính đời sống: nhà đất, lạm phát so theo năm, lãi thả nổi, bán hàng sàn; mở bằng cảnh cụ thể có giờ + cảnh đối lập" },
+    { "ten": "Câu Chuyện Ý Nghĩa (Quà Tặng Cuộc Sống)", "url": "https://www.youtube.com/channel/UC7LgFjjw27ysyghQhOk8Sog", "nuoc": "VN", "theo": true, "cong_thuc": "ngụ ngôn dạy dỗ: Vì sao nghèo, Lười học ham chơi; kể thẳng, kết câu dạy" },
+    { "ten": "Thế Giới Quanh Em", "url": "https://www.youtube.com/channel/UCOGqniMaZt5nqOleG97AN2Q", "nuoc": "VN", "theo": true, "cong_thuc": "ngụ ngôn dạy dỗ: Cô gái lười biếng, Dạy con" },
+    { "ten": "Dhar Mann", "url": "https://www.youtube.com/@DharMann", "nuoc": "Mỹ", "theo": true, "cong_thuc": "đạo lý giàu–nghèo, người sai nhận bài học, kết bằng câu dạy rõ" },
+    { "ten": "Steve Cutts", "url": "https://www.youtube.com/channel/UCpQLC-evmUAon9BBpcW4kYg", "nuoc": "Anh", "theo": true, "cong_thuc": "hoạt hình châm biếm vòng đời đi làm–tiêu tiền, không lời, 3 phút → hợp Short" },
+    { "ten": "Hypothetically", "url": "https://www.youtube.com/channel/UC0L9hD7HMwWU7xuU5HRA6Iw", "nuoc": "Mỹ", "theo": true, "cong_thuc": "thang cấp bậc: đời bạn ở từng mức giàu / từng cấp" },
+    { "ten": "The Infographics Show", "url": "https://www.youtube.com/@TheInfographicsShow", "nuoc": "Mỹ", "theo": true, "cong_thuc": "câu hỏi tiền vô lý: lương 70k mua xe 80k?" },
+    { "ten": "StoryBooth", "url": "https://www.youtube.com/@StoryBooth", "nuoc": "Mỹ", "theo": true, "cong_thuc": "người thật kể chuyện đời, dựng hoạt hình, 3 phút" },
+    { "ten": "Two Cents", "url": "https://www.youtube.com/channel/UCL8w_A8p8P1HWI3k6PR5Z6w", "nuoc": "Mỹ", "theo": true, "cong_thuc": "soi lời khuyên tài chính, thừa kế, nghề hot hết thời" },
+    { "ten": "Spiderum", "url": "https://www.youtube.com/channel/UCRsd_L7wBGdHLhfacuy3QVw", "nuoc": "VN", "theo": false, "cong_thuc": "phân tích dài, trung vị ~50k" },
+    { "ten": "Alux", "url": "https://www.youtube.com/@alux", "nuoc": "Mỹ", "theo": false, "cong_thuc": "danh sách người giàu, trung vị ~44k" },
+    { "ten": "Psych2Go", "url": "https://www.youtube.com/@Psych2go", "nuoc": "Mỹ", "theo": false, "cong_thuc": "tâm lý chung chung, trung vị ~54k" }
+  ],
+  "tu_khoa_tim": [
+    "hoạt hình chuyện công sở", "kể chuyện cuộc đời hoạt hình", "hoạt hình tài chính cá nhân", "quà tặng cuộc sống làm giàu",
+    "vì sao nghèo hoạt hình", "animated story money lesson", "every level of wealth animated", "why being poor is expensive animated"
+  ]
+}

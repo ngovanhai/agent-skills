@@ -1,0 +1,39 @@
+{
+  "harnesses": {
+    "antigravity": {
+      "label": "Antigravity (Gemini)",
+      "detectDir": ".gemini",
+      "skillsDir": ".gemini/config/skills"
+    },
+    "claude": {
+      "label": "Claude Code",
+      "detectDir": ".claude",
+      "skillsDir": ".claude/skills"
+    },
+    "codex": {
+      "label": "OpenAI Codex",
+      "detectDir": ".codex",
+      "skillsDir": ".codex/skills"
+    },
+    "cursor": {
+      "label": "Cursor",
+      "detectDir": ".cursor",
+      "skillsDir": ".cursor/skills"
+    },
+    "opencode": {
+      "label": "OpenCode",
+      "detectDir": ".config/opencode",
+      "skillsDir": ".config/opencode/skills"
+    },
+    "copilot": {
+      "label": "GitHub Copilot",
+      "detectDir": ".copilot",
+      "skillsDir": ".copilot/skills"
+    },
+    "agents": {
+      "label": "Open Agents Standard (~/.agents)",
+      "detectDir": ".agents",
+      "skillsDir": ".agents/skills"
+    }
+  }
+}

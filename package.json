@@ -1,0 +1,13 @@
+{
+  "name": "skillhub",
+  "version": "1.0.0",
+  "description": "Cross-platform shared agent skills manager (Git + Junction/Symlink)",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "skillhub": "./bin/skillhub.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

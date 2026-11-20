@@ -1,0 +1,37 @@
+{
+  "default": ["all"],
+  "profiles": {
+    "all": {
+      "description": "Tat ca cac skill trong repo",
+      "skills": ["*"]
+    },
+    "youtube": {
+      "description": "Bo skill san xuat kenh YouTube (Teo, Cong Toc Cuoi, Chibi)",
+      "skills": [
+        "chuong-2d",
+        "cong-toc-cuoi",
+        "nhan-vat-chibi",
+        "teo-kiem-hiep",
+        "teo-kiem-hiep-godot",
+        "teo-the-thao",
+        "thao-tac-chibi",
+        "tim-chu-de-hot",
+        "video-teo"
+      ]
+    },
+    "chibi": {
+      "description": "Bo skill chibi & hieu ung chuong Godot 2D",
+      "skills": [
+        "chuong-2d",
+        "nhan-vat-chibi",
+        "thao-tac-chibi"
+      ]
+    },
+    "knowledge": {
+      "description": "Bo skill quan ly tri thuc & ghi chu",
+      "skills": [
+        "llm-wiki"
+      ]
+    }
+  }
+}
