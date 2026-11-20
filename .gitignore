@@ -28,3 +28,6 @@ desktop.ini
 # Caches do công cụ sinh ra (máy nào cũng tự dựng lại được)
 **/.hyperframes/
 **/.cache/
+
+# Thư mục kết quả render của các skill (mp4, sheet soi) — không commit
+**/renders/

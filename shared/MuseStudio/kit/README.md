@@ -17,7 +17,7 @@ Thời gian (máy này, CPU): TTS ≈ 0,8× thời lượng, căn chữ ≈ 0,5�
 
 **Âm thanh (chốt 2026-10-24, `lib/mix.mjs`):** `sfx/` là bản êm do `node kit/sfx-soft.mjs` làm từ `sfx/_goc/` (lọc trầm < 180 Hz, ≤ -26 LUFS, đỉnh ≤ -12 dBFS) — không tiếng ùm ùm gây giật mình. Build chép đè bản êm vào `assets/sfx`, kẹp `vol` sfx ≤ 0,6, kẹp nhạc nền ≤ -40 LUFS (thấp hơn giọng ≈ -20 LUFS ít nhất 20 dB) theo độ to đo được (cache `<file>.lufs`).
 
-**GPU (AMD RX 6600 XT, DirectML):** `align` (khi `--align-local`) tự chạy trên GPU nếu có `E:/tool/whisper-dml`, căn chữ ≈ 3× (ra y hệt CPU). `tts` ở máy nhà (`--tts-local`, short, sửa ngắn) chạy `py/tts-zerotts.py` bằng CPU (model int8, venv `$HOME/Projects/ZeroTTS-src/.venv`). GPU lỗi thì tự chạy lại bằng CPU. Tắt bằng `--no-gpu` hoặc tạo file `kit/gpu-off`. Render vốn đã dùng GPU (Chrome D3D11 + encode `--gpu`).
+**GPU:** render mặc định dùng GPU (Chrome vẽ khung + encode `--gpu`); hình sai màu hoặc hỏng do GPU thì thêm `--no-gpu`. `align` (khi `--align-local`) tự dùng GPU nếu có venv whisper riêng — **Windows cũ:** AMD RX 6600 XT qua DirectML ở `E:/tool/whisper-dml`, căn chữ ≈ 3× (ra y hệt CPU); **Mac:** mặc định chạy CPU. `tts` ở máy nhà (`--tts-local`, short, sửa ngắn) chạy `py/tts-zerotts.py` bằng CPU (model int8, venv `$HOME/Projects/ZeroTTS-src/.venv`). GPU lỗi thì tự chạy lại bằng CPU. Tắt bằng `--no-gpu` hoặc tạo file `kit/gpu-off`.
 
 **Tốc độ render:**
 - `render` chạy 2 chương cùng lúc. Đổi số luồng bằng `--par N`; có `--low-memory` thì chỉ chạy 1.
