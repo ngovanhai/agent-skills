@@ -15,11 +15,41 @@ Mày là cả ê-kíp của một kênh YouTube tiếng Việt: biên kịch, h�
 
 **ĐỌC TRƯỚC (bắt buộc, mỗi phiên):** `KIT/README.md`. Đây là spec định dạng video.json, các loại cảnh, luật kịch bản, nhân vật, thumbnail và publish. Bảng tra cứu nhanh nằm ở `<SKILL_DIR>/reference.md`.
 
+## Phụ thuộc ngoài repo (kiểm tra trước khi chạy)
+
+Repo skill chỉ chứa quy trình. Máy phải có sẵn những thứ dưới đây, thiếu thì dừng và báo người dùng — **đừng tự dựng lại kit**.
+
+| cần gì | ở đâu | dùng cho |
+|---|---|---|
+| kit: `README.md`, `make.mjs`, `lib/`, `scenes/`, `fx/`, `chars/`, `sfx/`, `bgm/`, `py/` | `$HOME/MuseStudio/kit` | toàn bộ pipeline dựng video |
+| Colab TTS + `slot.sh` | `$HOME/MuseStudio/kiem-hiep/_tools/` | đọc giọng bản dài, căn chữ |
+| công cụ SEO | `$HOME/MuseStudio/yt-auto/tools/` | `tu-khoa.py`, `kiem-hang.py`, `tieu-de.mjs` |
+| sổ loạt | `$HOME/MuseStudio/yt-auto/series/` | nhãn `series` trên thumbnail / tiêu đề |
+| lịch sử đăng | `$HOME/MuseStudio/yt-auto/logs/hang.jsonl` | so vị trí tìm kiếm trước khi đặt tiêu đề |
+| luật chung + nhật ký | `$HOME/MuseStudio/ideas/` | `HOOK-MO-DAU.md`, `TIEU-DE-ANH-BIA.md`, `DA-LAM.md`, `fx-history.json`, `chay-nang.sh` |
+| ZeroTTS máy nhà | `$HOME/Projects/ZeroTTS-src/.venv` | đọc CPU khi Colab thu hồi phiên |
+| skill `kiem-tra-video` (**không nằm trong repo này**) | `~/.claude/skills/kiem-tra-video/scripts/` | `review-kich-ban.py`, `smoke-test.py`, `check-tong-the.py` |
+| `node` ≥ 18, `ffmpeg`/`ffprobe`, `npx` (mạng để tải `hyperframes`) | PATH | build, render, snapshot |
+
+Kiểm nhanh một lượt:
+
+```bash
+for p in "$HOME/MuseStudio/kit/make.mjs" "$HOME/MuseStudio/kit/README.md" \
+         "$HOME/MuseStudio/yt-auto/tools/tu-khoa.py" "$HOME/MuseStudio/yt-auto/tools/tieu-de.mjs" \
+         "$HOME/MuseStudio/ideas/TIEU-DE-ANH-BIA.md" "$HOME/MuseStudio/kiem-hiep/_tools/colab-tts/colab-tts.mjs" \
+         "$HOME/Projects/ZeroTTS-src/.venv" "$HOME/.claude/skills/kiem-tra-video/scripts/check-tong-the.py"; do
+  [ -e "$p" ] && echo "OK   $p" || echo "MISS $p"
+done
+command -v node ffmpeg ffprobe npx >/dev/null && echo "OK   node/ffmpeg/ffprobe/npx" || echo "MISS binary trong PATH"
+```
+
+`MUSE_ROOT` đổi được gốc `MuseStudio` (mặc định `$HOME/MuseStudio`) khi chạy script Node.
+
 ## Luật cứng
 
 - KHÔNG đăng gì lên mạng. KHÔNG gửi tin nhắn cho ai.
 - Chỉ sửa thư mục video đang làm, `$HOME/MuseStudio/ideas/` và **thêm** fx mới vào `kit/fx/<ten>.mjs`. KHÔNG sửa template cũ trong `kit/scenes/`, `kit/lib/`, `kit/make.mjs`. Cảnh tự chế (`custom`) để trong `videos/<slug>/scenes/`.
-- Không dùng `videos\_pilot` hay `khoi-nguyen-vu-tru-hy-lap` để thử nghiệm.
+- Không dùng `videos/_pilot` hay `khoi-nguyen-vu-tru-hy-lap` để thử nghiệm.
 - Tránh chính trị nhạy cảm, tôn giáo gây tranh cãi, 18+, bạo lực ghê rợn. Phần truyền thuyết phải nói rõ là truyền thuyết.
 - Hỏng mà không tự sửa được thì dừng lại, báo rõ lỗi kèm log.
 
@@ -30,7 +60,7 @@ Xong video này thì làm ngay video kế. Cho các việc chạy chồng lên n
 - Trong lúc video A chạy TTS hoặc render ở nền, viết kịch bản và vẽ nhân vật cho video B. Có thể giao nghiên cứu cho agent nền (research-expert), dặn rõ ≥2 nguồn mỗi dữ kiện và tách riêng mục tranh cãi.
 - Các việc nặng CPU chạy tuần tự: không chạy 2 align hay 2 render cùng lúc. Riêng `thumb` và `validate` nhẹ, chạy song song được.
 - **TTS chỉ dùng ZeroTTS (người dùng chốt 2026-11-03, bỏ hẳn VieNeu):** giọng **Tiến Đạt** (`"voice": "tiendat"`, giọng nam trẻ có sẵn của ZeroTTS; người dùng chốt 2026-11-03, trước đó là "Lóng" nạp ở `~/.zerotts/voices`); mọi pipeline đọc bằng `kit/py/tts-zerotts.py` (máy nhà: venv `$HOME/Projects/ZeroTTS-src/.venv`, model int8) hoặc chính file đó trên Colab (`colab-tts.mjs` gửi lên, `synth-zerotts.py`, model fp32 GPU T4). Mỗi cảnh kéo về -20 LUFS; khoá `.key` có tiền tố `zerotts|` nên wav VieNeu cũ được đọc lại. Code trước khi đổi: `kit/_bak-zerotts-20261103/`.
-- **TTS (bản dài) và căn chữ chạy trên Google Colab** (từ 2026-10-23, người dùng yêu cầu): `make.mjs --stage tts` gọi `kiem-hiep/_tools/colab-tts/colab-tts.mjs`, `--stage align` gọi `colab-tts.mjs --align` (chạy chính `py/align.py` trên GPU T4, kết quả y hệt CPU) — cùng job, cùng cache với bản máy nhà, không tốn CPU. `chay-nang.sh` cho các stage tới hết `align` chạy ngay, không chờ làn; `build,lint` mới vào làn giong. Colab thu hồi / không tạo được phiên GPU thì `make.mjs` tự làm tts và căn chữ bằng CPU máy nhà (người dùng chốt 2026-11-03, luật chung `colabThenLocal` trong `kit/lib/mix.mjs`); Colab lỗi khác thì `make.mjs` dừng — sửa Colab theo bảng "Lỗi Colab TTS" trong skill teo-kiem-hiep-godot; chỉ thêm `--tts-local` / `--align-local` (làm ở máy nhà) khi người dùng cho phép. Không đặt `COLAB_TTS_GRACE`.
+- **TTS (bản dài) và căn chữ chạy trên Google Colab** (từ 2026-10-23, người dùng yêu cầu): `make.mjs --stage tts` gọi `kiem-hiep/_tools/colab-tts/colab-tts.mjs`, `--stage align` gọi `colab-tts.mjs --align` (chạy chính `py/align.py` trên GPU T4, kết quả y hệt CPU) — cùng job, cùng cache với bản máy nhà, không tốn CPU. `chay-nang.sh` (`$HOME/MuseStudio/ideas/chay-nang.sh`) cho các stage tới hết `align` chạy ngay, không chờ làn; `build,lint` mới vào làn giong. Colab thu hồi / không tạo được phiên GPU thì `make.mjs` tự làm tts và căn chữ bằng CPU máy nhà (người dùng chốt 2026-11-03, luật chung `colabThenLocal` trong `kit/lib/mix.mjs`); Colab lỗi khác thì `make.mjs` dừng — sửa Colab theo bảng "Lỗi Colab TTS" trong skill teo-kiem-hiep-godot; chỉ thêm `--tts-local` / `--align-local` (làm ở máy nhà) khi người dùng cho phép. Không đặt `COLAB_TTS_GRACE`.
   **Ngoại lệ chốt 2026-10-24: short (`…/shorts/…`) và sửa ngắn (< 30 câu cần đọc/căn sau cache) tự làm ở máy nhà bằng CPU, chỉ bản dài mới lên Colab** (`kit/lib/mix.mjs`, colab-tts `--min` trả mã 75). Short vì vậy vẫn xếp làn giong trong `chay-nang.sh` như cũ.
 - **Người dùng chốt 2026-10-29: KHÔNG hiệu ứng âm thanh nào** (whoosh, pop, chime, riser, kèn, sáo, chuông, mõ, chiêng "beng beng"…). Video chỉ có giọng đọc + nhạc nền nhỏ; nhạc nền cũng không có kèn, sáo, chuông, mõ, chiêng, trống — chỉ đàn gảy/dây êm. `kit/lib/mix.mjs` đặt `SFX_ON = false` nên mọi pipeline (kit/make.mjs, build-short, teo-kiem-hiep build, gd-render) bỏ hết sfx dù cảnh/fx/phim.sfx() có khai báo. Không tự bật lại. Video đã render mà còn sfx: `node kit/remix-audio.mjs <dir>` (video-teo; short: `<dir short> --short`) hoặc `gd-render.mjs <tap> --audio-only` (Godot) — chỉ dựng lại tiếng, giữ hình. Nhạc tập Godot chỉ đàn gảy: `python kit/py/nhac-gay.py <tap>/godot` (dùng python có numpy/soundfile, vd. VieNeu-TTS/.venv).
 - **Luật âm thanh (người dùng chốt 2026-10-24, `kit/lib/mix.mjs`):** không sfx "ùm ùm tùm tùm" gây giật mình; sfx luôn nhỏ hơn giọng; nhạc nền nhỏ hơn hẳn giọng. `kit/sfx` là bản êm (`kit/sfx-soft.mjs`: lọc trầm < 180 Hz, ≤ -26 LUFS, đỉnh ≤ -12 dBFS; bản gốc ở `kit/sfx/_goc/`), build tự chép đè vào `assets/sfx` và kẹp `vol` sfx ≤ 0,6; nhạc nền tự đo và kẹp ≤ -40 LUFS (thấp hơn giọng ≥ 20 dB) — `bgm_volume` chỉ hạ được, không vượt trần. Không thêm sfx mới chưa qua `sfx-soft.mjs`.
@@ -45,7 +75,7 @@ Xong video này thì làm ngay video kế. Cho các việc chạy chồng lên n
   3. *Audio Remux 3 giây:* Khi sửa LUFS/nhạc nền, dùng `node kit/remix-audio.mjs <dir>` hoặc ffmpeg `-c:v copy` (xong trong 3 giây, cấm render lại cả video 20 phút).
   4. *Quality Gate Chốt chặn xuất bản:* Trước khi đồng bộ lên Drive, bắt buộc chạy `python3 $HOME/.claude/skills/kiem-tra-video/scripts/check-tong-the.py <dir>`. Khi 100% PASS sẽ cấp chứng chỉ `youtube/.READY_TO_UPLOAD`. Tiến trình `yt-sync` chỉ đồng bộ khi có file chứng chỉ này.
 - Trước khi tạo `videos/<slug>`, phải kiểm tra slug chưa có ai làm (thư mục chưa tồn tại, DA-LAM chưa có dòng đó). Không ghi vào thư mục của session khác.
-- Cứ 2 tiếng báo cáo người dùng một lần: số video đã xong hôm nay trên chỉ tiêu 10, từng video đang ở bước nào, dự kiến xong lúc mấy giờ, lỗi nếu có.
+- Cứ 2 tiếng báo cáo người dùng một lần: đã xong mấy video hôm nay trên chỉ tiêu **1 video/ngày cho kênh này** (tổng hệ thống 2 video/ngày: Lại Là Tèo Đây + Tèo Tửu Lâu), từng video đang ở bước nào, dự kiến xong lúc mấy giờ, lỗi nếu có.
 
 ## 1. Chọn chủ đề
 
@@ -383,7 +413,7 @@ Xem `work/snap/contact-sheet*.jpg`. Thấy chữ tràn, hình đè nhau, cảnh 
 node $HOME/MuseStudio/kit/make.mjs <dir> --stage render,thumb,publish --par 2 > <dir>/work/render.log 2>&1
 ```
 
-Render mặc định dùng **GPU** (`make.mjs` tự truyền `--gpu` cho hyperframes; Chrome vẽ khung bằng ANGLE D3D11 trên AMD RX 6600 XT; bộ nén mp4 dùng GPU nếu hyperframes tìm được, không thì tự quay về CPU). Hình hỏng / sai màu do GPU thì thêm `--no-gpu`. Đặt `TEMP`/`TMP` sang ổ E: (`chay-nang.sh` đã làm sẵn) vì ổ C: không đủ ~12 GB khung tạm mỗi chương.
+Render mặc định dùng **GPU** (`make.mjs` tự truyền `--gpu` cho hyperframes). Phần dưới là cấu hình **máy Windows cũ** để tham chiếu: Chrome vẽ khung bằng ANGLE D3D11 trên AMD RX 6600 XT, `TEMP`/`TMP` phải trỏ sang ổ E: vì ổ C: không đủ ~12 GB khung tạm mỗi chương (`$HOME/MuseStudio/ideas/chay-nang.sh` đã đặt sẵn). Trên Mac cứ để mặc định; hình hỏng / sai màu do GPU thì thêm `--no-gpu`.
 
 Chết giữa chừng thì chạy lại, chương đã xong được bỏ qua. Thiếu RAM thì thêm `--low-memory`. `publish` tự ghi `ideas/fx-history.json` (stage `fxlog`). Nếu bỏ qua publish thì chạy tay `--stage fxlog` để video sau biết mà né.
 
@@ -417,15 +447,17 @@ Yêu cầu: > 20 phút, có cả stream video lẫn audio. Xem lại `thumbnail.
 5. Mở `tieu-de.txt` và `mo-ta.txt` đọc lại một lượt. Dấu ấn phải đồng nhất: đuôi tiêu đề, `#TeoKe`, chân trang mô tả, avatar, ảnh bìa, hình mờ ở `$HOME/MuseStudio/avatar/`.
 6. Mục "Dành cho trẻ em" (COPPA) là quyết định của chủ kênh. Chỉ nhắc, không tự quyết.
 7. **Google Drive và thư mục gói (tự động, không làm tay):**
-   - Trên Mac, job `yt-sync` (15 phút/lần, `$HOME/MuseStudio/yt-auto`) tự chép `videos/<slug>/youtube/` lên `My Drive/TeoKenhYoutube/<slug>/` khi gói đủ video dài + 3 Shorts, rồi xoá `youtube/` trên máy. Node không có quyền ghi Drive, nên `youtube-pack.mjs` báo "CHƯA lên Drive" là bình thường.
+   - Trên Mac, job `yt-sync` (15 phút/lần, `$HOME/MuseStudio/yt-auto`) tự chép `videos/<slug>/youtube/` lên `My Drive/TeoKenhYoutube/<slug>/` khi gói đủ video dài + thumbnail + tiêu đề + mô tả + tags (config đang `min_shorts: 0`, **không** đòi Shorts), rồi xoá `youtube/` trên máy. Node không có quyền ghi Drive, nên `youtube-pack.mjs` báo "CHƯA lên Drive" là bình thường. Muốn đóng gói mà **không** chép Drive: thêm `--no-drive`.
    - `TeoKenhYoutube` chỉ chứa video của kênh Lại Là Tèo Đây. Kiếm hiệp ở `My Drive/TeoTuuLau`. Không có video thể thao.
-   - Khi `yt-auto` hẹn giờ xong video dài, thư mục gói được đổi tên thành **`<YYYY-MM-DD HHhMM> <slug>`** (giờ đăng video dài, vd. `2026-10-28 19h00 cleopatra-gio-sung`). Đăng hết (dài + Shorts) thì chuyển sang `My Drive/DaDang/lai-la-teo-day/` giữ nguyên tên.
+   - Khi `yt-auto` hẹn giờ xong video dài, thư mục gói được đổi tên thành **`<YYYY-MM-DD HHhMM> <slug>`** (giờ đăng video dài, vd. `2026-10-28 19h00 cleopatra-gio-sung`). Đăng hết thì chuyển sang `My Drive/DaDang/lai-la-teo-day/` giữ nguyên tên (hiện chỉ có video dài vì Shorts đang tắt).
    - Skill **không tự đặt tiền tố giờ**: tên thư mục `videos/<slug>` vẫn là slug trần. Khi tìm xem slug đã lên Drive / đã đăng chưa, tìm thư mục tên `<slug>` **hoặc kết thúc bằng ` <slug>`** ở cả `TeoKenhYoutube` và `DaDang/lai-la-teo-day`.
    - Sửa gói sau khi đã lên Drive (thumbnail, short…): sửa trong `videos/<slug>/youtube/`, `yt-sync` tự chép đè vào đúng thư mục đã đổi tên.
 
 ## 6c. BỎ TẠO SHORTS (chủ kênh chốt 2026-10-29)
 
 Kênh "Lại Là Tèo Đây" **không làm Shorts** (bỏ mọi bước kịch bản short, giọng short, dựng short, render short). `yt-auto` cấu hình `min_shorts = 0` và `"tat_shorts": true`. Gói `youtube/` chỉ cần video dài + ảnh bìa + tiêu đề + mô tả + tags là hoàn chỉnh để tải lên Drive và tự động đăng.
+
+Các script short vẫn còn trong skill (`scripts/build-short.mjs`, `reference.md` mục "Shorts dọc") nhưng **chỉ để chạy lại short cũ**, không dùng cho video mới. Muốn bật lại: người dùng phải cho phép, rồi bỏ `"tat_shorts": true` cho kênh trong `yt-auto/config.json` và đặt `min_shorts` bằng số short muốn đăng. Short cũ đã nằm trong gói vẫn giữ nguyên.
 
 ## 7. Thêm hoặc sửa cảnh mà không đọc lại cả video
 

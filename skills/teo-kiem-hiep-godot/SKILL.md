@@ -11,7 +11,7 @@ description: >-
 # Tèo Kiếm Hiệp × Godot 2D: mỗi tập một kịch bản, một khung, một bộ code hình
 
 `SKILL = thư mục chứa file này` · `KH = ~/.agent-skills/skills/teo-kiem-hiep` · `LOCK = bash $HOME/MuseStudio/kiem-hiep/_tools/slot.sh`
-Godot 4.7.2: `$HOME/Godot/Godot.app/Contents/MacOS/Godot` · Tập mẫu (chỉ đọc để học): `kiem-hiep/tap-10-lenh-ho-xung/godot/ (bản cũ hơn: kiem-hiep/_lab/mau-godot-tap-01/)`
+Godot 4.7.2: `$HOME/Godot/Godot.app/Contents/MacOS/Godot` · Tập mẫu mới nhất (chỉ đọc để học): `$HOME/MuseStudio/kiem-hiep/tap-38-vo-tong-ket-cuc/godot/` — có đủ `phim.gd`, `hanh_dong.gd`, `chibi.gd`, `mat/`, `cast.json`, `story.json`. Bản lab cũ (Godot thuần, không có thư mục `godot/`): `$HOME/MuseStudio/kiem-hiep/_lab/mau-godot-tap-01/`.
 
 Skill này lo **quy trình Godot**. Luật nội dung vẫn là của `teo-kiem-hiep`, phải đọc và theo:
 - mục "Luật cứng" (bản quyền, chính xác ≥2 nguồn, tôn trọng, ≥20 phút, không chia chương);
@@ -20,6 +20,38 @@ Skill này lo **quy trình Godot**. Luật nội dung vẫn là của `teo-kiem-
 - mục "Khung dựng" (kịch bản thô → phân tích → khung; mở đầu, kết, CTA).
 
 Phần HyperFrames trong teo-kiem-hiep (tap.json beat, build.mjs, plan.mjs, fx local, pack.mjs) **không dùng** cho tập Godot.
+
+## Phụ thuộc ngoài repo (kiểm tra trước khi chạy)
+
+Repo skill chỉ chứa quy trình. Máy phải có sẵn những thứ dưới đây, không có thì dừng và báo người dùng, **đừng tự dựng lại**.
+
+| cần gì | ở đâu | dùng cho |
+|---|---|---|
+| skill `teo-kiem-hiep` | `~/.agent-skills/skills/teo-kiem-hiep` (= `KH`) | `gd-voice`, `gd-render`, `gd-mat`, luật nội dung, kho chủ đề |
+| skill `nhan-vat-chibi` | cùng repo | look nhân vật, `scripts/lib.mjs` |
+| skill `thao-tac-chibi` | cùng repo | sổ thao tác + engine rig v2 |
+| skill `chuong-2d` | cùng repo | làm chiêu trước khi `gd-chieu` đưa vào tập |
+| kit (font, sfx, bgm, `lib/mix.mjs`, `py/tts-zerotts.py`) | `$HOME/MuseStudio/kit` | build tiếng, SFX êm, ZeroTTS |
+| `slot.sh` + Colab TTS | `$HOME/MuseStudio/kiem-hiep/_tools/` | suất máy, đọc giọng bản dài |
+| công cụ SEO | `$HOME/MuseStudio/yt-auto/tools/` | `tu-khoa.py`, `kiem-hang.py` |
+| luật chung | `$HOME/MuseStudio/ideas/` | `HOOK-MO-DAU.md`, `TIEU-DE-ANH-BIA.md`, `DA-LAM.md` |
+| ZeroTTS máy nhà | `$HOME/Projects/ZeroTTS-src/.venv` | đọc CPU khi Colab thu hồi phiên |
+| Godot | `$HOME/Godot/Godot.app/Contents/MacOS/Godot` | render, soi sheet |
+| skill `kiem-tra-video` (**không nằm trong repo này**) | `~/.claude/skills/kiem-tra-video/scripts/` | `smoke-test.py`, `check-tong-the.py`, `review-kich-ban.py` |
+| skill `hoat-anh-kich-ban` (tuỳ chọn) | `~/.claude/skills/hoat-anh-kich-ban/scripts/tao-storyboard.py` | đọc header `loi.txt` để ra storyboard |
+
+Kiểm nhanh một lượt:
+
+```bash
+for p in "$HOME/MuseStudio/kit" "$HOME/MuseStudio/yt-auto" "$HOME/MuseStudio/kiem-hiep/_tools/slot.sh" \
+         "$HOME/Projects/ZeroTTS-src/.venv" "$HOME/Godot/Godot.app/Contents/MacOS/Godot" \
+         "$HOME/.claude/skills/kiem-tra-video/scripts/check-tong-the.py" \
+         "$HOME/.agent-skills/skills/teo-kiem-hiep/scripts/gd-render.mjs"; do
+  [ -e "$p" ] && echo "OK   $p" || echo "MISS $p"
+done
+```
+
+`MUSE_ROOT` đổi được gốc `MuseStudio` (mặc định `$HOME/MuseStudio`) khi chạy script Node; `GODOT` và `FFMPEG` để trỏ binary khác.
 
 ## Công cụ
 
@@ -34,6 +66,7 @@ Phần HyperFrames trong teo-kiem-hiep (tap.json beat, build.mjs, plan.mjs, fx l
 | `LOCK "<tap> xem" node KH/scripts/gd-render.mjs <tap> --preview --from A --to B --sheet 5 --out xa` | Preview 960×540 + `work/sheet-xa.jpg`. |
 | `LOCK "<tap> render" node KH/scripts/gd-render.mjs <tap> --par 2` | Bản cuối `renders/final.mp4`. Render bằng **ffmpeg song song 2 nửa qua pipe**, không dùng Movie Maker. |
 | `node KH/scripts/gd-render.mjs <tap> --audio-only` | **Audio Remuxing trong 3 giây:** Khi chỉ sửa LUFS, nhạc nền, SFX ducking, ffmpeg giữ nguyên video stream `-c:v copy` và chỉ thay audio trong 3s (tăng tốc x400, không re-render 20 phút). |
+| `… gd-render.mjs <tap> --sheet 30 --keep` | Cờ phụ: `--sheet <giây>` xuất thêm `work/sheet-<tên>.jpg` (mỗi ô cách nhau `<giây>`); `--keep` giữ file tạm trong `work/` để soi; `--no-duck` tắt tự hạ nhạc khi có lời; `--sfx-hp=<Hz>` (mặc định 180) và `--nhac-db=<dB>` chỉnh tay. |
 | `node SKILL/scripts/pack.mjs <tap>` | `youtube/`: mp4, thumbnail.png 1280×720, tieu-de, mo-ta, tags. |
 | `python3 $HOME/.claude/skills/kiem-tra-video/scripts/check-tong-the.py <tap>` | **Quality Gate chốt chặn:** Kiểm tra toàn diện Kịch bản, Hình ảnh, Âm thanh (-20 LUFS, Peak -0.5), Gói YouTube. Khi 100% PASS tự động cấp chứng chỉ `youtube/.READY_TO_UPLOAD`. |
 | `node SKILL/scripts/gd-check.mjs <tap> --log` | Sau bản cuối: ghi story.json vào `SKILL/data/history.json`. |
@@ -55,7 +88,7 @@ Việc nặng ở máy nhà (render, preview, check chiêu) luôn chạy qua `LO
      # TEO_SOCKET: none | kinh_lup | but_long | gay_truc | ho_lo_ruou | the_bai | quat_long_vu
      # TEO_ROLE: <Vai trò cụ thể của Tèo trong tập>
      ```
-     *(review-kich-ban.py và tao-storyboard.py sẽ đọc trực tiếp header này để nạp tài nguyên và kiểm tra chống trùng lặp 5 tập. Thiếu header sẽ bị đánh trượt ngay lập tức).*
+     *(Header do công cụ ngoài đọc, `gd-check` **không** kiểm: `~/.claude/skills/kiem-tra-video/scripts/review-kich-ban.py` (bắt buộc, thiếu header là đánh trượt) và `~/.claude/skills/hoat-anh-kich-ban/scripts/tao-storyboard.py` (tuỳ chọn, để ra storyboard). Hai skill đó không nằm trong repo này — thiếu thì báo người dùng, đừng tự viết lại).*
    - **TỶ LỆ PHÂN BỔ VÀNG 65 / 35 (Chống nhàm chán & Bảo vệ thuật toán YouTube):**
      - **65% Nhóm Nòng Cốt:** *Võ Đài So Kèo* & *Trinh Thám Kỳ Án* (giữ vững bản sắc "Tửu Lâu luận kiếm", nhịp retention cao nhất).
      - **35% Nhóm Gia Vị:** *Lật Ngược Định Kiến* (minh oan nhân vật), *Hồ Sơ Mật* (thâm cung bí sử), *Hùng Ca Bi Tráng* (đại chiến huyết lệ).
@@ -135,12 +168,14 @@ Việc nặng ở máy nhà (render, preview, check chiêu) luôn chạy qua `LO
 
 ## Gói trên Google Drive (tự động, không làm tay)
 
-- Job `yt-sync` (15 phút/lần, `$HOME/MuseStudio/yt-auto`) tự chép `kiem-hiep/<tap>/youtube/` lên **`My Drive/TeoTuuLau/<tap>/`** khi đủ video dài + 3 Shorts, rồi xoá `youtube/` trên máy. Không chép tay, không dùng thư mục `TeoKenhYoutube` (thư mục đó chỉ của kênh Lại Là Tèo Đây).
+- Job `yt-sync` (15 phút/lần, `$HOME/MuseStudio/yt-auto`) tự chép `kiem-hiep/<tap>/youtube/` lên **`My Drive/TeoTuuLau/<tap>/`** khi gói đủ video dài + `thumbnail.png` + `tieu-de.txt` + `mo-ta.txt` + `tags.txt` (config đang để `min_shorts: 0`, **không** đòi Shorts), rồi xoá `youtube/` trên máy. Không chép tay, không dùng thư mục `TeoKenhYoutube` (thư mục đó chỉ của kênh Lại Là Tèo Đây).
 - Khi `yt-auto` hẹn giờ xong video dài, thư mục được đổi tên thành **`<YYYY-MM-DD HHhMM> <tap>`** (giờ đăng video dài, vd. `2026-10-28 19h00 tap-15-nhac-bat-quan`). Đăng hết thì chuyển sang `My Drive/DaDang/teo-tuu-lau/`, giữ nguyên tên.
 - Tên `kiem-hiep/<tap>` trên máy vẫn là tên trần, không tự thêm giờ. Khi xem một tập đã lên Drive / đã đăng chưa, tìm thư mục tên `<tap>` **hoặc kết thúc bằng ` <tap>`** ở `TeoTuuLau` và `DaDang/teo-tuu-lau`.
 - Sửa gói sau khi đã lên Drive (ảnh bìa, short…): sửa và `pack.mjs` lại trong `kiem-hiep/<tap>/`, `yt-sync` tự chép đè vào đúng thư mục đã đổi tên.
 
-## Shorts dọc (3 short mỗi tập, 1080×1920, ≤ 60 s)
+## Shorts dọc (1080×1920, ≤ 60 s) — ĐANG TẮT
+
+> **Trạng thái 2026-11-20: KHÔNG làm.** Người dùng chốt 2026-10-29 bỏ toàn bộ short; `yt-auto/config.json` để `min_shorts: 0` và `tat_shorts: true` ở cả hai kênh. Giữ mục này lại để bật lại sau, **chỉ khi người dùng yêu cầu rõ**. Bật lại thì: bỏ `"tat_shorts": true` cho kênh trong `yt-auto/config.json` và đặt `min_shorts` bằng số short muốn đăng. Short cũ đã nằm trong gói vẫn được giữ nguyên.
 
 Mỗi short là **một project Godot dọc riêng** ở `<tap>/shorts/<NN-ten>/godot/`. Nó dùng lại bút, mặt, font, chiêu và giọng của tập, nhưng hình phải **dựng lại cho khung dọc**: không cắt, không crop từ bản ngang. Các lệnh gd-voice, gd-check, gd-render, pack chạy thẳng trên thư mục short (`S = <tap>/shorts/<NN-ten>`).
 
@@ -201,6 +236,17 @@ Từ 2026-11-03 phiên Colab cài ZeroTTS (`setup-zerotts.py`, dấu `/content/.
 - Tốc độ bình thường: khoảng 4–5 phút giọng cho một tập 20 phút. Phiên là một hàng đợi chung, 9 tập thì xếp nối nhau.
 - Người dùng muốn đọc giọng trên Colab: Colab lỗi thì sửa Colab (bảng trên), **đừng tự chuyển sang `--local`/GPU máy nhà**.
 - Xong hết việc: `node kiem-hiep/_tools/colab-tts/colab-tts.mjs --stop` để tắt phiên, kiểm `.wait/` trống.
+
+## Sổ chống lặp `data/history.json`
+
+Mỗi tập đã xong là một bản ghi, `gd-check --log` tự ghi (khoá trùng `tap` thì ghi đè, không nhân đôi):
+
+```json
+{ "tap": "tap-38-vo-tong-ket-cuc", "ngay": "2026-11-16", "khung": "…", "teo_role": "…",
+  "but": "…", "may_quay": "…", "palette": "…", "nhac": "…", "thumb": "…", "mat": "…", "font": "…", "chan": "…" }
+```
+
+Hiện có 32 tập. Trước khi chọn khung, đọc bản ghi của 5 tập cuối — đó là thứ `gd-check` so tỉ lệ từ chung (≥60% lỗi, ≥40% cảnh báo). Sổ chỉ ghi bằng `--log`, **đừng sửa tay** trừ khi sửa lại một bản ghi sai.
 
 ## Bẫy GDScript / Godot đã gặp
 

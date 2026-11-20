@@ -41,7 +41,9 @@ Bẫy: nháy kép trong giá trị chèn vào `style="…"`; id trùng `${ns}-gr
 
 Ví dụ một bộ cảnh (tập Tesla, **không dùng lại**): `khung-giay` mở đoạn · `ho-so` giới thiệu · `loi-noi`/`bo-dam` lời thoại · `so-lon` con số · `hai-lan`/`doi-chieu` so sánh · `duong-dua` mốc thời gian · `ban-ve`/`vec-to-luc` cơ chế · `bien-lai` gag nhân vật phụ.
 
-## Shorts dọc (SKILL.md mục 6c)
+## Shorts dọc — ĐANG TẮT (SKILL.md mục 6c)
+
+> Trạng thái 2026-11-20: kênh đã bỏ Shorts. Mục này giữ lại để chạy lại short cũ hoặc bật lại sau, **không dùng cho video mới**.
 
 ```
 videos/<slug>/shorts/
@@ -111,18 +113,26 @@ Gợi ý: nghịch lý sốc · con số gây sốc · in medias res · câu h�
 - Câu chào, câu CTA, câu kết của 5 tập gần nhất: `node $HOME/MuseStudio/kit/fx-list.mjs`. **Không có câu mẫu**: mỗi tập tự viết theo giọng khung và `voice_role`.
 - Cấm công thức: "ba câu hỏi. Một… Hai… Và ba" · "đoạn sau còn gắt hơn" · "Mỗi lượt đăng ký là thêm một…" (nếu 5 tập trước đã dùng) · "điểm lại ba điều đã hứa" làm kết mặc định · "một … nổi tiếng khác, với một cách kể hoàn toàn mới".
 
-## Kho gợi ý chủ đề có neo (chưa làm; dùng rồi thì xoá khỏi đây)
+## Kho gợi ý chủ đề có neo
+
+> **Kiểm `$HOME/MuseStudio/ideas/DA-LAM.md` trước khi lấy bất kỳ dòng nào** — bảng này chỉ là gợi ý, đã có cái làm rồi. Dòng đánh dấu **(đã làm)** là đã lên lịch/đã đăng, đừng làm lại (trừ khi người dùng yêu cầu góc hoàn toàn khác).
 
 | mảng | ứng viên (neo: góc kể gợi ý) |
 |---|---|
-| nhân vật lịch sử VN | Quang Trung: hành quân thần tốc Tết Kỷ Dậu · Lý Thường Kiệt: "Nam quốc sơn hà" và trận Như Nguyệt · Ngô Quyền sau Bạch Đằng · Nguyễn Trãi và vụ án Lệ Chi Viên |
-| nhân vật lịch sử thế giới | Cleopatra: nữ hoàng cuối cùng của Ai Cập · Thành Cát Tư Hãn: đế chế lớn nhất lịch sử · Tần Thủy Hoàng: vua đi tìm thuốc trường sinh · Alexander Đại đế |
-| trận đánh / sự kiện | Điện Biên Phủ: 56 ngày đêm · Xích Bích: trận hoả công · Thermopylae: 300 chiến binh Sparta · Bức tường Berlin sụp đổ |
-| nhà khoa học / phát minh | Einstein và E=mc² · Newton: quả táo và lăng kính · Galileo: "Dù sao Trái Đất vẫn quay" |
-| thảm hoạ / bí ẩn | Titanic: đêm cuối cùng · Chernobyl: 1 giờ 23 phút · Pompeii: thành phố bị chôn sống · Tam giác Bermuda · Atlantis: lục địa biến mất |
+| nhân vật lịch sử VN | Quang Trung: hành quân thần tốc Tết Kỷ Dậu **(đã làm 2026-10-23)** · Lý Thường Kiệt: "Nam quốc sơn hà" và trận Như Nguyệt · Ngô Quyền sau Bạch Đằng · Nguyễn Trãi và vụ án Lệ Chi Viên |
+| nhân vật lịch sử thế giới | Cleopatra: nữ hoàng cuối cùng của Ai Cập **(đã làm 2026-10-24)** · Thành Cát Tư Hãn: mộ 800 năm chưa ai thấy **(đã làm 2/3)** · Tần Thủy Hoàng: vua đi tìm thuốc trường sinh · Alexander Đại đế: 12 ngày ở Babylon **(đã làm 3/3)** |
+| trận đánh / sự kiện | Điện Biên Phủ: 56 ngày đêm · Xích Bích: trận hoả công (đã dùng trong tập Chu Du) · Thermopylae: 300 chiến binh Sparta · Bức tường Berlin sụp đổ |
+| nhà khoa học / phát minh | Einstein và E=mc² · Newton: quả táo và lăng kính · Galileo: "Dù sao Trái Đất vẫn quay" · Graham Bell vs Elisha Gray **(đã làm 3/3)** |
+| thảm hoạ / bí ẩn | Titanic: đêm cuối cùng **(đã làm)** · Chernobyl: 1 giờ 23 phút · Pompeii: thành phố bị chôn sống · Tam giác Bermuda · Atlantis: lục địa biến mất |
 | kỳ quan / địa danh | Vạn Lý Trường Thành · Machu Picchu · Angkor Wat · Tháp Eiffel: công trình bị ghét nhất Paris · Đấu trường Colosseum |
-| dân gian / thần thoại | Thánh Gióng · Tôn Ngộ Không: Tây Du Ký có thật? · Chử Đồng Tử – Tiên Dung · Hercules: 12 kỳ công · Vua Arthur và thanh kiếm trong đá |
+| dân gian / thần thoại | Thánh Gióng **(đã làm 2026-11-12)** · Tây Du Ký: 81 kiếp nạn **(đã làm, bản tổng hợp)** · Chử Đồng Tử – Tiên Dung · Hercules: 12 kỳ công · Vua Arthur và thanh kiếm trong đá |
 | người nổi tiếng hiện đại | Steve Jobs: bị đuổi khỏi chính công ty mình · Pelé · Lý Tiểu Long · Charlie Chaplin · Walt Disney và chú chuột Mickey |
+
+Mảng nào cũng đã dùng khá nhiều neo lớn; muốn chắc thì chạy:
+
+```bash
+grep -in "<tên neo>" "$HOME/MuseStudio/ideas/DA-LAM.md"
+```
 
 **Chủ đề chung → neo nổi tiếng** (gặp ý chung chung thì đổi theo kiểu này):
 
