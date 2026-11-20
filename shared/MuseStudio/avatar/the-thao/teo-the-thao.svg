@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 760" width="500" height="760" data-pose="the-thao">
+  <!-- legs: skin + red socks + shoes -->
+  <rect x="146" y="600" width="44" height="120" rx="8" fill="#FFD9B8" stroke="#111" stroke-width="6"/>
+  <rect x="210" y="600" width="44" height="120" rx="8" fill="#FFD9B8" stroke="#111" stroke-width="6"/>
+  <rect x="146" y="650" width="44" height="66" rx="6" fill="#DA251D" stroke="#111" stroke-width="6"/>
+  <rect x="210" y="650" width="44" height="66" rx="6" fill="#DA251D" stroke="#111" stroke-width="6"/>
+  <path d="M146 668 H190 M210 668 H254" stroke="#FFCD00" stroke-width="8"/>
+  <path d="M118 716 Q120 700 168 704 Q194 706 194 722 Q194 742 150 740 Q116 738 118 716 Z" fill="#111"/>
+  <path d="M206 722 Q206 706 232 704 Q280 700 282 716 Q284 738 250 740 Q206 742 206 722 Z" fill="#111"/>
+  <!-- shorts -->
+  <path d="M112 540 L288 540 L292 612 L206 612 L200 580 L194 612 L108 612 Z" fill="#FFFFFF" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M114 596 L194 596 M206 596 L290 596" stroke="#DA251D" stroke-width="8"/>
+  <!-- left arm: red sleeve + skin forearm, hand on hip -->
+  <path d="M128 305 L108 420 L118 515" fill="none" stroke="#111" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M128 305 L108 420 L118 515" fill="none" stroke="#FFD9B8" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M128 305 L114 385" fill="none" stroke="#111" stroke-width="50" stroke-linecap="round"/>
+  <path d="M128 305 L114 385" fill="none" stroke="#DA251D" stroke-width="38" stroke-linecap="round"/>
+  <circle cx="118" cy="528" r="19" fill="#FFD9B8" stroke="#111" stroke-width="6"/>
+  <!-- jersey -->
+  <path d="M120 300 Q200 272 280 300 L290 560 L110 560 Z" fill="#DA251D" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M116 330 L112 560 M284 330 L288 560" stroke="#FFCD00" stroke-width="10"/>
+  <path d="M168 288 L200 330 L232 288" fill="none" stroke="#FFCD00" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M168 288 L200 330 L232 288" fill="none" stroke="#111" stroke-width="3"/>
+  <text x="200" y="470" text-anchor="middle" font-family="Inter" font-weight="900" font-size="104" fill="#FFCD00" stroke="#111" stroke-width="5" paint-order="stroke fill">10</text>
+  <path d="M152 352 l6 14 15 1 -12 9 4 15 -13 -8 -13 8 4 -15 -12 -9 15 -1 Z" fill="#FFCD00" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+  <!-- whistle on a cord -->
+  <path d="M178 290 Q190 360 246 372 M222 290 Q236 330 246 352" fill="none" stroke="#111" stroke-width="3"/>
+  <rect x="236" y="352" width="40" height="22" rx="10" fill="#D9D9D9" stroke="#111" stroke-width="4"/>
+  <circle cx="246" cy="363" r="5" fill="#111"/>
+  <!-- neck + head -->
+  <rect x="182" y="244" width="36" height="44" fill="#FFD9B8" stroke="#111" stroke-width="6"/>
+  <ellipse cx="120" cy="188" rx="14" ry="20" fill="#FFD9B8" stroke="#111" stroke-width="6"/>
+  <ellipse cx="280" cy="188" rx="14" ry="20" fill="#FFD9B8" stroke="#111" stroke-width="6"/>
+  <path d="M124 180 Q122 262 200 266 Q278 262 276 180 Q276 104 200 100 Q124 104 124 180 Z" fill="#FFD9B8" stroke="#111" stroke-width="6"/>
+  <path d="M118 176 Q108 92 168 72 Q204 52 246 70 Q296 88 284 168 Q270 128 246 118 Q236 138 200 132 Q218 116 210 104 Q176 136 132 130 Q124 150 118 176 Z" fill="#5A3825" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+  <!-- headband -->
+  <path d="M118 150 Q200 118 284 150 L282 172 Q200 140 120 174 Z" fill="#FFCD00" stroke="#111" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M190 132 L210 132" stroke="#DA251D" stroke-width="8" stroke-linecap="round"/>
+  <!-- face: happy, eyebrows up, mouth open -->
+  <path d="M150 148 Q170 138 190 146 M210 146 Q230 138 250 148" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <path d="M162 182 Q172 170 182 182 M218 182 Q228 170 238 182" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <path d="M172 218 Q200 222 228 218 Q222 256 200 256 Q178 256 172 218 Z" fill="#B3263A" stroke="#111" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M184 244 Q200 236 216 244" fill="none" stroke="#FF8FA3" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="150" cy="214" rx="14" ry="8" fill="#FF9E9E" opacity="0.7"/><ellipse cx="250" cy="214" rx="14" ry="8" fill="#FF9E9E" opacity="0.7"/>
+  <!-- glasses -->
+  <circle cx="172" cy="180" r="27" fill="none" stroke="#111" stroke-width="5"/>
+  <circle cx="228" cy="180" r="27" fill="none" stroke="#111" stroke-width="5"/>
+  <path d="M199 178 Q200 172 201 178 M145 176 L126 170 M255 176 L274 170" stroke="#111" stroke-width="5" fill="none"/>
+  <!-- right arm raised: red sleeve + skin forearm -->
+  <path d="M272 305 L330 360 L362 280" fill="none" stroke="#111" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M272 305 L330 360 L362 280" fill="none" stroke="#FFD9B8" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M272 305 L318 348" fill="none" stroke="#111" stroke-width="50" stroke-linecap="round"/>
+  <path d="M272 305 L318 348" fill="none" stroke="#DA251D" stroke-width="38" stroke-linecap="round"/>
+  <!-- football held up -->
+  <g transform="translate(372 222)">
+    <circle r="56" fill="#FFFFFF" stroke="#111" stroke-width="6"/>
+    <path d="M0 -18 L17 -6 L11 15 L-11 15 L-17 -6 Z" fill="#111"/>
+    <path d="M0 -18 L0 -52 M17 -6 L48 -16 M11 15 L30 44 M-11 15 L-30 44 M-17 -6 L-48 -16" stroke="#111" stroke-width="4"/>
+    <path d="M-14 -50 L0 -56 L14 -50 L8 -40 L-8 -40 Z M42 -30 L52 -20 L54 -4 L46 -10 Z M-42 -30 L-52 -20 L-54 -4 L-46 -10 Z M18 52 L34 40 L40 46 L28 54 Z M-18 52 L-34 40 L-40 46 L-28 54 Z" fill="#111"/>
+    <path d="M-30 -28 Q-20 -40 -6 -44" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  <circle cx="362" cy="278" r="21" fill="#FFD9B8" stroke="#111" stroke-width="6"/>
+</svg>

@@ -1,0 +1,249 @@
+{
+ "slug": "nguoi-giau-nhat-lich-su",
+ "title": "Những Người Giàu Nhất Lịch Sử Nhân Loại",
+ "voice": "Lóng",
+ "target_min": [
+  55,
+  65
+ ],
+ "names": "Mansa Musa, Mali, Cairo, Mecca, Timbuktu, Niani, al-Umari, Catalan Atlas, Croesus, Lydia, Sardis, Pactolus, Solon, Herodotus, Delphi, Halys, Cyrus, Crassus, Plutarch, Spartacus, Parthia, Carrhae, Augustus, Ai Cập, Medici, Cosimo, Florence, Jakob Fugger, Augsburg, Habsburg, Charles V, Fuggerei, Hòa Thân, Càn Long, Gia Khánh, Rothschild, Waterloo, Vanderbilt, Staten Island, Rockefeller, Standard Oil, Carnegie, J.P. Morgan, Henry Ford, Model T, Nizam, Hyderabad, Osman Ali Khan, Bạch Thái Bưởi, Lê Phát Đạt, Huyện Sỹ, Hui Bon Hoa, Chú Hỏa, Forbes, Elon Musk, Thạch Sùng, Vương Khải, Lục Châu, Kim Cốc, Ibn Khaldun, Warren Schultz, Djinguereber, Sankore, Bambuk, Bure, Hadrien Collet, Guinness, Alyattes, Athens, Marcus Licinius, Pliny, Bactria, Syria, Cassius Dio, Caesar, Octavian, Alexandria, Antony, Cleopatra, Suetonius, Giovanni di Bicci, Venice, Bruges, Tolfa, Donatello, Lorenzo, Botticelli, Michelangelo, Tyrol, Greg Steinmetz, Sigismund, Schwaz, Maximilian, sestertius, talent, florin, mithqal, dirham, Francis, Welser, Almadén, Anton, Celebrity Net Worth, Thập Sát Hải, Cung vương, Mayer Amschel, Salomon, Amschel, Naples, Manchester, Niall Ferguson, Wellington, Napoleon, Brian Cathcart, Bathurst, Hudson, Nicaragua, San Francisco, Commodore, Grand Central, Cleveland, Pennsylvania, Sherman, Ida Tarbell, Exxon, Chevron, Dunfermline, Pittsburgh, Bessemer, Homestead, U.S. Steel, Edinburgh, Scotland, Detroit, Highland Park, Golconda, Mir Osman Ali Khan, Jacob, Elizabeth, rupee, Marty, Bình Chuẩn, Majestic, Chợ Lớn, Larry Page, Sergey Brin, Jeff Bezos, Mark Zuckerberg, Tesla, SpaceX, Google, Amazon, Facebook, Tây Tấn, Kinh Châu, Lạc Dương, Tôn Tú, Long An, Tân An, Đức Hòa, Đức Huệ, Gò Vấp, Chợ Đũi, Bến Thành, Nam Phương, Từ Dũ, Nguyễn Trãi, Frankfurt",
+ "theme": "bang-den",
+ "bgm": "assets/nhac-day.mp3",
+ "cast": {
+  "musa": {
+   "svg": "chars/musa.svg",
+   "name": "Mansa Musa"
+  },
+  "musa-soc": {
+   "svg": "chars/musa-soc.svg",
+   "name": "Mansa Musa"
+  },
+  "croesus": {
+   "svg": "chars/croesus.svg",
+   "name": "Vua Croesus"
+  },
+  "solon": {
+   "svg": "chars/solon.svg",
+   "name": "Solon"
+  },
+  "crassus": {
+   "svg": "chars/crassus.svg",
+   "name": "Crassus"
+  },
+  "augustus": {
+   "svg": "chars/augustus.svg",
+   "name": "Hoàng đế Augustus"
+  },
+  "cosimo": {
+   "svg": "chars/cosimo.svg",
+   "name": "Cosimo de' Medici"
+  },
+  "fugger": {
+   "svg": "chars/fugger.svg",
+   "name": "Jakob Fugger"
+  },
+  "charles5": {
+   "svg": "chars/charles5.svg",
+   "name": "Hoàng đế Charles V"
+  },
+  "hoathan": {
+   "svg": "chars/hoathan.svg",
+   "name": "Hòa Thân"
+  },
+  "canlong": {
+   "svg": "chars/canlong.svg",
+   "name": "Vua Càn Long"
+  },
+  "giakhanh": {
+   "svg": "chars/giakhanh.svg",
+   "name": "Vua Gia Khánh"
+  },
+  "rothschild": {
+   "svg": "chars/rothschild.svg",
+   "name": "Nathan Rothschild"
+  },
+  "vanderbilt": {
+   "svg": "chars/vanderbilt.svg",
+   "name": "Cornelius Vanderbilt"
+  },
+  "rockefeller": {
+   "svg": "chars/rockefeller.svg",
+   "name": "John D. Rockefeller"
+  },
+  "carnegie": {
+   "svg": "chars/carnegie.svg",
+   "name": "Andrew Carnegie"
+  },
+  "ford": {
+   "svg": "chars/ford.svg",
+   "name": "Henry Ford"
+  },
+  "nizam": {
+   "svg": "chars/nizam.svg",
+   "name": "Nizam Osman Ali Khan"
+  },
+  "bachthaibuoi": {
+   "svg": "chars/bachthaibuoi.svg",
+   "name": "Bạch Thái Bưởi"
+  },
+  "huyensy": {
+   "svg": "chars/huyensy.svg",
+   "name": "Huyện Sỹ Lê Phát Đạt"
+  },
+  "chuhoa": {
+   "svg": "chars/chuhoa.svg",
+   "name": "Chú Hỏa (Hui Bon Hoa)"
+  },
+  "thachsung": {
+   "svg": "chars/thachsung.svg",
+   "name": "Thạch Sùng"
+  },
+  "vuongkhai": {
+   "svg": "chars/vuongkhai.svg",
+   "name": "Vương Khải"
+  },
+  "nuivang": {
+   "svg": "chars/nuivang.svg",
+   "name": "Núi vàng"
+  }
+ },
+ "creative": {
+  "frame": {
+   "name": "xưởng khắc tờ bạc riêng: mỗi người giàu được khắc lên một tờ bạc của chính họ, mệnh giá là tài sản đổi ra tiền hôm nay, ghim lên tường thành mười bảy tờ, còn con thạch sùng trên tường cứ tặc lưỡi",
+   "analysis": "Bảng top người giàu nào cũng đọc nghìn tỷ đô xong là quên và cãi nhau vì mỗi bảng đổi tiền một kiểu. Lõi chuyện là câu hỏi ĐỔI: cùng một gia tài đổi theo vàng, theo phần nền kinh tế hay theo năm lương ra ba con số chênh nhau hơn hai mươi lần; rồi giàu nhờ đâu và tiền đi về đâu. Người thợ khắc tiền đứng gần nhất để kể, vì biết tờ bạc chỉ là tờ giấy có người tin. Kết đã có sẵn trong ca dao: Thạch Sùng giàu nhất vẫn còn thiếu mẻ kho.",
+   "axis": "thời gian xuôi từ Croesus tới tỷ phú hôm nay sau một cảnh mở ở Cairo 1324, mỗi người giàu là một tờ bạc đánh số khắc đủ bốn nhịp: mệnh giá đổi ra hôm nay, giàu nhờ đâu, chi tiết lạ hay bị hiểu sai, của cải đi về đâu",
+   "open": "núi vàng đổ xuống giữa đêm Cairo 1324, giá vàng cắm xuống, tờ bạc của Mansa Musa trượt lên với mệnh giá ba dấu hỏi",
+   "close": "xếp lại mười bảy tờ bạc theo cùng một thước đổi, rồi khắc tờ cuối cho Thạch Sùng và con thạch sùng trên tường tặc lưỡi lần cuối",
+   "segments": [
+    "Mansa Musa và cơn mất giá vàng ở Cairo",
+    "ba cách đổi tiền xưa ra tiền nay trên cái cân",
+    "vàng của vua: Croesus, Crassus, Augustus",
+    "nhà băng mua quyền: Medici, Fugger cho vay ra hoàng đế",
+    "ông quan giàu hơn ngân khố: Hòa Thân",
+    "huyền thoại Waterloo của Rothschild",
+    "dầu và thép: Vanderbilt, Rockefeller, Carnegie cho đi",
+    "lương năm đô và viên kim cương chặn giấy",
+    "phú hộ Việt: Bạch Thái Bưởi và bốn nhà giàu Nam Kỳ",
+    "tỷ phú hôm nay so với ông vua không ai đo được",
+    "Thạch Sùng còn thiếu mẻ kho"
+   ]
+  },
+  "voice_role": "thợ khắc bản in tiền ở xưởng in nhỏ, mũ vải xanh, kính lúp kẹp trán; đọc mệnh giá như đọc bản in thử, đổi số lớn ra năm lương người Việt",
+  "style": "mỗi người giàu một tờ bạc khắc tay: chân dung bầu dục, mệnh giá đổi ra hôm nay, dấu triện số phận",
+  "motif": "tờ bạc hoa văn guilloche, cái cân đồng, sổ cái kẻ đỏ, máy đếm tiền, con thạch sùng trên tường xưởng",
+  "hook": "cảnh mở in medias res bằng một con số mất giá: núi vàng ở Cairo 1324 làm giá vàng cắm xuống",
+  "hook_visual": "núi thỏi vàng rơi chồng thành tháp giữa đêm tím, biểu đồ giá vàng vẽ đường đỏ cắm xuống làm núi vàng rung, tờ bạc chân dung Mansa Musa trượt lên với ba dấu hỏi nhấp nháy, dấu triện bầu dục đóng xuống",
+  "palette": "xanh tiền + tím mực khắc + vàng thỏi trên giấy kem và bàn dạ xanh",
+  "signature_fx": [
+   "glint",
+   "twinkle",
+   "confetti"
+  ],
+  "gag": "con thạch sùng trên tường xưởng tặc lưỡi mỗi khi có người giàu rồi vẫn muốn thêm; cuối video mới biết nó là Thạch Sùng thiếu mẻ kho",
+  "visual": {
+   "medium": "bản khắc tiền giấy: hoa văn guilloche, ô chân dung bầu dục, số sê-ri đỏ, sổ cái kế toán, cân đồng",
+   "why": "chuyện người giàu là chuyện đổi tiền, mà thứ người ta tin là tiền nhất chính là tờ bạc khắc tay, nên mỗi người giàu được khắc một tờ",
+   "layout": "tờ bạc to chiếm giữa khung trên bàn dạ xanh, chân dung bên trái, mệnh giá bên phải; cảnh Tèo đứng bên phải trước tường vôi xanh, phiếu khắc ghim bên trái",
+   "palette": [
+    "#2F6B4F",
+    "#5B3A73",
+    "#D4A92E",
+    "#B8312F",
+    "#F1E9D2",
+    "#1F3D33"
+   ],
+   "font": "Big Caslon (tiêu đề) + Superclarendon (số tiền) + Cochin (chữ thường) + Courier New (sổ cái)",
+   "kit": "scenes/_tien.mjs",
+   "scene_kit": [
+    "hook-musa: hook núi vàng Cairo",
+    "to-bac: khắc tờ bạc số N với mệnh giá",
+    "chan-dung: huy chương giới thiệu nhân vật",
+    "so-cai: sổ cái giàu nhờ đâu",
+    "can-vang: cái cân đổi tiền xưa ra nay",
+    "may-dem: máy đếm tiền nhảy số",
+    "bieu-do: chồng tiền so sánh",
+    "ban-do: bản đồ hành trình khắc",
+    "hai-mat: hai mặt tờ bạc lời đồn và sự thật",
+    "cau-khac: câu nói in trên chứng chỉ",
+    "so-phan: dấu triện số phận của cải",
+    "teo-xuong: Tèo ở xưởng với con thạch sùng",
+    "tuong-bac: tường ghim tờ bạc"
+   ]
+  }
+ },
+ "thumbnail": {
+  "text": "Giàu hơn Elon Musk?",
+  "highlight": "Elon Musk",
+  "who": [
+   "musa-soc"
+  ],
+  "pose": "shock",
+  "circle": true,
+  "arrow": false,
+  "badge": "?",
+  "bg": "purple",
+  "layout": "classic",
+  "prop": "nuivang",
+  "circle_x": 40,
+  "circle_y": 330,
+  "circle_r": 390,
+  "prop_rot": 0
+ },
+ "publish": {
+  "titles": [
+   "Những Người Giàu Nhất Lịch Sử Nhân Loại Trong N Phút",
+   "Mansa Musa Giàu Hơn Elon Musk? Người Giàu Nhất Lịch Sử",
+   "Người Giàu Nhất Mọi Thời Đại: 17 Tờ Bạc, Một Thước Đổi"
+  ],
+  "description": "Những người giàu nhất lịch sử nhân loại, từ ông vua làm vàng ở Cairo mất giá năm 1324 tới tỷ phú hôm nay, đổi ra tiền bây giờ là bao nhiêu?\n\nTrong xưởng khắc tiền của Tèo, mỗi người giàu được khắc lên một tờ bạc riêng: Mansa Musa, Croesus, Crassus, Augustus, nhà Medici, Jakob Fugger, Hòa Thân, Rothschild, Vanderbilt, Rockefeller, Carnegie, Henry Ford, Nizam xứ Hyderabad, Bạch Thái Bưởi, các phú hộ Nam Kỳ, tỷ phú hôm nay và Thạch Sùng. Mỗi tờ trả lời bốn câu: giàu tới đâu nếu đổi ra tiền hôm nay, giàu nhờ đâu, chuyện lạ hay bị hiểu sai, và của cải cuối cùng đi về đâu.\n\nVì sao cùng một gia tài mà các bảng xếp hạng ghi chênh nhau hàng chục lần? Mansa Musa có giàu hơn Elon Musk không? Và con thạch sùng trên tường xưởng cứ tặc lưỡi vì điều gì?\n\nNếu được khắc mặt một người lên tờ bạc của riêng bạn, bạn chọn ai? Viết ở phần bình luận, và bấm đăng ký kênh Lại Là Tèo Đây để xem các video lịch sử tiếp theo.",
+  "hashtags": [
+   "#nguoigiaunhat",
+   "#lichsu",
+   "#mansamusa",
+   "#rockefeller"
+  ],
+  "tags": [
+   "người giàu nhất lịch sử",
+   "người giàu nhất lịch sử nhân loại",
+   "những người giàu nhất lịch sử",
+   "người giàu nhất mọi thời đại",
+   "mansa musa",
+   "mansa musa và elon musk",
+   "rockefeller",
+   "hòa thân",
+   "thạch sùng",
+   "bạch thái bưởi",
+   "carnegie",
+   "nguoi giau nhat lich su",
+   "mansa musa elon musk",
+   "lịch sử thế giới"
+  ],
+  "notes": "Con số tài sản đều là ước tính, đổi theo các cách khác nhau (vàng, phần nền kinh tế, năm lương) — lời đọc đã nói rõ khoảng và nguồn. Kiểm lại: Forbes 3/2026 Elon Musk ~839 tỷ USD; Rockefeller 631/163/28 tỷ (Guinness) và 2,3% GDP Mỹ 1913; Fugger ~2% GDP châu Âu (Steinmetz); Hòa Thân tịch thu ≈ 1 năm ngân khố (dải ước tính rộng); Carnegie 225 triệu (phần của ông), 2.509 thư viện; Nizam 0,1–2 tỷ USD (các nguồn lệch xa); Henry Ford ~199 tỷ chỉ 1 nguồn tổng hợp; chuyện Nizam đan tất, câu ca phú hộ Nam Kỳ: theo lời kể/báo chí. Giá vàng/bạc, tỷ giá, lương bình quân VN dùng mức 2025–2026, nói 'khoảng'. Truyền thuyết đã gắn nhãn: Solon–Croesus, giàn thiêu, vàng nóng Crassus, Rothschild–Waterloo, Thạch Sùng thiếu mẻ kho (truyện dân gian Việt)."
+ },
+ "chapters": [
+  "chapters/01.json",
+  "chapters/02.json",
+  "chapters/03.json",
+  "chapters/04.json",
+  "chapters/05.json",
+  "chapters/06.json",
+  "chapters/07.json",
+  "chapters/08.json",
+  "chapters/09.json",
+  "chapters/10.json",
+  "chapters/11.json",
+  "chapters/12.json",
+  "chapters/13.json",
+  "chapters/14.json",
+  "chapters/15.json",
+  "chapters/16.json",
+  "chapters/17.json",
+  "chapters/18.json",
+  "chapters/19.json",
+  "chapters/20.json",
+  "chapters/21.json",
+  "chapters/22.json",
+  "chapters/23.json",
+  "chapters/24.json"
+ ]
+}

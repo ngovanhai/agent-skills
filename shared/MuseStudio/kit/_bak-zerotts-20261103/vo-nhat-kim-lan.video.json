@@ -1,0 +1,198 @@
+{
+ "slug": "vo-nhat-kim-lan",
+ "title": "Vợ Nhặt Kim Lân: Cưới Vợ Bằng 4 Bát Bánh Đúc",
+ "voice": "Lóng",
+ "target_min": [
+  20,
+  30
+ ],
+ "names": "Kim Lân, Nguyễn Văn Tài, Tràng, bà cụ Tứ, thị, xóm ngụ cư, Phù Lưu, Từ Sơn, Bắc Ninh, Thái Bình, Nam Định, Hà Nam, Ninh Bình, Kim Sơn, Quần Mục, Tây Lương, Hải Phòng, Phủ Lý, Thái Nguyên, Bắc Giang, Văn Tạo, Furuta Motoo, Võ An Ninh, Nguyễn Quang Ân, Decoux, Ất Dậu, chè khoán, đống rấm, dạm ngõ, Con chó xấu xí, Làng Vũ Đại, lão Hạc, Chí Phèo, chị Dậu, Tiền Phong",
+ "bgm": "assets/nhac-gay.mp3",
+ "bgm_volume": 0.06,
+ "theme": "giay-do",
+ "cast": {
+  "trang": {
+   "svg": "chars/trang.svg",
+   "name": "Tràng"
+  },
+  "trang-lo": {
+   "svg": "chars/trang-lo.svg",
+   "name": "Tràng"
+  },
+  "thi": {
+   "svg": "chars/thi.svg",
+   "name": "Thị"
+  },
+  "thi-cong": {
+   "svg": "chars/thi-cong.svg",
+   "name": "Thị"
+  },
+  "thi-sang": {
+   "svg": "chars/thi-sang.svg",
+   "name": "Thị"
+  },
+  "batu": {
+   "svg": "chars/batu.svg",
+   "name": "Bà cụ Tứ"
+  },
+  "batu-khoc": {
+   "svg": "chars/batu-khoc.svg",
+   "name": "Bà cụ Tứ"
+  },
+  "batu-cuoi": {
+   "svg": "chars/batu-cuoi.svg",
+   "name": "Bà cụ Tứ"
+  },
+  "kimlan": {
+   "svg": "chars/kimlan.svg",
+   "name": "Kim Lân"
+  },
+  "treem": {
+   "svg": "chars/treem.svg",
+   "name": "Trẻ con xóm ngụ cư"
+  },
+  "nguoidoi": {
+   "svg": "chars/nguoidoi.svg",
+   "name": "Người đói"
+  },
+  "voanninh": {
+   "svg": "chars/voanninh.svg",
+   "name": "Võ An Ninh"
+  },
+  "nhasu": {
+   "svg": "chars/nhasu.svg",
+   "name": "Nhà sử học"
+  },
+  "batbanhduc": {
+   "svg": "chars/batbanhduc.svg",
+   "name": "Bát bánh đúc"
+  },
+  "noichao": {
+   "svg": "chars/noichao.svg",
+   "name": "Nồi cháo cám"
+  }
+ },
+ "creative": {
+  "frame": {
+   "name": "sổ lễ cưới của ông mối không ai mời: một đám cưới năm Ất Dậu đủ bảy lễ mà không có lễ nào, mỗi lễ đổi bằng một thứ của năm đói",
+   "analysis": "Lõi của Vợ nhặt là một đám cưới diễn ra giữa nạn đói: mọi nghi lễ cưới hỏi bị cái đói thay bằng thứ rẻ nhất (câu hò thay dạm ngõ, bốn bát bánh đúc thay thách cưới, nồi cháo cám thay cỗ cưới). Cảm xúc đi từ rợn và chua chát sang ấm, rồi tới hy vọng ở lá cờ. Người đứng gần nhất để kể là một ông mối, kẻ thuộc làu các lễ nên thấy rõ lễ nào bị đổi bằng gì. Khoảnh khắc đắt nhất là bốn bát bánh đúc, nên mở bằng nó. Chuyện thật (nạn đói, con số, Kim Lân, bản thảo mất) là những tờ giấy xám kẹp vào sổ lễ đúng lúc truyện cần.",
+   "axis": "bảy lễ của một đám cưới truyền thống theo đúng thứ tự (dạm ngõ, thách cưới, đồ dẫn cưới, rước dâu, ra mắt, động phòng, cỗ cưới); mỗi lễ mở bằng một thiếp giấy điều ghi theo lệ, dán đè mảnh giấy xám ghi năm Ất Dậu đã đổi nó thành gì; chuyện thật là năm tờ giấy xám kẹp giữa sổ",
+   "open": "bốn bát bánh đúc rơi lên mâm đồng từng bát, chữ Hỷ giấy điều bung lên rồi bị tro xám nuốt, triện ẤT DẬU 1945; câu hỏi ai lại cưới vợ khi cả xóm chết đói, người vợ nhặt có thật không; Tèo chào một câu khi đang mở sổ lễ",
+   "close": "vòng về mâm đồng bốn bát không: không phải giá một người vợ mà là bữa ăn đầu tiên của hai người quyết sống; trả lời câu hỏi có thật không bằng lời Kim Lân cu Tràng cũng là tôi; ông mối cuối cùng đọc trọn bài chúc cưới đã bị cắt ngang suốt video",
+   "segments": [
+    "Lễ 1 dạm ngõ: câu hò trên đường kéo xe thóc, thị đẩy xe, xóm ngụ cư",
+    "Giấy xám 1: nạn đói Ất Dậu, Thái Bình, nhổ lúa trồng đay, thóc, đường gạo",
+    "Lễ 2 thách cưới: lần gặp lại, bốn bát bánh đúc, câu đùa, chậc kệ",
+    "Lễ 3 đồ dẫn cưới: cái thúng con, hai hào dầu; giấy xám 2: Kim Lân là ai",
+    "Lễ 4 rước dâu: đường về xóm, trẻ con reo, xóm ngẩng lên, căn lều",
+    "Giấy xám 3: hai triệu hay bao nhiêu, khảo sát Văn Tạo Furuta, Hà Nội, Võ An Ninh",
+    "Lễ 5 ra mắt: bà cụ Tứ, phải duyên phải kiếp, người già nói chuyện sống",
+    "Lễ 6 động phòng: đèn dầu, sáng hôm sau; giấy xám 4: bản thảo Xóm ngụ cư mất, in 1962",
+    "Lễ 7 cỗ cưới: cháo cám chè khoán, trống thúc thuế, kho thóc, lá cờ",
+    "Giấy xám 5 và kết: phá kho thóc có thật, người vợ nhặt có thật không, bài chúc trọn vẹn"
+   ]
+  },
+  "voice_role": "ông mối già không ai mời của xóm ngụ cư, cầm cuốn sổ lễ bìa đỏ; năm đói chẳng ai cưới nên thất nghiệp, tự đi theo đám cưới anh Tràng để ghi đủ bảy lễ; nói chậm, hay mở bằng theo lệ thì rồi tự đổi sang năm nay thì, gọi Tràng là anh cu Tràng, gọi thị là cô dâu không tên, cứ định đọc bài chúc cưới là bị cắt ngang",
+  "style": "kể trọn truyện theo bảy lễ cưới, mỗi lễ một thiếp giấy điều bị dán đè mảnh giấy xám năm Ất Dậu, chuyện thật kẹp giữa sổ lễ thành những tờ giấy xám",
+  "motif": "thiếp cưới giấy điều nhũ vàng, chữ Hỷ cắt giấy, triện son, mâm đồng, bát bánh đúc, nồi cháo cám, giấy bản xám tro, khói đống rấm, quạ trên cây gạo",
+  "hook": "một cái giá không tưởng: người vợ đổi bằng bốn bát bánh đúc, đặt từng bát lên mâm cưới",
+  "hook_visual": "mâm đồng giữa khung, bốn bát bánh đúc rơi nảy xuống theo từng tiếng đếm, chữ Hỷ giấy điều bung sau mâm rồi lớp tro xám quét ngang nuốt màu đỏ, triện ẤT DẬU 1945 đóng góc trên",
+  "palette": "xám tro giấy bản và đỏ giấy điều nhũ vàng",
+  "signature_fx": [
+   "fog",
+   "light-leak",
+   "vignette"
+  ],
+  "gag": "bài chúc cưới của ông mối Tèo bị cắt ngang ở mỗi lễ (chưa tới lúc, xe đi mất, bà cụ khóc, trống thúc thuế), cuối video mới đọc trọn",
+  "visual": {
+   "medium": "thiếp cưới giấy điều nhũ vàng, chữ Hỷ cắt giấy và triện son đặt trên nền giấy bản xám tro của năm đói",
+   "why": "Vợ nhặt là đám cưới bị cái đói tước hết lễ nghi, nên màu đỏ hỷ sự đặt chồng lên màu tro nạn đói tự nói lên cái nghịch lý của truyện",
+   "layout": "thiếp đỏ hoặc mảnh giấy xám ở giữa, nhân vật đứng thấp ở một bên, góc trên phải là thẻ sổ lễ đếm 7 chấm, chữ đặt trên dải giấy điều",
+   "palette": [
+    "#CFC8BA",
+    "#C21F2B",
+    "#D9A93B",
+    "#2B2926",
+    "#EFE8D8"
+   ],
+   "font": "Marion (tiêu đề, trích văn) + Brush Script (chữ bút lông) + Phosphate (triện, con số)",
+   "kit": "scenes/_thiep.mjs",
+   "scene_kit": [
+    "hook-mam: hook bốn bát trên mâm đồng",
+    "thiep: mở mỗi lễ cưới, theo lệ và năm Ất Dậu",
+    "xom: cảnh truyện ở xóm, chợ tỉnh, sân, trong lều",
+    "loi: câu văn gốc trên giấy bản kẻ dòng + chân dung tròn",
+    "the-ten: thẻ tên kiểu thiếp cưới giới thiệu nhân vật",
+    "mat: cận mặt nhân vật + chữ cảm xúc bút lông",
+    "con-so: con số đóng triện + hàng bát đầy/rỗng",
+    "ban-do: bản đồ Bắc Bộ, vết mực loang",
+    "anh-tu-lieu: ảnh tư liệu vẽ chì than, chú thích, nguồn",
+    "doi-chieu: hai cột giấy điều và giấy xám",
+    "so-mo: sổ lễ của ông mối + gag bài chúc",
+    "mon-an: cận đồ vật: bánh đúc, cháo cám, thúng, đèn dầu",
+    "to-hong: dòng thời gian trên sợi tơ hồng"
+   ]
+  }
+ },
+ "thumbnail": {
+  "text": "Giá một người vợ?",
+  "highlight": "người vợ",
+  "who": [
+   "thi"
+  ],
+  "prop": "batbanhduc",
+  "circle": true,
+  "circle_x": 250,
+  "circle_y": 330,
+  "circle_r": 390,
+  "arrow": false,
+  "badge": "?",
+  "bg": "red",
+  "layout": "classic",
+  "prop_rot": -6
+ },
+ "publish": {
+  "titles": [
+   "Vợ Nhặt Kim Lân: Cưới Vợ Bằng 4 Bát Bánh Đúc",
+   "Vợ Nhặt Kim Lân Và Sự Thật Nạn Đói 1945",
+   "Vợ Nhặt Là Có Thật? Kim Lân Kể Năm Đói 1945"
+  ],
+  "description": "Vợ Nhặt của Kim Lân kể chuyện anh cu Tràng cưới vợ bằng bốn bát bánh đúc, đúng giữa nạn đói Ất Dậu 1945. Người vợ nhặt ấy có thật không, và nạn đói trong truyện thật đến mức nào?\n\nTèo làm ông mối không ai mời của xóm ngụ cư, đi theo đám cưới này đủ bảy lễ và kể trọn truyện: câu hò trên đường kéo xe thóc, bốn bát bánh đúc ở chợ tỉnh, cái thúng con và hai hào dầu, đường rước dâu qua xóm ngụ cư, bà cụ Tứ với câu “u cũng mừng lòng”, ngọn đèn dầu đêm tân hôn, nồi cháo cám bà gọi là “chè khoán”, tiếng trống thúc thuế và lá cờ đỏ trên đê.\n\nXen giữa là chuyện thật ngoài trang sách: nạn đói Ất Dậu 1944–1945 (Thái Bình mất khoảng 280 nghìn người; nhổ lúa trồng đay; con số hai triệu và các ước tính khác nhau; khảo sát của Văn Tạo và Furuta Motoo), Kim Lân là ai (Nguyễn Văn Tài, 1920–2007, từng đóng vai lão Hạc), bản thảo tiểu thuyết Xóm ngụ cư bị mất và truyện ngắn in năm 1962 trong tập Con chó xấu xí.\n\nNếu được đứng trong đám cưới ấy, bạn sẽ chúc anh Tràng câu gì? Viết vào bình luận, và đăng ký kênh để đi cùng Tèo tới những câu chuyện sau.",
+  "hashtags": [
+   "VoNhat",
+   "KimLan",
+   "VanHocVietNam",
+   "NanDoi1945"
+  ],
+  "tags": [
+   "vợ nhặt kim lân",
+   "vợ nhặt",
+   "kim lân vợ nhặt",
+   "tóm tắt vợ nhặt",
+   "vợ nhặt kim lân tóm tắt",
+   "vợ nhặt là có thật",
+   "kim lân",
+   "nạn đói 1945",
+   "nạn đói ất dậu",
+   "sự thật nạn đói 1945",
+   "vì sao có nạn đói 1945",
+   "ngữ văn 11",
+   "văn học việt nam",
+   "vo nhat kim lan",
+   "nan doi 1945"
+  ],
+  "notes": "1) Toàn văn truyện còn bản quyền, không có trên Wikisource: các câu trích ngắn (câu hò 'Muốn ăn cơm trắng mấy giò này…', 'Cái đói đã tràn đến xóm này tự lúc nào', 'Chè khoán đây, ngon đáo để cơ', 'u cũng mừng lòng', 'Bây giờ hắn mới thấy hắn nên người', 'Người ta có gặp bước khó khăn…') lấy theo các trang văn mẫu/SGK, nên đối chiếu bản in SGK nếu cần. Lời Tràng mời về và lời thị kể chuyện phá kho thóc nói là 'đại ý'. 2) 'Cu Tràng cũng là tôi', mẹ ông tên Tam: chỉ một bài phỏng vấn gốc (Tiền Phong 2007, Tuổi Trẻ đăng lại) — video ghi rõ nguồn và 'đại ý'. 3) Số người chết: video nêu thang ước tính (~300 nghìn phía Nhật 1959, ~400 nghìn Huế 5/1945, ~500 nghìn báo cáo Pháp, ~1 triệu Decoux, hơn 2 triệu Tuyên ngôn) và chốt 'khoảng nửa triệu tới hai triệu'. 4) Thái Bình ~280 nghìn (~1/4 dân số), Kim Sơn 22.908 người / 1.571 trong 6.161 hộ chết hết, Quần Mục 1.206/2.052 (58,77%), Tây Lương ~2/3: theo Nhân Dân, VTC News, Báo Lào Cai (Nguyễn Quang Ân). Hà Nam ~50 nghìn, Ninh Bình ~38 nghìn. 5) Đay 5.000 ha (1940) → 45.000 ha (1944): Wikipedia + Nhân Dân. Miền Nam đốt lúa thay than: Wikipedia + LSVN. 6) Kim Lân 1/8/1920 – 20/7/2007; Giải thưởng Nhà nước 2001; vai lão Hạc trong 'Làng Vũ Đại ngày ấy'. 'Học tới tiểu học' (Wikipedia; ông tự nói trượt tốt nghiệp tiểu học). 7) Truyện không có địa danh xóm ngụ cư; video chỉ nói 'có lẽ mang dáng những làng quanh vùng ông sống'. Không có nguyên mẫu người vợ nhặt được xác nhận. 8) Ảnh Võ An Ninh không đưa lên video, chỉ nhắc."
+ },
+ "chapters": [
+  "chapters/01.json",
+  "chapters/02.json",
+  "chapters/03.json",
+  "chapters/04.json",
+  "chapters/05.json",
+  "chapters/06.json",
+  "chapters/07.json",
+  "chapters/08.json",
+  "chapters/09.json",
+  "chapters/10.json"
+ ]
+}

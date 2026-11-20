@@ -24,3 +24,7 @@ desktop.ini
 **/*.log.done
 **/job-runs/
 **/thu-*.wav
+
+# Caches do công cụ sinh ra (máy nào cũng tự dựng lại được)
+**/.hyperframes/
+**/.cache/

@@ -1,0 +1,206 @@
+{
+ "slug": "chi-pheo-co-that",
+ "title": "Chí Phèo Có Thật Không? Ai Giết Bá Kiến?",
+ "voice": "Lóng",
+ "target_min": [
+  20,
+  30
+ ],
+ "names": "Chí Phèo, Bá Kiến, Thị Nở, Lý Cường, Đội Tảo, Năm Thọ, binh Chức, tư Đạm, bát Tùng, Vũ Đại, Đại Hoàng, Nam Cao, Trần Hữu Tri, Nam Sang, Cao Đà, Lý Nhân, Hà Nam, Nam Lý, Ninh Bình, Hoàng Đan, Thụy Khuê, Đời Mới, Đôi lứa xứng đôi, Luống cày, Cái lò gạch cũ, Lê Văn Trương, Trần Thị Hồng, Trần Duy Bính, Bá Bính, Trần Thị Nở, Thìn, Trinh, Đào, Phạm Văn Khoa, Bùi Cường, Đức Lưu, Làng Vũ Đại ngày ấy, Lão Hạc, Sống mòn, Février",
+ "bgm": "playful-pizzicato.mp3",
+ "bgm_volume": 0.06,
+ "theme": "noir",
+ "cast": {
+  "chipheo": {
+   "svg": "chars/chipheo.svg",
+   "name": "Chí Phèo"
+  },
+  "chipheo-gian": {
+   "svg": "chars/chipheo-gian.svg",
+   "name": "Chí Phèo"
+  },
+  "chipheo-buon": {
+   "svg": "chars/chipheo-buon.svg",
+   "name": "Chí Phèo"
+  },
+  "chipheo-tre": {
+   "svg": "chars/chipheo-tre.svg",
+   "name": "Chí (năm 20 tuổi)"
+  },
+  "bakien": {
+   "svg": "chars/bakien.svg",
+   "name": "Bá Kiến"
+  },
+  "bakien-cuoi": {
+   "svg": "chars/bakien-cuoi.svg",
+   "name": "Bá Kiến"
+  },
+  "thino": {
+   "svg": "chars/thino.svg",
+   "name": "Thị Nở"
+  },
+  "thino-gian": {
+   "svg": "chars/thino-gian.svg",
+   "name": "Thị Nở"
+  },
+  "baco": {
+   "svg": "chars/baco.svg",
+   "name": "Bà cô Thị Nở"
+  },
+  "baba": {
+   "svg": "chars/baba.svg",
+   "name": "Bà ba"
+  },
+  "lycuong": {
+   "svg": "chars/lycuong.svg",
+   "name": "Lý Cường"
+  },
+  "doitao": {
+   "svg": "chars/doitao.svg",
+   "name": "Đội Tảo"
+  },
+  "namcao": {
+   "svg": "chars/namcao.svg",
+   "name": "Nam Cao"
+  },
+  "nongdan": {
+   "svg": "chars/nongdan.svg",
+   "name": "Người làng"
+  },
+  "luatsu": {
+   "svg": "chars/luatsu.svg",
+   "name": "Bên bào chữa"
+  },
+  "kiemsat": {
+   "svg": "chars/kiemsat.svg",
+   "name": "Bên buộc tội"
+  },
+  "batchao": {
+   "svg": "chars/batchao.svg",
+   "name": "Bát cháo hành"
+  }
+ },
+ "creative": {
+  "frame": {
+   "name": "hồ sơ đánh máy giấy than của một phiên toà giả định mở lại vụ án làng Vũ Đại, mỗi phần là một bước tố tụng và mỗi tờ là một bản sao tím",
+   "analysis": "Lõi chuyện là một vụ án có hung thủ rõ ràng nhưng câu hỏi 'ai thật sự có lỗi' thì người đọc cãi nhau gần một trăm năm, và chính văn bản tự gọi nó là vụ án, có cả chi tiết làng làm biên bản. Người xem tìm 'Chí Phèo có thật không' và 'Chí Phèo là ai', nên phần giám định nguyên mẫu nằm giữa phiên toà. Cảm xúc đi từ tò mò, sang ghê sợ một con quỷ dữ, rồi thương khi có bát cháo hành, rồi nghẹn ở câu 'Ai cho tao lương thiện', cuối cùng là câu hỏi để ngỏ. Người đứng gần nhất để kể là người ghi biên bản: thấy hết, không được phán. Trình tự tố tụng tự nhiên chia chất liệu thành lý lịch, tang vật, lời khai, giám định, nhân chứng, hiện trường, tranh luận, nghị án, và vẫn giữ được thứ tự cốt truyện để kể trọn.",
+   "axis": "đi theo các bước của một phiên toà: lý lịch bị cáo, tang vật, lời khai nạn nhân, giám định nguyên mẫu, nhân chứng Thị Nở và bà cô, dựng lại hiện trường, tranh luận bốn bàn tay bị đổ tội, rồi nghị án bằng năm lá phiếu; trong mỗi bước, cốt truyện vẫn chạy xuôi từ lò gạch tới lò gạch",
+   "open": "câu nói của nhân vật 'Ai cho tao lương thiện?' được gõ to kín tờ giấy, ảnh bát cháo hành kẹp ghim, hai thẻ tên đóng dấu cùng chết, búa toà đập xuống mở lại hồ sơ; một câu hỏi ai thật sự giết Bá Kiến; lời hứa năm lá phiếu cuối video; Tèo chào một câu sau máy chữ rồi ghi ngay dòng đầu: bị cáo sinh ở một cái lò gạch cũ",
+   "close": "nhân chứng còn sống nói lời sau cùng, câu cuối truyện về cái lò gạch đặt cạnh câu đầu thành một vòng tròn, bát cháo hành không trả về ai, năm lá phiếu lật lên nhưng toà không tuyên án, máy chữ lần đầu gõ trọn chữ lương thiện, rồi người xem bỏ lá phiếu của mình trong bình luận",
+   "segments": [
+    "lý lịch bị cáo: từ cái lò gạch bỏ không, qua những bàn tay nuôi, tới canh điền nhà lý Kiến, bà ba và tờ giải huyện bị thiếu",
+    "tang vật là một con người: hình dạng người về từ nhà tù, vỏ chai và mảnh chai ăn vạ ở cổng nhà cụ bá, câu có họ và một đồng bạc",
+    "lời khai của nạn nhân đã chết: mềm nắn rắn buông, hồ sơ Năm Thọ và binh Chức, món nợ đội Tảo, năm sào vườn bãi sông",
+    "giám định: làng Đại Hoàng, Nam Cao là ai, ba cái tên của truyện, ba nguyên mẫu, ngôi nhà Bá Bính và cái kết hư cấu",
+    "nhân chứng Thị Nở: đêm trăng vườn chuối, buổi sáng tỉnh rượu đầu tiên, bát cháo hành và cơn thèm lương thiện",
+    "năm ngày chẵn và lời khai của bà cô, tới lúc bị cáo hít thấy hơi cháo hành rồi uống tới say mềm",
+    "dựng lại hiện trường trưa nắng: con đường thẳng tới nhà cụ bá, năm hào không ai nhặt, câu hỏi cuối cùng và lời làng bàn tán",
+    "tranh luận: bên buộc tội chỉ con dao, bên bào chữa chỉ bốn bàn tay Bá Kiến, nhà tù, cả làng, bà cô; đời sau của cái tên và người viết",
+    "nghị án: lời sau cùng của Thị Nở, cái lò gạch cũ khép vòng, tang vật không trả về ai, năm lá phiếu và lá của người xem"
+   ]
+  },
+  "voice_role": "thư ký phiên toà giả định, ngồi máy chữ kèm giấy than ghi biên bản vụ án làng Vũ Đại; được ghi mà không được phán, nói gọn và đều như nhịp phím, mở mỗi đoạn bằng 'ghi vào biên bản' hay 'toà ghi', gọi người xem là các bạn bồi thẩm khi bỏ phiếu, gọi Bá Kiến là cụ bá như người làng; cái máy chữ cũ của thư ký cứ tới chữ lương thiện là kẹt phím",
+  "style": "mỗi đoạn là một tờ trong tập hồ sơ dưới ngọn đèn bàn: biên bản đánh máy hiện từng dòng theo nhịp phím, ảnh tang vật đen trắng ngả tím kẹp ghim, dấu mộc tím đóng xuống, bút chì đỏ khoanh chữ, sơ đồ làng kẻ ô",
+  "motif": "máy chữ và giấy than tím, ảnh tang vật đánh số, dấu mộc tím, cân đồng của toà, sơ đồ làng Vũ Đại bút chì đỏ, bát cháo hành bốc khói, cái lò gạch bỏ không",
+  "hook": "câu nói của nhân vật gõ máy chữ to kín trang: lời thoại nổi tiếng nhất của truyện mở trước, rồi tang vật, rồi búa toà mở lại vụ án",
+  "hook_visual": "tờ giấy kẹp trên trục máy chữ chiếm gần trọn khung, chữ AI CHO TAO / LƯƠNG THIỆN? gõ to từng dòng làm máy rung, bút chì đỏ gạch chân, ảnh bát cháo hành trượt vào góc phải, hai thẻ tên bị dấu CÙNG CHẾT đóng lên, búa toà giáng xuống và dấu HỒ SƠ MỞ LẠI đập giữa trang",
+  "palette": "giấy pelure trắng xám và mực than tím trên mặt bàn gỗ tối, điểm bút chì đỏ và ánh đèn bàn vàng",
+  "signature_fx": [
+   "spotlight",
+   "glitch",
+   "vignette"
+  ],
+  "gag": "máy chữ của thư ký gõ được mọi chữ, kể cả vượt ngục hay đâm chết, nhưng cứ tới chữ lương thiện là kẹt phím; tới cuối phiên mới gõ trọn được, khi thư ký hiểu chữ ấy không ai gõ hộ được cho ai",
+  "visual": {
+   "medium": "tập hồ sơ vụ án đánh máy kèm giấy than thời Pháp thuộc trên bàn toà: tờ pelure, chữ máy chữ mực tím, ảnh tang vật kẹp ghim, dấu mộc tím, sơ đồ hiện trường bút chì, cân đồng",
+   "why": "chính văn bản gọi cái chết của Bá Kiến là vụ án và có chi tiết làng làm biên bản, nên câu chuyện tự nó trông như một tập hồ sơ được lật lại; người kể là người ghi biên bản",
+   "layout": "tờ hồ sơ nằm hơi nghiêng chiếm phần lớn khung dưới vòng đèn bàn, chữ đánh máy căn trái có lề bút chì đỏ, ảnh tang vật hoặc thẻ số kẹp bên phải; cảnh phòng xử dùng vách gỗ, bục nhân chứng bên trái hoặc phải, máy chữ của thư ký ở góc dưới",
+   "palette": [
+    "#3B2F6B",
+    "#F1EEE6",
+    "#2B2530",
+    "#C2412F",
+    "#F4C762",
+    "#CDAE6A"
+   ],
+   "font": "Superclarendon (tiêu đề, số, dấu) + American Typewriter (chữ đánh máy) + Noteworthy (ghi chú bút chì)",
+   "kit": "scenes/_hoso.mjs",
+   "scene_kit": [
+    "hook-may-chu: hook, câu thoại gõ to kín trang + tang vật + búa toà",
+    "mo-phien: mở mỗi phần phiên toà, bìa hồ sơ xi măng, số phần, búa gõ",
+    "bien-ban: tờ biên bản đánh máy từng dòng, khoanh/gạch bút chì, số lớn, dòng kẹt phím",
+    "tang-vat: ảnh tang vật kẹp ghim có thẻ số, phiếu mô tả, bút chì khoanh",
+    "ly-lich: phiếu lý lịch giới thiệu nhân vật, ảnh dán, các ô đánh máy, dấu tím",
+    "nhan-chung: bục nhân chứng trong phòng xử, lời khai trên phiếu đánh máy",
+    "toa: Tèo thư ký ngồi máy chữ trong phòng xử, bong bóng, gag kẹt phím",
+    "so-do: sơ đồ làng Vũ Đại hoặc Hà Nam – Ninh Bình trên giấy kẻ ô, ghim số, đường đi bút chì đỏ",
+    "can: cân đồng của toà, quả cân giấy rơi vào đĩa, đòn nghiêng theo lý lẽ",
+    "doi-chieu: hai bản sao giấy than đặt cạnh nhau, dấu bằng/khác/hỏi",
+    "trich: trang sách cũ xé mép, câu trích in to, gạch chân bút chì",
+    "phieu: lá phiếu bồi thẩm lật lên, lá trống cho người xem"
+   ]
+  }
+ },
+ "thumbnail": {
+  "text": "Ai cho tao lương thiện?",
+  "highlight": "lương thiện",
+  "who": [
+   "chipheo-buon"
+  ],
+  "prop": "batchao",
+  "layout": "closeup",
+  "circle_x": 40,
+  "circle_y": 330,
+  "circle_r": 360,
+  "arrow": false,
+  "badge": false,
+  "bg": "noir",
+  "series": "Văn học Việt"
+ },
+ "publish": {
+  "titles": [
+   "Chí Phèo Có Thật Không? Ai Giết Bá Kiến?",
+   "Chí Phèo Là Ai? Bị Bỏ Ở Lò Gạch, Chết Ở Nhà Bá Kiến",
+   "Phiên Tòa Giả Định: Ai Giết Bá Kiến Trong Chí Phèo?"
+  ],
+  "description": "Chí Phèo có thật không? Làng Vũ Đại có thật: đó là làng Đại Hoàng, quê nhà văn Nam Cao, và theo lời con gái nhà văn kể, Chí Phèo được ghép từ ba người có thật trong làng. Nhưng vụ án ở nhà Bá Kiến thì sao?\n\nMột tập trong loạt \"Văn học Việt Nam nổi tiếng\". Tèo làm thư ký một phiên toà giả định, mở lại hồ sơ vụ án làng Vũ Đại và kể trọn truyện ngắn Chí Phèo của Nam Cao: đứa bé bị bỏ ở cái lò gạch cũ, anh canh điền nhà lý Kiến, bảy tám năm biệt tăm, người trở về rạch mặt ăn vạ, mưu \"mềm nắn rắn buông\" của Bá Kiến, Năm Thọ, binh Chức, đội Tảo, đêm trăng vườn chuối, bát cháo hành của Thị Nở, năm ngày chẵn, lời của bà cô, và câu hỏi \"Ai cho tao lương thiện?\".\n\nVideo có cả phần giám định: Nam Cao là ai (tên thật Trần Hữu Tri), vì sao truyện từng mang tên \"Cái lò gạch cũ\" và \"Đôi lứa xứng đôi\", Chí Phèo tên thật là gì, ngôi nhà Bá Bính ở Đại Hoàng, phim \"Làng Vũ Đại ngày ấy\" năm 1982. Cuối video là năm lá phiếu: Bá Kiến, nhà tù, cả làng Vũ Đại, bà cô Thị Nở, hay chính Chí Phèo?\n\nNếu là bồi thẩm, bạn bỏ phiếu cho ai? Viết vào bình luận và đăng ký kênh để xem các tác phẩm tiếp theo trong loạt văn học Việt Nam.",
+  "hashtags": [
+   "ChiPheo",
+   "NamCao",
+   "VanHocVietNam",
+   "PhienToaGiaDinh"
+  ],
+  "tags": [
+   "chí phèo có thật không",
+   "chí phèo là ai",
+   "chí phèo",
+   "nam cao",
+   "bá kiến",
+   "bá kiến chí phèo",
+   "chí phèo và thị nở",
+   "phiên tòa giả định",
+   "chí phèo tên thật là gì",
+   "chí phèo giết bá kiến",
+   "tóm tắt chí phèo",
+   "chí phèo tóm tắt",
+   "nam cao truyện ngắn",
+   "văn học việt nam",
+   "ngữ văn 11",
+   "chi pheo co that khong",
+   "chi pheo",
+   "nam cao"
+  ],
+  "notes": "1) Nguyên mẫu (ông Chí, ông Trinh, ông Đào; chánh tổng Trần Duy Bính; bà Trần Thị Nở, cô Thìn) và chuyện 'người thật đi biệt tích, không đâm chém Bá Kiến' chủ yếu dựa vào sách của bà Trần Thị Hồng (con gái Nam Cao) qua báo Zing và vi.wikipedia; video luôn nói 'theo con gái nhà văn / người làng kể'. 2) Chuyện chữ 'Phèo' ('đi phèo') cũng theo lời kể đó. 3) Năm in lại trong Luống cày: nguồn lệch 1945/1946, video nói 'khoảng 1945, 1946'. 4) 'Lê Văn Trương đặt tên Đôi lứa xứng đôi' chỉ 1 nguồn, video nói 'có tài liệu nói'. 5) Nam Cao sinh 1915 (giấy khai sinh ghi 1917), hy sinh cuối tháng 11/1951 ở vùng Hoàng Đan; ngày cụ thể các nguồn lệch (30 hay 28/11), video chỉ nói 'cuối tháng 11'. 6) Đại Hoàng nay thuộc xã Nam Lý, tỉnh Ninh Bình (sau sắp xếp 2025) theo Báo Lào Cai 11/2025 và vi.wikipedia: kiểm lại tên xã trước khi đăng. 7) Nhà Bá Bính '3 gian, 16 cột lim' theo báo chí. 8) Các câu trích đối chiếu bản in 1941 trên vi.wikisource (chính tả cũ có gạch nối, video viết chính tả nay). 9) Phiên toà là giả định; lời khai của nhân vật đều lấy từ văn bản hoặc diễn ý. Có chi tiết tự kết liễu: video không tả, chỉ nói một câu."
+ },
+ "chapters": [
+  "chapters/01.json",
+  "chapters/02.json",
+  "chapters/03.json",
+  "chapters/04.json",
+  "chapters/05.json",
+  "chapters/06.json",
+  "chapters/07.json",
+  "chapters/08.json",
+  "chapters/09.json"
+ ]
+}

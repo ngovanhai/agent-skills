@@ -1,0 +1,205 @@
+{
+  "slug": "lua-dao-lon-nhat-lich-su",
+  "title": "Vụ Lừa Đảo Tài Chính Lớn Nhất Lịch Sử Là Vụ Nào? | Tèo Kể",
+  "voice": "Lóng",
+  "target_min": [
+    55,
+    65
+  ],
+  "names": "Victor Lustig, Eiffel, André Poisson, Al Capone, George Parker, Brooklyn, Han van Meegeren, Vermeer, Göring, Konrad Kujau, Stern, Heidemann, Charles Ponzi, Boston, Gregor MacGregor, Poyais, Sergei Mavrodi, MMM, Bernie Madoff, Markopolos, Elizabeth Holmes, Theranos, Anna Sorokin, Frank Abagnale",
+  "theme": "giay-do",
+  "cast": {
+    "lustig": {
+      "svg": "chars/lustig.svg",
+      "name": "Victor Lustig"
+    },
+    "parker": {
+      "svg": "chars/parker.svg",
+      "name": "George C. Parker"
+    },
+    "meegeren": {
+      "svg": "chars/meegeren.svg",
+      "name": "Han van Meegeren"
+    },
+    "goring": {
+      "svg": "chars/goring.svg",
+      "name": "Hermann Göring"
+    },
+    "kujau": {
+      "svg": "chars/kujau.svg",
+      "name": "Konrad Kujau"
+    },
+    "ponzi": {
+      "svg": "chars/ponzi.svg",
+      "name": "Charles Ponzi"
+    },
+    "macgregor": {
+      "svg": "chars/macgregor.svg",
+      "name": "Gregor MacGregor"
+    },
+    "mavrodi": {
+      "svg": "chars/mavrodi.svg",
+      "name": "Sergei Mavrodi"
+    },
+    "madoff": {
+      "svg": "chars/madoff.svg",
+      "name": "Bernie Madoff"
+    },
+    "markopolos": {
+      "svg": "chars/markopolos.svg",
+      "name": "Harry Markopolos"
+    },
+    "holmes": {
+      "svg": "chars/holmes.svg",
+      "name": "Elizabeth Holmes"
+    },
+    "abagnale": {
+      "svg": "chars/abagnale.svg",
+      "name": "Frank Abagnale"
+    },
+    "sorokin": {
+      "svg": "chars/sorokin.svg",
+      "name": "Anna Sorokin"
+    },
+    "eiffel": {
+      "svg": "chars/eiffel.svg",
+      "name": "Tháp Eiffel"
+    }
+  },
+  "chapters": [
+    "chapters/01.json",
+    "chapters/02.json",
+    "chapters/03.json",
+    "chapters/04.json",
+    "chapters/05.json",
+    "chapters/06.json",
+    "chapters/07.json",
+    "chapters/08.json",
+    "chapters/09.json",
+    "chapters/10.json",
+    "chapters/11.json",
+    "chapters/12.json",
+    "chapters/13.json",
+    "chapters/14.json",
+    "chapters/15.json",
+    "chapters/16.json",
+    "chapters/17.json",
+    "chapters/18.json",
+    "chapters/19.json",
+    "chapters/20.json",
+    "chapters/21.json",
+    "chapters/22.json",
+    "chapters/23.json",
+    "chapters/24.json"
+  ],
+  "creative": {
+    "frame": {
+      "name": "quầy thẩm định những món đồ không có thật",
+      "analysis": "Mỗi vụ lừa lớn để lại một món đồ mà nạn nhân trả tiền thật để mua; lõi chuyện là khoảng cách giữa giá đã trả và giá thật, người xem muốn biết vì sao người khôn vẫn bị lừa và mánh đó hôm nay còn không.",
+      "axis": "từng món đồ đặt lên quầy theo giá đã trả tăng dần, mỗi món: ai mang tới, mánh từng bước, lúc vỡ lở, kết cục, thẻ thẩm định, mánh này hôm nay",
+      "open": "tháp Eiffel đeo thẻ BÁN, Tèo đang lau kính lúp sau quầy",
+      "close": "món cuối là chiếc điện thoại của người xem với tin nhắn lãi 30% mỗi tháng, kính không mờ, định giá 0 đồng",
+      "segments": [
+        "Lustig bán tháp Eiffel",
+        "Parker và cầu Brooklyn: truyền thuyết và hồ sơ",
+        "Van Meegeren bán Vermeer giả cho Göring",
+        "Kujau và nhật ký Hitler",
+        "Ponzi và phiếu bưu chính",
+        "MacGregor bán nước Poyais",
+        "Mavrodi và MMM",
+        "Madoff 65 tỷ trên giấy",
+        "Holmes và một giọt máu",
+        "Abagnale: câu chuyện cũng là cú lừa",
+        "món đồ của người xem"
+      ]
+    },
+    "voice_role": "thợ thẩm định của một tiệm cầm đồ cuối phố, kính lúp kẹp một mắt, định giá mọi thứ, nói chậm rãi như đang soi từng chi tiết",
+    "gag": "kính lúp mờ hơi mỗi khi gặp món đẹp quá mức thật; lần cuối kính không mờ",
+    "style": "chậm rãi như thợ cầm đồ soi từng món, mỗi vụ chốt bằng một thẻ thẩm định",
+    "motif": "quầy kính tiệm cầm đồ, kính lúp kẹp một mắt, thẻ giá giấy kem buộc dây",
+    "hook": "hình đắt nhất trước: tháp Eiffel đeo thẻ BÁN, thẻ lật thành ĐÃ BÁN?",
+    "hook_visual": "tháp Eiffel chiếm trọn khung đêm Paris, thẻ BÁN đóng xuống rồi đung đưa, tiền rơi, hộp trống, bóng người mua cúi đầu, thẻ lật mặt",
+    "palette": "gỗ óc chó tối + đồng thau + nỉ xanh + nhung đỏ",
+    "signature_fx": [
+      "spotlight",
+      "verdict",
+      "glint"
+    ],
+    "visual": {
+      "medium": "quầy thẩm định của tiệm cầm đồ cuối phố",
+      "why": "mỗi vụ lừa để lại một món đồ nạn nhân trả tiền thật để mua, nên cả video là việc đặt từng món lên quầy và định giá",
+      "layout": "quầy kính ngang dưới khung, món đồ giữa khay nhung, Tèo sau quầy bên phải, thẻ giá treo phía trên; giấy tờ soi trên nỉ xanh",
+      "palette": [
+        "#2A1C14",
+        "#C9A045",
+        "#1F4A3A",
+        "#7A1F2B",
+        "#F2E6C9"
+      ],
+      "font": "Baskerville (tiêu đề) + Marker Felt (thẻ giá viết tay) + Courier New (giấy tờ)",
+      "kit": "scenes/_tiem.mjs",
+      "scene_kit": [
+        "hook-thap-ban: hook",
+        "quay: khách đặt món lên quầy",
+        "ho-so: hồ sơ khách",
+        "cac-buoc: vé cầm đồ từng bước",
+        "so-tien: thẻ giá khổng lồ",
+        "kinh-lup: soi chi tiết giấy tờ",
+        "ban-do: bản đồ giấy da + ghim",
+        "loi-noi: phiếu trích lời",
+        "doi-chieu: lời rao vs hồ sơ + cân",
+        "the-tham-dinh: thẻ chốt mỗi vụ",
+        "don-bay: sổ thẩm định 6 đòn bẩy",
+        "hom-nay: điện thoại tin nhắn số lạ"
+      ]
+    }
+  },
+  "bgm": "playful-pizzicato.mp3",
+  "thumbnail": {
+    "text": "Bán cả tháp Eiffel?",
+    "highlight": "Eiffel",
+    "who": [
+      "eiffel",
+      "lustig"
+    ],
+    "pose": "shock",
+    "bg": "teal",
+    "layout": "classic",
+    "circle": false,
+    "arrow": false,
+    "badge": false
+  },
+  "publish": {
+    "titles": [
+      "Những Vụ Lừa Đảo Lớn Nhất Lịch Sử Trong 65 Phút",
+      "Vụ Lừa Đảo Tài Chính Lớn Nhất Lịch Sử Là Vụ Nào?",
+      "Mô Hình Ponzi Là Gì? Vì Sao Người Khôn Vẫn Bị Lừa"
+    ],
+    "intro_label": "Bán cả tháp Eiffel",
+    "description": "Những vụ lừa đảo lớn nhất thế giới trong lịch sử, từ người bán tháp Eiffel tới 65 tỷ đô trên giấy của Madoff, được đặt lần lượt lên quầy thẩm định của Tèo.\n\nMột tiếng, mười một món đồ không có thật mà người ta đã trả tiền thật để mua: tháp Eiffel của Victor Lustig, cầu Brooklyn (truyền thuyết và hồ sơ), bức Vermeer giả bán cho Göring, Nhật ký Hitler của tạp chí Stern, phiếu bưu chính của Charles Ponzi, đất nước Poyais không tồn tại, vé MMM của Sergei Mavrodi, sao kê của Bernie Madoff, một giọt máu của Theranos, nữ thừa kế Anna Sorokin và câu chuyện Frank Abagnale. Mỗi món có một thẻ thẩm định: giá đã trả, giá thật và đòn bẩy tâm lý đứng sau.\n\nCuối video là món đồ có thể đang nằm trong túi bạn: một tin nhắn hứa lãi 30% mỗi tháng. Sáu đòn bẩy (uy quyền, gấp gáp, lòng tham, đám đông, khan hiếm, bí mật) và một câu hỏi bốn chữ để tự vệ.\n\nBạn từng nhận tin nhắn nào giống một món trên quầy? Kể cho Tèo ở phần bình luận, và đăng ký kênh để không lỡ món tiếp theo.",
+    "hashtags": [
+      "luadao",
+      "ponzi",
+      "lichsu",
+      "kechuyen"
+    ],
+    "tags": [
+      "những vụ lừa đảo lớn nhất thế giới",
+      "vụ lừa đảo lớn nhất thế giới",
+      "vụ lừa đảo tài chính lớn nhất lịch sử",
+      "những vụ lừa đảo lớn nhất lịch sử",
+      "bán tháp eiffel",
+      "victor lustig",
+      "mô hình ponzi",
+      "mô hình ponzi là gì",
+      "bernie madoff",
+      "theranos",
+      "mmm mavrodi",
+      "nhung vu lua dao lon nhat the gioi",
+      "lua dao lon nhat lich su",
+      "ban thap eiffel",
+      "lừa đảo trên mạng"
+    ],
+    "notes": "Kiểm lại trước khi đăng (từ research.md, mục Dữ kiện còn tranh cãi): (1) Lustig chỉ bán thành công một lần, lần hai bị báo cảnh sát; (2) chuyện Al Capone dựa vào lời kể; (3) số người chết ở Poyais là ước tính (hơn một nửa ~250 người); (4) Parker bán cầu Brooklyn là truyền thuyết, không hồ sơ gốc; (5) thời điểm Madoff bắt đầu: ít nhất hàng thập niên; (6) Abagnale còn sống và phủ nhận các cáo buộc trong sách Alan Logan; (7) số liệu thiệt hại MMM khác nhau giữa các nguồn; video KHÔNG nói MMM ở Việt Nam; (8) án Holmes giảm (3/2026) chỉ thấy trên Wikipedia en; (9) Holmes, Sorokin, Abagnale còn sống: giọng trung tính, chỉ nói điều toà án/hồ sơ ghi. Mục COPPA (Dành cho trẻ em) do chủ kênh quyết."
+  }
+}

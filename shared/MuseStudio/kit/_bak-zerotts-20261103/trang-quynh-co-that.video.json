@@ -1,0 +1,207 @@
+{
+  "slug": "trang-quynh-co-that",
+  "title": "Trạng Quỳnh Có Thật Không? Ông Chưa Từng Đỗ Trạng",
+  "voice": "Lóng",
+  "target_min": [
+    20,
+    30
+  ],
+  "names": "Trạng Quỳnh, Nguyễn Quỳnh, Cống Quỳnh, Ôn Như, Bột Thượng, Hoằng Lộc, Hoằng Hoá, Thanh Hoá, sông Mã, Thăng Long, Thạch Thất, Phụng Thiên, Thái Bình, Đoàn Thị Điểm, Nguyễn Nham, Trịnh Căn, Trịnh Cương, Trịnh Giang, Trịnh Doanh, Lê Hiển Tông, Nasreddin Hodja, Gabrovo, Xiển Bột, Hoàng Tuấn Phổ, Hà Văn Tấn, Trần Đăng Khoa, Nguyễn Đức Hiền, Kim Khánh, Hương cống, Sĩ vọng, Giải nguyên, giáo thụ, huấn đạo, tri phủ, đại phong, mầm đá, tượng lo, lọ tương, Tú Cát, bọ hung",
+  "bgm": "assets/nhac-gay.mp3",
+  "bgm_volume": 0.06,
+  "theme": "tron",
+  "creative": {
+    "frame": {
+      "name": "tập truyện tranh cuối cùng vẽ lại bằng bút chì xanh: mỗi trang một giai thoại Trạng Quỳnh vẽ đúng như dân gian kể, rồi soát bằng gia phả họ Nguyễn, truyện nào không thể là của ông thì tẩy tên ông đi",
+      "analysis": "Lõi chuyện là một cái tên bị người đời khoác thêm: một ông Cống có thật ở Hoằng Lộc và hàng trăm truyện cười gán cho ông. Cảm xúc đi từ thích thú (truyện quen) sang ngờ vực (năm tháng lệch) rồi trìu mến (vì sao dân trao chữ Trạng). Khoảnh khắc mạnh nhất là câu Trạng chết chúa cũng băng hà đặt cạnh ngày mất trong gia phả. Người đứng gần nhất là người vẽ truyện tranh, vì truyện tranh chính là nơi phần lớn người xem gặp Trạng Quỳnh; cây bút chì xanh của hoạ sĩ cho phép vẽ đúng truyện rồi sửa ngay trên trang.",
+      "axis": "theo đời người thật (sinh, đi thi, làm quan, mất) nhưng mỗi chặng đời là một trang truyện tranh: vẽ một giai thoại nổi tiếng gắn với chặng đó, rồi soát bằng năm tháng, chức tước, gia phả; trang về những truyện cùng khuôn kẹp trước trang cuối",
+      "open": "bìa truyện tranh đập xuống bàn, cục tẩy chà mất chữ TRẠNG, chúa bật ra hỏi BĂNG HÀ, dải gia phả trượt vào",
+      "close": "trang cuối đặt câu Trạng chết chúa cũng băng hà cạnh ngày mất trong gia phả; vẽ lại bìa, viết lại chữ Trạng bằng bút chì: chữ ấy do dân trao chứ không phải trường thi",
+      "segments": [
+        "trang 1: nhà có nghề chữ ở Bột Thượng, người em mất năm 14 tuổi",
+        "trang 2: trường thi, truyện thừa giấy vẽ voi, đỗ Hương cống 1696",
+        "trang 3: chữ Trạng từ đâu ra, thi Hội trượt, đỗ Sĩ vọng 1718",
+        "trang 4: làm thầy dạy học rồi tri phủ Thái Bình, bị giáng chức",
+        "trang 5: truyện ăn mầm đá và câu hỏi chúa nào",
+        "trang 6: Quỳnh và Đoàn Thị Điểm trên thước năm",
+        "trang 7: đối đáp sứ Tàu, câu đối Tú Cát",
+        "trang 8: những truyện cùng khuôn với Nasreddin, Gabrovo, Xiển Bột",
+        "trang 9: Trạng chết chúa cũng băng hà đối chiếu gia phả",
+        "bìa sau: nhà thờ họ, nhà lưu niệm, truyện tranh và phim"
+      ]
+    },
+    "voice_role": "hoạ sĩ truyện tranh được nhà in thuê vẽ tập cuối Trạng Quỳnh, ngồi bàn vẽ với lọ mực đen, cây bút chì xanh không lên bản in và một cục tẩy hồng; nói nhanh, hay đọc to tiếng động trong ô truyện, gọi phần mình đang kể là trang, chuyển đoạn bằng câu lật sang trang, mỗi lần tẩy tên lại tiếc cục tẩy",
+    "style": "mỗi trang vẽ một giai thoại như truyện tranh in màu rồi soát bằng nét bút chì xanh và tờ gia phả; truyện nào không thể là của ông thì tẩy tên",
+    "motif": "trang truyện tranh in offset bốn màu chấm lưới, bóng thoại, chữ tượng thanh, nét bút chì xanh của hoạ sĩ, tờ gia phả giấy dó và triện son, cục tẩy hồng mòn dần",
+    "hook": "nghịch lý tẩy chữ: cái tên ai cũng gọi bị tẩy ngay trên bìa truyện, rồi một câu hỏi về câu nói cả nước thuộc",
+    "hook_visual": "bìa truyện tranh vàng hồng đập xuống bàn, cục tẩy chà chữ TRẠNG mất dần, chúa trượt vào kêu BĂNG HÀ, dấu hỏi khổng lồ bung giữa khung, dải gia phả vàng trượt vào đóng triện son",
+    "palette": "giấy vẽ ngà, xanh lơ in, hồng sen, vàng in trên bàn gỗ sẫm",
+    "signature_fx": [
+      "in-lua",
+      "speedlines"
+    ],
+    "gag": "cục tẩy hồng mới tinh mòn dần: mỗi lần tẩy tên Trạng Quỳnh khỏi một truyện không thể là của ông, bảng đếm ghi lần tẩy thứ mấy và còn bao nhiêu phần trăm cục tẩy",
+    "visual": {
+      "medium": "trang truyện tranh in offset bốn màu (đen, xanh lơ, hồng sen, vàng) chấm lưới halftone, ô viền mực, bóng thoại, chữ tượng thanh; đè lên là nét bút chì xanh không lên bản in của hoạ sĩ; gia phả giấy dó và triện son",
+      "why": "phần lớn người Việt gặp Trạng Quỳnh qua truyện tranh và truyện kể, còn người thật chỉ còn trong gia phả, nên đặt hai lớp mực in và bút chì soát lên cùng một trang là cách hiện ra đúng câu hỏi có thật không",
+      "layout": "tờ giấy vẽ chiếm gần trọn khung (70–1850 × 26–866) trên mặt bàn gỗ sẫm; ô truyện chia 1–4 ô; ghi chú bút chì ở lề; góc trên phải nhãn trang N, góc dưới phải cục tẩy",
+      "palette": [
+        "#F6F0DE",
+        "#161616",
+        "#2B8FD0",
+        "#E0457B",
+        "#FFCF3A"
+      ],
+      "font": "Marker Felt (tượng thanh, tên) + Chalkboard SE (bóng thoại, lời dẫn, bút chì) + Baskerville (gia phả)",
+      "kit": "scenes/_truyen.mjs",
+      "scene_kit": [
+        "hook-bia: bìa truyện bị tẩy chữ",
+        "trang: trang truyện 1–4 ô kể giai thoại",
+        "o-lon: ô lớn khoảnh khắc đắt + tượng thanh",
+        "le-chi: ghi chú bút chì soát ô truyện",
+        "gia-pha: tờ gia phả + bản chép bút chì",
+        "the-nv: tờ thiết kế nhân vật (giới thiệu)",
+        "thuoc-nam: thước năm đối chiếu đời người",
+        "tay-ten: gag cục tẩy tẩy tên",
+        "ban-do: bản đồ phác bút chì",
+        "so-to: con số trong sao nổ",
+        "hai-cot: truyện kể đối gia phả chép",
+        "ban-ve: Tèo ở bàn vẽ (chào, CTA, chuyển trang)",
+        "chong-sach: các ấn bản theo năm"
+      ]
+    }
+  },
+  "cast": {
+    "quynh": {
+      "svg": "chars/quynh.svg",
+      "name": "Quỳnh"
+    },
+    "quynh-cuoi": {
+      "svg": "chars/quynh-cuoi.svg",
+      "name": "Quỳnh"
+    },
+    "quynh-gia": {
+      "svg": "chars/quynh-gia.svg",
+      "name": "Quỳnh"
+    },
+    "quynh-be": {
+      "svg": "chars/quynh-be.svg",
+      "name": "Quỳnh"
+    },
+    "chua": {
+      "svg": "chars/chua.svg",
+      "name": "Chúa Trịnh"
+    },
+    "chua-soc": {
+      "svg": "chars/chua-soc.svg",
+      "name": "Chúa Trịnh"
+    },
+    "diem": {
+      "svg": "chars/diem.svg",
+      "name": "Đoàn Thị Điểm"
+    },
+    "su": {
+      "svg": "chars/su.svg",
+      "name": "Sứ thần"
+    },
+    "quanthi": {
+      "svg": "chars/quanthi.svg",
+      "name": "Quan trường thi"
+    },
+    "cha": {
+      "svg": "chars/cha.svg",
+      "name": "Thầy đồ"
+    },
+    "me": {
+      "svg": "chars/me.svg",
+      "name": "Bà mẹ"
+    },
+    "em": {
+      "svg": "chars/em.svg",
+      "name": "Người em"
+    },
+    "nasreddin": {
+      "svg": "chars/nasreddin.svg",
+      "name": "Nasreddin Hodja"
+    },
+    "xienbot": {
+      "svg": "chars/xienbot.svg",
+      "name": "Xiển Bột"
+    },
+    "hocgia": {
+      "svg": "chars/hocgia.svg",
+      "name": "Nhà nghiên cứu"
+    },
+    "daubep": {
+      "svg": "chars/daubep.svg",
+      "name": "Đầu bếp"
+    },
+    "lotuong": {
+      "svg": "chars/lotuong.svg",
+      "name": "Lọ tương"
+    },
+    "giapha": {
+      "svg": "chars/giapha.svg",
+      "name": "Gia phả"
+    }
+  },
+  "thumbnail": {
+    "text": "Chúa có chết theo?",
+    "highlight": "chết theo",
+    "who": [
+      "quynh-cuoi",
+      "chua-soc"
+    ],
+    "pose": "smug",
+    "circle": false,
+    "arrow": false,
+    "badge": "?",
+    "bg": "teal",
+    "layout": "split"
+  },
+  "publish": {
+    "titles": [
+      "Trạng Quỳnh Có Thật Không? Ông Chưa Từng Đỗ Trạng",
+      "Trạng Quỳnh Tiểu Sử: Chính Sử Về Cống Quỳnh",
+      "Trạng Chết Chúa Cũng Băng Hà? Gia Phả Chép Khác"
+    ],
+    "description": "Trạng Quỳnh có thật không? Người thật là Nguyễn Quỳnh (1677–1748) ở làng Bột Thượng, Hoằng Lộc, Thanh Hoá, chỉ đỗ Hương cống nên người làng gọi là Cống Quỳnh, chưa từng đỗ Trạng nguyên.\n\nTrong video, Tèo vẽ lại từng truyện Trạng Quỳnh nổi tiếng như một tập truyện tranh (thừa giấy vẽ voi, ăn mầm đá, Quỳnh và Đoàn Thị Điểm, đối đáp sứ Tàu, Trạng chết chúa cũng băng hà), rồi soát từng trang bằng năm tháng, chức tước và gia phả họ Nguyễn: truyện nào có thể là của ông, truyện nào chắc chắn được gán cho ông.\n\nTrang cuối đặt câu Trạng chết chúa cũng băng hà cạnh ngày mất ghi trong gia phả. Theo bạn, truyện Trạng Quỳnh nào là của chính ông Cống Quỳnh? Bình luận cho Tèo biết, và đăng ký kênh để xem tiếp những nhân vật dân gian khác.",
+    "hashtags": [
+      "TrangQuynh",
+      "NguyenQuynh",
+      "VanHocDanGian",
+      "LichSuVietNam"
+    ],
+    "tags": [
+      "trạng quỳnh",
+      "trạng quỳnh có thật không",
+      "trạng quỳnh tiểu sử",
+      "tiểu sử trạng quỳnh",
+      "nguyễn quỳnh",
+      "cống quỳnh",
+      "trạng chết chúa cũng băng hà",
+      "trạng quỳnh là ai",
+      "tại sao trạng quỳnh chết",
+      "ăn mầm đá",
+      "truyện trạng quỳnh",
+      "trang quynh co that khong",
+      "trang quynh tieu su",
+      "chính sử trạng quỳnh",
+      "truyện dân gian việt nam"
+    ],
+    "notes": "Năm sinh/mất 1677–1748 theo gia phả họ Nguyễn (một số tài liệu ghi khác). Đỗ Hương cống 1696, đỗ Sĩ vọng 1718, tri phủ Thái Bình: theo vi.wikipedia và bài của Hoàng Tuấn Phổ, thứ tự chức vụ lệch giữa các nguồn. 'Hơn 90% hư cấu' là ước tính một nhà nghiên cứu (Hoàng Tuấn Phổ, 1997), một nguồn. Chuyện học vị Tú tài chỉ có từ thời Nguyễn: một nguồn. Nhà lưu niệm 2004 và hội Amis de Trạng Quỳnh 2002 theo Tuổi Trẻ. Truyện Trạng chết chúa băng hà có nhiều dị bản; video kể theo bản phổ biến (đầu độc trong yến tiệc, nằm võng nghe hát). Trịnh Doanh làm chúa 1740–1767."
+  },
+  "chapters": [
+    "chapters/01.json",
+    "chapters/02.json",
+    "chapters/03.json",
+    "chapters/04.json",
+    "chapters/05.json",
+    "chapters/06.json",
+    "chapters/07.json",
+    "chapters/08.json",
+    "chapters/09.json",
+    "chapters/10.json",
+    "chapters/11.json"
+  ]
+}

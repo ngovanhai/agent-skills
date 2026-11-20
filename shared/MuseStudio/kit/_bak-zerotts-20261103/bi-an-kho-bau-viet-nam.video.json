@@ -1,0 +1,231 @@
+{
+  "slug": "bi-an-kho-bau-viet-nam",
+  "title": "Bí Ẩn Và Kho Báu Lịch Sử Việt Nam Chưa Có Lời Giải | Tèo Kể",
+  "names": "Quang Trung, Nguyễn Huệ, Phú Xuân, Đan Dương, Gia Long, Nguyễn Ánh, Cảnh Thịnh, Thái Đức, Nguyễn Nhạc, Đại Nam thực lục, Ông Vò, Thanh Toàn, Nguyễn Đắc Xuân, Dương Xuân, Thiền Lâm, Ngô Thì Nhậm, Phan Huy Ích, Ba Vành, Ngọc Trản, Kim Phụng, Chóp Vung, Phan Huy Lê, Phượng Hoàng Trung Đô, Tự Đức, Khiêm Lăng, Khiêm Cung, Vạn Niên Cơ, Chày Vôi, Lưu Khiêm, Xung Khiêm, Hoà Khiêm, Bửu Thành, Kiến Phúc, Vọng Cảnh, Thọ Lăng, Đình Bảng, Đền Đô, Lý Thái Tổ, Lý Công Uẩn, Cổ Pháp, Lý Chiêu Hoàng, Minh Châu, Chiêu Lăng, Long Hưng, An Sinh, Hiến Tông, Dụ Tông, Nghệ Tông, Hưng Đạo Vương, An Lạc, Hồ Quý Ly, Hồ Nguyên Trừng, Tôn Thất Thuyết, Hàm Nghi, De Courcy, Phủ Nội vụ, Mang Cá, Havas, François Thierry, Léonce Détroyat, Jocelyn Pène-Siefert, Đồng Khánh, Nguyễn Văn Tường, Tân Sở, Cam Lộ, Cần Vương, Phạm Văn Sơn, Oscar Chapuis, Mã Cú, Minh Hoá, Algérie, Alger, Núi Tàu, Bà Nà, Trần Kim Thạch, Ngườm Kim, Viên Minh, Nà Lữ, Óc Eo, Ba Thê, Louis Malleret, Antoninus Pius, Cattigara, Ptolemy, Phù Nam, Chân Lạp, Đặc Mục, Cổ Loa, Hoàng Giang, An Dương Vương, Kim Quy, Cao Lỗ, Mỵ Châu, Trọng Thuỷ, Cầu Vực, Mả Tre, Ngọc Lũ, Như Trác, Làng Vạc, Lam Sơn thực lục, Thuận Thiên, Tang thương ngẫu lục, Phạm Đình Hổ, Nguyễn Án, Trần Quang Đức, Lục Thuỷ, Tả Vọng, Hữu Vọng, Ngọc Sơn, Ngọ Môn, Bảo Đại, Trần Huy Liệu, Nguyễn Lương Bằng, Cù Huy Cận, Hoàng đế chi bảo, Minh Mạng, Quốc vương chi ấn, Nguyễn Phúc Khoát, Nam Phương, Bảo Long, Monique Baudot, Millon, Nguyễn Thế Hồng, An Dân, Khải Định, Hòn Cau, Côn Đảo, Khang Hy, Christie's, Michael Flecker, Batavia, Cù Lao Chàm, Chu Đậu, Visal, Mensun Bound, Topkapi, Istanbul, Bùi Thị Hý, Nam Sách, Butterfields, San Francisco, eBay, Ung Chính, Sotheby's, Châu Thuận Biển, Bình Châu",
+  "theme": "tron",
+  "bgm": "playful-pizzicato.mp3",
+  "cast": {
+    "quangtrung": {
+      "svg": "chars/quangtrung.svg",
+      "name": "Vua Quang Trung"
+    },
+    "gialong": {
+      "svg": "chars/gialong.svg",
+      "name": "Vua Gia Long"
+    },
+    "tuduc": {
+      "svg": "chars/tuduc.svg",
+      "name": "Vua Tự Đức"
+    },
+    "hamnghi": {
+      "svg": "chars/hamnghi.svg",
+      "name": "Vua Hàm Nghi"
+    },
+    "baodai": {
+      "svg": "chars/baodai.svg",
+      "name": "Vua Bảo Đại"
+    },
+    "lythaito": {
+      "svg": "chars/lythaito.svg",
+      "name": "Lý Thái Tổ"
+    },
+    "tranthaitong": {
+      "svg": "chars/tranthaitong.svg",
+      "name": "Trần Thái Tông"
+    },
+    "lychieuhoang": {
+      "svg": "chars/lychieuhoang.svg",
+      "name": "Lý Chiêu Hoàng"
+    },
+    "hoquyly": {
+      "svg": "chars/hoquyly.svg",
+      "name": "Hồ Quý Ly"
+    },
+    "leloi": {
+      "svg": "chars/leloi.svg",
+      "name": "Lê Lợi"
+    },
+    "caolo": {
+      "svg": "chars/caolo.svg",
+      "name": "Cao Lỗ"
+    },
+    "tonthatthuyet": {
+      "svg": "chars/tonthatthuyet.svg",
+      "name": "Tôn Thất Thuyết"
+    },
+    "decourcy": {
+      "svg": "chars/decourcy.svg",
+      "name": "De Courcy"
+    },
+    "thierry": {
+      "svg": "chars/thierry.svg",
+      "name": "François Thierry"
+    },
+    "malleret": {
+      "svg": "chars/malleret.svg",
+      "name": "Louis Malleret"
+    },
+    "mensunbound": {
+      "svg": "chars/mensunbound.svg",
+      "name": "Mensun Bound"
+    },
+    "nguyendacxuan": {
+      "svg": "chars/nguyendacxuan.svg",
+      "name": "Nguyễn Đắc Xuân"
+    },
+    "tranquangduc": {
+      "svg": "chars/tranquangduc.svg",
+      "name": "Trần Quang Đức"
+    },
+    "nguoimua": {
+      "svg": "chars/nguoimua.svg",
+      "name": "Ông Nguyễn Thế Hồng"
+    },
+    "ngudan": {
+      "svg": "chars/ngudan.svg",
+      "name": "Ngư dân"
+    },
+    "quangtrung-soc": {
+      "svg": "chars/quangtrung-soc.svg",
+      "name": "Vua Quang Trung"
+    }
+  },
+  "creative": {
+    "frame": {
+      "name": "những mẻ đãi cát dọc một con sông lịch sử, từ chân núi ra cửa biển",
+      "analysis": "Chất liệu là một hỗn hợp: ít dữ kiện chắc như vàng (chính sử, hiện vật khảo cổ có niên đại, hồ sơ đấu giá), nhiều ghi chép muộn và giả thuyết một người (cát), rất nhiều lời đồn (bùn). Người xem vừa muốn nghe chuyện kho báu ly kỳ vừa muốn biết chuyện nào thật; người đãi cát làm đúng việc đó: lắc chảo cho cái nặng lắng xuống, cái nhẹ trôi đi, nên cách chấm ba mức thành một động tác nhìn thấy được.",
+      "axis": "ba khúc sông: thượng nguồn là những ngôi mộ vua không tìm thấy, trung lưu là những kho vàng trên đất liền, hạ nguồn và cửa biển là báu vật trong cung và kho báu dưới đáy biển; mỗi chuyện một mẻ đãi đánh số liên tục, kết bằng chấm ba lớp vàng, cát, bùn",
+      "open": "nấm mộ cát cắm thẻ Quang Trung trong lòng chảo, nước tràn vào làm tan, chỉ còn dấu hỏi; Tèo lội nước tới gối",
+      "close": "dốc mười hai mẻ thành ba đống trên bãi cửa biển; lần đầu Tèo soi trước khi reo; đắp lại nấm cát buổi sáng, nước làm tan, dấu hỏi vẫn còn; lọ vàng vẫn rỗng",
+      "segments": [
+        "mẻ 1: lăng vua Quang Trung, chính sử Nguyễn tự ghi việc đào mộ, ba chiếc vò, các giả thuyết vị trí",
+        "mẻ 2: Khiêm Lăng của vua Tự Đức và lời đồn hai trăm người bị giết",
+        "mẻ 3 và 4: Thọ Lăng nhà Lý, Chiêu Lăng và An Sinh nhà Trần, nấm nào của vua nào",
+        "mẻ 5: kho Phủ Nội vụ khi kinh thành Huế thất thủ năm 1885, những con số vênh nhau",
+        "mẻ 6: vàng của vua Hàm Nghi, thành Tân Sở và người đào ba mươi năm",
+        "mẻ 7: những kho vàng chỉ có trong lời kể: núi Tàu, Bà Nà, Ngườm Kim, nhà Mạc",
+        "mẻ 8: vàng Óc Eo và vương quốc Phù Nam không để lại cuốn sử nào",
+        "mẻ 9: Cổ Loa, kho mũi tên đồng, trống đồng Mả Tre, nỏ thần",
+        "mẻ 10 và 11: thanh gươm hồ Hoàn Kiếm, Cụ Rùa, chiếc ấn Hoàng đế chi bảo đi lạc rồi trở về",
+        "mẻ 12: năm con tàu đắm, gốm Chu Đậu đấu giá ế rồi về nước"
+      ]
+    },
+    "voice_role": "người đãi cát thuê trên một con sông, ống quần xắn tới gối, đội nón lá rách vành, ôm cái chảo gỗ mít; nói chậm, chắc, đếm vòng lắc chảo, mở mỗi chuyện bằng câu xúc cát mẻ thứ mấy, hay nhắc nước không biết nói dối, cái nặng ở lại, cái nhẹ trôi đi",
+    "style": "mỗi chuyện là một mẻ đãi cát: sử chép gì, lời đồn nói gì, lắc chảo ba vòng rồi chấm ba lớp vàng, cát, bùn",
+    "motif": "lòng chảo đãi gỗ nhìn từ trên xuống, nước phù sa xoáy, hòn cuội khắc số, cọc tre cắm bờ, bong bóng bùn",
+    "hook": "nghịch lý về một cái tên ai cũng biết mà không ai biết nằm ở đâu, nấm mộ cát tan trong chảo",
+    "hook_visual": "lòng chảo đãi chiếm trọn khung nhìn từ trên xuống, nấm mộ cát cắm thẻ tên tan dần khi nước xoáy tràn vào, để lại dấu hỏi bằng cát vàng, ấn CHƯA CÓ LỜI GIẢI đóng xuống",
+    "palette": "nâu phù sa + xanh nước sông đục + vàng kim + cát + bùn đen",
+    "signature_fx": [
+      "seal",
+      "gio-cat",
+      "compass",
+      "song-am"
+    ],
+    "gag": "hễ chảo loé là Tèo reo Vàng! rồi hoá ra mica, nắp chai, nắng chiếu rong; lọ vàng bên hông rỗng suốt video; lần cuối Tèo tự ngậm miệng: lần này, soi trước đã",
+    "visual": {
+      "medium": "lòng chảo đãi cát và dòng sông phù sa nhìn từ trên cao, hiện vật và trang sử trồi lên khỏi lớp cát ướt",
+      "why": "cả video là việc tách vàng khỏi cát và bùn, nên mọi dữ kiện đều xuất hiện như thứ lắng xuống hay trôi đi trong nước",
+      "layout": "dải sông chéo khung từ trên trái xuống dưới phải; chảo tròn ở tâm hoặc một phần ba phải; chữ trên ván gỗ trôi hoặc khắc lên đá cuội; Tèo lội nước ngang gối ở mép trái hoặc phải",
+      "palette": [
+        "#6B4A2B",
+        "#3E6B63",
+        "#E2B33C",
+        "#D9C49A",
+        "#2B2620"
+      ],
+      "font": "Palatino / Book Antiqua (khắc đá, tiêu đề) + Segoe Print (nhãn viết tay trên ván)",
+      "kit": "scenes/_song.mjs",
+      "scene_kit": [
+        "hook-chao-mo: hook nấm mộ cát tan trong chảo",
+        "chao: Tèo lội nước xúc cát, mở mẻ, gag mica, CTA",
+        "nguoi-xua: nhân vật khắc trên tấm ván trôi",
+        "su-chep: trang sử mở ra, dòng được trích ý",
+        "doc-song: bản đồ dòng sông có ghim nơi chốn + năm",
+        "hien-vat: hiện vật trồi lên khỏi lớp cát kèm nhãn",
+        "con-so: con số khắc lên hòn cuội",
+        "bac-da: diễn biến từng bước trên bậc đá ven sông",
+        "coc-bo: giả thuyết là cọc tre cắm trên bờ",
+        "hai-bo: đối chiếu hai bờ sông",
+        "bong-bun: lời đồn nổi lên như bong bóng bùn rồi vỡ",
+        "ba-lop: chấm chảo ba lớp vàng, cát, bùn"
+      ]
+    }
+  },
+  "thumbnail": {
+    "text": "Mộ vua nằm ở đâu?",
+    "highlight": "ở đâu",
+    "who": [
+      "quangtrung-soc"
+    ],
+    "pose": "shock",
+    "bg": "orange",
+    "layout": "closeup",
+    "circle": false,
+    "arrow": false,
+    "badge": "?"
+  },
+  "voice": "Lóng",
+  "target_min": [
+    55,
+    65
+  ],
+  "chapters": [
+    "chapters/01.json",
+    "chapters/02.json",
+    "chapters/03.json",
+    "chapters/04.json",
+    "chapters/05.json",
+    "chapters/06.json",
+    "chapters/07.json",
+    "chapters/08.json",
+    "chapters/09.json",
+    "chapters/10.json",
+    "chapters/11.json",
+    "chapters/12.json",
+    "chapters/13.json",
+    "chapters/14.json",
+    "chapters/15.json",
+    "chapters/16.json",
+    "chapters/17.json",
+    "chapters/18.json",
+    "chapters/19.json",
+    "chapters/20.json",
+    "chapters/21.json",
+    "chapters/22.json",
+    "chapters/23.json",
+    "chapters/24.json"
+  ],
+  "publish": {
+    "titles": [
+      "Bí Ẩn Lịch Sử Việt Nam Trong 65 Phút",
+      "Mộ Vua Quang Trung Ở Đâu? 12 Bí Ẩn Chưa Có Lời Giải",
+      "Kho Báu Vua Hàm Nghi Và 11 Bí Ẩn Lịch Sử Việt Nam"
+    ],
+    "description": "Bí ẩn lịch sử Việt Nam chưa có lời giải: mộ vua Quang Trung ở đâu, kho vàng của vua Hàm Nghi có thật không, thanh gươm hồ Hoàn Kiếm, chiếc ấn Hoàng đế chi bảo đi lạc rồi trở về, và kho báu dưới đáy biển Hòn Cau.\n\nTèo vào vai người đãi cát thuê, lội theo một con sông lịch sử từ đầu nguồn ra cửa biển. Mỗi chuyện là một mẻ đãi: sử chép gì, lời đồn nói gì, rồi lắc chảo cho cái nặng lắng xuống. Cuối mỗi mẻ, mình chấm ba lớp: VÀNG là chuyện có chứng cứ, CÁT là giả thuyết chưa đủ chứng, BÙN là lời đồn nên cho trôi.\n\n12 mẻ đãi: lăng vua Quang Trung và ba chiếc vò, Khiêm Lăng của vua Tự Đức, Thọ Lăng nhà Lý và lăng mộ nhà Trần, kho Phủ Nội vụ năm 1885, vàng của vua Hàm Nghi ở Tân Sở, những kho vàng chỉ có trong lời kể, vàng Óc Eo và vương quốc Phù Nam, Cổ Loa và nỏ thần, gươm hồ Hoàn Kiếm và Cụ Rùa, chiếc ấn Hoàng đế chi bảo, và năm con tàu đắm.\n\nTrong 12 mẻ, mẻ nào làm bạn bất ngờ nhất? Bình luận cho Tèo biết nhé, và đăng ký kênh để đi tiếp những khúc sông khác.",
+    "hashtags": [
+      "bianlichsu",
+      "lichsuvietnam",
+      "khobau",
+      "quangtrung"
+    ],
+    "tags": [
+      "bí ẩn lịch sử việt nam",
+      "bí ẩn chưa có lời giải",
+      "kho báu việt nam",
+      "mộ vua quang trung",
+      "mộ vua quang trung ở đâu",
+      "kho báu vua hàm nghi",
+      "bí mật lịch sử việt nam",
+      "ấn hoàng đế chi bảo",
+      "gươm hồ hoàn kiếm",
+      "óc eo phù nam",
+      "tàu đắm hòn cau",
+      "khiêm lăng tự đức",
+      "bi an lich su viet nam",
+      "kho bau viet nam",
+      "lịch sử việt nam"
+    ],
+    "notes": "Kiểm lại trước khi đăng: (1) năm đào mộ Quang Trung (chính sử chép cuối 1801, một số bài viết sau ghi 1802); (2) các con số kho Phủ Nội vụ 1885 vênh nhau giữa các nguồn, video đã nói rõ là vênh; (3) ấn Hoàng đế chi bảo: đúc 1823, nặng khoảng 10,78 kg, đấu giá Millon 2022, về nước 2023, giá mua theo báo khoảng 6,1 triệu euro; (4) tàu đắm Hòn Cau: hơn 200 nghìn món, khoảng 31.661 món bán được ở cuộc đấu giá ở Mỹ; (5) chuyện hai trăm người bị giết ở Khiêm Lăng và các kho vàng núi Tàu, Bà Nà, Ngườm Kim được video xếp vào lời đồn; (6) Nguyễn Đắc Xuân, Trần Quang Đức, ông Nguyễn Thế Hồng là hình vẽ tượng trưng, không phải chân dung."
+  }
+}

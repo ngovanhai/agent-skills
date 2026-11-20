@@ -1,0 +1,227 @@
+{
+ "slug": "alexander-12-ngay-sot",
+ "title": "Cái Chết Của Alexander Đại Đế: 12 Ngày Ở Babylon",
+ "voice": "Lóng",
+ "target_min": [
+  20,
+  30
+ ],
+ "names": "Alexander, Alexandros, Babylon, Chaldea, Belephantes, Etemenanki, Marduk, Ishtar, Euphrates, Aiaru, Diodorus, Plutarch, Arrian, Curtius, Suetonius, Cassius Dio, Nearchus, Medius, Larissa, Thessaly, Iolaus, Antipater, Cassander, Aristotle, Nonacris, Styx, Hephaestion, Ecbatana, Calanus, Dionysius, Seleucus, Perdiccas, Krateros, kratistos, Roxana, Bactria, Ptolemy, Memphis, Alexandria, Augustus, Gedrosia, Malli, Hyphasis, Coenus, Hydaspes, Porus, Gaugamela, Darius, Maracanda, Cleitus, Ephemerides, Eumenes, Cardia, Serapis, Veratrum album, Leo Schep, Pat Wheatley, Otago, Adrienne Mayor, Antoinette Hayes, calicheamicin, Andrew Chugg, David Oldach, Maryland, Burke Cunha, John Marr, Charles Calisher, Sbarounis, Katherine Hall, Dunedin, Guillain–Barré, Robin Lane Fox, Bosworth, Diadochi, Delphi",
+ "bgm": "playful-pizzicato.mp3",
+ "bgm_volume": 0.06,
+ "cast": {
+  "alexander": {
+   "svg": "chars/alexander.svg",
+   "name": "Alexander"
+  },
+  "alexander-om": {
+   "svg": "chars/alexander-om.svg",
+   "name": "Alexander"
+  },
+  "alexander-soc": {
+   "svg": "chars/alexander-soc.svg",
+   "name": "Alexander"
+  },
+  "hephaestion": {
+   "svg": "chars/hephaestion.svg",
+   "name": "Hephaestion"
+  },
+  "medius": {
+   "svg": "chars/medius.svg",
+   "name": "Medius"
+  },
+  "iolaus": {
+   "svg": "chars/iolaus.svg",
+   "name": "Iolaus"
+  },
+  "antipater": {
+   "svg": "chars/antipater.svg",
+   "name": "Antipater"
+  },
+  "cassander": {
+   "svg": "chars/cassander.svg",
+   "name": "Cassander"
+  },
+  "aristotle": {
+   "svg": "chars/aristotle.svg",
+   "name": "Aristotle"
+  },
+  "perdiccas": {
+   "svg": "chars/perdiccas.svg",
+   "name": "Perdiccas"
+  },
+  "ptolemy": {
+   "svg": "chars/ptolemy.svg",
+   "name": "Ptolemy"
+  },
+  "roxana": {
+   "svg": "chars/roxana.svg",
+   "name": "Roxana"
+  },
+  "chaldean": {
+   "svg": "chars/chaldean.svg",
+   "name": "Belephantes"
+  },
+  "calanus": {
+   "svg": "chars/calanus.svg",
+   "name": "Calanus"
+  },
+  "plutarch": {
+   "svg": "chars/plutarch.svg",
+   "name": "Plutarch"
+  },
+  "arrian": {
+   "svg": "chars/arrian.svg",
+   "name": "Arrian"
+  },
+  "augustus": {
+   "svg": "chars/augustus.svg",
+   "name": "Augustus"
+  },
+  "oldach": {
+   "svg": "chars/oldach.svg",
+   "name": "David Oldach"
+  },
+  "marr": {
+   "svg": "chars/marr.svg",
+   "name": "John Marr"
+  },
+  "hall": {
+   "svg": "chars/hall.svg",
+   "name": "Katherine Hall"
+  },
+  "schep": {
+   "svg": "chars/schep.svg",
+   "name": "Leo Schep"
+  },
+  "mayor": {
+   "svg": "chars/mayor.svg",
+   "name": "Adrienne Mayor"
+  },
+  "chen": {
+   "svg": "chars/chen.svg",
+   "name": "Chén rượu"
+  }
+ },
+ "creative": {
+  "frame": {
+   "name": "mười hai phiến nhật ký đất sét của cậu học việc chiêm tinh trên nóc tháp Babylon, mỗi nghi phạm phải khớp với bảng mười hai ngày sốt",
+   "analysis": "Lõi chuyện là một ca bệnh có ghi chép từng ngày nhưng không có xác: mười hai ngày từ bàn tiệc tới cái chết, rồi hai nghìn ba trăm năm các thầy thuốc và sử gia tranh nhau chẩn đoán. Người đứng gần nhất là những thầy Chaldea đã cảnh báo nhà vua và chính họ ghi dòng 'nhà vua chết, trời nhiều mây' trong nhật ký thiên văn. Vì vậy thân bài là một cuộc đối chiếu: bảng mười hai ngày khắc trên đất sét là thước đo, mỗi nghi phạm (độc nhanh, lê lô, sốt rét, thương hàn, virus, rượu, Guillain–Barré) phải khớp với từng ô, kết bằng bảng điểm.",
+   "axis": "đối chiếu từng nghi phạm với bảng mười hai ngày sốt khắc trên phiến đất sét: trước dựng manh mối đời ông và đêm tiệc, rồi khắc đủ mười hai ô, rồi gọi lần lượt thuốc độc, đầm lầy, cái xác không thối, câu trăn trối, cuối cùng ấn nét nêm chấm điểm",
+   "open": "đếm ngược mười hai, bảy, hai, không ngày quanh chiếc chén vàng giữa khung, chén nứt, nghiêng, đổ, ấn VUA CHẾT; hỏi ông chết vì cái gì; hứa bảng điểm cuối video; Tèo chào một câu trên nóc tháp rồi vào thẳng lời cảnh báo của các thầy Chaldea",
+   "close": "bảng điểm nét nêm cho sáu nghi phạm, hai nghi phạm hoà ở đầu, nghiêng về bệnh mà không gạch hẳn thuốc độc; Tèo khắc phiến cuối giống hệt nhật ký thiên văn: nhà vua chết, trời nhiều mây, giá lúa mạch như hôm qua",
+   "segments": [
+    "đêm hai mươi chín tháng Aiaru và lời cảnh báo phía tây",
+    "phiến 1: người chưa thua trận nào, vết thương, sa mạc, rượu, mất bạn",
+    "phiến 2: ba điềm gở và đêm tiệc nhà Medius, chén Heracles có thật không",
+    "phiến 3: mười hai ngày theo Nhật ký triều đình",
+    "phiến 4: thuốc độc nhà Antipater, cây lê lô trắng, suối Styx",
+    "phiến 5: muỗi đầm lầy, thương hàn, đàn quạ và rượu",
+    "phiến 6: sáu ngày xác không thối và giả thuyết chết nhầm",
+    "phiến 7: cho kẻ mạnh nhất, chiếc nhẫn, xe tang rẽ sang Ai Cập",
+    "phiến 8: bảng điểm nét nêm"
+   ]
+  },
+  "voice_role": "cậu học việc của các thầy chiêm tinh Chaldea, đêm nào cũng ngồi trên nóc tháp Etemenanki khắc nhật ký trời lên phiến đất sét bằng bút sậy; nói chậm, đếm từng ô như đếm sao, chuyển đoạn bằng câu nặn thêm một phiến, gọi các thầy là thầy mình, phiến nào cũng phải ghi giá lúa mạch kể cả đêm nhà vua chết",
+  "style": "khắc từng ngày sốt của nhà vua lên một phiến đất sét lớn, gọi lần lượt từng nghi phạm vào đối chiếu với các ô, ô nào khớp thì đóng dấu ngọc lam, lệch thì gạch đỏ",
+  "motif": "tường gạch men lam cổng Ishtar với sư tử vàng, phiến đất sét chữ hình nêm, con dấu trụ lăn ra chân dung, chén vàng hai quai, nhẫn ấn lam ngọc, bầu trời sao trên nóc tháp tầng",
+  "hook": "đếm ngược số ngày còn sống quanh một đồ vật: phiến đất đếm 12, 7, 2, 0 trong lúc chén rượu nứt, nghiêng rồi đổ",
+  "hook_visual": "chén vàng hai quai khổng lồ giữa khung trên nền tối có quầng đèn, phiến đất sét bên trái nhảy số và rung mỗi nhịp, chén nứt một vệt, nghiêng, rượu nhỏ giọt, đổ nhào, ấn đỏ VUA CHẾT đập xuống",
+  "palette": "lam men Ishtar, vàng sư tử, đất sét nâu, đêm xanh thẫm",
+  "signature_fx": [
+   "twinkle",
+   "glint",
+   "vignette"
+  ],
+  "gag": "phiến nhật ký nào Tèo cũng phải ghi giá lúa mạch và mực nước sông Euphrates, kể cả đêm nhà vua chết; phiến cuối vẫn ghi giá lúa mạch như hôm qua",
+  "visual": {
+   "medium": "phù điêu gạch men lam cổng Ishtar và phiến đất sét chữ hình nêm của nhật ký thiên văn Babylon, thêm con dấu trụ lăn ra chân dung",
+   "why": "câu chuyện còn lại tới nay nhờ một phiến nhật ký thiên văn Babylon ghi 'nhà vua chết, trời nhiều mây', và người kể là học trò của các thầy Chaldea, nên mọi thứ hiện lên như được khắc vào đất sét hoặc ốp lên tường men của chính thành phố nơi ông chết",
+   "layout": "phiến đất sét lớn chiếm gần trọn khung, chữ khắc giữa phiến; ô tranh gạch men có viền vàng và dải hoa thị trên đầu; hồ sơ nghi phạm chia đôi ô men trái, phiến đối chiếu phải; Tèo đứng trái trên nóc tháp, bong bóng chữ bên phải",
+   "palette": [
+    "#1E4F9E",
+    "#E3AA3E",
+    "#C9A27A",
+    "#0D1530",
+    "#C23A2B",
+    "#38A6A0"
+   ],
+   "font": "Phosphate (tiêu đề, số khắc) + Cochin (lời chữ) + Kefa (nhãn)",
+   "kit": "scenes/_babylon.mjs",
+   "scene_kit": [
+    "hook-chen: hook, chén vàng + phiến đếm ngược",
+    "phien: mở mỗi phiến câu hỏi hoặc trang nhật ký đêm",
+    "bang-sot: bảng mười hai ngày sốt, khớp/lệch theo nghi phạm",
+    "noc-thap: Tèo trên nóc tháp, dưới cổng Ishtar, trong buồng chép, gag giá lúa mạch",
+    "tuong-gach: ô tranh gạch men minh hoạ sự kiện",
+    "con-dau: con dấu trụ lăn ra chân dung, giới thiệu nhân vật",
+    "nghi-pham: hồ sơ nghi phạm, ô men biểu tượng + phiến đối chiếu",
+    "hai-ban: hai bản kể đặt cạnh nhau, giấy cói và đất sét",
+    "so-khac: con số khắc vàng trên tấm men",
+    "ban-do: bản đồ khắc đất sét, đường hành quân",
+    "dai-su: dải phù điêu sư tử làm mốc thời gian",
+    "bang-diem: bảng điểm nét nêm cuối video"
+   ]
+  }
+ },
+ "thumbnail": {
+  "text": "Chén rượu giết vua?",
+  "highlight": "giết vua",
+  "who": [
+   "alexander-soc"
+  ],
+  "prop": "chen",
+  "circle_x": 470,
+  "circle_y": 350,
+  "circle_r": 340,
+  "prop_rot": -10,
+  "arrow": false,
+  "badge": false,
+  "bg": "orange",
+  "layout": "classic",
+  "series": "Nhà chinh phạt"
+ },
+ "publish": {
+  "titles": [
+   "Cái Chết Của Alexander Đại Đế: 12 Ngày Ở Babylon",
+   "Alexander Đại Đế Chết Vì Đâu? 6 Nghi Phạm Được Chấm",
+   "Alexander Đại Đế Bị Đầu Độc? Xác 6 Ngày Không Thối"
+  ],
+  "description": "Cái chết của Alexander Đại đế vẫn là một bí ẩn sau hơn 2.300 năm: chỉ mười hai ngày sau một đêm tiệc ở Babylon, vị vua 32 tuổi chưa từng thua trận đã qua đời. Bị đầu độc, sốt rét, thương hàn, hay một căn bệnh khiến người ta tưởng ông đã chết khi ông vẫn còn sống?\n\nTập 3/3 của loạt \"Những nhà chinh phạt vĩ đại\" (sau Napoleon ở Nga năm 1812 và ngôi mộ Thành Cát Tư Hãn). Tèo đóng vai cậu học việc của các thầy chiêm tinh Chaldea trên nóc tháp Babylon, khắc từng ngày sốt của nhà vua lên phiến đất sét theo Nhật ký triều đình mà Arrian và Plutarch chép lại, rồi gọi lần lượt từng nghi phạm vào đối chiếu: thuốc độc nhà Antipater, rượu ngâm lê lô trắng, nước suối Styx, sốt rét, thương hàn, virus Tây sông Nile, viêm tuỵ và hội chứng Guillain–Barré.\n\nVideo có cả lời cảnh báo 'đừng vào thành từ phía tây', chén rượu Heracles mà Plutarch cho là bịa, câu trăn trối 'cho kẻ mạnh nhất', sáu ngày xác không thối và cỗ xe tang bị Ptolemy chặn đưa sang Ai Cập. Cuối video là bảng điểm của cậu học việc.\n\nNếu được ấn nét nêm cuối cùng, bạn chọn nghi phạm nào? Viết vào bình luận và đăng ký kênh để xem các loạt tiếp theo.",
+  "hashtags": [
+   "AlexanderDaiDe",
+   "LichSuTheGioi",
+   "BiAnLichSu",
+   "NhaChinhPhat"
+  ],
+  "tags": [
+   "cái chết của alexander đại đế",
+   "alexander đại đế",
+   "alexandros đại đế",
+   "alexander đại đế chết vì sao",
+   "alexander đại đế bị đầu độc",
+   "lịch sử về alexander đại đế",
+   "cuộc đời của alexander đại đế",
+   "câu chuyện về alexander đại đế",
+   "babylon",
+   "alexander the great death",
+   "cai chet cua alexander dai de",
+   "alexander dai de",
+   "a lịch sơn đại đế",
+   "nhà chinh phạt vĩ đại",
+   "lịch sử thế giới"
+  ],
+  "notes": "Cần kiểm lại: (1) ngày mất 10 hay 11/6/323 TCN (nhật ký thiên văn Babylon ghi ngày 29 Aiaru; video nói 'khoảng mười hoặc mười một'); (2) lịch từng ngày trong Nhật ký triều đình theo Plutarch 76 và Arrian 7.25–26 (video gộp thành 12 ô 'bảng của mình'); (3) chuyện chén Heracles chỉ có ở Diodorus, Plutarch gọi là bịa; (4) chi tiết 'xác không thối khoảng sáu ngày' (Plutarch 77, Curtius 10.10; con số sáu ngày lấy theo các bản tóm tắt hiện đại); (5) chuyện Augustus làm gãy mũi chỉ có ở Cassius Dio, kèm 'người ta nói'; (6) bài Oldach đăng NEJM 11/6/1998; (7) con số Bosworth ≥12.000 lính chết ở Gedrosia; (8) ý 'thương hàn và Guillain–Barré có thể cùng đúng' là Tèo tự nối, video đã nói rõ; (9) bảng điểm là chấm chủ quan của kênh. Tên Hán Việt 'A Lịch Sơn' lấy theo Wikipedia tiếng Việt."
+ },
+ "chapters": [
+  "chapters/01.json",
+  "chapters/02.json",
+  "chapters/03.json",
+  "chapters/04.json",
+  "chapters/05.json",
+  "chapters/06.json",
+  "chapters/07.json",
+  "chapters/08.json",
+  "chapters/09.json"
+ ]
+}

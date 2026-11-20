@@ -1,0 +1,217 @@
+{
+ "slug": "tat-den-chi-dau-2-dong",
+ "title": "Chị Dậu Bán Con Được 2 Đồng, Giờ Là Bao Nhiêu?",
+ "voice": "Lóng",
+ "target_min": [
+  20,
+  30
+ ],
+ "names": "Chị Dậu, Anh Dậu, Nguyễn Văn Dậu, Lê Thị Đào, cái Tý, thằng Dần, cái Tỉu, chú Hợi, Đông Xá, thôn Đoài, Nghị Quế, Trần Đức Quế, Hoàng Thị Sẹo, mụ Cửu Xung, Ngô Tất Tố, Lộc Hà, Đông Anh, Việt nữ, Vũ Trọng Phụng, Phạm Văn Khoa, Tắt đèn, sổ thông quy, đèn hoa kỳ, phrăng",
+ "bgm": "playful-pizzicato.mp3",
+ "bgm_volume": 0.05,
+ "theme": "tron",
+ "cast": {
+  "chidau": {
+   "svg": "chars/chidau.svg",
+   "name": "Chị Dậu"
+  },
+  "chidau-gian": {
+   "svg": "chars/chidau-gian.svg",
+   "name": "Chị Dậu"
+  },
+  "chidau-khoc": {
+   "svg": "chars/chidau-khoc.svg",
+   "name": "Chị Dậu"
+  },
+  "anhdau": {
+   "svg": "chars/anhdau.svg",
+   "name": "Anh Dậu"
+  },
+  "anhdau-troi": {
+   "svg": "chars/anhdau-troi.svg",
+   "name": "Anh Dậu"
+  },
+  "caity": {
+   "svg": "chars/caity.svg",
+   "name": "Cái Tý"
+  },
+  "caity-khoc": {
+   "svg": "chars/caity-khoc.svg",
+   "name": "Cái Tý"
+  },
+  "thangdan": {
+   "svg": "chars/thangdan.svg",
+   "name": "Thằng Dần"
+  },
+  "lytruong": {
+   "svg": "chars/lytruong.svg",
+   "name": "Lý trưởng"
+  },
+  "caile": {
+   "svg": "chars/caile.svg",
+   "name": "Cai lệ"
+  },
+  "nguoinha": {
+   "svg": "chars/nguoinha.svg",
+   "name": "Người nhà lý trưởng"
+  },
+  "nghique": {
+   "svg": "chars/nghique.svg",
+   "name": "Nghị Quế"
+  },
+  "banghi": {
+   "svg": "chars/banghi.svg",
+   "name": "Bà Nghị"
+  },
+  "quanphu": {
+   "svg": "chars/quanphu.svg",
+   "name": "Quan phủ"
+  },
+  "mucuu": {
+   "svg": "chars/mucuu.svg",
+   "name": "Mụ Cửu Xung"
+  },
+  "balao": {
+   "svg": "chars/balao.svg",
+   "name": "Bà lão láng giềng"
+  },
+  "ngotatto": {
+   "svg": "chars/ngotatto.svg",
+   "name": "Ngô Tất Tố"
+  },
+  "dongbac": {
+   "svg": "chars/dongbac.svg",
+   "name": "Đồng bạc Đông Dương"
+  },
+  "ongcau": {
+   "svg": "chars/ongcau.svg",
+   "name": "Ông cậu"
+  },
+  "onggiao": {
+   "svg": "chars/onggiao.svg",
+   "name": "Ông giáo"
+  },
+  "quancu": {
+   "svg": "chars/quancu.svg",
+   "name": "Quan cụ"
+  }
+ },
+ "creative": {
+  "frame": {
+   "name": "sổ nợ viết than trên vách nhà anh Dậu dưới ngọn đèn hoa kỳ: mỗi món đem bán được trừ vào suất sưu, mỗi lần mất một thứ thì bấc hạ một nấc, tới đêm mưa ngâu thì đèn tắt",
+   "analysis": "Lõi của Tắt Đèn là một phép trừ không bao giờ về không: chị Dậu bán khoai, bán ổ chó, bán đứa con gái lên bảy để đủ hai đồng bảy hào, rồi sổ làng ghi thêm suất sưu của người đã chết. Người xem tìm 'chị Dậu bán con' và muốn biết hai đồng ấy đáng bao nhiêu, nên trục tự nhiên là từng khoản tiền trong văn bản gốc, kể xuôi cốt truyện để kể trọn. Cảm xúc đi từ tò mò về một con số, sang nghẹn ở câu 'U bán con thật đấy ư', hả hê ở cảnh tức nước vỡ bờ, lạnh người ở câu 'Tắt đèn, nhà ngói như nhà tranh' mà tên truyện lấy ra, rồi trả lời câu hỏi đổi tiền ở cuối. Người đứng gần nhất là thằng bán dầu dạo của làng: đèn nhà nào cũng uống dầu của nó, nó tính tiền bằng xu và thấy ngọn đèn nhà anh Dậu nhỏ dần.",
+   "axis": "đi theo sổ nợ của nhà anh Dậu: mỗi khối là một khoản tiền xuất hiện trong văn bản gốc (suất sưu, gánh khoai, giá cái Tý và ổ chó, văn tự hai chục đồng, suất sưu người chết, tiền hàng đội, nắm bạc của quan phủ, lương vú sữa), cốt truyện chạy xuôi từ tiếng trống thúc sưu tới lúc đèn hoa kỳ tắt, rồi cân hai đồng bạc ra tiền hôm nay",
+   "open": "đồng bạc khổng lồ rơi xuống vách đất cạnh cái Tý, sổ nợ gạch về không rồi bị đóng thêm suất sưu người chết, đèn hoa kỳ tắt; một câu hỏi hai đồng năm ấy là bao nhiêu tiền bây giờ; lời hứa đặt hai đồng lên đĩa cân ở cuối; Tèo chào một câu bên chõng tre rồi vào ngay sáng mùa sưu ở làng Đông Xá",
+   "close": "trả lời bằng hai cái cân (vàng theo luật tiền tệ 1930 và thước đo ngay trong sách: lương vú sữa, đêm trọ hai xu), quay lại đúng hình mở đầu đồng bạc với cái Tý, rồi Tèo tự tắt ngọn đèn của mình",
+   "segments": [
+    "mùa sưu ở Đông Xá và nhà anh Dậu chưa có một xu: hai đám ma, gánh khoai năm hào",
+    "khoản nợ đầu tiên hai đồng bảy hào: vay không được, anh Dậu bị trói ra đình, ý nghĩ bán con",
+    "nhà Nghị Quế: bà Nghị mặc cả tuổi cái Tý, ổ chó, hai đồng hai trừ giấy mực, văn tự hoa tai vàng hai chục đồng",
+    "cái Tý ở lại, câu chó đắt hơn người, rồi lý trưởng đòi suất sưu của chú Hợi đã chết",
+    "chuyện thật đằng sau: thuế thân ngoài đời, Ngô Tất Tố là ai, tên tiền thân, bị cấm năm 1939, chị Dậu có thật không",
+    "đêm anh Dậu bị khiêng về, buổi sáng chị Dậu đánh cai lệ: tức nước vỡ bờ",
+    "lên phủ: quan phủ mắng thu lạm, trại giam, nắm bạc hơn chục đồng bị vứt xuống đất, hợp đồng vú sữa",
+    "nhà quan cụ trên tỉnh, đêm mưa ngâu, ngọn đèn hoa kỳ tắt và câu nói làm tên truyện",
+    "đặt hai đồng lên đĩa cân: theo vàng, theo công, theo đêm trọ, rồi đèn tắt"
+   ]
+  },
+  "voice_role": "thằng bé bán dầu hoả dạo của làng Đông Xá, gánh hai thùng dầu rót cho đèn hoa kỳ từng nhà; nói khẽ như sợ làm tắt đèn, tính mọi thứ bằng xu và hào, chuyển đoạn bằng câu khêu bấc hay hạ bấc một nấc, gẩy cái bàn tính mà nó bảo chỉ có nút trừ",
+  "style": "kể xuôi cốt truyện như đọc một cuốn sổ nợ ghi than lên vách, mỗi khoản tiền là một nấc bấc hạ xuống",
+  "motif": "vách đất trát rơm, sổ nợ viết than, mẹt tre bày đồng bạc hào xu, đèn hoa kỳ ở góc khung mờ dần, cân đòn đổi tiền, giấy hồng điều ghi tên",
+  "hook": "con số đếm ngược về không rồi bật ngược lên: sổ sưu bị gạch về 0 rồi bị đóng thêm suất sưu người chết, đèn tắt",
+  "hook_visual": "đồng bạc khổng lồ xoay rơi xuống giữa vách đất, cái Tý trượt vào cạnh, dòng nợ bị gạch đỏ thành số 0 rồi con dấu đỏ đập xuống, ngọn lửa đèn hoa kỳ co lại và tắt, giấy đỏ TẮT ĐÈN đóng xuống trong bóng tối",
+  "palette": "nâu vách đất ấm dưới ánh đèn dầu cam, chữ than đen, đỏ son",
+  "signature_fx": [
+   "vignette",
+   "rain",
+   "spotlight"
+  ],
+  "gag": "bàn tính của Tèo chỉ có nút trừ: gẩy kiểu gì cũng ra thiếu; và ngọn đèn ở góc vách hạ bấc sau mỗi món nhà anh Dậu mất",
+  "visual": {
+   "medium": "vách đất trát rơm của một túp lều tranh dưới ngọn đèn hoa kỳ: sổ nợ viết bằng than, tiền bày trên mẹt tre, cân đòn đổi tiền",
+   "why": "câu chuyện là một chuỗi phép trừ tiền trong một túp nhà nghèo, và chính truyện kết thúc bằng một ngọn đèn hoa kỳ tắt, nên vách đất dưới đèn dầu là nơi tự nhiên nhất để ghi sổ và để đèn làm đồng hồ",
+   "layout": "vách đất kín khung, chữ than viết tay ngang vách bên trái, nhân vật đứng thấp dưới chân vách, đèn hoa kỳ nhỏ ở mép phải trên làm đồng hồ, giấy hồng điều cho tên và tiêu đề",
+   "palette": [
+    "#C4955A",
+    "#21170F",
+    "#A8321E",
+    "#FFAE3B",
+    "#C9B26A",
+    "#DAD5C8"
+   ],
+   "font": "Palatino (tiêu đề, trích văn) + Marker Felt (chữ than) + Avenir Next (nhãn nhỏ)",
+   "kit": "scenes/_vach.mjs",
+   "scene_kit": [
+    "hook-dem-nguoc: hook và cảnh vòng tròn cuối",
+    "so-no: sổ nợ viết than, cộng trừ từng khoản",
+    "ben-den: Tèo bên chõng tre có đèn hoa kỳ và bàn tính, chào/CTA/bình luận",
+    "canh: diễn lại khoảnh khắc trong truyện ở sân, đình, nhà Nghị Quế, công đường, đêm",
+    "the-ten: giới thiệu nhân vật bằng giấy hồng điều",
+    "me-tien: bày món bán và đồng bạc lên mẹt tre",
+    "can-vang: cân đòn đổi tiền xưa ra tiền nay",
+    "trang-sach: câu nguyên văn trên trang sách mở",
+    "cot-moc: mốc thời gian khía trên cây cột tre",
+    "hai-to: hai tờ giấy dán vách đối chiếu"
+   ]
+  }
+ },
+ "thumbnail": {
+  "text": "Đứa con giá 1 đồng?",
+  "highlight": "1 đồng",
+  "who": [
+   "chidau-khoc"
+  ],
+  "prop": "dongbac",
+  "layout": "classic",
+  "circle_x": 160,
+  "circle_y": 375,
+  "circle_r": 330,
+  "arrow": true,
+  "badge": false,
+  "bg": "noir",
+  "series": "Văn học Việt"
+ },
+ "publish": {
+  "titles": [
+   "Chị Dậu Bán Con Được 2 Đồng, Giờ Là Bao Nhiêu?",
+   "Tắt Đèn Ngô Tất Tố: Vì Sao Nộp Sưu Cho Người Chết?",
+   "Tắt Đèn Ngô Tất Tố: Tên Truyện Từ Câu Nói Của Ai?"
+  ],
+  "description": "Chị Dậu bán con được 2 đồng: cái Tý lên bảy cùng cả ổ chó, bán cho nhà Nghị Quế để nộp suất sưu hai đồng bảy hào. Hai đồng ấy bằng bao nhiêu tiền bây giờ?\n\nMột tập trong loạt \"Văn học Việt Nam nổi tiếng\" của Tèo Kể (đã có Thúy Kiều và Chí Phèo). Tèo làm thằng bán dầu dạo của làng Đông Xá, ghi sổ nợ nhà anh Dậu lên vách và kể trọn tiểu thuyết Tắt đèn của Ngô Tất Tố: tiếng trống thúc sưu, gánh khoai năm hào, bà Nghị mặc cả tuổi cái Tý, tờ văn tự \"mượn đôi hoa tai vàng\" hai chục đồng, suất sưu của người em chồng đã chết, đoạn Tức nước vỡ bờ, nắm bạc của quan phủ, đời vú sữa nhà quan và đêm ngọn đèn hoa kỳ tắt.\n\nVideo có cả chuyện thật đằng sau tác phẩm: Ngô Tất Tố là ai, thuế thân thời Pháp thuộc, chị Dậu có thật không, vì sao truyện mang tên Tắt đèn. Cuối video, hai đồng bạc được đặt lên cân: theo vàng năm 1930 và theo chính thước đo trong sách.\n\nNếu hai đồng bạc ấy rơi vào tay bạn hôm nay, bạn đổi nó ra thứ gì? Viết vào bình luận và đăng ký kênh để xem các truyện tiếp theo.",
+  "hashtags": [
+   "ChiDau",
+   "TatDen",
+   "NgoTatTo",
+   "VanHocVietNam"
+  ],
+  "tags": [
+   "chị dậu bán con",
+   "tắt đèn ngô tất tố",
+   "ngô tất tố tắt đèn",
+   "chị dậu",
+   "ngô tất tố là ai",
+   "tắt đèn",
+   "tóm tắt tắt đèn",
+   "tắt đèn ngô tất tố tóm tắt",
+   "câu chuyện tắt đèn của ngô tất tố",
+   "tức nước vỡ bờ",
+   "chị dậu bán con bán chó",
+   "ngữ văn 8",
+   "văn học việt nam",
+   "chi dau ban con",
+   "tat den ngo tat to"
+  ],
+  "notes": "1) Mọi con số trong truyện (sưu 2 đồng 7 hào, cái Tý 1 đồng, chó 1 đồng 1 hào, 2 hào giấy mực, văn tự 20 đồng, tiền hàng đội 5 hào, nắm bạc hơn chục đồng, lương vú sữa 5 đồng/tháng, trọ 2 xu/tối) đối chiếu nguyên văn vi.wikisource Tắt đèn các chương III–XXVII; bản in khác có thể lệch câu chữ. 2) Câu kết theo Wikisource: 'Trời tối như mực và như cái tiền đồ của chị.' (vi.wikipedia chép khác). 3) Quy đổi vàng: đồng bạc Đông Dương gắn 10 phrăng từ 1930, ~655 mg vàng (CoinWeek; tính từ phrăng Poincaré 65,5 mg vàng 900‰); giá vàng miếng lấy mức ~140–150 triệu/lượng cuối hè 2026 (tapchikinhtetaichinh.vn), chưa có giá ngày đăng — nên xem lại giá vàng trước khi đăng. Video nói rõ là ước lượng. 4) Năm sinh Ngô Tất Tố 1893/1894, video nói cả hai. 5) Tên tiền thân 'Một ổ chó và một đứa con' chỉ theo báo Nhân Dân; lời khen của Vũ Trọng Phụng dẫn gián tiếp. 6) Phim Chị Dậu (Phạm Văn Khoa) chỉ nói 'đầu những năm 1980'. 7) Chưa có tài liệu sử về việc thu sưu người chết — video nói rõ đó là chi tiết tiểu thuyết. 8) Tập có cảnh quấy rối (chương cuối) kể rất kín, không tả; COPPA do chủ kênh quyết."
+ },
+ "chapters": [
+  "chapters/01.json",
+  "chapters/02.json",
+  "chapters/03.json",
+  "chapters/04.json",
+  "chapters/05.json",
+  "chapters/06.json",
+  "chapters/07.json",
+  "chapters/08.json",
+  "chapters/09.json"
+ ]
+}

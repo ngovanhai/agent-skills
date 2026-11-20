@@ -1,19 +1,23 @@
 # MuseStudio kit — video giải thích dài 25–30 phút
 
-Mày viết `video.json` (kịch bản + cảnh), kit lo phần còn lại: giọng VieNeu "Lóng" → căn chữ Whisper → dựng cảnh HyperFrames → render từng chương → ghép `renders/final.mp4` → `thumbnail.png` → `publish.md`.
+Mày viết `video.json` (kịch bản + cảnh), kit lo phần còn lại: giọng Tiến Đạt ("tiendat", ZeroTTS) → căn chữ Whisper → dựng cảnh HyperFrames → render từng chương → ghép `renders/final.mp4` → `thumbnail.png` → `publish.md`.
 
 ```bash
-node C:/Users/anhha/MuseStudio/kit/make.mjs C:/Users/anhha/MuseStudio/videos/<slug>                     # tất cả các bước
-node C:/Users/anhha/MuseStudio/kit/make.mjs <dir> --stage validate                                # chỉ kiểm tra kịch bản
-node C:/Users/anhha/MuseStudio/kit/make.mjs <dir> --stage build,lint                              # dựng lại sau khi sửa
-node C:/Users/anhha/MuseStudio/kit/make.mjs <dir> --stage render --only ch03 --force              # render lại 1 chương
+node $HOME/MuseStudio/kit/make.mjs $HOME/MuseStudio/videos/<slug>                     # tất cả các bước
+node $HOME/MuseStudio/kit/make.mjs <dir> --stage validate                                # chỉ kiểm tra kịch bản
+node $HOME/MuseStudio/kit/make.mjs <dir> --stage build,lint                              # dựng lại sau khi sửa
+node $HOME/MuseStudio/kit/make.mjs <dir> --stage render --only ch03 --force              # render lại 1 chương
 ```
 
 Các bước: `scaffold, validate, tts, align, build, lint, render, thumb, publish, fxlog`. Bước nào cũng chạy tiếp được (có cache): TTS/căn chữ chỉ làm lại cảnh có `say` đổi, render bỏ qua chương đã render và chưa đổi.
 
 Thời gian (máy này, CPU): TTS ≈ 0,8× thời lượng, căn chữ ≈ 0,5×, render ≈ 2,7× → video 28 phút ≈ **2–2,5 giờ** chạy máy. Chạy `tts`, `align`, `render` ở chế độ nền (background) và theo dõi log.
 
-**GPU (AMD RX 6600 XT, DirectML):** `tts` và `align` tự chạy trên GPU nếu có venv `C:/Users/anhha/VieNeu-TTS/.venv-dml` và `E:/tool/whisper-dml`. TTS nhanh ≈ 1,5×, căn chữ ≈ 3× (ra y hệt CPU). GPU lỗi thì tự chạy lại bằng CPU. Tắt bằng `--no-gpu` hoặc tạo file `kit/gpu-off`. Render vốn đã dùng GPU (Chrome D3D11 + encode `--gpu`).
+**TTS + căn chữ trên Colab (mặc định từ 2026-10-23; TTS chỉ dùng ZeroTTS từ 2026-11-03, bỏ VieNeu):** `tts` gửi lên Google Colab GPU T4 qua `kiem-hiep/_tools/colab-tts/colab-tts.mjs` (cùng job + cache `.key` với `py/tts-zerotts.py`, bản máy nhà); `align` qua `colab-tts.mjs --align` (chạy chính `py/align.py` bằng CUDA, wav đổi sang flac 16 kHz trước khi gửi, cùng key cache — đã so: ra y hệt CPU). Không tốn CPU máy nhà; `ideas/chay-nang.sh` cho hai bước này chạy ngay, không chờ làn. Colab lỗi thì dừng; `--tts-local` / `--align-local` để làm ở máy nhà như dưới. Short (`…/shorts/…`) và sửa ngắn (< 30 câu) tự làm ở máy nhà (CPU) — chỉ bản dài mới lên Colab (`lib/mix.mjs`).
+
+**Âm thanh (chốt 2026-10-24, `lib/mix.mjs`):** `sfx/` là bản êm do `node kit/sfx-soft.mjs` làm từ `sfx/_goc/` (lọc trầm < 180 Hz, ≤ -26 LUFS, đỉnh ≤ -12 dBFS) — không tiếng ùm ùm gây giật mình. Build chép đè bản êm vào `assets/sfx`, kẹp `vol` sfx ≤ 0,6, kẹp nhạc nền ≤ -40 LUFS (thấp hơn giọng ≈ -20 LUFS ít nhất 20 dB) theo độ to đo được (cache `<file>.lufs`).
+
+**GPU (AMD RX 6600 XT, DirectML):** `align` (khi `--align-local`) tự chạy trên GPU nếu có `E:/tool/whisper-dml`, căn chữ ≈ 3× (ra y hệt CPU). `tts` ở máy nhà (`--tts-local`, short, sửa ngắn) chạy `py/tts-zerotts.py` bằng CPU (model int8, venv `$HOME/Projects/ZeroTTS-src/.venv`). GPU lỗi thì tự chạy lại bằng CPU. Tắt bằng `--no-gpu` hoặc tạo file `kit/gpu-off`. Render vốn đã dùng GPU (Chrome D3D11 + encode `--gpu`).
 
 **Tốc độ render:**
 - `render` chạy 2 chương cùng lúc. Đổi số luồng bằng `--par N`; có `--low-memory` thì chỉ chạy 1.
@@ -34,7 +38,7 @@ Ví dụ đầy đủ: `kit/example.video.json` (pilot 6 cảnh), chỉ để xe
 {
   "slug": "su-tich-ho-guom",                 // tên thư mục, không dấu
   "title": "Sự thật về thanh gươm trả lại giữa hồ",
-  "voice": "Lóng",
+  "voice": "tiendat",
   "target_min": [25, 30],                    // validate cảnh báo nếu lệch
   "names": "Lê Lợi, Lam Sơn, Thuận Thiên",   // tên riêng giúp Whisper nghe đúng
   "bgm": "playful-pizzicato.mp3",            // file trong kit/bgm, hoặc đường dẫn trong thư mục video ("assets/nhac.mp3")
@@ -57,7 +61,7 @@ Mỗi **cảnh** = một đoạn lời đọc (`say`) + một template hình. M�
 
 ## 2. Luật kịch bản (bắt buộc)
 
-**Độ dài.** 20–30 phút ≈ **5.600–7.000 từ** (giọng Lóng thật ≈ 4,5 từ/giây) ≈ **120–160 cảnh**, mỗi cảnh **12–60 từ** (5–15 giây). Câu dưới 10 từ thì VieNeu đọc vội và méo (validate báo). Trên 70 từ thì tách cảnh.
+**Độ dài.** 20–30 phút ≈ **5.600–7.000 từ** (giọng thật ≈ 4,5 từ/giây) ≈ **120–160 cảnh**, mỗi cảnh **12–60 từ** (5–15 giây). Câu dưới 10 từ dễ bị đọc vội và méo (validate báo). Trên 70 từ thì tách cảnh.
 
 **Khung kể (`video.creative.frame`).** Không chọn từ danh sách nào: mỗi tập viết kịch bản thô, phân tích chất liệu (lõi chuyện, cảm xúc, khoảnh khắc mạnh nhất, ai đứng gần nhất để kể, người xem muốn biết gì, chất liệu chia thành khối nào) rồi tự thiết kế `frame = {name, analysis, axis, open, close, segments[]}` (skill video-teo mục 2b). Khung quyết định thứ tự thân bài, cách mở, cách kết và vai Tèo (`creative.voice_role`, chữ tự do). Validate cảnh báo nếu khung thiếu phần, `analysis` <25 chữ, tên/trục khung gần giống hoặc dàn khung giống ≥45% một trong 3 tập gần nhất, `voice_role` gần giống 2 tập gần nhất. Video cũ không có frame object vẫn được kiểm như trước. **Không có câu mẫu**: câu chào, CTA, câu kết của 5 tập gần nhất in ở `node fx-list.mjs` để né.
 
@@ -75,7 +79,7 @@ Mỗi **cảnh** = một đoạn lời đọc (`say`) + một template hình. M�
 
 **Nhịp hình.** Không dùng cùng một `type` quá 2 lần liên tiếp. `narrator` ≤20% số cảnh (validate báo). Loại cảnh xương sống đi theo khung. Mỗi nhân vật quan trọng có 1 cảnh `intro` khi xuất hiện lần đầu.
 
-**Giọng văn.** Tèo xưng "mình", gọi người xem "các bạn". Câu ngắn, đời thường, có đùa nhẹ, nhịp đổi theo `voice_role`. Tên riêng viết đúng chính tả. Số viết bằng chữ số được (VieNeu đọc "1428" đúng).
+**Giọng văn.** Tèo xưng "mình", gọi người xem "các bạn". Câu ngắn, đời thường, có đùa nhẹ, nhịp đổi theo `voice_role`. Tên riêng viết đúng chính tả. Số viết bằng chữ số được (tts-zerotts.py tự đổi số, ngày, giờ sang chữ trước khi đọc).
 
 **Kết.** Theo khung (phán quyết, twist, vòng tròn, câu hỏi để ngỏ…), không mặc định "điểm lại ba điều". Cảnh cuối là `outro`, hé lộ tập sau mỗi lần một kiểu.
 
@@ -134,7 +138,7 @@ Thêm fx mới: tạo `kit/fx/<ten>.mjs` export `{id, cat, label, run(ctx, o)}` 
 
 Thư viện có sẵn: `kit/chars/library/` (thần Hy Lạp). Nhân vật mới thì vẽ vào `<video>/chars/<key>.svg`, đúng phong cách:
 
-- `viewBox="0 0 300 420"`, kiểu **chibi phẳng (kiểu cũ)**: đầu to tròn, thân ngắn, tô màu phẳng, viền đen `#111` dày 6, mắt chấm đen có đốm sáng, má hồng. Bộ vẽ chuẩn: `~/.claude/skills/video-teo/scripts/gen-chars.template.mjs`. Không dùng bộ anime (từ 2026-10-21).
+- `viewBox="0 0 300 420"`, kiểu **chibi phẳng (kiểu cũ)**: đầu to tròn, thân ngắn, tô màu phẳng, viền đen `#111` dày 6, mắt chấm đen có đốm sáng, má hồng. Bộ vẽ chuẩn: `$HOME/.agent-skills/skills/video-teo/scripts/gen-chars.template.mjs`. Không dùng bộ anime (từ 2026-10-21).
 - Trang phục và đạo cụ nói rõ thân phận (long bào, mũ cánh chuồn, áo tứ thân, giáp, nón lá, toga, áo blouse…). Đạo cụ cũng có thể là một "nhân vật" riêng (gươm, rùa…) để dùng trong `moment` hoặc thumbnail.
 - Biểu cảm (đổi lông mày / miệng) là file riêng `<key>-<expr>.svg`, khai báo thành key riêng trong `cast`.
 - Muốn nhân vật mấp máy môi khi nói (`talk`, `intro.speaks`) thì vẽ 2 nhóm: `<g id="mouth-closed">…</g>` và `<g id="mouth-open" opacity="0">…</g>`.

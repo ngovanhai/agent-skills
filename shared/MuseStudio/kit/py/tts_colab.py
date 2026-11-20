@@ -8,8 +8,8 @@ import os, sys, json, time, hashlib, zipfile, tempfile, subprocess
 from pathlib import Path
 
 KIT_PY = Path(__file__).resolve().parent
-REPO = Path(os.environ.get("VIENEU_DIR") or "C:/Users/anhha/VieNeu-TTS")
-COLAB = os.environ.get("COLAB_CLI") or "C:/Users/anhha/.colab-cli/Scripts/colab.exe"
+REPO = Path(os.environ.get("VIENEU_DIR") or str(Path.home() / "VieNeu-TTS"))
+COLAB = os.environ.get("COLAB_CLI") or str(Path.home() / ".colab-cli/Scripts/colab.exe")
 SESSION = os.environ.get("COLAB_SESSION") or "vieneu"
 GPU = os.environ.get("COLAB_GPU") or "T4"
 HOME = Path(os.environ.get("VIENEU_HOME") or (Path.home() / ".vieneu"))

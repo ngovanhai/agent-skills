@@ -1,0 +1,216 @@
+{
+ "slug": "mot-bua-no-nam-cao",
+ "title": "Một Bữa No Nam Cao: Vì Sao Bà Lão Chết Vì Ăn No?",
+ "voice": "Lóng",
+ "target_min": [
+  20,
+  30
+ ],
+ "names": "Nam Cao, Trần Hữu Tri, Một bữa no, bà phó Thụ, cái đĩ, Đại Hoàng, Lý Nhân, Hà Nam, Vũ Đại, Chí Phèo, Lão Hạc, Đời thừa, Đôi lứa xứng đôi, Hoàng Đan, Ninh Bình, Thái Bình, Nam Định, Bắc Kỳ, Ất Dậu, Phong Lê, bánh đúc, khung cửi, vực, kali, phốt pho, magiê, insulin",
+ "bgm": "playful-pizzicato.mp3",
+ "bgm_volume": 0.05,
+ "theme": {
+  "preset": "bang-den",
+  "font": "\"Chalkboard SE\", \"Marker Felt\", sans-serif"
+ },
+ "cast": {
+  "balao": {
+   "svg": "chars/balao.svg",
+   "name": "Bà lão"
+  },
+  "balao-cuoi": {
+   "svg": "chars/balao-cuoi.svg",
+   "name": "Bà lão"
+  },
+  "balao-khoc": {
+   "svg": "chars/balao-khoc.svg",
+   "name": "Bà lão"
+  },
+  "balao-an": {
+   "svg": "chars/balao-an.svg",
+   "name": "Bà lão"
+  },
+  "balao-no": {
+   "svg": "chars/balao-no.svg",
+   "name": "Bà lão"
+  },
+  "caidi": {
+   "svg": "chars/caidi.svg",
+   "name": "Cái đĩ"
+  },
+  "caidi-mung": {
+   "svg": "chars/caidi-mung.svg",
+   "name": "Cái đĩ"
+  },
+  "caidi-ngai": {
+   "svg": "chars/caidi-ngai.svg",
+   "name": "Cái đĩ"
+  },
+  "bapho": {
+   "svg": "chars/bapho.svg",
+   "name": "Bà phó Thụ"
+  },
+  "bapho-gat": {
+   "svg": "chars/bapho-gat.svg",
+   "name": "Bà phó Thụ"
+  },
+  "codet": {
+   "svg": "chars/codet.svg",
+   "name": "Cô dệt cửi"
+  },
+  "contrai": {
+   "svg": "chars/contrai.svg",
+   "name": "Con trai bà lão"
+  },
+  "condau": {
+   "svg": "chars/condau.svg",
+   "name": "Con dâu"
+  },
+  "chuthue": {
+   "svg": "chars/chuthue.svg",
+   "name": "Người chủ thuê"
+  },
+  "namcao": {
+   "svg": "chars/namcao.svg",
+   "name": "Nam Cao"
+  },
+  "nguoidoi": {
+   "svg": "chars/nguoidoi.svg",
+   "name": "Người đói 1945"
+  },
+  "bacsi": {
+   "svg": "chars/bacsi.svg",
+   "name": "Bác sĩ"
+  },
+  "batcom": {
+   "svg": "chars/batcom.svg",
+   "name": "Bát cơm"
+  },
+  "noidong": {
+   "svg": "chars/noidong.svg",
+   "name": "Nồi đồng"
+  }
+ },
+ "creative": {
+  "frame": {
+   "name": "sổ đếm của người giữ nồi làng: mười con số quanh một nồi cơm nhà bà phó Thụ, đếm từ mười đồng bán cháu tới ba vực cơm, rồi ra ngoài trang sách tới hai triệu người",
+   "analysis": "Lõi của Một bữa no là một phép đếm tàn nhẫn: đời bà lão bị đếm ra tiền và ra cơm, mười đồng bán cháu, tiền công tụt từ một đồng về không, ba tấm bánh đúc còn không tấm nào, luật mỗi người ba vực cơm, rồi bà chết vì ăn vượt con số người giàu cho phép. Người xem tìm tóm tắt một bữa no nên phải kể trọn, và họ muốn biết vì sao ăn no lại chết. Cảm xúc đi từ thương, sang tủi, sang nhục ở bữa cơm đừng mời, lạnh người ở câu bà chết no, rồi giận khi nạn đói thật đến hai năm sau. Người đứng gần nhất là người giữ nồi cơm của làng, quen đếm mọi thứ bằng bát.",
+   "axis": "mỗi khối mở bằng một con số có thật trong văn bản gốc, theo đúng thứ tự xuất hiện để kể trọn truyện; ba con số ngoài đời (năm 1943 của Nam Cao, ba chất khoáng của y học, hai triệu người của nạn đói 1945) chen vào đúng chỗ chúng giúp hiểu truyện",
+   "open": "đếm một, hai, ba vực cơm vào cái bát đàn khổng lồ, nồi đồng đổ cả vào, nửa tháng sau bát nứt và dấu CHẾT NO; một câu hỏi vì sao người đói lại chết vì no; lời hứa đặt câu nói của bà phó Thụ lên bàn cân y học; Tèo chào một câu bên bếp kiềng rồi vào ngay đêm bà lão hờ con",
+   "close": "cân hai vế câu của bà phó Thụ: vế no một bữa là đủ chết đúng một nửa vì lý do bà không hiểu, vế đói không thể chết bị nạn đói 1945 bác bỏ; quay về cái bát ở cảnh mở, giờ rỗng và nứt, dấu đổi thành CHẾT VÌ ĐÓI; Tèo hỏi lại ăn cơm chưa",
+   "segments": [
+    "ngót bảy mươi tuổi và mười đồng: đêm hờ con, chồng con chết, con dâu bỏ đi, nuôi cháu bảy năm rồi cho làm con nuôi lấy mười đồng, tám cải mả hai làm vốn",
+    "năm sáu chủ, tiền công từ một đồng về không: đi ở bế em, bị chê chậm và rơi vãi, lọ nước vỡ, năm hào về hưu trí",
+    "năm 1943 ngoài trang sách: Nam Cao là ai, làng Đại Hoàng, thầy giáo mất việc, cái đói có sẵn trước nạn đói",
+    "ba tấm bánh đúc rồi không tấm nào: hơn ba tháng bánh đúc, xin chợ, mấy hôm nhịn, đêm hờ con và cái kế ra đi",
+    "năm sáu quãng nghỉ và hai lần cổng: đường tới nhà bà phó Thụ, gốc sung, đàn chó, bà phó đi chợ về mắng như tát nước, cho một bữa cơm",
+    "hai xu của cái đĩ: bà cháu gặp nhau ở đầu chái, câu chỉ nhịn thôi, hai đồng trinh trong túi rút dải yếm",
+    "ba vực cơm: mâm gỗ một mâm, câu đừng mời, bát mắm riêng, luật ba vực, chưa hết hai lượt cả nhà bỏ đũa, bà vét sạch nồi",
+    "nửa tháng: khát nước, bụng căng, nửa đêm đau, thổ, tả, lị, rồi chết; bà phó gọi là chết no và lấy làm bài học",
+    "ba chất của bàn cân y học: hội chứng nuôi ăn lại, kali phốt pho magiê, vì sao không chẩn đoán được nhân vật",
+    "hai triệu: nạn đói Ất Dậu, vì sao có nạn đói 1945, những người đói khác của Nam Cao, câu của bà phó Thụ bị lịch sử bác bỏ"
+   ]
+  },
+  "voice_role": "người giữ nồi cơm của làng, chuyên thổi cơm thuê cho đám giỗ đám cưới với cái nồi đồng to nhất làng; nói chậm, ấm hơi bếp, quy mọi thứ ra bát cơm, đếm từng vực một, chuyển đoạn bằng tiếng đũa cả gõ vào thành nồi rồi mở vung lấy con số kế tiếp, chào ai cũng bằng câu ăn cơm chưa",
+  "style": "đếm từng con số trong truyện như xới từng vực cơm từ một nồi đồng: con số bốc lên từ hơi nồi, sơ đồ xếp bằng hạt gạo trên nia, câu văn gốc hiện ra trong hơi cơm",
+  "motif": "bát đàn men lam, nồi đồng bốc hơi, vực cơm, nia tre và hạt gạo xếp hình, lá chuối ghi tên, chồng bát nhỏ ở góc khung cao dần theo từng con số",
+  "hook": "con số đếm lên rồi vượt mức: một, hai, ba vực cơm theo luật nhà giàu, rồi cả nồi, rồi nửa tháng sau một dấu chết",
+  "hook_visual": "bát đàn khổng lồ giữa khung, mỗi tiếng đếm một vực cơm rơi thẳng xuống và số DIN to bật 1, 2, 3 bên phải, nồi đồng trượt vào nghiêng đổ làm núi cơm vượt miệng bát, rồi khung tối lại, bát nứt một đường, dấu đỏ CHẾT NO đập xuống giữa",
+  "palette": "xám tro bếp, trắng gạo, xanh men lam, đỏ than hồng",
+  "signature_fx": [
+   "embers",
+   "ash",
+   "spotlight"
+  ],
+  "gag": "Tèo chào ai cũng bằng câu ăn cơm chưa, câu chào mà người ta bảo sinh ra từ những năm đói; mỗi lần sang con số mới lại gõ đũa cả cạch một tiếng vào thành nồi đồng",
+  "visual": {
+   "medium": "gian bếp tro xám và cái nia gạo: con số bốc lên từ hơi nồi đồng, sơ đồ và bản đồ xếp bằng hạt gạo trên mặt nia, tên nhân vật viết trên lá chuối, bát đàn men lam là đơn vị đếm",
+   "why": "câu chuyện là một chuỗi phép đếm tiền và cơm quanh một nồi cơm nhà giàu, kết bằng cái chết vì một bữa cơm, nên mọi hình đều làm từ chính cơm gạo và đồ bếp: đếm bằng vực, vẽ bằng hạt gạo",
+   "layout": "bếp kiềng và nồi đồng ở giữa dưới làm điểm neo, số to bốc lên chính giữa phía trên, nhân vật đứng thấp hai bên, nia tròn chiếm giữa khung cho sơ đồ nhìn từ trên xuống, chồng bát nhỏ ở góc phải trên làm đồng hồ n/10",
+   "palette": [
+    "#2B3331",
+    "#F4F1E6",
+    "#2F5D9E",
+    "#E4572E",
+    "#C7963E",
+    "#4F7D3A"
+   ],
+   "font": "Georgia (tiêu đề, câu văn gốc in nghiêng) + Chalkboard SE (chữ viết tay) + DIN Condensed (con số đếm)",
+   "kit": "scenes/_bep.mjs",
+   "scene_kit": [
+    "hook-dem-vuc: hook đếm vực cơm và cảnh kết vòng tròn",
+    "mo-vung: mở mỗi con số trong sổ đếm (chuyển đoạn)",
+    "bep: Tèo bên bếp kiềng chào, bình luận, mời đăng ký",
+    "canh: diễn lại cảnh trong truyện ở lều, làng, sân nhà giàu, bếp, đêm",
+    "la-chuoi: giới thiệu nhân vật bằng nhãn lá chuối",
+    "hoi-com: câu văn gốc bốc lên từ hơi nồi",
+    "nia: sơ đồ đống gạo, chuỗi nguyên nhân, vạch đếm bằng hạt gạo",
+    "ban-do: bản đồ đồng bằng Bắc Bộ xếp bằng hạt gạo",
+    "chan-bat: mốc thời gian là bát úp trên chạn",
+    "hai-noi: so sánh hai bên quanh cây đũa cả",
+    "co-the: cơ chế hội chứng nuôi ăn lại"
+   ]
+  }
+ },
+ "thumbnail": {
+  "text": "Ăn hết nồi, rồi chết?",
+  "highlight": "hết nồi",
+  "who": [
+   "balao-no"
+  ],
+  "prop": "noidong",
+  "layout": "classic",
+  "circle_x": 400,
+  "circle_y": 320,
+  "circle_r": 400,
+  "prop_rot": -8,
+  "arrow": false,
+  "badge": false,
+  "bg": "teal",
+  "series": "VĂN HỌC 1930–1945"
+ },
+ "publish": {
+  "titles": [
+   "Một Bữa No Nam Cao: Vì Sao Bà Lão Chết Vì Ăn No?",
+   "Tóm Tắt Một Bữa No: Ba Vực Cơm Và Nửa Tháng Sau",
+   "Một Bữa No Của Nam Cao: Viết Trước Nạn Đói 1945"
+  ],
+  "description": "Một bữa no của Nam Cao: một bà lão đói lả ăn hết cả nồi cơm nhà bà phó Thụ, nơi mỗi người chỉ được ăn ba vực, rồi nửa tháng sau thì chết. Vì sao người đói lại chết vì được ăn no?\n\nTập mở đầu loạt \"Văn học 1930–1945\" của Tèo Kể. Tèo làm người giữ nồi cơm của làng, kể trọn truyện ngắn Một bữa no (Nam Cao, 1943) qua mười con số: ngót bảy mươi tuổi, mười đồng cho cháu đi làm con nuôi, tiền công bế em tụt từ một đồng về không, ba tấm bánh đúc, năm sáu quãng nghỉ trên đường tới nhà bà phó Thụ, hai xu của đứa cháu, ba vực cơm và câu \"Thôi, bà ăn đi! Đừng mời!\", nửa tháng thổ tả rồi chết, và lời răn \"no một bữa là đủ chết\".\n\nVideo có cả chuyện thật đằng sau tác phẩm: Nam Cao là ai, cái đói ở nông thôn Bắc Kỳ năm 1943, y học hôm nay nói gì về hội chứng nuôi ăn lại (refeeding syndrome), và vì sao có nạn đói Ất Dậu 1945 chỉ hai năm sau truyện.\n\nNếu là đứa cháu ngồi cạnh bà đang vét nồi trước mặt bà phó Thụ, bạn sẽ làm gì? Viết vào bình luận và đăng ký kênh để xem các truyện tiếp theo của loạt: Hai Đứa Trẻ (Thạch Lam) và Xuân Tóc Đỏ (Vũ Trọng Phụng).",
+  "hashtags": [
+   "MotBuaNo",
+   "NamCao",
+   "VanHocVietNam",
+   "NanDoi1945"
+  ],
+  "tags": [
+   "một bữa no",
+   "một bữa no nam cao",
+   "một bữa no của nam cao",
+   "tóm tắt một bữa no",
+   "một bữa no tóm tắt",
+   "tác phẩm một bữa no",
+   "nam cao",
+   "nam cao truyện ngắn",
+   "bà phó thụ",
+   "hội chứng nuôi ăn lại",
+   "nạn đói 1945",
+   "vì sao có nạn đói 1945",
+   "văn học việt nam",
+   "mot bua no",
+   "mot bua no nam cao"
+  ],
+  "notes": "Kiểm lại trước khi đăng: (1) mọi câu trích theo bản vi.wikisource 'Một bữa no' (đã đối chiếu bản thô); (2) năm sinh Nam Cao ghi 1915, có giấy tờ ghi 1917; (3) chuyện trường tư bị đóng khi Nhật vào Đông Dương ghi 'theo các tiểu sử thường in', không nêu năm; (4) số người chết nạn đói nêu theo khoảng 400 nghìn, khoảng 1 triệu, hơn 2 triệu (Tuyên ngôn Độc lập); (5) phần y khoa nói rõ không chẩn đoán được nhân vật, triệu chứng cũng giống bệnh đường ruột; (6) câu của GS Phong Lê lấy từ VietTimes 17/01/2015 (loạt bài nạn đói 1945 kỳ 5); (7) 'vực' giải thích là một lần xới cơm ra bát."
+ },
+ "chapters": [
+  "chapters/01.json",
+  "chapters/02.json",
+  "chapters/03.json",
+  "chapters/04.json",
+  "chapters/05.json",
+  "chapters/06.json",
+  "chapters/07.json",
+  "chapters/08.json",
+  "chapters/09.json",
+  "chapters/10.json"
+ ]
+}

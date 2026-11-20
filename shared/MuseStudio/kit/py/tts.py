@@ -6,7 +6,7 @@ import sys, json, time, hashlib
 from pathlib import Path
 
 import os
-REPO = Path(os.environ.get("VIENEU_DIR") or "C:/Users/anhha/VieNeu-TTS")
+REPO = Path(os.environ.get("VIENEU_DIR") or str(Path.home() / "VieNeu-TTS"))
 sys.path.insert(0, str(REPO))
 from vieneu import Vieneu
 from apps.user_voices import load_user_voices
