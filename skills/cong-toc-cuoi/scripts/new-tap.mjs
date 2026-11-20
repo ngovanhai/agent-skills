@@ -247,10 +247,11 @@ put("story.json", JSON.stringify({
 }, null, 1) + "\n");
 
 // engine nhân vật của kênh: nv.gd + cast.json (tập được thêm vai mới vào cast.json của tập)
-const ENG = "C:/Users/anhha/MuseStudio/cong-toc-cuoi/_tools/doodle";
+const MS = process.env.MUSE_ROOT || (await import("node:os")).homedir() + "/MuseStudio";
+const ENG = MS + "/cong-toc-cuoi/_tools/doodle";
 for (const f of ["nv.gd", "cast.json"]) if (!existsSync(join(G, f)) && existsSync(join(ENG, f))) { copyFileSync(join(ENG, f), join(G, f)); made.push(f); }
 
-const sfxSrc = "C:/Users/anhha/MuseStudio/kit/sfx";
+const sfxSrc = MS + "/kit/sfx";
 for (const f of existsSync(sfxSrc) ? readdirSync(sfxSrc) : []) {
   if (/^lib-.*\.mp3$/.test(f) && !existsSync(join(G, "sfx", f))) copyFileSync(join(sfxSrc, f), join(G, "sfx", f));
 }

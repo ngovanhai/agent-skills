@@ -15,7 +15,7 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 const SKILL = dirname(dirname(fileURLToPath(import.meta.url)));
-const FFMPEG = "C:/Users/anhha/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.2-full_build/bin/ffmpeg.exe";
+const FFMPEG = process.env.FFMPEG || "ffmpeg";
 const args = process.argv.slice(2);
 const die = (m) => { console.error("new-short: " + m); process.exit(1); };
 const tus = [];

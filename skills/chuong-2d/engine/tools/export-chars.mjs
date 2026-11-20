@@ -3,11 +3,12 @@
 // Dùng: node tools/export-chars.mjs [id…]  -> chars/<id>.json (không ghi id = xuất hết sổ)
 import fs from "fs";
 import path from "path";
-import { pathToFileURL } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 import os from "os";
 
 // Nhân vật lấy từ sổ chung của skill nhan-vat-chibi (data/chars.json); thêm/sửa nhân vật ở đó.
-const LIB = path.join(os.homedir(), ".claude/skills/nhan-vat-chibi/scripts/lib.mjs");
+const SKILLS = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+const LIB = path.join(SKILLS, "nhan-vat-chibi/scripts/lib.mjs");
 const { rig, loadChars, lookOf, lint } = await import(pathToFileURL(LIB).href);
 const { figure, JOINTS } = rig;
 const BOOK = loadChars();

@@ -5,14 +5,14 @@ description: Tìm chủ đề bóng đá ĐANG NÓNG trong ngày, tuần và th�
 
 # Tìm chủ đề nóng để ăn view
 
-`SKILL = thư mục chứa file này` · Kết quả ghi vào `C:/Users/anhha/MuseStudio/the-thao/_hot/`.
+`SKILL = thư mục chứa file này` · Kết quả ghi vào `$HOME/MuseStudio/the-thao/_hot/`.
 
 Vì sao có skill này (2026-10-30): các tập chọn theo series (lịch sử CLB, cuộc đời huyền thoại) gần như không có view. Ngày 29/10 kênh có 2 sub và CTR tập dài 0,8–1,0%. Video tốt nhất là Short Camavinga (1.100 view) làm ngay sau trận El Clásico. Kết luận: **đi theo thứ người xem đang theo dõi và đang gõ tìm**, không đi theo lịch của mình.
 
 ## Bước 1: quét số liệu (≈20 giây)
 
 ```bash
-cd C:/Users/anhha/MuseStudio/the-thao/_hot
+cd $HOME/MuseStudio/the-thao/_hot
 node ~/.agent-skills/skills/tim-chu-de-hot/scripts/hot.mjs --out $(date +%F).md --json $(date +%F).json
 # thêm hạt giống khi cần đào sâu: --seed "u15 việt nam,fifa asean cup,quả bóng vàng"
 ```

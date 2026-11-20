@@ -10,12 +10,14 @@ import { existsSync, readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { join, resolve, basename, dirname } from "node:path";
 import { spawnSync } from "node:child_process";
 import { homedir } from "node:os";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const SKILL = dirname(dirname(fileURLToPath(import.meta.url)));
-const GODOT = "C:/tool/Godot/Godot_v4.7.2-stable_win64_console.exe";
+const MS = process.env.MUSE_ROOT || homedir() + "/MuseStudio";
+const { ganDuoi, kiemTieuDe } = await import(pathToFileURL(join(MS, "yt-auto/tools/tieu-de.mjs")).href); // luật tiêu đề chung: ideas/TIEU-DE-ANH-BIA.md mục 1d
+const GODOT = process.env.GODOT || (process.platform === "darwin" ? homedir() + "/Godot/Godot.app/Contents/MacOS/Godot" : "godot");
 const HIST = join(SKILL, "data/history.json");
-const CHARS = join(homedir(), ".claude/skills/nhan-vat-chibi/data/chars.json");
+const CHARS = join(SKILL, "..", "nhan-vat-chibi/data/chars.json");
 const args = process.argv.slice(2);
 const has = (k) => { const i = args.indexOf(k); if (i < 0) return false; args.splice(i, 1); return true; };
 const noGodot = has("--no-godot"), doLog = has("--log");
@@ -88,7 +90,9 @@ if (fresh && existsSync(TL)) {
 
 // ---- luật lời: không "Chương", hook trước chào, chào sớm, CTA giữa + cuối
 const word = (w) => new RegExp(`(^|[^\\p{L}])${w}(?=$|[^\\p{L}])`, "iu");
-for (const l of lines) if (word("chương").test(l.text)) err.push(`[${l.id}] có chữ "Chương" — video liền mạch, không chia chương`);
+// ngoại lệ: tên riêng "Tứ Thập Nhị Chương Kinh" (tập 23) và "bốn mươi hai chương" của chính bộ kinh ấy không phải lời chia chương
+const boTen = (s) => s.replace(/tứ\s+thập\s+nhị\s+chương(\s+kinh)?/giu, "").replace(/bốn\s+mươi\s+hai\s+chương/giu, "");
+for (const l of lines) if (word("chương").test(boTen(l.text))) err.push(`[${l.id}] có chữ "Chương" — video liền mạch, không chia chương`);
 for (const l of lines) if (/lại là tèo đây/i.test(l.text)) err.push(`[${l.id}] câu chào công thức "lại là Tèo đây" bị cấm — chào theo vai`);
 if (lines[0] && /chào/i.test(lines[0].text)) err.push("câu đầu phải là hook, không phải lời chào");
 if (SHORT) {
@@ -96,11 +100,18 @@ if (SHORT) {
   if (hw > 12) warn.push(`câu hook [${lines[0].id}] ${hw} chữ — nên ≤ 12`);
   if (segs[0] && segs[0].t1 > 12.5) warn.push(`đoạn hook ${segs[0].kid} dài ${segs[0].t1.toFixed(1)} s — nên ≤ 12 s`);
   if (!lines.some((l) => /đăng ký/i.test(l.text) && l.t0 >= DUR * 0.7)) err.push("short phải kết bằng câu mời đăng ký (trong 30% cuối)");
-  if (!lines.some((l) => /tèo kể/i.test(l.text))) warn.push('không câu nào nhắc tên kênh "Tèo Kể"');
+  if (!lines.some((l) => /(tèo tửu lâu|tèo kể)/i.test(l.text))) warn.push('không câu nào nhắc tên kênh "Tèo Tửu Lâu"');
 }
 const greet = SHORT || lines.find((l) => /tèo/i.test(l.text));
 if (!greet) warn.push("không câu nào nhắc tên Tèo — Tèo phải tự giới thiệu theo vai");
 else if (!SHORT && greet.t0 > 90) warn.push(`Tèo xuất hiện lần đầu ở ${mmss(greet.t0)} (nên ≤ 1:00, trừ khung kể bằng nhân vật khác)`);
+// lời mời đầu video (người dùng chốt 2026-11-05): ngay sau hook (3 câu đầu đoạn thứ hai) mời bình luận chọn chủ đề + like + đăng ký/theo dõi
+if (!SHORT && segs[1]) {
+  const dau = segs[1].lines.slice(0, 3).map((l) => l.text).join(" ");
+  const thieu = [[/bình luận/i, '"bình luận" (muốn Tèo làm về ai / ý tưởng nào)'], [/like/i, '"like"'], [/(đăng ký|theo dõi)/i, '"đăng ký"/"theo dõi"']]
+    .filter(([re]) => !re.test(dau)).map(([, t]) => t);
+  if (thieu.length) err.push(`ngay sau hook (3 câu đầu ${segs[1].kid}) thiếu lời mời: ${thieu.join(", ")}`);
+}
 const CTA = /(đăng ký|bật chuông|bấm like|nhấn like|thả like|bình luận)/i;
 const ctas = lines.filter((l) => CTA.test(l.text));
 if (!SHORT && !ctas.some((l) => l.t0 >= DUR * 0.25 && l.t0 <= DUR * 0.75)) err.push("thiếu CTA ở khoảng 25–75% thời lượng");
@@ -139,7 +150,7 @@ else if (SHORT) {
   if (!norm(story.seo?.mo_ta)) err.push("story.seo.mo_ta chưa viết");
   const t = story.seo?.title || "";
   if (!t || t.includes("…")) err.push("story.seo.title chưa viết");
-  else if (t.length > 60 || !t.endsWith("| Tèo Kể")) err.push(`seo.title phải ≤ 60 ký tự và kết thúc "| Tèo Kể" (đang ${t.length})`);
+  else { const k = kiemTieuDe(ganDuoi(t, true)); err.push(...k.err); warn.push(...k.warn); }
 } else {
   story = JSON.parse(read("story.json"));
   const hist = JSON.parse(readFileSync(HIST, "utf8")).filter((h) => h.tap !== slug).slice(-5);
@@ -160,7 +171,7 @@ else if (SHORT) {
     if (sim(doan[i][1], doan[j][1]) >= SIM_ERR) err.push(`story.doan: ${doan[i][0]} và ${doan[j][0]} cùng kiểu dựng ("${doan[i][1]}" ~ "${doan[j][1]}")`);
   const t = story.seo?.title || "";
   if (!t || t.includes("…")) err.push("story.seo.title chưa viết");
-  else if (t.length > 60 || !t.endsWith("| Tèo Kể")) err.push(`seo.title phải ≤ 60 ký tự và kết thúc "| Tèo Kể" (đang ${t.length})`);
+  else { const k = kiemTieuDe(ganDuoi(t)); err.push(...k.err); warn.push(...k.warn); }
 }
 
 // ---- cast.json: char phải có trong sổ nhân vật
@@ -171,7 +182,7 @@ if (existsSync(join(G, "cast.json")) && existsSync(CHARS)) {
 
 // ---- chiêu: làm bằng chuong-2d (có trong sổ) và đã gd-chieu vào tập
 if (existsSync(join(G, "story.json"))) {
-  const MV = join(homedir(), ".claude/skills/chuong-2d/data/moves.json");
+  const MV = join(SKILL, "..", "chuong-2d/data/moves.json");
   const mbook = existsSync(MV) ? JSON.parse(readFileSync(MV, "utf8")) : [];
   const ok = new Set((Array.isArray(mbook) ? mbook : Object.values(mbook)).map((m) => m.id));
   const ch = JSON.parse(read("story.json")).chieu || [];

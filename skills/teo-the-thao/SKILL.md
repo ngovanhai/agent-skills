@@ -10,9 +10,9 @@ description: >-
 
 # Tèo Thể Thao × Godot 2D: bóng đá, mỗi tập một kịch bản, một khung, một bộ code hình
 
-`SKILL = thư mục chứa file này` · `KH = ~/.agent-skills/skills/teo-kiem-hiep` (mượn script giọng/render/mặt) · `LOCK = bash C:/Users/anhha/MuseStudio/the-thao/_tools/slot.sh`
-Godot 4.7.2: `C:/tool/Godot/Godot_v4.7.2-stable_win64_console.exe` · Thư mục tập: `C:/Users/anhha/MuseStudio/the-thao/tap-<NN>-<slug>/` (slug không dấu, gạch nối).
-Học cách dựng Godot từ tập mẫu kiếm hiệp `C:/Users/anhha/MuseStudio/kiem-hiep/tap-01-tieu-phong-vs-quach-tinh/godot/` (chỉ đọc).
+`SKILL = thư mục chứa file này` · `KH = ~/.agent-skills/skills/teo-kiem-hiep` (mượn script giọng/render/mặt) · `LOCK = bash $HOME/MuseStudio/the-thao/_tools/slot.sh`
+Godot 4.7.2: `$HOME/Godot/Godot.app/Contents/MacOS/Godot` · Thư mục tập: `$HOME/MuseStudio/the-thao/tap-<NN>-<slug>/` (slug không dấu, gạch nối).
+Học cách dựng Godot từ tập mẫu kiếm hiệp `$HOME/MuseStudio/kiem-hiep/tap-01-tieu-phong-vs-quach-tinh/godot/` (chỉ đọc).
 
 Skill này là bản bóng đá của `teo-kiem-hiep-godot`: cùng quy trình Godot, cùng hợp đồng render, nhưng luật nội dung, kho chủ đề và cảnh hành động là của bóng đá. **Không dùng `chuong-2d`** (đó là chưởng kiếm hiệp).
 
@@ -36,9 +36,9 @@ Người dùng giao quản lý kênh với mục tiêu **1.000 sub trong 30 ngà
   - **Sản xuất:** job `teo-tt-tin-sang` 04:00 (tin nóng, 1 tập); job `teo-tt-video-dai` 07:05, 14:05, 21:05 (Task Scheduler `\TeoTheThao\`) chỉ làm tập KỂ CHUYỆN, nghỉ lượt khi hàng chờ đã ≥4 tập kể chuyện. Làm dư thì tập nằm trong hàng chờ để dự phòng.
   - **agy hết hạn mức thì KHÔNG dùng agy nữa.** Trước khi gọi agy, đọc `the-thao/_tools/agy-het-han.txt`; mốc mở lại chưa tới thì không gọi. agy trả 429 / RESOURCE_EXHAUSTED / "Resets in …" thì ghi mốc mở lại vào file đó. Cả hai trường hợp đều không dừng job: **Claude tự làm trọn tập** theo quy trình dưới đây, vẫn review kịch bản bằng subagent độc lập, rồi pack → `drive-sync --xoa`. Chi tiết ở `SKILL/data/van-hanh.md`.
 - **Quy trình đăng (người dùng chọn 2026-10-27): làm xong → review → pack → `drive-sync --xoa` lên Drive vào hàng chờ; KHÔNG tải lên YouTube khi sản xuất.** Job `teo-tt-dang-bai` mỗi sáng 05:30 lấy từ hàng chờ (`the-thao/_tools/dang-tu-drive.mjs`, sổ `_tools/da-dang.json`) tối đa 2 tập dài, tải lên và **tự hẹn giờ công khai** 07:00 và 19:00 (người dùng chọn tự công khai, không duyệt từng ngày). Cách tải và hẹn giờ: `SKILL/data/van-hanh.md`. Kiểm avatar góc phải là kênh Tèo Thể Thao. Không gửi tin nhắn, không bình luận ở kênh khác. Người dùng muốn **làm liên tục**: xong tập này làm ngay tập sau.
-- Sản xuất theo `ke-hoach-30-ngay.md` khi người dùng bảo làm hoặc khi job theo lịch (người dùng đã tạo 2026-10-26) chạy; ghi mỗi lần chạy vào `C:/Users/anhha/MuseStudio/the-thao/_tools/job-log.md`.
+- Sản xuất theo `ke-hoach-30-ngay.md` khi người dùng bảo làm hoặc khi job theo lịch (người dùng đã tạo 2026-10-26) chạy; ghi mỗi lần chạy vào `$HOME/MuseStudio/the-thao/_tools/job-log.md`.
 - Trước khi chọn chủ đề, đọc mục "Bài học từ số liệu" cuối `tang-truong.md`.
-- Chỉ sửa thư mục tập đang làm, `C:/Users/anhha/MuseStudio/ideas/DA-LAM.md` (mảng "Tèo thể thao"), dấu `(tập N)` trong `SKILL/data/chu-de.md` và hai nhật ký trong `ke-hoach-30-ngay.md`. Không sửa `kit/`.
+- Chỉ sửa thư mục tập đang làm, `$HOME/MuseStudio/ideas/DA-LAM.md` (mảng "Tèo thể thao"), dấu `(tập N)` trong `SKILL/data/chu-de.md` và hai nhật ký trong `ke-hoach-30-ngay.md`. Không sửa `kit/`.
 - Không chia chương, không nói "Chương X". **Video dài 8:00–14:30** (người dùng chốt dưới 15 phút; nhắm 10–13 phút). gd-check chặn quá 14:30.
 - **Bản quyền và hình ảnh:**
   - Được: tên cầu thủ/CLB/giải, tỉ số, số liệu, kể lại bằng lời của mình, bình luận, so sánh.
@@ -117,8 +117,8 @@ Việc nặng (giọng, render) luôn chạy qua `LOCK` bằng Bash tool (Git Ba
      - Look lấy từ skill `nhan-vat-chibi` (chưa có thì tạo bằng skill đó và soi sheet): áo đấu màu đội + số áo, kiểu tóc đặc trưng, không logo. Tèo có thể mặc áo trọng tài, áo HLV, áo phóng viên… theo vai.
      - **Tèo của kênh này là nhân vật `teo-the-thao`** trong sổ nhan-vat-chibi (người dùng yêu cầu khác Tèo cũ, 2026-10-26): tóc đen mái bằng, da rám nắng, mắt nâu, áo xanh coban cổ trắng số 10, quần xanh than. **Không dùng `teo-tieu-nhi` hay preset `teo`** (kính tròn, khăn đỏ, tóc nâu gai là Tèo của kênh kiếm hiệp). Trang phục theo vai (áo trọng tài, áo HLV…) thì giữ tóc, da, mắt, chỉ đổi áo.
      - `godot/cast.json`: `{"teo": {"char": "teo-the-thao", "name": "Tèo"}, "messi": {"char": "messi", "name": "Messi"}}`.
-     - **Kiểu nhân vật của kênh: CARTOON** (người dùng chọn 2026-10-26, thay mặt anime mắt to long lanh): đầu vẽ bằng `C:/Users/anhha/MuseStudio/the-thao/_tools/ve-cartoon.mjs` (viền đậm một màu, mắt bầu dục trắng con ngươi đen, lông mày khối, mũi rõ, miệng rộng, tóc mảng phẳng), thân/tay chân là rig v2 (`chibi.gd`). Dùng chung cho mọi tập để nhận diện kênh, **không** viết ve.mjs riêng từng tập. Soi: `node ~/.agent-skills/skills/nhan-vat-chibi/scripts/char.mjs sheet <id> --ve <ve-cartoon.mjs>`.
-     - Đưa nhân vật vào tập: trong `<tap>/godot/` chạy `node C:/Users/anhha/MuseStudio/the-thao/_tools/export-chars.mjs <id>…` (ra `chars/<id>.json` mặt cartoon) và chép `~/.agent-skills/skills/thao-tac-chibi/engine/chibi.gd` vào `godot/`. Trong phim.gd: `var c = preload("res://chibi.gd").new(); add_child(c); c.setup(id)`, mỗi khung đặt `c.t = t` rồi `c.apply(pose, 0.0)` (tất định theo t), `c.set_expr(...)`; nói thì đổi `binh` ↔ `vui` để nhép miệng.
+     - **Kiểu nhân vật của kênh: CARTOON** (người dùng chọn 2026-10-26, thay mặt anime mắt to long lanh): đầu vẽ bằng `$HOME/MuseStudio/the-thao/_tools/ve-cartoon.mjs` (viền đậm một màu, mắt bầu dục trắng con ngươi đen, lông mày khối, mũi rõ, miệng rộng, tóc mảng phẳng), thân/tay chân là rig v2 (`chibi.gd`). Dùng chung cho mọi tập để nhận diện kênh, **không** viết ve.mjs riêng từng tập. Soi: `node ~/.agent-skills/skills/nhan-vat-chibi/scripts/char.mjs sheet <id> --ve <ve-cartoon.mjs>`.
+     - Đưa nhân vật vào tập: trong `<tap>/godot/` chạy `node $HOME/MuseStudio/the-thao/_tools/export-chars.mjs <id>…` (ra `chars/<id>.json` mặt cartoon) và chép `~/.agent-skills/skills/thao-tac-chibi/engine/chibi.gd` vào `godot/`. Trong phim.gd: `var c = preload("res://chibi.gd").new(); add_child(c); c.setup(id)`, mỗi khung đặt `c.t = t` rồi `c.apply(pose, 0.0)` (tất định theo t), `c.set_expr(...)`; nói thì đổi `binh` ↔ `vui` để nhép miệng.
      - Tỉ lệ đầu to thân ngắn (2–3 đầu) giữ nguyên.
 6. **Code hình.** Thay hết `phim.gd` (xoá dấu `CHUA_DUNG`) và thêm file vẽ riêng. Không chép code hình tập trước, chỉ đọc để học. Cấu trúc file do tập tự chọn.
    - main.gd gọi `phim.setup(main)` một lần (có `main.segs`, `main.lines`, `main.DUR`), `phim.at(t, seg, line)` mỗi khung, `phim.sfx()` → `[[giây, "whoosh", dB], …]`.
@@ -140,7 +140,7 @@ Việc nặng (giọng, render) luôn chạy qua `LOCK` bằng Bash tool (Git Ba
 11. **Ảnh bìa:** `godot/thumb.tscn` + `thumb.gd` vẽ bằng bút của tập, chạy có cửa sổ (không `--headless`), lưu `thumb/thumb-godot.png`. Theo tang-truong.md mục 3: tối đa 3 thứ, mặt chibi to biểu cảm mạnh, ≤4 chữ viền dày, không lặp chữ tiêu đề, đọc được khi thu về 160×90 (thu nhỏ ảnh để soi). Không logo.
 12. **Gói:** `pack.mjs <tap>`, đọc lại `youtube/thumbnail.png`. Rồi `gd-check <tap> --log`. (DA-LAM.md thôi ghi từ 2026-11-04, sổ cái thay thế.)
    Ghi `youtube/binh-luan.txt` (câu hỏi hai lựa chọn để ghim). Tập theo chủ đề nóng ghi `youtube/UU-TIEN.txt` (điểm + hạn chót đăng).
-   **Đẩy Drive rồi xoá video trong máy**: `node SKILL/scripts/drive-sync.mjs <tap> --xoa` (lên `G:/My Drive/TeoTheThao/<slug>/`, chỉ xoá khi SHA-256 khớp; xem van-hanh.md). Không tự tải lên YouTube ở bước này: job `teo-tt-dang-bai` đăng 07:00/19:00; riêng tập có UU-TIEN.txt thì job sản xuất được đăng gấp qua `dang-tu-drive.mjs chon-mot` (chỉ vào khe 07:00/19:00 còn trống). Sau drive-sync chạy `node C:/Users/anhha/MuseStudio/_so-cai/so-cai.mjs quet tt` để tập vào sổ cái ở trạng thái "chờ đăng". Báo người dùng: tiêu đề, thumbnail, giờ sẽ đăng (`so-cai.mjs lich`).
+   **Đẩy Drive rồi xoá video trong máy**: `node SKILL/scripts/drive-sync.mjs <tap> --xoa` (lên `G:/My Drive/TeoTheThao/<slug>/`, chỉ xoá khi SHA-256 khớp; xem van-hanh.md). Không tự tải lên YouTube ở bước này: job `teo-tt-dang-bai` đăng 07:00/19:00; riêng tập có UU-TIEN.txt thì job sản xuất được đăng gấp qua `dang-tu-drive.mjs chon-mot` (chỉ vào khe 07:00/19:00 còn trống). Sau drive-sync chạy `node $HOME/MuseStudio/_so-cai/so-cai.mjs quet tt` để tập vào sổ cái ở trạng thái "chờ đăng". Báo người dùng: tiêu đề, thumbnail, giờ sẽ đăng (`so-cai.mjs lich`).
 13. ~~3 Shorts dọc~~ **TẮT từ 2026-11-03** (người dùng không làm Short nữa). Bỏ qua bước này và mục "Shorts dọc" bên dưới.
 
 ## Shorts dọc (3 short mỗi tập, 1080×1920, ≤ 60 s)

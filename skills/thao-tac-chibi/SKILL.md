@@ -13,7 +13,7 @@ description: Dựng cảnh truyện 2D bằng Godot với nhân vật chibi rig 
 | Sổ thao tác | `SKILL/data/thao-tac.md`: id, công thức, cảnh mẫu, bài học |
 | Cảnh mẫu | `SKILL/engine/canh/*.gd` |
 
-Godot: `C:/tool/Godot/Godot_v4.7.2-stable_win64_console.exe`. Lab gốc nơi phát triển: `C:/Users/anhha/MuseStudio/kiem-hiep/_lab/canh-chibi`.
+Godot: `$HOME/Godot/Godot.app/Contents/MacOS/Godot`. Lab gốc nơi phát triển: `$HOME/MuseStudio/kiem-hiep/_lab/canh-chibi`.
 
 ## Quy trình
 

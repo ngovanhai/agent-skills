@@ -3,8 +3,8 @@
 Kênh: @congtoccuoi · ID `UClW6e47o_G4Jy1H0i2pBxig` · tài khoản thương hiệu dưới ngoh33889@gmail.com (cùng Google account với Tèo Thể Thao `UCmVa984PvbXOWKsLKYXbZHw`).
 Trình duyệt: FoxProfile profile **`cong-toc-cuoi`** (tạo 2026-10-28, cookie chép từ `teo-the-thao` theo yêu cầu người dùng, kênh mặc định đã chọn là Cọng Tóc Cuối). REST: `http://127.0.0.1:8000/api/v1/browser/cong-toc-cuoi/page/...`.
 **Không dùng profile `teo-the-thao` cho kênh này** (profile đó phải luôn ở kênh Tèo cho job đăng bài 8:00).
-Nhật ký: `C:/Users/anhha/MuseStudio/cong-toc-cuoi/_tools/job-log.md` (mỗi lần tải lên một dòng; job 09:00 vẫn đọc file này để chặn tải trùng, nên đừng sửa mẫu dòng).
-**Sổ cái (từ 2026-11-04):** `C:/Users/anhha/MuseStudio/_so-cai/cong-toc-cuoi.json`, chung công cụ `so-cai.mjs` với Tèo Thể Thao. Trạng thái: đang làm → chờ đăng (đã đóng gói) → đã tải → đã hẹn → công khai, hoặc LỖI. `ctc-dang.ps1` tự ghi. Tải hoặc hẹn tay ngoài script thì ghi bằng: `node so-cai.mjs ghi ctc <slug> da-hen --id <ID> --gio "YYYY-MM-DD HH:MM"`.
+Nhật ký: `$HOME/MuseStudio/cong-toc-cuoi/_tools/job-log.md` (mỗi lần tải lên một dòng; job 09:00 vẫn đọc file này để chặn tải trùng, nên đừng sửa mẫu dòng).
+**Sổ cái (từ 2026-11-04):** `$HOME/MuseStudio/_so-cai/cong-toc-cuoi.json`, chung công cụ `so-cai.mjs` với Tèo Thể Thao. Trạng thái: đang làm → chờ đăng (đã đóng gói) → đã tải → đã hẹn → công khai, hoặc LỖI. `ctc-dang.ps1` tự ghi. Tải hoặc hẹn tay ngoài script thì ghi bằng: `node so-cai.mjs ghi ctc <slug> da-hen --id <ID> --gio "YYYY-MM-DD HH:MM"`.
 
 ## Luật
 - Job `ctc-dang-bai` (09:00, `_tools/ctc-hang-ngay.ps1`) tự tải lên và **hẹn giờ công khai** 07:00/19:00, giữ lịch kín 3 ngày tới (người dùng chốt 2026-11-03). Tập bị LỖI mà chưa có mã video thì lượt sau tự thử lại. Đăng tay: `pwsh -File _tools/ctc-dang.ps1 -Tap <slug> -Ngay YYYY-MM-DD -Gio 07:00`.
@@ -32,16 +32,16 @@ Selector và mẹo giống hệt kênh Tèo: đọc mục "Tải video lên Stud
 Sau khi tải xong: `node ~/.agent-skills/skills/cong-toc-cuoi/scripts/drive-sync.mjs <tap> --xoa` (lên `G:/My Drive/CongTocCuoi/<slug>/`, chỉ xoá trong máy khi SHA-256 khớp).
 
 ## Ảnh kênh
-Avatar/banner gốc: `C:/Users/anhha/MuseStudio/cong-toc-cuoi/kenh/`. Vẽ lại: trong `_tools/doodle` chạy `godot --path . -- --mode=avatar|banner --out=<png>` rồi ffmpeg (avatar: `crop=1080:1080:420:0,scale=800:800`; banner: `scale=2560:1440`, vùng an toàn 1546×423 giữa). Tải lên ở Studio → Tùy chỉnh → Hồ sơ (input file thứ 0 = banner, thứ 1 = ảnh) → Xong → Xuất bản.
+Avatar/banner gốc: `$HOME/MuseStudio/cong-toc-cuoi/kenh/`. Vẽ lại: trong `_tools/doodle` chạy `godot --path . -- --mode=avatar|banner --out=<png>` rồi ffmpeg (avatar: `crop=1080:1080:420:0,scale=800:800`; banner: `scale=2560:1440`, vùng an toàn 1546×423 giữa). Tải lên ở Studio → Tùy chỉnh → Hồ sơ (input file thứ 0 = banner, thứ 1 = ảnh) → Xong → Xuất bản.
 
 ## Đọc số liệu (chỉ đọc)
 `https://studio.youtube.com/channel/UClW6e47o_G4Jy1H0i2pBxig/analytics/tab-overview/period-default`. Ghi bài học có số (≥2 video cùng xu hướng) vào cuối `cong-thuc.md` mục "Bài học từ số liệu".
 
 ## Sản xuất tự động bằng AGY CLI (Cập nhật 2026-11-06)
-agy: `C:/Users/anhha/AppData/Local/agy/bin/agy.exe` (Antigravity CLI), model mặc định `gemini-3.8-flash-high`.
+agy: `agy` (Antigravity CLI), model mặc định `gemini-3.8-flash-high`.
 - **Tác vụ Windows Task Scheduler:** `ctc-tao-video` (chạy tự động lúc 02:00 và 14:00).
-- **Bộ điều phối:** `C:/Users/anhha/MuseStudio/cong-toc-cuoi/_tools/chay-job-ctc.ps1`.
-- **Đề bài tự động:** `C:/Users/anhha/MuseStudio/cong-toc-cuoi/_tools/ctc-video-dai-prompt.md`.
+- **Bộ điều phối:** `$HOME/MuseStudio/cong-toc-cuoi/_tools/chay-job-ctc.ps1`.
+- **Đề bài tự động:** `$HOME/MuseStudio/cong-toc-cuoi/_tools/ctc-video-dai-prompt.md`.
 - **Quy trình:**
   1. Script kiểm tra sổ cái `_so-cai/so-cai.mjs`. Nếu số tập chờ đăng $\ge 6$ thì nghỉ lượt để tránh dư thừa và nghẽn máy.
   2. Khi hàng chờ $< 6$ hoặc có cờ `-Force`, agy tự động chọn ý từ `kho-y-tuong.md`, tạo tập mới, viết kịch bản, chạy TTS (Quốc Tuấn + thoại nữ Ngọc Huyền), code Godot, tạo nhạc, soi hình, tự review độc lập, render bản cuối `gd-render.mjs --par 2`, đóng gói `pack.mjs` và cập nhật sổ cái `quet ctc`.
@@ -50,10 +50,10 @@ agy: `C:/Users/anhha/AppData/Local/agy/bin/agy.exe` (Antigravity CLI), model m�
      - Ép làm ngay 1 tập: `pwsh -File C:\Users\anhha\MuseStudio\cong-toc-cuoi\_tools\chay-job-ctc.ps1 -Force`
 
 ## Sản xuất trước đây bằng agy bán tự động (lịch sử 2026-10-29 đến 2026-11-05)
-agy: `C:/Users/anhha/AppData/Local/agy/bin/agy.exe` (Antigravity CLI), tự duyệt mọi lệnh (`--dangerously-skip-permissions`).
-- **Bản giao việc:** `C:/Users/anhha/MuseStudio/cong-toc-cuoi/_tools/agy-tap.md`. agy làm từ chọn chủ đề đến kịch bản, giọng, phim.gd, soi, thumbnail, nhạc, rồi **dừng trước khi render bản cuối**. Muốn giao chủ đề cụ thể thì thêm dòng "NHIỆM VỤ CỤ THỂ: …" vào cuối prompt.
+agy: `agy` (Antigravity CLI), tự duyệt mọi lệnh (`--dangerously-skip-permissions`).
+- **Bản giao việc:** `$HOME/MuseStudio/cong-toc-cuoi/_tools/agy-tap.md`. agy làm từ chọn chủ đề đến kịch bản, giọng, phim.gd, soi, thumbnail, nhạc, rồi **dừng trước khi render bản cuối**. Muốn giao chủ đề cụ thể thì thêm dòng "NHIỆM VỤ CỤ THỂ: …" vào cuối prompt.
 - **Chạy** (Git Bash, chạy nền):
-  `cd /c/Users/anhha/MuseStudio/cong-toc-cuoi && /c/Users/anhha/AppData/Local/agy/bin/agy.exe -p "$(cat _tools/agy-tap.md)" --model gemini-3.8-flash-high --dangerously-skip-permissions --print-timeout 0 > _tools/agy-<việc>.log 2>&1`
+  `cd /c$HOME/MuseStudio/cong-toc-cuoi && agy -p "$(cat _tools/agy-tap.md)" --model gemini-3.8-flash-high --dangerously-skip-permissions --print-timeout 0 > _tools/agy-<việc>.log 2>&1`
 - **agy hết quota thì thôi dùng agy** (người dùng chọn 2026-11-03). Log có `RESOURCE_EXHAUSTED` / `Individual quota reached` (mã 429) nghĩa là hết quota:
   - Không chờ quota hồi rồi chạy lại.
   - Không viết vòng thử lại.

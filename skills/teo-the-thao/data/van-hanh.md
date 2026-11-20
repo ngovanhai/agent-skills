@@ -2,11 +2,11 @@
 
 Kênh: @TeoTheThao · ID `UCmVa984PvbXOWKsLKYXbZHw` · tài khoản ngoh33889@gmail.com.
 Trình duyệt: FoxProfile profile `teo-the-thao`, điều khiển qua REST `http://127.0.0.1:8000/api/v1/browser/teo-the-thao/page/...`.
-Nhật ký chung của các job: `C:/Users/anhha/MuseStudio/the-thao/_tools/job-log.md` (mỗi lần chạy thêm một dòng: ngày giờ, job, kết quả, việc người dùng cần làm).
+Nhật ký chung của các job: `$HOME/MuseStudio/the-thao/_tools/job-log.md` (mỗi lần chạy thêm một dòng: ngày giờ, job, kết quả, việc người dùng cần làm).
 
 ## Bộ hẹn giờ: Windows Task Scheduler (từ 2026-10-28)
 
-Bộ hẹn giờ của app Claude Desktop ngừng chạy từ 2026-10-27 chiều (app báo oauth 403). Vì vậy 4 job đã chuyển sang Windows Task Scheduler, thư mục `\TeoTheThao\`. Mỗi job gọi `pwsh -File C:/Users/anhha/MuseStudio/the-thao/_tools/chay-job.ps1 -Job <id>`; script này đọc đề ở `~/.claude/scheduled-tasks/<id>/SKILL.md` rồi chạy `claude -p --dangerously-skip-permissions` trong `C:/Users/anhha/MuseStudio`.
+Bộ hẹn giờ của app Claude Desktop ngừng chạy từ 2026-10-27 chiều (app báo oauth 403). Vì vậy 4 job đã chuyển sang Windows Task Scheduler, thư mục `\TeoTheThao\`. Mỗi job gọi `pwsh -File $HOME/MuseStudio/the-thao/_tools/chay-job.ps1 -Job <id>`; script này đọc đề ở `~/.claude/scheduled-tasks/<id>/SKILL.md` rồi chạy `claude -p --dangerously-skip-permissions` trong `$HOME/MuseStudio`.
 - Log mỗi lượt ở `_tools/job-runs/<id>-<giờ>.log`. Lượt trước còn chạy thì lượt sau tự bỏ (file `.lock`).
 - **Từ 2026-11-03 người dùng TẮT Short:** job `teo-tt-short` đã tắt (Disabled), job đăng không đăng Short (MAX_SHORT = 0), `teo-tt-video-dai` chạy 07:05/14:05/21:05 và không làm Short. Dòng lịch dưới đây là lịch cũ.
 - Lịch hiện tại: `teo-tt-video-dai` 07:05/14:05/21:05, `teo-tt-dang-bai` 05:30 (2 tập dài 07:00 + 19:00, 0 Short), `teo-tt-so-lieu` 22:30. `teo-tt-short` tắt. (Lịch cũ trước 03/11: 2 dài + 6 Short mỗi ngày.)
@@ -16,17 +16,17 @@ Bộ hẹn giờ của app Claude Desktop ngừng chạy từ 2026-10-27 chiều
 ## Luật đăng (bắt buộc, kể cả khi chạy theo lịch)
 
 - **(Luật cũ, đã thay từ 2026-10-27 — xem mục "Quy trình đăng mới" bên dưới.)** Hiện tại: job `teo-tt-dang-bai` tải lên rồi **hẹn giờ công khai** 07:00/19:00, không cần duyệt từng video.
-- **Sổ cái (từ 2026-11-04):** `C:/Users/anhha/MuseStudio/_so-cai/teo-the-thao.json`, công cụ `so-cai.mjs` dùng chung với Cọng Tóc Cuối. `dang-tu-drive.mjs xong` tự ghi "đã hẹn". `danh-sach` coi tập có trong sổ ở trạng thái đã tải/đã hẹn là đã đăng. Xem nhanh: `node so-cai.mjs xem tt | lich | can-xu-ly`, bảng `bang.html`. Hẹn hoặc tải tay ngoài `xong` thì ghi: `node so-cai.mjs ghi tt <slug> da-hen --id <ID> --gio "YYYY-MM-DD HH:MM"`. Xác nhận công khai: `node so-cai.mjs kiem` (hỏi oEmbed công khai của YouTube, không cần trình duyệt).
+- **Sổ cái (từ 2026-11-04):** `$HOME/MuseStudio/_so-cai/teo-the-thao.json`, công cụ `so-cai.mjs` dùng chung với Cọng Tóc Cuối. `dang-tu-drive.mjs xong` tự ghi "đã hẹn". `danh-sach` coi tập có trong sổ ở trạng thái đã tải/đã hẹn là đã đăng. Xem nhanh: `node so-cai.mjs xem tt | lich | can-xu-ly`, bảng `bang.html`. Hẹn hoặc tải tay ngoài `xong` thì ghi: `node so-cai.mjs ghi tt <slug> da-hen --id <ID> --gio "YYYY-MM-DD HH:MM"`. Xác nhận công khai: `node so-cai.mjs kiem` (hỏi oEmbed công khai của YouTube, không cần trình duyệt).
 - Không bình luận ở kênh khác, không nhắn tin, không đổi cài đặt tài khoản.
 
 ## Sản xuất bằng agy (Gemini 3.8 Flash), Claude review (người dùng chọn 2026-10-27)
 
-agy: `C:/Users/anhha/AppData/Local/agy/bin/agy.exe` (Antigravity CLI). Người dùng chọn cho agy tự duyệt mọi lệnh (`--dangerously-skip-permissions`).
-- Bản giao việc: `C:/Users/anhha/MuseStudio/the-thao/_tools/agy-video-dai.md` và `agy-short.md` (cấm tải lên/đụng kênh/Drive). Thêm dòng "NHIỆM VỤ CỤ THỂ" ở cuối khi cần.
+agy: `agy` (Antigravity CLI). Người dùng chọn cho agy tự duyệt mọi lệnh (`--dangerously-skip-permissions`).
+- Bản giao việc: `$HOME/MuseStudio/the-thao/_tools/agy-video-dai.md` và `agy-short.md` (cấm tải lên/đụng kênh/Drive). Thêm dòng "NHIỆM VỤ CỤ THỂ" ở cuối khi cần.
 - **Chạy (từ 2026-10-29): KHÔNG gọi agy.exe thẳng từ Bash.** Ngày 29/10, gọi agy thẳng từ phiên Claude headless làm chết chính phiên đó (mã 0xC000013A/137); lượt 09:18 còn kéo chết cả các job khác đang chạy. Cách chạy: ghi bản giao việc (agy-video-dai.md + dòng NHIỆM VỤ CỤ THỂ) ra một file, rồi
-  `pwsh -NoProfile -File C:/Users/anhha/MuseStudio/the-thao/_tools/chay-agy.ps1 -Tag <việc-ngày-giờ> -PromptFile <file giao việc> [-Continue]`
+  `pwsh -NoProfile -File $HOME/MuseStudio/the-thao/_tools/chay-agy.ps1 -Tag <việc-ngày-giờ> -PromptFile <file giao việc> [-Continue]`
   Lệnh này mở agy thành một tác vụ Task Scheduler riêng (`\TeoTheThaogy\`) rồi trả về ngay, in đường dẫn `log=` và `done=`. Chờ agy xong bằng Bash `run_in_background` với vòng `until [ -f <done> ]; do sleep 5; done`; file `.done` chứa mã thoát của agy. Muốn dừng agy thì chạy `Stop-ScheduledTask -TaskPath \TeoTheThaogy\ -TaskName agy-<tag>`.
-- **agy hết hạn mức thì KHÔNG dùng agy nữa (người dùng chốt 2026-11-03).** Trước khi gọi agy, đọc `C:/Users/anhha/MuseStudio/the-thao/_tools/agy-het-han.txt`: nếu file có và mốc mở lại trong đó chưa tới thì KHÔNG gọi agy. agy trả 429 / RESOURCE_EXHAUSTED / "Resets in …" thì ghi mốc mở lại (giờ hiện tại + thời gian chờ) vào file đó. Hai trường hợp này đều không DỪNG job: **Claude tự sản xuất toàn bộ** theo skill `teo-the-thao` (tập dài: quy trình bước 0–13; Short: mục Shorts dọc), vẫn qua `slot.sh`, vẫn review kịch bản bằng subagent độc lập, rồi pack → drive-sync --xoa như thường. Ghi job-log "Claude tự làm (agy hết hạn mức đến …)".
+- **agy hết hạn mức thì KHÔNG dùng agy nữa (người dùng chốt 2026-11-03).** Trước khi gọi agy, đọc `$HOME/MuseStudio/the-thao/_tools/agy-het-han.txt`: nếu file có và mốc mở lại trong đó chưa tới thì KHÔNG gọi agy. agy trả 429 / RESOURCE_EXHAUSTED / "Resets in …" thì ghi mốc mở lại (giờ hiện tại + thời gian chờ) vào file đó. Hai trường hợp này đều không DỪNG job: **Claude tự sản xuất toàn bộ** theo skill `teo-the-thao` (tập dài: quy trình bước 0–13; Short: mục Shorts dọc), vẫn qua `slot.sh`, vẫn review kịch bản bằng subagent độc lập, rồi pack → drive-sync --xoa như thường. Ghi job-log "Claude tự làm (agy hết hạn mức đến …)".
 - Trước khi chạy ghi job-log dòng "ĐANG LÀM: agy …" để job khác không làm trùng; xong thì thay bằng kết quả.
 - **Claude review trước khi tải lên** (không tin báo cáo của agy):
   1. `gd-check <tập>` (hoặc `<short>`) phải OK; mở `y-tuong.md` xem Đánh giá chủ đề (≥28/40) và Review kịch bản ĐẠT.
@@ -38,7 +38,7 @@ agy: `C:/Users/anhha/AppData/Local/agy/bin/agy.exe` (Antigravity CLI). Người 
 ## Quy trình đăng mới: Drive → hàng chờ → đăng mỗi ngày (người dùng chọn 2026-10-27, thay mọi chỗ "Riêng tư, chờ duyệt" bên dưới)
 
 - **Sản xuất** (job teo-tt-video-dai, teo-tt-short, hoặc làm tay): review xong → `pack.mjs` → ghi `<tập>/youtube/binh-luan.txt` (câu hỏi hai lựa chọn) → `drive-sync.mjs <tập> --xoa`. KHÔNG tải lên YouTube.
-- **Hàng chờ:** `node C:/Users/anhha/MuseStudio/the-thao/_tools/dang-tu-drive.mjs danh-sach` đọc `G:/My Drive/TeoTheThao/*` và sổ đã đăng `_tools/da-dang.json`.
+- **Hàng chờ:** `node $HOME/MuseStudio/the-thao/_tools/dang-tu-drive.mjs danh-sach` đọc `G:/My Drive/TeoTheThao/*` và sổ đã đăng `_tools/da-dang.json`.
 - **Đăng** (job teo-tt-dang-bai, 8:00 mỗi ngày): `dang-tu-drive.mjs chon` chọn 1 tập dài (cũ nhất; bỏ nếu ngày đó đã có tập dài hẹn) + 3 Short (ưu tiên Short có tập dài đã đăng ngày trước; Short của tập dài cùng ngày chỉ xếp sau 19:00), chép tạm về `the-thao/_dang/` (FoxProfile chỉ tải file trong the-thao) → `Upload-Video` (`_tools/dang-bai.ps1`) → `Schedule-Video` (`_tools/yt-schedule.ps1`) → `dang-tu-drive.mjs xong <id> <link> "<ngày giờ>"`. Giờ: tập dài 19:00, Short 11:30, 15:30, 21:30 (GMT+7).
 - Người dùng chọn tự công khai theo giờ: job đăng KHÔNG cần duyệt từng ngày. "duyệt hết" chỉ còn dùng cho video cũ còn nằm ở mục "Chờ duyệt".
 - Bình luận câu hỏi: job đăng hôm sau đăng dưới video đã công khai hôm trước.
@@ -46,7 +46,7 @@ agy: `C:/Users/anhha/AppData/Local/agy/bin/agy.exe` (Antigravity CLI). Người 
 ## Duyệt gộp: người dùng nhắn "duyệt hết" (2026-10-27)
 
 Người dùng không duyệt từng video; chỉ cần một câu trong chat ("duyệt hết", "đăng hết", "duyệt tất cả video chờ") là đồng ý cho **mọi video đang nằm ở mục "Chờ duyệt" của job-log tại thời điểm đó**. Khi nhận câu ấy (trong phiên chat với người dùng, không phải trong job tự chạy):
-1. Đọc mục "Chờ duyệt" trong `C:/Users/anhha/MuseStudio/the-thao/_tools/job-log.md`, liệt kê lại ngắn cho người dùng biết sẽ đăng gì.
+1. Đọc mục "Chờ duyệt" trong `$HOME/MuseStudio/the-thao/_tools/job-log.md`, liệt kê lại ngắn cho người dùng biết sẽ đăng gì.
 2. Với từng video: giờ đề xuất còn ở tương lai → **Lên lịch** đúng giờ đó (GMT+07:00); giờ đã qua → Công khai ngay (Short cách nhau ≥2 giờ thì lên lịch rải tiếp trong ngày).
 3. Bình luận câu hỏi đề xuất: video công khai ngay thì đăng luôn; video hẹn giờ thì tạo một scheduled task một lần (fireAt = giờ đăng + 5 phút) đăng bình luận, như teo-tt-binh-luan-tap2.
 4. Chuyển các dòng sang "Nhật ký đăng" của ke-hoach-30-ngay.md, xoá khỏi "Chờ duyệt", báo lại danh sách + giờ.

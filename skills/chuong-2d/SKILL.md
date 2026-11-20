@@ -11,7 +11,7 @@ description: >
 # Chưởng 2D: mỗi chiêu một file, chung engine, theo rule chuẩn
 
 `SKILL = thư mục chứa file này` · Engine (dự án Godot): `SKILL/engine/` · Sổ chiêu: `SKILL/data/moves.json`
-Godot: `C:/tool/Godot/Godot_v4.7.2-stable_win64_console.exe` · Nhân vật: `engine/tools/export-chars.mjs` (rig2 của skill teo-kiem-hiep).
+Godot: `$HOME/Godot/Godot.app/Contents/MacOS/Godot` · Nhân vật: `engine/tools/export-chars.mjs` (rig2 của skill teo-kiem-hiep).
 
 ## Quy trình (làm đủ, không bỏ bước)
 
@@ -110,6 +110,8 @@ Gợi ý cho chiêu sau:
 
 Khai mốc trong `_setup` bằng `cue(t_truyện, "lib-…", vol)`. Ở chỗ sự kiện xảy ra động (va chạm, vỡ, đáp đất) thì gọi `sfx("lib-…", vol)`.
 Engine tự đổi sang giây thật (đã tính slowmo) và ghi `work/<id>.sfx`; `mix.sh <id>` đọc file đó để ghép.
+
+**Người dùng chốt (2026-10-24): không có tiếng "ùm ùm tùm tùm" gây giật mình, sfx luôn nhỏ hơn giọng đọc.** `engine/sfx` (và `kit/sfx`) là bản êm do `node ~/MuseStudio/kit/sfx-soft.mjs` làm từ `_goc/` (lọc trầm < 180 Hz, ≤ -26 LUFS, đỉnh ≤ -12 dBFS); `impact-bass-*` giờ chỉ còn tiếng "tộc" nhẹ. `mix.sh`, `gd-render` tự kẹp mỗi tiếng ≤ 0.6 và chặn đỉnh cả kênh -12 dBFS, nên vol trong bảng dưới cao hơn 0.6 cũng chỉ ra 0.6. Không thêm file sfx mới chưa qua `sfx-soft.mjs`.
 
 | sự kiện | sfx |
 |---|---|

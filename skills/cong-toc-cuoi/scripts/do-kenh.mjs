@@ -4,14 +4,14 @@
 //   node do-kenh.mjs --tim           tìm kênh mới theo tu_khoa_tim (+ --tu "<từ khoá>" thêm)
 //   node do-kenh.mjs --kenh <url>    đo thêm một kênh lạ
 //   [--so 40] số video gần nhất mỗi kênh, [--top 8] số video nhiều view in ra
-// Ra: C:/Users/anhha/MuseStudio/cong-toc-cuoi/_tools/do-kenh-<ngày>.md
+// Ra: $HOME/MuseStudio/cong-toc-cuoi/_tools/do-kenh-<ngày>.md
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
 
 const SKILL = join(dirname(fileURLToPath(import.meta.url)), "..");
-const OUTDIR = "C:/Users/anhha/MuseStudio/cong-toc-cuoi/_tools";
+const OUTDIR = (process.env.MUSE_ROOT || (await import("node:os")).homedir() + "/MuseStudio") + "/cong-toc-cuoi/_tools";
 const argv = process.argv.slice(2);
 const has = (k) => argv.includes("--" + k);
 const opt = (k, d) => { const i = argv.indexOf("--" + k); return i >= 0 ? argv[i + 1] : d; };

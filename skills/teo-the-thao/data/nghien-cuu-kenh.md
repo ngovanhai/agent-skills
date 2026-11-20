@@ -1,6 +1,6 @@
 # Nghiên cứu các kênh thể thao lớn: chủ đề sự nghiệp, cuộc đời, lịch sử đội bóng (2026-10-27)
 
-Nguồn: 15 lượt tìm kiếm YouTube (giao diện tiếng Việt, profile teo-the-thao), ~170 video, ghi tiêu đề, kênh, lượt xem, tuổi video, thời lượng. Dữ liệu thô: `C:/Users/anhha/MuseStudio/the-thao/_tools/research-yt-search.txt`. Đây là mẫu theo kết quả tìm kiếm, không phải thống kê toàn bộ kênh; lượt xem là con số YouTube hiện lúc tìm (N = nghìn, Tr = triệu).
+Nguồn: 15 lượt tìm kiếm YouTube (giao diện tiếng Việt, profile teo-the-thao), ~170 video, ghi tiêu đề, kênh, lượt xem, tuổi video, thời lượng. Dữ liệu thô: `$HOME/MuseStudio/the-thao/_tools/research-yt-search.txt`. Đây là mẫu theo kết quả tìm kiếm, không phải thống kê toàn bộ kênh; lượt xem là con số YouTube hiện lúc tìm (N = nghìn, Tr = triệu).
 
 ## 1. Các kênh đang thắng ở mảng này
 
@@ -38,7 +38,7 @@ Nguồn: 15 lượt tìm kiếm YouTube (giao diện tiếng Việt, profile teo
 
 ## 4. Phần 2: các nhóm chủ đề khác (2026-10-27)
 
-Nguồn: 24 lượt tìm kiếm nữa, ~330 video, dữ liệu thô `C:/Users/anhha/MuseStudio/the-thao/_tools/research-yt-search-2.txt`. Xếp từ mạnh đến yếu với kênh hoạt hình không dùng clip.
+Nguồn: 24 lượt tìm kiếm nữa, ~330 video, dữ liệu thô `$HOME/MuseStudio/the-thao/_tools/research-yt-search-2.txt`. Xếp từ mạnh đến yếu với kênh hoạt hình không dùng clip.
 
 | nhóm | ví dụ & lượt xem | đánh giá cho Tèo |
 |---|---|---|

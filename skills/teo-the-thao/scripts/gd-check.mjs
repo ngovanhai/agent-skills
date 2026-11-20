@@ -14,9 +14,9 @@ import { homedir } from "node:os";
 import { fileURLToPath } from "node:url";
 
 const SKILL = dirname(dirname(fileURLToPath(import.meta.url)));
-const GODOT = "C:/tool/Godot/Godot_v4.7.2-stable_win64_console.exe";
+const GODOT = process.env.GODOT || (process.platform === "darwin" ? homedir() + "/Godot/Godot.app/Contents/MacOS/Godot" : "godot");
 const HIST = join(SKILL, "data/history.json");
-const CHARS = join(homedir(), ".claude/skills/nhan-vat-chibi/data/chars.json");
+const CHARS = join(SKILL, "..", "nhan-vat-chibi/data/chars.json");
 const args = process.argv.slice(2);
 const has = (k) => { const i = args.indexOf(k); if (i < 0) return false; args.splice(i, 1); return true; };
 const noGodot = has("--no-godot"), doLog = has("--log");

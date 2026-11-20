@@ -6,8 +6,8 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync, copyFileSync } from
 import { join, resolve, basename, dirname } from "node:path";
 import { spawnSync } from "node:child_process";
 
-const FFMPEG = "C:/Users/anhha/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.2-full_build/bin/ffmpeg.exe";
-const FFPROBE = FFMPEG.replace(/ffmpeg\.exe$/, "ffprobe.exe");
+const FFMPEG = process.env.FFMPEG || "ffmpeg";
+const FFPROBE = FFMPEG.replace(/ffmpeg(\.exe)?$/, "ffprobe");
 if (!process.argv[2]) { console.log("dùng: node pack.mjs <thư mục tập>"); process.exit(1); }
 const TAP = resolve(process.argv[2]), slug = basename(TAP), Y = join(TAP, "youtube");
 const die = (m) => { console.error(m); process.exit(1); };

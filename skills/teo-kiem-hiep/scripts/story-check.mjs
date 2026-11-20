@@ -5,6 +5,7 @@
 import { readFileSync, existsSync } from "fs";
 import { join, resolve, basename } from "path";
 import { pathToFileURL } from "url";
+import { homedir } from "node:os";
 import { readHistory } from "./plan.mjs";
 import { voOf } from "../engine/voice.mjs";
 import { SETS } from "../engine/sets.mjs";
@@ -65,7 +66,7 @@ export function lookOf(tap) {
     thumb: { layout: tap.thumb?.layout || "vs", text: tap.thumb?.text || tap.hook || "" },
   };
 }
-const KH_DIR = "C:/Users/anhha/MuseStudio/kiem-hiep";
+const KH_DIR = (process.env.MUSE_ROOT || homedir() + "/MuseStudio") + "/kiem-hiep";
 // look của tập cũ: history mới có sẵn; tập ghi trước khi có trường này thì đọc lại tap.json của nó
 export function lookOfHist(h) {
   if (h.look) return h.look;

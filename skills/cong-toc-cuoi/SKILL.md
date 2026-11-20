@@ -11,9 +11,9 @@ description: >-
 
 # Cọng Tóc Cuối × Godot 2D
 
-`SKILL = thư mục chứa file này` · `KH = ~/.agent-skills/skills/teo-kiem-hiep` (mượn gd-voice, gd-render) · `LOCK = bash C:/Users/anhha/MuseStudio/the-thao/_tools/slot.sh`
-Godot 4.7.2: `C:/tool/Godot/Godot_v4.7.2-stable_win64_console.exe` · Tập: `C:/Users/anhha/MuseStudio/cong-toc-cuoi/tap-<NN>-<slug>/` (slug không dấu, gạch nối).
-Engine nhân vật: `C:/Users/anhha/MuseStudio/cong-toc-cuoi/_tools/doodle/` (`nv.gd`, `cast.json`, `README.md`: tư thế, biểu cảm, tuỳ chọn vai). new-tap chép sẵn vào tập.
+`SKILL = thư mục chứa file này` · `KH = ~/.agent-skills/skills/teo-kiem-hiep` (mượn gd-voice, gd-render) · `LOCK = bash $HOME/MuseStudio/the-thao/_tools/slot.sh`
+Godot 4.7.2: `$HOME/Godot/Godot.app/Contents/MacOS/Godot` · Tập: `$HOME/MuseStudio/cong-toc-cuoi/tap-<NN>-<slug>/` (slug không dấu, gạch nối).
+Engine nhân vật: `$HOME/MuseStudio/cong-toc-cuoi/_tools/doodle/` (`nv.gd`, `cast.json`, `README.md`: tư thế, biểu cảm, tuỳ chọn vai). new-tap chép sẵn vào tập.
 Kênh: ID `UClW6e47o_G4Jy1H0i2pBxig`, tài khoản thương hiệu dưới ngoh33889@gmail.com. Vận hành, đăng bài: `SKILL/data/van-hanh.md`.
 
 Đọc trước mỗi tập: `SKILL/data/cong-thuc.md` (giữ gì / bỏ gì của Lạnh, mẫu tiêu đề, mạch tập, thumbnail) và `SKILL/data/danh-gia.md`.
@@ -34,7 +34,7 @@ Kênh: ID `UClW6e47o_G4Jy1H0i2pBxig`, tài khoản thương hiệu dưới ngoh3
 - **Nền không cố định:** mỗi tập tự vẽ nền theo chuyện (nét bút dạ cùng chất: viền đen rung, tô phẳng nhạt), mỗi chặng một nền. Không chép code nền tập trước, chỉ đọc để học.
 - Video dài 10:00–18:00 (nhắm 12–15 phút). Không chia chương.
 - **Đăng:** pack xong là xong việc sản xuất. Job `ctc-dang-bai` (09:00, `_tools/ctc-hang-ngay.ps1`) tự tải lên bằng profile `cong-toc-cuoi` và **hẹn giờ công khai** 07:00/19:00 (người dùng chốt từ 2026-11-03), giữ lịch kín 3 ngày tới. **Không đụng profile `teo-the-thao`.**
-- **Sổ cái** `C:/Users/anhha/MuseStudio/_so-cai/` (chung với Tèo Thể Thao): `node so-cai.mjs xem ctc | lich | can-xu-ly`, bảng `bang.html`. `ctc-dang.ps1` tự ghi đã tải / đã hẹn / lỗi; job 09:00 quét sổ và kiểm tập đã công khai chưa. Muốn biết tập nào đã đăng, chờ đăng hay lỗi thì xem sổ này, không đoán từ thư mục.
+- **Sổ cái** `$HOME/MuseStudio/_so-cai/` (chung với Tèo Thể Thao): `node so-cai.mjs xem ctc | lich | can-xu-ly`, bảng `bang.html`. `ctc-dang.ps1` tự ghi đã tải / đã hẹn / lỗi; job 09:00 quét sổ và kiểm tập đã công khai chưa. Muốn biết tập nào đã đăng, chờ đăng hay lỗi thì xem sổ này, không đoán từ thư mục.
 - Chỉ sửa thư mục tập đang làm, dấu `(tập N)` trong `SKILL/data/chu-de.md`, `SKILL/data/history.json` (qua `--log`). Sửa engine `_tools/doodle` khi cần tư thế mới (ghi README).
 - Hỏng mà không tự sửa được thì dừng lại, báo rõ lỗi kèm log.
 
@@ -60,7 +60,7 @@ Việc nặng (giọng, render) chạy qua `LOCK` bằng Bash tool (Git Bash) �
 
 ## Quy trình
 
-0. **Chọn ý từ kho: tạo trước, lọc sau** (người dùng chốt 2026-10-29, tự làm, không hỏi). Nguồn duy nhất là `C:/Users/anhha/MuseStudio/cong-toc-cuoi/kho-y-tuong.md`, theo `danh-gia.md` mục 1d:
+0. **Chọn ý từ kho: tạo trước, lọc sau** (người dùng chốt 2026-10-29, tự làm, không hỏi). Nguồn duy nhất là `$HOME/MuseStudio/cong-toc-cuoi/kho-y-tuong.md`, theo `danh-gia.md` mục 1d:
    - **Bổ sung kho khi cạn:** kho còn dưới 15 ý `chờ` đạt từ 33 điểm trở lên thì tạo đợt mới trước, tối thiểu 50 ý.
      - Đủ các nhóm, nhóm "bên trong một nghề" chiếm từ 1/5 trở lên.
      - **Nguồn ý** (người dùng chốt 2026-11-05: "sửa lại skill để tìm ý tưởng cho tao"). Dùng đủ 4 nguồn:
@@ -111,7 +111,7 @@ Việc nặng (giọng, render) chạy qua `LOCK` bằng Bash tool (Git Bash) �
    Chỉ sửa nhạc sau khi đã render: không cần render lại hình, trộn lại tiếng (giọng đặt theo `timeline.json` + nhac.ogg −3 dB) rồi ghép vào video bằng `ffmpeg -c:v copy`.
 8. **Bản cuối** `gd-render --par 2` qua LOCK (nền). Kiểm đầu/giữa/cuối có hình và tiếng.
 9. **Thumbnail:** `godot/thumb.tscn` + `thumb.gd` dùng nv.gd, theo `cong-thuc.md` mục Thumbnail, chạy có cửa sổ, lưu `thumb/thumb-godot.png`; thu về 160×90 soi.
-10. **Gói:** `pack.mjs <tap>`, đọc lại thumbnail → `gd-check <tap> --log` → `node C:/Users/anhha/MuseStudio/_so-cai/so-cai.mjs quet ctc` (tập vào sổ ở trạng thái "chờ đăng") → báo người dùng: tiêu đề, thumbnail, khung giờ sẽ đăng (`so-cai.mjs lich`), câu bình luận ghim. Job `ctc-dang-bai` lo tải lên, hẹn giờ và đẩy Drive.
+10. **Gói:** `pack.mjs <tap>`, đọc lại thumbnail → `gd-check <tap> --log` → `node $HOME/MuseStudio/_so-cai/so-cai.mjs quet ctc` (tập vào sổ ở trạng thái "chờ đăng") → báo người dùng: tiêu đề, thumbnail, khung giờ sẽ đăng (`so-cai.mjs lich`), câu bình luận ghim. Job `ctc-dang-bai` lo tải lên, hẹn giờ và đẩy Drive.
 11. **3 Shorts** (dưới).
 
 ## Series Phần 1 / 2 / 3

@@ -3,11 +3,12 @@
 import { readFileSync, mkdirSync, readdirSync, rmSync, existsSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { spawnSync } from "node:child_process";
+import { homedir } from "node:os";
 
 const argv = process.argv.slice(2);
 const opt = (k, d) => { const i = argv.indexOf("--" + k); return i >= 0 ? argv[i + 1] : d; };
 const TAP = resolve(argv[0]), G = join(TAP, "godot"), W = join(TAP, "work", "soi");
-const GODOT = "C:/tool/Godot/Godot_v4.7.2-stable_win64_console.exe";
+const GODOT = process.env.GODOT || (process.platform === "darwin" ? homedir() + "/Godot/Godot.app/Contents/MacOS/Godot" : "godot");
 const chi = opt("chi", "") ? opt("chi").split(",") : null;
 const frac = +opt("dt", 0.7);
 const tl = JSON.parse(readFileSync(join(G, "timeline.json"), "utf8"));

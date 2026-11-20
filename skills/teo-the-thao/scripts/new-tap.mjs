@@ -247,7 +247,7 @@ put("story.json", JSON.stringify({
 
 put("cast.json", "{}\n");
 
-const sfxSrc = "C:/Users/anhha/MuseStudio/kit/sfx";
+const sfxSrc = (process.env.MUSE_ROOT || (await import("node:os")).homedir() + "/MuseStudio") + "/kit/sfx";
 for (const f of existsSync(sfxSrc) ? readdirSync(sfxSrc) : []) {
   if (/^lib-.*\.mp3$/.test(f) && !existsSync(join(G, "sfx", f))) copyFileSync(join(sfxSrc, f), join(G, "sfx", f));
 }
