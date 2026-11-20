@@ -28,7 +28,7 @@ Repo skill chỉ chứa quy trình. Máy phải có sẵn những thứ dưới 
 | lịch sử đăng | `$HOME/MuseStudio/yt-auto/logs/hang.jsonl` | so vị trí tìm kiếm trước khi đặt tiêu đề |
 | luật chung + nhật ký | `$HOME/MuseStudio/ideas/` | `HOOK-MO-DAU.md`, `TIEU-DE-ANH-BIA.md`, `DA-LAM.md`, `fx-history.json`, `chay-nang.sh` |
 | ZeroTTS máy nhà | `$HOME/Projects/ZeroTTS-src/.venv` | đọc CPU khi Colab thu hồi phiên |
-| skill `kiem-tra-video` (**không nằm trong repo này**) | `~/.claude/skills/kiem-tra-video/scripts/` | `review-kich-ban.py`, `smoke-test.py`, `check-tong-the.py` |
+| skill `kiem-tra-video` | cùng repo (`scripts/`) | `review-kich-ban.py`, `smoke-test.py`, `check-tong-the.py` |
 | `node` ≥ 18, `ffmpeg`/`ffprobe`, `npx` (mạng để tải `hyperframes`) | PATH | build, render, snapshot |
 
 Kiểm nhanh một lượt:
@@ -37,7 +37,7 @@ Kiểm nhanh một lượt:
 for p in "$HOME/MuseStudio/kit/make.mjs" "$HOME/MuseStudio/kit/README.md" \
          "$HOME/MuseStudio/yt-auto/tools/tu-khoa.py" "$HOME/MuseStudio/yt-auto/tools/tieu-de.mjs" \
          "$HOME/MuseStudio/ideas/TIEU-DE-ANH-BIA.md" "$HOME/MuseStudio/kiem-hiep/_tools/colab-tts/colab-tts.mjs" \
-         "$HOME/Projects/ZeroTTS-src/.venv" "$HOME/.claude/skills/kiem-tra-video/scripts/check-tong-the.py"; do
+         "$HOME/Projects/ZeroTTS-src/.venv" "$HOME/.agent-skills/skills/kiem-tra-video/scripts/check-tong-the.py"; do
   [ -e "$p" ] && echo "OK   $p" || echo "MISS $p"
 done
 command -v node ffmpeg ffprobe npx >/dev/null && echo "OK   node/ffmpeg/ffprobe/npx" || echo "MISS binary trong PATH"
@@ -70,10 +70,10 @@ Xong video này thì làm ngay video kế. Cho các việc chạy chồng lên n
 - **KHÔNG LÀM SHORTS (chủ kênh chốt 2026-10-29):** Kênh Lại Là Tèo Đây bỏ toàn bộ các bước làm Short (kịch bản short, giọng short, dựng short, render short). `yt-auto` cấu hình `min_shorts = 0` và `"tat_shorts": true`. Gói `youtube/` hoàn chỉnh khi có video dài + thumbnail.png + tieu-de.txt + mo-ta.txt + tags.txt.
 - **Lời mời tương tác ngay sau hook (người dùng chốt 2026-11-05):** Ngay sau đoạn hook mở đầu, luôn có một câu hỏi người xem muốn kênh làm về ai hoặc sự kiện/ý tưởng nào thì comment để kênh làm, kết hợp kêu gọi like và follow/đăng ký kênh.
 - **Quy trình kiểm soát chất lượng 5 tầng & Smoke Test (người dùng chốt 2026-11-08):**
-  1. *Tiền kỳ kịch bản:* Chạy `python3 $HOME/.claude/skills/kiem-tra-video/scripts/review-kich-ban.py <dir>` (đếm >= 4.500 từ, duyệt hook <= 35s, CTA).
-  2. *Smoke Test trước khi render:* Chạy `python3 $HOME/.claude/skills/kiem-tra-video/scripts/smoke-test.py <dir>` (test cú pháp JS/JSON trong 15s).
+  1. *Tiền kỳ kịch bản:* Chạy `python3 $HOME/.agent-skills/skills/kiem-tra-video/scripts/review-kich-ban.py <dir>` (đếm >= 4.500 từ, duyệt hook <= 35s, CTA).
+  2. *Smoke Test trước khi render:* Chạy `python3 $HOME/.agent-skills/skills/kiem-tra-video/scripts/smoke-test.py <dir>` (test cú pháp JS/JSON trong 15s).
   3. *Audio Remux 3 giây:* Khi sửa LUFS/nhạc nền, dùng `node kit/remix-audio.mjs <dir>` hoặc ffmpeg `-c:v copy` (xong trong 3 giây, cấm render lại cả video 20 phút).
-  4. *Quality Gate Chốt chặn xuất bản:* Trước khi đồng bộ lên Drive, bắt buộc chạy `python3 $HOME/.claude/skills/kiem-tra-video/scripts/check-tong-the.py <dir>`. Khi 100% PASS sẽ cấp chứng chỉ `youtube/.READY_TO_UPLOAD`. Tiến trình `yt-sync` chỉ đồng bộ khi có file chứng chỉ này.
+  4. *Quality Gate Chốt chặn xuất bản:* Trước khi đồng bộ lên Drive, bắt buộc chạy `python3 $HOME/.agent-skills/skills/kiem-tra-video/scripts/check-tong-the.py <dir>`. Khi 100% PASS sẽ cấp chứng chỉ `youtube/.READY_TO_UPLOAD`. Tiến trình `yt-sync` chỉ đồng bộ khi có file chứng chỉ này.
 - Trước khi tạo `videos/<slug>`, phải kiểm tra slug chưa có ai làm (thư mục chưa tồn tại, DA-LAM chưa có dòng đó). Không ghi vào thư mục của session khác.
 - Cứ 2 tiếng báo cáo người dùng một lần: đã xong mấy video hôm nay trên chỉ tiêu **1 video/ngày cho kênh này** (tổng hệ thống 2 video/ngày: Lại Là Tèo Đây + Tèo Tửu Lâu), từng video đang ở bước nào, dự kiến xong lúc mấy giờ, lỗi nếu có.
 

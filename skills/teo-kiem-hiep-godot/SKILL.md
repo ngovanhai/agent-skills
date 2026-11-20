@@ -37,7 +37,7 @@ Repo skill chỉ chứa quy trình. Máy phải có sẵn những thứ dưới 
 | luật chung | `$HOME/MuseStudio/ideas/` | `HOOK-MO-DAU.md`, `TIEU-DE-ANH-BIA.md`, `DA-LAM.md` |
 | ZeroTTS máy nhà | `$HOME/Projects/ZeroTTS-src/.venv` | đọc CPU khi Colab thu hồi phiên |
 | Godot | `$HOME/Godot/Godot.app/Contents/MacOS/Godot` | render, soi sheet |
-| skill `kiem-tra-video` (**không nằm trong repo này**) | `~/.claude/skills/kiem-tra-video/scripts/` | `smoke-test.py`, `check-tong-the.py`, `review-kich-ban.py` |
+| skill `kiem-tra-video` | cùng repo (`scripts/`) | `smoke-test.py`, `check-tong-the.py`, `review-kich-ban.py` |
 | skill `hoat-anh-kich-ban` (tuỳ chọn) | `~/.claude/skills/hoat-anh-kich-ban/scripts/tao-storyboard.py` | đọc header `loi.txt` để ra storyboard |
 
 Kiểm nhanh một lượt:
@@ -45,7 +45,7 @@ Kiểm nhanh một lượt:
 ```bash
 for p in "$HOME/MuseStudio/kit" "$HOME/MuseStudio/yt-auto" "$HOME/MuseStudio/kiem-hiep/_tools/slot.sh" \
          "$HOME/Projects/ZeroTTS-src/.venv" "$HOME/Godot/Godot.app/Contents/MacOS/Godot" \
-         "$HOME/.claude/skills/kiem-tra-video/scripts/check-tong-the.py" \
+         "$HOME/.agent-skills/skills/kiem-tra-video/scripts/check-tong-the.py" \
          "$HOME/.agent-skills/skills/teo-kiem-hiep/scripts/gd-render.mjs"; do
   [ -e "$p" ] && echo "OK   $p" || echo "MISS $p"
 done
@@ -62,13 +62,13 @@ done
 | `node KH/scripts/gd-mat.mjs <tap>` | Mặt từng nhân vật bằng `<tap>/ve.mjs` → `godot/mat/<nv>/<biểu cảm>.svg`, đọc `godot/cast.json`. |
 | `node SKILL/scripts/gd-chieu.mjs <tap> <id chiêu> [id …]` | Đưa chiêu đã làm xong bên `chuong-2d` (có trong `moves.json`) vào tập: chép engine + chiêu + nhân vật vào `godot/chuong/` (đổi đường `res://`), cầu nối `chuong/chieu.gd`, sfx thiếu; ghi `story.chieu`; đổi project sang renderer `forward_plus` (chiêu làm trên Forward+, gl_compatibility lệch màu). Sửa chiêu bên chuong-2d xong thì chạy lại. |
 | `node SKILL/scripts/gd-check.mjs <tap>` | Soát: id, chữ "Chương", hook/Tèo/lời mời đầu video/CTA, giọng khớp chữ, parse Godot, DUR ≥ 20:00, phim.gd đã dựng, story.json khác 5 tập trước, cast có trong sổ. `--no-godot` bỏ bước Godot. |
-| `python3 $HOME/.claude/skills/kiem-tra-video/scripts/smoke-test.py <tap>` | **Smoke Test siêu tốc 15s:** Kiểm tra cú pháp Godot headless, soát thời lượng >= 20 phút, soát 170+ biểu cảm Chibi SVG, chụp 4 snapshot preview để duyệt mắt trước khi render dài. |
+| `python3 $HOME/.agent-skills/skills/kiem-tra-video/scripts/smoke-test.py <tap>` | **Smoke Test siêu tốc 15s:** Kiểm tra cú pháp Godot headless, soát thời lượng >= 20 phút, soát 170+ biểu cảm Chibi SVG, chụp 4 snapshot preview để duyệt mắt trước khi render dài. |
 | `LOCK "<tap> xem" node KH/scripts/gd-render.mjs <tap> --preview --from A --to B --sheet 5 --out xa` | Preview 960×540 + `work/sheet-xa.jpg`. |
 | `LOCK "<tap> render" node KH/scripts/gd-render.mjs <tap> --par 2` | Bản cuối `renders/final.mp4`. Render bằng **ffmpeg song song 2 nửa qua pipe**, không dùng Movie Maker. |
 | `node KH/scripts/gd-render.mjs <tap> --audio-only` | **Audio Remuxing trong 3 giây:** Khi chỉ sửa LUFS, nhạc nền, SFX ducking, ffmpeg giữ nguyên video stream `-c:v copy` và chỉ thay audio trong 3s (tăng tốc x400, không re-render 20 phút). |
 | `… gd-render.mjs <tap> --sheet 30 --keep` | Cờ phụ: `--sheet <giây>` xuất thêm `work/sheet-<tên>.jpg` (mỗi ô cách nhau `<giây>`); `--keep` giữ file tạm trong `work/` để soi; `--no-duck` tắt tự hạ nhạc khi có lời; `--sfx-hp=<Hz>` (mặc định 180) và `--nhac-db=<dB>` chỉnh tay. |
 | `node SKILL/scripts/pack.mjs <tap>` | `youtube/`: mp4, thumbnail.png 1280×720, tieu-de, mo-ta, tags. |
-| `python3 $HOME/.claude/skills/kiem-tra-video/scripts/check-tong-the.py <tap>` | **Quality Gate chốt chặn:** Kiểm tra toàn diện Kịch bản, Hình ảnh, Âm thanh (-20 LUFS, Peak -0.5), Gói YouTube. Khi 100% PASS tự động cấp chứng chỉ `youtube/.READY_TO_UPLOAD`. |
+| `python3 $HOME/.agent-skills/skills/kiem-tra-video/scripts/check-tong-the.py <tap>` | **Quality Gate chốt chặn:** Kiểm tra toàn diện Kịch bản, Hình ảnh, Âm thanh (-20 LUFS, Peak -0.5), Gói YouTube. Khi 100% PASS tự động cấp chứng chỉ `youtube/.READY_TO_UPLOAD`. |
 | `node SKILL/scripts/gd-check.mjs <tap> --log` | Sau bản cuối: ghi story.json vào `SKILL/data/history.json`. |
 
 Việc nặng ở máy nhà (render, preview, check chiêu) luôn chạy qua `LOCK`; giọng đọc trên Colab thì không: máy chỉ có 2 suất. Lệnh dài chạy nền.
@@ -88,7 +88,7 @@ Việc nặng ở máy nhà (render, preview, check chiêu) luôn chạy qua `LO
      # TEO_SOCKET: none | kinh_lup | but_long | gay_truc | ho_lo_ruou | the_bai | quat_long_vu
      # TEO_ROLE: <Vai trò cụ thể của Tèo trong tập>
      ```
-     *(Header do công cụ ngoài đọc, `gd-check` **không** kiểm: `~/.claude/skills/kiem-tra-video/scripts/review-kich-ban.py` (bắt buộc, thiếu header là đánh trượt) và `~/.claude/skills/hoat-anh-kich-ban/scripts/tao-storyboard.py` (tuỳ chọn, để ra storyboard). Hai skill đó không nằm trong repo này — thiếu thì báo người dùng, đừng tự viết lại).*
+     *(Header do script đọc, `gd-check` **không** kiểm: `~/.agent-skills/skills/kiem-tra-video/scripts/review-kich-ban.py` (cùng repo, bắt buộc — thiếu header là đánh trượt) và `~/.claude/skills/hoat-anh-kich-ban/scripts/tao-storyboard.py` (skill ngoài repo, tuỳ chọn — để ra storyboard; thiếu thì báo người dùng, đừng tự viết lại).)*
    - **TỶ LỆ PHÂN BỔ VÀNG 65 / 35 (Chống nhàm chán & Bảo vệ thuật toán YouTube):**
      - **65% Nhóm Nòng Cốt:** *Võ Đài So Kèo* & *Trinh Thám Kỳ Án* (giữ vững bản sắc "Tửu Lâu luận kiếm", nhịp retention cao nhất).
      - **35% Nhóm Gia Vị:** *Lật Ngược Định Kiến* (minh oan nhân vật), *Hồ Sơ Mật* (thâm cung bí sử), *Hùng Ca Bi Tráng* (đại chiến huyết lệ).
