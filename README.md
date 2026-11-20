@@ -6,6 +6,7 @@ Hệ thống quản lý và đồng bộ skills dùng chung cho nhiều máy (Wi
 - **1 nguồn duy nhất:** toàn bộ skill nằm trong `skills/<skill-name>/SKILL.md`.
 - **Liên kết trực tiếp:** trên Windows tạo **Directory Junction** (không cần Admin), trên macOS/Linux tạo **Symlink** vào thư mục skills của từng harness.
 - **An toàn:** chỉ quản lý các link ghi trong `.managed.json`, không đụng tới skill built-in hay skill cộng đồng. Thư mục trùng cũ được tự động backup vào `.backup/`.
+- **Loại trừ theo máy:** `.local.json` (không commit) nhận `"exclude": ["<skill>"]` để bỏ skill và `"excludeMounts": ["<mount-id>"]` để giữ thư mục thật, không symlink — dùng khi bản trên máy mới hơn bản trong repo (vd. `kit` có fx chưa push).
 
 ## Lệnh hay dùng
 ```bash

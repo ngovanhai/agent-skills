@@ -56,7 +56,9 @@ function loadMounts() {
 
 function resolveDesiredMounts(localCfg, allMounts) {
   const active = new Set(localCfg.profiles || ['all']);
+  const skip = new Set(localCfg.excludeMounts || []);
   return allMounts.filter((m) => {
+    if (skip.has(m.id)) return false;
     const srcPath = path.join(REPO_DIR, m.source);
     if (!fs.existsSync(srcPath)) return false;
     if (!m.profiles || m.profiles.length === 0) return true;
@@ -82,6 +84,7 @@ function loadLocalConfig(harnesses, profilesCfg) {
     profiles: profilesCfg.default || ['all'],
     harnesses: detectInstalledHarnesses(harnesses),
     exclude: [],
+    excludeMounts: [],
   };
 }
 
@@ -185,10 +188,12 @@ function cmdInit(args) {
     }
   }
 
+  const prev = readJson(LOCAL_CONFIG_FILE) || {};
   const localCfg = {
     profiles: chosenProfiles,
     harnesses: chosenHarnesses,
-    exclude: [],
+    exclude: prev.exclude || [],
+    excludeMounts: prev.excludeMounts || [],
   };
   writeJson(LOCAL_CONFIG_FILE, localCfg);
   console.log(`Da luu cau hinh may tai ${LOCAL_CONFIG_FILE}`);
