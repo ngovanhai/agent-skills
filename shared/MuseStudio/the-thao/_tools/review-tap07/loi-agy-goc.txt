@@ -1,0 +1,99 @@
+## k01 hook | pre=0.6 post=0.8
+[k01-01] Đêm mười lăm tháng mười hai năm hai nghìn mười tám, sân vận động Mỹ Đình rung chuyển bởi bốn vạn khán giả khi tiếng còi mãn cuộc vang lên.
+[k01-02] Nhưng mười bốn tháng trước, người đàn ông năm mươi chín tuổi này đến Hà Nội trong ánh mắt nghi ngờ và biệt danh châm chọc là huấn luyện viên ngủ gật.
+[k01-03] Trong mười phút tới, Tèo sẽ kể cho bạn hành trình lội ngược dòng ngoạn mục của thầy Pắc Hang-xơ để làm nên chiếc cúp vàng lịch sử.
+
+## k02 vai-teo | pre=0.6 post=0.8
+[k02-01] Hôm nay Tèo đóng vai người quản lý dụng cụ sân tập, gom từng quả bóng và trải chiếc sa bàn nỉ chiến thuật của thầy Pắc.
+[k02-02] Chiếc sa bàn màu xanh lục cùng những quân cờ nam châm đỏ trắng này đã theo chân ông qua từng trận đánh làm thay đổi bóng đá nước nhà.
+[k02-03] Để hiểu vì sao ông hồi sinh cả nền bóng đá, chúng ta hãy quay về bốn mươi năm trước, nơi cậu bé miền núi chạm vào trái bóng tròn.
+
+## k03 khoi-dau | pre=0.6 post=0.8
+[k03-01] Thầy Pắc sinh ra tại huyện Sanh-che-ong thuộc tỉnh Ki-oong-sang-nam của Hàn Quốc, một vùng quê nghèo xa xôi.
+[k03-02] Gia đình khó khăn khiến con đường đến với bóng đá của ông không hề bằng phẳng như nhiều bạn bè cùng trang lứa.
+[k03-03] Mãi khi vào đại học, chàng trai trẻ mới chính thức theo đuổi bóng đá chuyên nghiệp bằng thể lực bền bỉ và tinh thần một chiến binh.
+[k03-04] Gia nhập câu lạc bộ Lắc-ki Gôn-xta Hoang-xô, tức ép-xê Xơ-un ngày nay, ông thi đấu ở vị trí tiền vệ trung tâm cần cù và quyết liệt.
+[k03-05] Năm một nghìn chín trăm tám mươi lăm, ông cùng đội bóng vô địch quốc gia Hàn Quốc và lọt vào đội hình tiêu biểu của giải.
+[k03-06] Với chín mươi chín trận và mười lăm bàn thắng, tiền vệ Pắc Hang-xơ từng có sự nghiệp cầu thủ đáng nể trước khi làm huấn luyện viên.
+
+## k04 world-cup-2002 | pre=0.6 post=0.8
+[k04-01] Bước ngoặt lớn nhất đời ông đến vào mùa hè năm hai nghìn lẻ hai, khi vòng chung kết Uân Cúp diễn ra tại Hàn Quốc.
+[k04-02] Huấn luyện viên lừng danh người Hà Lan Gút Híp-đinh tiếp quản đội tuyển và chọn thầy Pắc làm trợ lý số một kiêm cầu nối tâm lý.
+[k04-03] Dưới trướng Híp-đinh, thầy Pắc học được cách xây dựng thể lực thép, kỷ luật chiến thuật nghiêm ngặt và nghệ thuật kích hoạt sự tự tin.
+[k04-04] Hàn Quốc năm đó làm nên câu chuyện thần thoại khi quật ngã Bồ Đào Nha, Ý và Tây Ban Nha để hiên ngang bước vào bán kết thế giới.
+[k04-05] Đứng ở vị trí thứ tư thế giới là chiến tích vĩ đại nhất trong lịch sử bóng đá châu Á tính đến thời điểm đó.
+[k04-06] Hình ảnh người trợ lý nhỏ bé ôm chầm lấy thuyền trưởng Gút Híp-đinh sau mỗi trận thắng đã in sâu vào ký ức người hâm mộ xứ Hàn.
+
+## k05 cu-nga-busan | pre=0.6 post=0.8
+[k05-01] Nhưng vinh quang ngắn chẳng tày gang, vài tháng sau thầy Pắc được giao dẫn dắt đội tuyển Ô-lim-pích Hàn Quốc dự Á vận hội Bu-san.
+[k05-02] Áp lực phải bước lên đỉnh vinh quang trên sân nhà đè nặng lên vai vị tân huấn luyện viên trưởng trong từng trận đấu.
+[k05-03] Đội bóng của ông thi đấu rất hay nhưng lại dừng bước ở bán kết trước I-ran sau loạt sút luân lưu với tỷ số ba bàn thua năm.
+[k05-04] Dù sau đó thắng Thái Lan ba không để cán đích ở vị trí thứ ba, kết quả ấy vẫn bị coi là thất bại trước dư luận quê nhà.
+[k05-05] Liên đoàn bóng đá Hàn Quốc quyết định sa thải thầy Pắc ngay sau giải đấu, khép lại giấc mơ lớn đầu tiên trong sự nghiệp cầm quân.
+
+## k06 15-nam-lan-dan | pre=0.6 post=0.8
+[k06-01] Mười lăm năm tiếp theo là chuỗi ngày thăng trầm qua các câu lạc bộ Ki-oong-nam, Chơn-nam Đơ-ra-gơn rồi đội bóng quân đội Sang-ju Sang-mu.
+[k06-02] Dù từng hai lần đưa Sang-ju Sang-mu vô địch giải hạng hai Hàn Quốc, sự nghiệp của ông vẫn dần rơi vào quên lãng.
+[k06-03] Đến đầu năm hai nghìn mười bảy, thầy Pắc phải dạt xuống dẫn dắt câu lạc bộ hạng ba Chang-uôn Xi-ti ở giải bán chuyên nghiệp.
+[k06-04] Đúng lúc bế tắc nhất, bức ảnh ông nhắm mắt tập trung trên ghế chỉ đạo bị truyền thông quê nhà gán cho biệt danh ngài ngủ gật.
+[k06-05] Biệt danh ấy bám theo ông như một sự chế giễu cay nghiệt, khiến người ta tin rằng sự nghiệp của ông đã hoàn toàn hết thời.
+
+## k07 hop-dong-vff | pre=0.6 post=0.8
+[k07-01] Ở tuổi gần sáu mươi, khi tưởng cánh cửa đỉnh cao đã khép lại, một lời đề nghị bất ngờ xuất hiện từ dải đất hình chữ ét.
+[k07-02] Sau thất bại cay đắng tại Xi Gêm hai nghìn mười bảy, liên đoàn bóng đá Việt Nam bí mật bay sang Xơ-un tìm kiếm một thuyền trưởng mới.
+[k07-03] Ngày mười một tháng mười năm hai nghìn mười bảy, lễ ký kết diễn ra tại Hà Nội giữa muôn trùng hoài nghi của người hâm mộ.
+[k07-04] Nhiều người tự hỏi một huấn luyện viên hạng ba và mang tiếng ngủ gật thì giúp gì được cho bóng đá Việt Nam đang chạm đáy thất vọng.
+[k07-05] Nếu bạn yêu thích những câu chuyện vượt khó truyền cảm hứng, hãy bấm đăng ký kênh Tèo Thể Thao để cùng Tèo theo dõi các tập sau nhé.
+[k07-06] Theo bạn thành công của thầy Pắc đến từ chiến thuật hay cái tâm, hãy bình luận chữ C cho chiến thuật hoặc chữ T cho tâm lý nhé.
+
+## k08 tran-ra-mat | pre=0.6 post=0.8
+[k08-01] Không hề phân trần trước búa rìu dư luận, thầy Pắc bước vào trận ra mắt chính thức vào ngày mười bốn tháng mười một năm hai nghìn mười bảy.
+[k08-02] Tiếp đón đối thủ Áp-ga-ni-xtan tại sân Mỹ Đình trong khuôn khổ vòng loại châu Á, đội tuyển Việt Nam trải qua chín mươi phút vô cùng nghẹt thở.
+[k08-03] Thủ môn Tuấn Mạnh liên tục cứu thua xuất thần trước các pha bắn phá của đối phương để bảo toàn mành lưới đến phút cuối cùng.
+[k08-04] Trận hòa không bàn thắng là vừa đủ để bóng đá Việt Nam chính thức giành vé dự vòng chung kết cúp bóng đá châu Á hai nghìn mười chín.
+[k08-05] Trên sa bàn chiến thuật, thầy Pắc bắt đầu đặt những quân cờ đầu tiên cho sơ đồ ba trung vệ phòng ngự phản công vô cùng khoa học.
+[k08-06] Ông phát hiện cầu thủ Việt Nam không hề yếu kỹ thuật, mà điểm yếu chí mạng là thiếu niềm tin và chưa biết phân bổ thể lực.
+
+## k09 thuong-chau | pre=0.6 post=0.8
+[k09-01] Đến đây bạn nghĩ sự hoài nghi đã tan biến sau tấm vé châu Á, chưa đâu, kỳ tích Thường Châu mới là bước ngoặt thực sự.
+[k09-02] Kênh Tèo Thể Thao đã kể rất kỹ về Thường Châu ở tập ba, nhưng với thầy Pắc, Thường Châu là nơi chữa lành nỗi sợ hãi cho học trò.
+[k09-03] Dưới bão tuyết trắng xóa và thất bại ở phút một trăm mười chín trước U-dơ-bê-ki-xtan, các cầu thủ trẻ gục xuống sân khóc nức nở.
+[k09-04] Thầy Pắc lập tức chạy vào sân kéo các học trò lại thành một vòng tròn lớn để siết chặt tay nhau giữa trời đông lạnh giá.
+[k09-05] Người thầy Hàn Quốc nói to một câu đã trở thành lịch sử rằng tại sao chúng ta phải cúi đầu khi chúng ta đã cố gắng hết sức.
+[k09-06] Câu nói ấy đập tan tâm lý tự ti vốn đã đeo bám bóng đá Việt Nam suốt nhiều thập kỷ trước các đối thủ lớn trong khu vực.
+
+## k10 chuan-bi-aff | pre=0.6 post=0.8
+[k10-01] Sau khi tiếp tục tạo địa chấn lọt vào top bốn Á vận hội mùa hè hai nghìn mười tám, thử thách lớn nhất trong năm chính là cúp A-ép-ép.
+[k10-02] Mười năm ròng rã kể từ đêm đăng quang năm hai nghìn lẻ tám, người hâm mộ Việt Nam luôn khát khao chạm tay vào chiếc cúp vàng Đông Nam Á.
+[k10-03] Thầy Pắc quyết định triệu tập tiền đạo kỳ cựu ba mươi ba tuổi Nguyễn Anh Đức để làm điểm tựa kinh nghiệm cho dàn sao trẻ U hai mươi ba.
+[k10-04] Theo Tèo, đó là quyết định táo bạo nhưng thể hiện con mắt tinh tường của ông trong việc tìm kiếm một trung phong tì đè và làm tường mẫu mực.
+[k10-05] Toàn đội bước vào giải đấu với sự chuẩn bị kỹ lưỡng về thể lực và sự tự tin cao độ chưa từng thấy trong lịch sử.
+
+## k11 vong-bang-ban-ket | pre=0.6 post=0.8
+[k11-01] Tại vòng bảng, cỗ máy đỏ của thầy Pắc thi đấu vững như bàn thạch khi lần lượt vượt qua Lào, Ma-lay-xi-a, Mi-an-ma và Cam-pu-chia.
+[k11-02] Đội tuyển Việt Nam giành mười điểm, ghi tám bàn thắng và đặc biệt là không để lọt lưới một bàn thua nào suốt bốn trận vòng bảng.
+[k11-03] Bước vào bán kết, thầy trò ông Pắc chạm trán đối thủ khó chịu Phi-líp-pin dưới sự dẫn dắt của chiến lược gia lừng danh Ê-rích-xơn.
+[k11-04] Lượt đi trên sân khách Ba-cô-lốt, Anh Đức và Văn Đức tỏa sáng rực rỡ để mang về chiến thắng hai bàn một đầy bản lĩnh.
+[k11-05] Trận lượt về tại Mỹ Đình tiếp tục là màn trình diễn thuyết phục khi Quang Hải và Công Phượng lập công giúp Việt Nam thắng chung cuộc bốn hai.
+
+## k12 bukit-jalil | pre=0.6 post=0.8
+[k12-01] Trận chung kết lượt đi diễn ra ngày mười một tháng mười hai năm hai nghìn mười tám trên chảo lửa Bu-kít Gia-lin ở thủ đô Cua-la Lăm-pơ.
+[k12-02] Trước hơn tám vạn cổ động viên cuồng nhiệt của đội chủ nhà Ma-lay-xi-a, các cầu thủ áo đỏ không hề tỏ ra nao núng hay sợ hãi.
+[k12-03] Ngay phút hai mươi hai, Huy Hùng chớp thời cơ dứt điểm mở tỷ số trong sự sững sờ của toàn bộ khán đài đội chủ nhà.
+[k12-04] Chỉ ba phút sau, Phạm Đức Huy tung cú nã đại bác bằng chân không thuận từ ngoài vòng cấm nhân đôi cách biệt ngoạn mục.
+[k12-05] Dù Ma-lay-xi-a vùng lên gỡ hòa hai đều từ các pha bóng cố định, kết quả hòa này vẫn đem lại lợi thế cực lớn cho tuyển Việt Nam.
+
+## k13 my-dinh-chung-ket | pre=0.6 post=0.8
+[k13-01] Đêm mười lăm tháng mười hai năm hai nghìn mười tám, bốn vạn khán giả biến sân vận động Mỹ Đình thành một chảo lửa rực cờ đỏ sao vàng.
+[k13-02] Ngay phút thứ sáu của trận chung kết lượt về, khoảnh khắc định mệnh làm nổ tung cầu trường đã chính thức xuất hiện.
+[k13-03] Nhận đường bóng bên cánh trái, Quang Hải đảo chân kỹ thuật loại bỏ hậu vệ đối phương rồi bấm đường chuyền cầu âu vào vòng cấm.
+[k13-04] Tiền đạo kỳ cựu Anh Đức khéo léo chọn điểm rơi, xoay người bắt vô-lê một chạm chân trái xé toang mành lưới đội khách Ma-lay-xi-a.
+[k13-05] Bàn thắng tuyệt mỹ ấy làm bùng nổ cầu trường và đưa tổng tỷ số sau hai lượt trận lên ba bàn thắng so với hai.
+[k13-06] Trong suốt hơn tám mươi phút còn lại, hàng thủ ba trung vệ kỷ luật của thầy Pắc đã hóa giải hoàn toàn mọi đợt hãm thành của đối thủ.
+
+## k14 dang-quang | pre=0.6 post=20.0
+[k14-01] Khi tiếng còi mãn cuộc vang lên, sân vận động Mỹ Đình như nổ tung trong niềm hạnh phúc vỡ òa của hàng triệu người dân cả nước.
+[k14-02] Đội tuyển Việt Nam chính thức bước lên đỉnh vinh quang Đông Nam Á sau tròn mười năm đằng đẵng đợi chờ.
+[k14-03] Thầy Pắc Hang-xơ ôm lấy các trợ lý và bật khóc, người đàn ông từng bị chê ngủ gật đã trở thành vị thuyền trưởng vĩ đại của bóng đá Việt.
+[k14-04] Hành trình của thầy Pắc vẫn còn tiếp diễn với chức vô địch Xi Gêm hai nghìn mười chín và kỳ tích vòng loại thứ ba Uân Cúp ở phần hai.
+[k14-05] Nếu bạn muốn xem lại giải đấu Thường Châu trong bão tuyết năm ấy, video đó đang hiện ngay trên màn hình, hãy bấm vào xem và đăng ký Tèo Thể Thao nhé.

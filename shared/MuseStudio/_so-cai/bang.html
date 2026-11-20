@@ -1,0 +1,245 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sổ cái video</title>
+<style>
+:root{--bg:#f4f3f0;--card:#fff;--fg:#1c1b19;--mu:#6d6b66;--line:#e4e2dd;--soft:#f0eee9;
+--ok:#15803d;--okb:#dcfce7;--hen:#1d4ed8;--henb:#dbeafe;--cho:#a16207;--chob:#fef3c7;--lam:#57534e;--lamb:#eeece8;--do:#b91c1c;--dob:#fee2e2;--today:#fff7d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141413;--card:#1f1f1d;--fg:#ecebe7;--mu:#a19f99;--line:#33322e;--soft:#292826;
+--ok:#4ade80;--okb:#14321f;--hen:#93b4fb;--henb:#1b2a4a;--cho:#fbbf24;--chob:#3b2f10;--lam:#c4c1ba;--lamb:#2b2a27;--do:#fca5a5;--dob:#421a1a;--today:#2e2a17}}
+:root[data-theme="dark"]{--bg:#141413;--card:#1f1f1d;--fg:#ecebe7;--mu:#a19f99;--line:#33322e;--soft:#292826;
+--ok:#4ade80;--okb:#14321f;--hen:#93b4fb;--henb:#1b2a4a;--cho:#fbbf24;--chob:#3b2f10;--lam:#c4c1ba;--lamb:#2b2a27;--do:#fca5a5;--dob:#421a1a;--today:#2e2a17}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,"Segoe UI",Roboto,sans-serif}
+main{max-width:1180px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+h1{font-size:26px;margin:0;letter-spacing:-.01em}
+h2{font-size:18px;margin:34px 0 12px}
+.mu{color:var(--mu)}a{color:var(--hen)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px}
+/* thẻ kênh */
+.kenh{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:14px}
+.k{padding:16px 18px;border-top:5px solid var(--m)}
+.k h3{margin:0 0 10px;font-size:17px;display:flex;align-items:center;gap:8px}
+.cham{width:10px;height:10px;border-radius:50%;background:var(--m);display:inline-block}
+.hc{font-size:15px;margin:0 0 14px}.hc b{font-size:28px;margin-right:4px}
+.canh{display:inline-block;margin-left:8px;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;background:var(--dob);color:var(--do);vertical-align:middle}
+.dem{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.dem div{background:var(--soft);border-radius:10px;padding:8px 6px;text-align:center}
+.dem b{display:block;font-size:20px;line-height:1.2}.dem span{font-size:12px;color:var(--mu)}
+.dem .loi b{color:var(--do)}
+/* cần xử lý */
+.xl{margin-top:14px;padding:14px 18px}
+.xl h3{margin:0 0 8px;font-size:16px}
+.xl ul{margin:0;padding:0;list-style:none}
+.xl li{display:flex;gap:10px;padding:7px 0;border-top:1px solid var(--line);align-items:flex-start}
+.xl li:first-child{border-top:0}
+.tag{flex:none;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.t-loi{background:var(--dob);color:var(--do)}.t-cb{background:var(--chob);color:var(--cho)}.t-hen{background:var(--henb);color:var(--hen)}
+.xl .nd{min-width:0;overflow-wrap:anywhere}.xl .nd small{display:block;color:var(--mu)}
+.ok-all{margin-top:14px;padding:12px 18px;color:var(--ok);background:var(--okb);border-color:transparent}
+/* lịch */
+.cuon{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.lich{border-collapse:separate;border-spacing:6px;min-width:900px;width:100%}
+.lich th{font-size:13px;font-weight:600;color:var(--mu);padding:4px 2px;text-align:left}
+.lich th.nay{color:var(--fg)}
+.lich th.nay span{background:var(--fg);color:var(--bg);border-radius:6px;padding:1px 6px;margin-left:4px;font-size:11px}
+.lich td{vertical-align:top;width:13%}
+.lich td.nhan{width:110px;font-size:13px;font-weight:600;white-space:nowrap}
+.lich td.nhan i{font-style:normal;display:block;font-weight:400;color:var(--mu)}
+.o{border-radius:10px;padding:8px 10px;min-height:76px;border-left:4px solid transparent;background:var(--card);border:1px solid var(--line);border-left-width:4px}
+.o b{font-size:13px}.o p{margin:2px 0 0;font-size:12.5px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.o.trong{border:2px dashed var(--do);background:var(--dob);color:var(--do);font-weight:600;font-size:13px;display:flex;align-items:center;justify-content:center}
+.o.se-lap,.o.trong{flex-direction:column;gap:2px}
+.o.se-lap{border:1px dashed var(--mu);color:var(--mu);background:transparent;font-size:12.5px;display:flex;align-items:center;justify-content:center;text-align:center}
+.chu{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--mu);margin:-4px 0 10px}
+.chu span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--c);border:1px dashed var(--b,transparent)}
+.o.qua-trong{background:transparent;border:1px dashed var(--line);color:var(--mu);display:flex;align-items:center;justify-content:center}
+.o.qua{opacity:.55}
+.o.dk{border-style:dashed;border-color:var(--cho);background:var(--chob)}
+.o small{font-weight:400;font-size:11.5px}
+.p-dk{background:var(--chob);color:var(--cho)}
+.keo[draggable="true"]{cursor:grab}.dang-keo{opacity:.4}
+.tha{outline:3px solid var(--hen);outline-offset:2px}
+.grip{color:var(--mu);margin-right:6px;font-weight:400;user-select:none}
+.goi-y{font-size:13px;margin:-4px 0 10px}
+.hang{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:14px}
+.hk{border-top:4px solid var(--m)}.hk h3{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.nho{margin-left:auto;font:inherit;font-size:12.5px;padding:4px 10px;border-radius:8px;border:1px solid var(--line);background:var(--soft);color:var(--fg);cursor:pointer}
+ol.xep{list-style:none;margin:0;padding:0}
+ol.xep li{display:grid;grid-template-columns:auto 26px minmax(0,1fr) auto auto;align-items:center;gap:8px;padding:8px 6px;border-top:1px solid var(--line);border-radius:8px}
+ol.xep li:first-child{border-top:0}
+ol.xep .stt{font-weight:700;color:var(--mu);text-align:right}
+ol.xep .td{font-size:13.5px;line-height:1.35}ol.xep .td small{display:block}
+ol.xep .vao{font-size:12.5px;color:var(--cho);white-space:nowrap;font-weight:600}
+ol.xep .nut{display:flex;gap:4px}
+ol.xep .nut button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;font-size:14px}
+ol.xep .nut button:disabled{opacity:.3;cursor:default}
+body.dang-luu{cursor:progress}body.dang-luu main{opacity:.6;pointer-events:none}
+@media (max-width:640px){ol.xep li{grid-template-columns:26px minmax(0,1fr) auto;grid-template-areas:"stt td nut" "stt vao nut"}ol.xep .grip{display:none}
+ ol.xep .stt{grid-area:stt}ol.xep .td{grid-area:td}ol.xep .vao{grid-area:vao}ol.xep .nut{grid-area:nut}}
+.o.cb{box-shadow:inset 0 0 0 2px var(--cho)}
+.b-cong-khai{border-left-color:var(--ok)!important}.b-da-hen,.b-da-tai{border-left-color:var(--hen)!important}.b-cho-dang{border-left-color:var(--cho)!important}.b-loi{border-left-color:var(--do)!important}.b-dang-lam,.b-dong-goi{border-left-color:var(--lam)!important}
+.td-nay{background:var(--today);border-radius:12px}
+/* danh sách */
+.tabs{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.tabs button,.loc button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:6px 14px}
+.tabs button.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.loc{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.loc button{font-size:13px;padding:4px 11px}
+.loc button.on{border-color:var(--fg);font-weight:600}
+.loc button i{font-style:normal;color:var(--mu);margin-left:3px}
+.loc input{font:inherit;font-size:14px;margin-left:auto;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);min-width:200px}
+.ds{padding:4px 0}
+.dong{display:grid;grid-template-columns:56px 130px minmax(0,1fr) 150px 60px;gap:12px;align-items:center;padding:10px 18px;border-top:1px solid var(--line)}
+.dong:first-child{border-top:0}
+.dong .so{font-weight:700;color:var(--mu)}
+.dong .td{min-width:0}.dong .td small{display:block;font-size:12.5px;margin-top:2px}
+.dong .td small.loi{color:var(--do)}.dong .td small.cb{color:var(--cho)}
+.dong .gio{font-size:13.5px;color:var(--mu)}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.p-cong-khai{background:var(--okb);color:var(--ok)}.p-da-hen,.p-da-tai{background:var(--henb);color:var(--hen)}.p-cho-dang{background:var(--chob);color:var(--cho)}.p-loi{background:var(--dob);color:var(--do)}.p-dang-lam,.p-dong-goi{background:var(--lamb);color:var(--lam)}
+.uu{font-size:11px;font-weight:600;color:var(--cho);margin-left:6px}
+.rong{padding:24px 18px;color:var(--mu);text-align:center}
+@media (max-width:720px){
+ .dem{grid-template-columns:repeat(3,1fr)}
+ .dong{grid-template-columns:40px minmax(0,1fr) auto;padding:10px 14px;grid-template-areas:"so td xem" "so tt gio";row-gap:6px}
+ .dong .so{grid-area:so}.dong .td{grid-area:td}.dong .tt{grid-area:tt}.dong .gio{grid-area:gio;text-align:right}.dong .xem{grid-area:xem}
+ .loc input{margin-left:0;width:100%}
+}
+</style></head><body><main>
+<header><h1>Sổ cái video</h1><span class="mu" id="capnhat"></span></header>
+<section class="kenh" id="kenh"></section>
+<div id="xl"></div>
+<h2>Lịch 7 ngày tới</h2>
+<div class="chu"><span style="--c:var(--ok)">Đã công khai</span><span style="--c:var(--hen)">Đã hẹn giờ</span><span style="--c:var(--chob);--b:var(--cho)">Dự kiến: tập trong hàng chờ, job đăng sẽ hẹn</span><span style="--c:transparent;--b:var(--mu)">Tin sáng (TT 07:00, job 04:00 tự làm)</span><span style="--c:var(--dob);--b:var(--do)">Trống, hết tập</span></div>
+<p class="mu goi-y" id="goiy"></p>
+<div class="cuon"><table class="lich" id="lich"></table></div>
+<h2>Thứ tự đăng hàng chờ</h2>
+<div class="hang" id="hang"></div>
+<h2>Danh sách tập</h2>
+<div class="tabs" id="tabs"></div>
+<div class="loc" id="loc"></div>
+<div class="card ds" id="ds"></div>
+<p class="mu" style="margin-top:24px;font-size:13px">Làm mới: <code>node so-cai.mjs quet</code> rồi <code>node so-cai.mjs kiem</code> · job so-cai-kiem tự chạy 07:40 và 19:40.</p>
+</main>
+<script type="application/json" id="du-lieu">{"luc":"2026-11-20 09:01","kenh":[{"k":"teo-the-thao","ten":"Tèo Thể Thao","mau":"#0e7c66","cho":4,"du":"2026-11-24 19:00","het":"2026-11-25 19:00","sapCan":false,"short":23,"khe":[{"k":"2026-11-20 07:00","qua":true,"kieu":"hen","r":{"tap":41,"tieu_de":"Brazil 1-1 Uruguay: Siêu Phẩm Valverde Và Cơn Giận Salvador","tt":"cong-khai","cb":false},"dk":null},{"k":"2026-11-20 19:00","qua":false,"kieu":"hen","r":{"tap":34,"tieu_de":"Zidane và cú húc đầu 2006: Vì sao kết thúc bằng thẻ đỏ?","tt":"da-hen","cb":false},"dk":null},{"k":"2026-11-21 07:00","qua":false,"kieu":"tin-sang","r":null,"dk":null},{"k":"2026-11-21 19:00","qua":false,"kieu":"du-kien","r":null,"dk":{"tap":36,"slug":"tap-36-arsenal-49-tran-bat-bai-2004","tieu_de":"Arsenal và 49 trận bất bại: Vì sao 22 năm chưa ai xô đổ?"}},{"k":"2026-11-22 07:00","qua":false,"kieu":"tin-sang","r":null,"dk":null},{"k":"2026-11-22 19:00","qua":false,"kieu":"du-kien","r":null,"dk":{"tap":39,"slug":"tap-39-ronaldo-va-con-co-giat-1998","tieu_de":"Ronaldo và cơn co giật 1998: Bí mật ở Stade de France"}},{"k":"2026-11-23 07:00","qua":false,"kieu":"tin-sang","r":null,"dk":null},{"k":"2026-11-23 19:00","qua":false,"kieu":"du-kien","r":null,"dk":{"tap":40,"slug":"tap-40-gerrard-va-cu-truot-chan-2014","tieu_de":"Gerrard và cú trượt chân 2014: 1 giây cướp đi 24 năm"}},{"k":"2026-11-24 07:00","qua":false,"kieu":"tin-sang","r":null,"dk":null},{"k":"2026-11-24 19:00","qua":false,"kieu":"du-kien","r":null,"dk":{"tap":42,"slug":"tap-42-david-beckham-va-the-do-1998","tieu_de":"David Beckham và thẻ đỏ 1998: Vì sao cả nước Anh căm thù?"}},{"k":"2026-11-25 07:00","qua":false,"kieu":"tin-sang","r":null,"dk":null},{"k":"2026-11-25 19:00","qua":false,"kieu":"trong","r":null,"dk":null},{"k":"2026-11-26 07:00","qua":false,"kieu":"tin-sang","r":null,"dk":null},{"k":"2026-11-26 19:00","qua":false,"kieu":"trong","r":null,"dk":null}],"hang":[{"tap":36,"slug":"tap-36-arsenal-49-tran-bat-bai-2004","tieu_de":"Arsenal và 49 trận bất bại: Vì sao 22 năm chưa ai xô đổ?","nhom":"ke","vao":"2026-11-21 19:00","loi":false},{"tap":39,"slug":"tap-39-ronaldo-va-con-co-giat-1998","tieu_de":"Ronaldo và cơn co giật 1998: Bí mật ở Stade de France","nhom":"ke","vao":"2026-11-22 19:00","loi":false},{"tap":40,"slug":"tap-40-gerrard-va-cu-truot-chan-2014","tieu_de":"Gerrard và cú trượt chân 2014: 1 giây cướp đi 24 năm","nhom":"ke","vao":"2026-11-23 19:00","loi":false},{"tap":42,"slug":"tap-42-david-beckham-va-the-do-1998","tieu_de":"David Beckham và thẻ đỏ 1998: Vì sao cả nước Anh căm thù?","nhom":"ke","vao":"2026-11-24 19:00","loi":false}],"tap":[{"tap":1,"slug":"tap-01-mbappe-phut-87-camp-nou","tt":"cong-khai","tieu_de":"Mbappé và phút 87 khiến Camp Nou câm lặng","gio":"2026-10-27 08:24","link":"https://youtu.be/xwlamTtWNLk","loi":"","cb":"","uu":false},{"tap":2,"slug":"tap-02-istanbul-2005-sau-phut","tt":"cong-khai","tieu_de":"Liverpool thua 0–3 ở Istanbul và 6 phút không ai tin","gio":"2026-10-27 19:30","link":"https://youtu.be/v2r89Hg2F30","loi":"","cb":"","uu":false},{"tap":3,"slug":"tap-03-thuong-chau-2018-ba-tran-120-phut","tt":"cong-khai","tieu_de":"Thường Châu 2018: ba trận 120 phút của U23 Việt Nam","gio":"2026-10-28 12:00","link":"https://youtu.be/XlcweKEmcmA","loi":"","cb":"","uu":false},{"tap":4,"slug":"tap-04-harry-kane-qua-bong-vang-2026","tt":"cong-khai","tieu_de":"Harry Kane: từ cậu bé bị Arsenal loại đến Quả bóng vàng","gio":"2026-10-28 19:00","link":"https://youtu.be/v69tIiaA3Eo","loi":"","cb":"","uu":false},{"tap":5,"slug":"tap-05-man-united-phan-1-newton-heath-den-1968","tt":"cong-khai","tieu_de":"Man United: từ đội công nhân đến đỉnh châu Âu (Phần 1)","gio":"2026-10-30 12:00","link":"https://youtu.be/bBakNbG25gU","loi":"","cb":"","uu":false},{"tap":6,"slug":"tap-06-ronaldo-phan-1-madeira-den-old-trafford","tt":"cong-khai","tieu_de":"Ronaldo: từ cậu bé bị chê làm xiếc đến Quả bóng vàng","gio":"2026-10-30 19:00","link":"https://youtu.be/ukR8P5ihopU","loi":"","cb":"","uu":false},{"tap":7,"slug":"tap-07-park-hang-seo-phan-1","tt":"cong-khai","tieu_de":"Park Hang-seo: từ HLV ngủ gật đến đỉnh cao 2018 (Phần 1)","gio":"2026-10-31 12:00","link":"https://youtu.be/suw0tteI7QA","loi":"","cb":"","uu":false},{"tap":8,"slug":"tap-08-u15-viet-nam-world-cup-u15-2026","tt":"cong-khai","tieu_de":"U15 Việt Nam vào chung kết World Cup: sự thật là gì?","gio":"2026-10-30 18:00","link":"https://youtu.be/1iGGMQUHkSc","loi":"","cb":"","uu":true},{"tap":9,"slug":"tap-09-qua-bong-vang-moi-thoi-dai","tt":"cong-khai","tieu_de":"Quả bóng vàng mọi thời đại: vì sao Ronaldo 2008 thắng Messi?","gio":"2026-10-31 19:00","link":"https://youtu.be/zoXP2T4Cba4","loi":"","cb":"","uu":true},{"tap":10,"slug":"tap-10-arsenal-thang-liverpool-anfield","tt":"cong-khai","tieu_de":"Arsenal thắng Liverpool ở Anfield: vì sao chờ 14 năm?","gio":"2026-11-03 19:00","link":"https://youtu.be/FK6e5t07VVk","loi":"","cb":"","uu":true},{"tap":11,"slug":"tap-11-asian-cup-2027-hoan-tuyen-viet-nam","tt":"cong-khai","tieu_de":"Asian Cup 2027 bị hoãn: tuyển Việt Nam được hay mất?","gio":"2026-11-04 07:00","link":"https://youtu.be/pF4yRg3-bvw","loi":"","cb":"","uu":true},{"tap":12,"slug":"tap-12-ronaldo-phan-2-real-madrid","tt":"cong-khai","tieu_de":"Ronaldo ở Real Madrid: 4 cúp C1 và cú móc bóng (Phần 2)","gio":"2026-11-08 19:00","link":"https://youtu.be/SsKMk1_tUAM","loi":"","cb":"","uu":false},{"tap":13,"slug":"tap-13-cahn-cup-c1-chau-a","tt":"cong-khai","tieu_de":"CAHN ở Cúp C1 châu Á: đội Việt Nam đi được bao xa?","gio":"2026-11-04 19:00","link":"https://youtu.be/d9iaPqTDnus","loi":"","cb":"","uu":true},{"tap":14,"slug":"tap-14-mu-nguoc-dong-roma-3-2","tt":"cong-khai","tieu_de":"MU ngược dòng Roma 3-2: Carrick được cứu?","gio":"2026-11-05 07:00","link":"https://youtu.be/J9ffj3XLRFE","loi":"","cb":"","uu":true},{"tap":15,"slug":"tap-15-u17-viet-nam-world-cup-2026","tt":"cong-khai","tieu_de":"U17 Việt Nam dự World Cup: cửa đi tiếp lớn cỡ nào?","gio":"2026-11-05 19:00","link":"https://youtu.be/9TBqTp5kKZ4","loi":"","cb":"","uu":true},{"tap":16,"slug":"tap-16-yamal-vuot-mbappe-ky-luc-c1","tt":"cong-khai","tieu_de":"Yamal vượt Mbappé: 14 bàn Champions League trước tuổi 20","gio":"2026-11-06 19:00","link":"https://youtu.be/be0YuYyI278","loi":"","cb":"","uu":true},{"tap":17,"slug":"tap-17-como-thang-lens-9-1","tt":"cong-khai","tieu_de":"Como thắng Lens 9-1: Fabregas đã làm gì?","gio":"2026-11-07 19:00","link":"https://youtu.be/Vlxxks_GTWY","loi":"","cb":"","uu":true},{"tap":18,"slug":"tap-18-bo-u23-viet-nam","tt":"loi","tieu_de":"tap-18-bo-u23-viet-nam","gio":"","link":"","loi":"Bỏ đề 05/11: người dùng bỏ mọi chủ đề bóng đá Việt Nam; không render, không lên Drive, không đăng","cb":"","uu":false},{"tap":18,"slug":"tap-18-messi-tam-cho-yamal","tt":"cong-khai","tieu_de":"Vì sao Messi tắm cho Yamal? Bức ảnh 19 năm trước","gio":"2026-11-09 19:00","link":"https://youtu.be/SlrSwh_8vCc","loi":"","cb":"","uu":false},{"tap":19,"slug":"tap-19-tuoi-tho-messi-khan-giay","tt":"cong-khai","tieu_de":"Messi: mũi tiêm mỗi tối và hợp đồng khăn giấy","gio":"2026-11-10 19:00","link":"https://youtu.be/kheKQRsZyQo","loi":"","cb":"","uu":false},{"tap":20,"slug":"tap-20-vi-sao-bong-da-nhat-ban-phat-trien","tt":"cong-khai","tieu_de":"Vì sao bóng đá Nhật Bản phát triển? Kế hoạch 100 năm","gio":"2026-11-12 19:00","link":"https://youtu.be/Gk6WR_ird-Y","loi":"","cb":"","uu":false},{"tap":21,"slug":"tap-21-ronaldo-chia-tay-doi-tuyen-bo-dao-nha","tt":"cong-khai","tieu_de":"Ronaldo chia tay tuyển Bồ Đào Nha: 146 bàn và vì sao rời đi","gio":"2026-11-06 07:00","link":"https://youtu.be/iYnh-8ZCRBk","loi":"","cb":"","uu":true},{"tap":22,"slug":"tap-22-ac-milan-thua-ferencvaros-0-2","tt":"cong-khai","tieu_de":"AC Milan 0-2 Ferencváros: Địa chấn San Siro, bi kịch Amorim","gio":"2026-11-07 07:00","link":"https://youtu.be/dMY5eFAe0NY","loi":"","cb":"","uu":true},{"tap":23,"slug":"tap-23-real-madrid-di-stefano-5-cup-c1","tt":"cong-khai","tieu_de":"Real Madrid và Di Stéfano: 5 Cúp C1 liên tiếp lập kỷ lục","gio":"2026-11-14 19:00","link":"https://youtu.be/2PKQAL6rtfM","loi":"","cb":"","uu":false},{"tap":24,"slug":"tap-24-nottingham-forest-thang-man-city-3-1","tt":"cong-khai","tieu_de":"Nottingham Forest 3-1 Man City: Cơn địa chấn tại City Ground","gio":"2026-11-08 07:00","link":"https://youtu.be/YYBIeiRexZk","loi":"","cb":"","uu":true},{"tap":25,"slug":"tap-25-vi-sao-messi-roi-barca-2021","tt":"cong-khai","tieu_de":"Messi rời Barcelona: Vì sao 21 năm kết thúc bằng nước mắt?","gio":"2026-11-17 19:00","link":"https://youtu.be/eX257dCIfuE","loi":"","cb":"","uu":false},{"tap":26,"slug":"tap-26-man-united-hoa-aston-villa-4-4","tt":"cong-khai","tieu_de":"Man United 4-4 Aston Villa: Rượt Đuổi 8 Bàn Điên Rồ Phút 96","gio":"2026-11-09 07:00","link":"https://youtu.be/K5cZ6gHlL5o","loi":"","cb":"","uu":true},{"tap":27,"slug":"tap-27-vi-sao-ronaldo-roi-man-united-2022","tt":"cong-khai","tieu_de":"Ronaldo rời Man United: Vì sao 90 phút làm nổ tung tất cả?","gio":"2026-11-18 19:00","link":"https://youtu.be/jeVdTmSB_Q8","loi":"","cb":"","uu":false},{"tap":28,"slug":"tap-28-barca-nguoc-dong-atletico-2-1","tt":"cong-khai","tieu_de":"Atletico 1-2 Barcelona: Ma Thuật Yamal Và Bản Lĩnh Nhà Vua","gio":"2026-11-10 07:00","link":"https://youtu.be/CLTT-bWa6M8","loi":"","cb":"","uu":true},{"tap":29,"slug":"tap-29-cau-thu-giau-nhat-the-gioi-la-ai","tt":"cong-khai","tieu_de":"Ronaldo 300 triệu: ai mới là cầu thủ giàu nhất?","gio":"2026-11-19 00:00","link":"https://youtu.be/g8XMmdg8M9Q","loi":"","cb":"","uu":false},{"tap":30,"slug":"tap-30-mu-chon-pochettino-thay-carrick","tt":"cong-khai","tieu_de":"MU sa thải Carrick: Vì sao chọn Pochettino giá 10 triệu đô?","gio":"2026-11-12 07:00","link":"https://youtu.be/yJ8Y27ZtGs0","loi":"","cb":"","uu":true},{"tap":31,"slug":"tap-31-italia-thang-phap-3-1","tt":"dang-lam","tieu_de":"tap-31-italia-thang-phap-3-1","gio":"","link":"","loi":"","cb":"","uu":false},{"tap":32,"slug":"tap-32-maradona-ban-tay-cua-chua-1986","tt":"cong-khai","tieu_de":"Maradona và Bàn tay của Chúa: 4 phút điên rồ nhất World Cup","gio":"2026-11-19 19:00","link":"https://youtu.be/pVP2MAxbmDU","loi":"","cb":"","uu":false},{"tap":33,"slug":"tap-33-tay-ban-nha-thua-anh-2-3-dut-chuoi-43-tran","tt":"dang-lam","tieu_de":"tap-33-tay-ban-nha-thua-anh-2-3-dut-chuoi-43-tran","gio":"","link":"","loi":"","cb":"","uu":true},{"tap":34,"slug":"tap-34-zidane-va-cu-huc-dau-2006","tt":"da-hen","tieu_de":"Zidane và cú húc đầu 2006: Vì sao kết thúc bằng thẻ đỏ?","gio":"2026-11-20 19:00","link":"https://youtu.be/dwDNaOPs8Q8","loi":"","cb":"","uu":false},{"tap":35,"slug":"tap-35-duc-thang-ha-lan-3-0","tt":"cong-khai","tieu_de":"Đức 3-0 Hà Lan: Cơn Lốc Berlin Và Ma Thuật Của Klopp","gio":"2026-11-17 07:00","link":"https://youtu.be/YOa3KB47j6w","loi":"","cb":"","uu":true},{"tap":36,"slug":"tap-36-arsenal-49-tran-bat-bai-2004","tt":"cho-dang","tieu_de":"Arsenal và 49 trận bất bại: Vì sao 22 năm chưa ai xô đổ?","gio":"","link":"","loi":"","cb":"","uu":false},{"tap":37,"slug":"tap-37-bo-dao-nha-thang-wales-3-2","tt":"cong-khai","tieu_de":"Wales 2-3 Bồ Đào Nha: 5 Bàn Điên Rồ Và 17 Phút Tử Thủ Thẻ Đỏ","gio":"2026-11-18 07:00","link":"https://youtu.be/oR51t1ERnoo","loi":"","cb":"","uu":true},{"tap":38,"slug":"tap-38-argentina-1-0-peru-lautaro-messi","tt":"cong-khai","tieu_de":"Argentina 1-0 Peru: Siêu Phẩm Lautaro Và Kỷ Lục Của Messi","gio":"2026-11-19 07:00","link":"https://youtu.be/NwwSTwrP2E8","loi":"","cb":"","uu":true},{"tap":39,"slug":"tap-39-ronaldo-va-con-co-giat-1998","tt":"cho-dang","tieu_de":"Ronaldo và cơn co giật 1998: Bí mật ở Stade de France","gio":"","link":"","loi":"","cb":"","uu":false},{"tap":40,"slug":"tap-40-gerrard-va-cu-truot-chan-2014","tt":"cho-dang","tieu_de":"Gerrard và cú trượt chân 2014: 1 giây cướp đi 24 năm","gio":"","link":"","loi":"","cb":"","uu":false},{"tap":41,"slug":"tap-41-brazil-1-1-uruguay-valverde-gerson","tt":"cong-khai","tieu_de":"Brazil 1-1 Uruguay: Siêu Phẩm Valverde Và Cơn Giận Salvador","gio":"2026-11-20 07:00","link":"https://youtu.be/1y3AveOxpds","loi":"","cb":"","uu":true},{"tap":42,"slug":"tap-42-david-beckham-va-the-do-1998","tt":"cho-dang","tieu_de":"David Beckham và thẻ đỏ 1998: Vì sao cả nước Anh căm thù?","gio":"","link":"","loi":"","cb":"","uu":false}]},{"k":"cong-toc-cuoi","ten":"Cọng Tóc Cuối","mau":"#c2410c","cho":0,"du":"2026-11-23 07:00","het":"2026-11-23 19:00","sapCan":false,"short":0,"khe":[{"k":"2026-11-20 07:00","qua":true,"kieu":"hen","r":{"tap":26,"tieu_de":"Phong bì đám cưới 2 triệu: Đám cưới bỗng hoãn rồi huỷ","tt":"cong-khai","cb":false},"dk":null},{"k":"2026-11-20 19:00","qua":false,"kieu":"hen","r":{"tap":27,"tieu_de":"Mở quán cà phê bằng tiền tiết kiệm 5 năm và CÁI KẾT","tt":"da-hen","cb":true},"dk":null},{"k":"2026-11-21 07:00","qua":false,"kieu":"hen","r":{"tap":28,"tieu_de":"Làm content creator cho KOL triệu view và CÁI BẪY","tt":"da-hen","cb":false},"dk":null},{"k":"2026-11-21 19:00","qua":false,"kieu":"hen","r":{"tap":29,"tieu_de":"Tài xế công nghệ: trả lại 50 triệu và cái kết BỊ TỐ","tt":"da-hen","cb":false},"dk":null},{"k":"2026-11-22 07:00","qua":false,"kieu":"hen","r":{"tap":30,"tieu_de":"Nhảy việc liên tục: tưởng tăng lương ai ngờ ÂM 30 TRIỆU","tt":"da-hen","cb":false},"dk":null},{"k":"2026-11-22 19:00","qua":false,"kieu":"hen","r":{"tap":31,"tieu_de":"Con trưởng trong gia đình gánh 84 TRIỆU và cú lật cuốn sổ họ","tt":"da-hen","cb":false},"dk":null},{"k":"2026-11-23 07:00","qua":false,"kieu":"hen","r":{"tap":32,"tieu_de":"Mẹ chồng giữ hộ 8 cây vàng cưới: Mở két sắt và CÚ LẬT","tt":"da-hen","cb":false},"dk":null},{"k":"2026-11-23 19:00","qua":false,"kieu":"trong","r":null,"dk":null},{"k":"2026-11-24 07:00","qua":false,"kieu":"trong","r":null,"dk":null},{"k":"2026-11-24 19:00","qua":false,"kieu":"trong","r":null,"dk":null},{"k":"2026-11-25 07:00","qua":false,"kieu":"trong","r":null,"dk":null},{"k":"2026-11-25 19:00","qua":false,"kieu":"trong","r":null,"dk":null},{"k":"2026-11-26 07:00","qua":false,"kieu":"trong","r":null,"dk":null},{"k":"2026-11-26 19:00","qua":false,"kieu":"trong","r":null,"dk":null}],"hang":[],"tap":[{"tap":1,"slug":"tap-01-mot-nam-thue-tro","tt":"cong-khai","tieu_de":"Thuê trọ lương 8 triệu: một năm còn lại bao NHIÊU?","gio":"2026-10-30 09:14","link":"https://youtu.be/fXAXMNs6Gtw","loi":"","cb":"","uu":false},{"tap":2,"slug":"tap-02-dam-cuoi-no-bo-vo","tt":"cong-khai","tieu_de":"Tiền mừng cưới mất tích, cưới xong nợ bố vợ 76 TRIỆU","gio":"2026-10-31 19:00","link":"https://youtu.be/FNKl_Iv_kMc","loi":"","cb":"","uu":false},{"tap":3,"slug":"tap-03-nha-vo-hoi-luong","tt":"cong-khai","tieu_de":"Ra mắt nhà vợ khai thêm 5 triệu lương và CÁI KẾT","gio":"2026-11-01 19:00","link":"https://youtu.be/JFA3NkSEA8w","loi":"","cb":"","uu":false},{"tap":4,"slug":"tap-04-giao-vien-hop-dong","tt":"cong-khai","tieu_de":"Sự thật phía sau một GIÁO VIÊN HỢP ĐỒNG và cái kết","gio":"2026-11-02 19:00","link":"https://youtu.be/chkGo8uCZqs","loi":"","cb":"","uu":false},{"tap":5,"slug":"tap-05-dong-nghiep-cuop-cong","tt":"cong-khai","tieu_de":"Đồng nghiệp cướp công, bạn mất 2,8 TRIỆU vì một đánh giá","gio":"2026-10-30 19:00","link":"https://youtu.be/5fi9Py7cXZ4","loi":"","cb":"","uu":false},{"tap":6,"slug":"tap-06-me-chong-don-vao","tt":"cong-khai","tieu_de":"Mẹ chồng bán nhà của bạn, trả nợ đa cấp 1,1 TỶ","gio":"2026-11-03 19:00","link":"https://youtu.be/Hc7YvSB8tPY","loi":"","cb":"","uu":false},{"tap":7,"slug":"tap-07-con-nha-nguoi-ta","tt":"cong-khai","tieu_de":"Con nhà người ta đi du học về: Cú lừa 50 TRIỆU ngày Tết","gio":"2026-11-04 19:00","link":"https://youtu.be/0_7lv6eU4Cs","loi":"","cb":"","uu":false},{"tap":8,"slug":"tap-08-luong-10-trieu-flex","tt":"cong-khai","tieu_de":"Lương 10 triệu flex trên mạng: cuối tháng còn 37 NGHÌN","gio":"2026-11-05 19:00","link":"https://youtu.be/eZkwUHx2TTU","loi":"","cb":"","uu":false},{"tap":9,"slug":"tap-09-chay-chi-tieu-ngan-hang","tt":"cong-khai","tieu_de":"Nhân viên ngân hàng chạy chỉ tiêu: cái giá THẬT phía sau","gio":"2026-11-04 07:00","link":"https://youtu.be/lziwBKb482c","loi":"","cb":"","uu":false},{"tap":10,"slug":"tap-10-luong-thang-13-danh-gia","tt":"cong-khai","tieu_de":"Lương tháng 13 và cái kết khi sếp chấm điểm THÁI ĐỘ","gio":"2026-11-05 07:00","link":"https://youtu.be/RQKJKGfMimU","loi":"","cb":"","uu":false},{"tap":11,"slug":"tap-11-di-du-lich-chia-tien","tt":"cong-khai","tieu_de":"Chia tiền đi biển cùng nhóm bạn: 4 chuyến mất 14 TRIỆU","gio":"2026-11-06 07:00","link":"https://youtu.be/Y0rLV2eVwiA","loi":"","cb":"","uu":false},{"tap":12,"slug":"tap-12-12-quy-tac-song-chung","tt":"cong-khai","tieu_de":"Mẹ chồng tương lai gửi 12 quy tắc: điều 12 BẮT NỘP LƯƠNG","gio":"2026-11-06 19:00","link":"https://youtu.be/R1tjiMlvL4A","loi":"","cb":"","uu":false},{"tap":13,"slug":"tap-13-tet-noi-hay-ngoai","tt":"cong-khai","tieu_de":"Tết nội hay ngoại: Đòi về quê và cú lật 300 TRIỆU tiền cọc","gio":"2026-11-07 07:00","link":"https://youtu.be/cxysOvPHtdQ","loi":"","cb":"","uu":false},{"tap":14,"slug":"tap-14-sep-moi-kem-tuoi","tt":"cong-khai","tieu_de":"Ép nhân viên nghỉ việc: Sếp mới kém tuổi và cú lật 84 TRIỆU","gio":"2026-11-07 19:00","link":"https://youtu.be/l4-KivprOWQ","loi":"","cb":"","uu":false},{"tap":15,"slug":"tap-15-tong-dai-cham-soc-khach-hang","tt":"cong-khai","tieu_de":"Tổng đài chăm sóc khách hàng: 14 cuộc chửi và bị TRỪ THƯỞNG","gio":"2026-11-08 07:00","link":"https://youtu.be/FZilz8O_DDs","loi":"","cb":"","uu":false},{"tap":16,"slug":"tap-16-chia-het-dat-cho-con","tt":"cong-khai","tieu_de":"Chia đất cho con: 1.000m² chia ba và cái kết ĂN NHỜ Ở ĐẬU","gio":"2026-11-08 19:00","link":"https://youtu.be/gDUqnPxsens","loi":"","cb":"","uu":false},{"tap":17,"slug":"tap-17-chong-4-the-tin-dung","tt":"cong-khai","tieu_de":"4 thẻ tín dụng sau ngày cưới: bí mật sính lễ 96 TRIỆU","gio":"2026-11-09 07:00","link":"https://youtu.be/KjY15a2fLaI","loi":"","cb":"","uu":false},{"tap":18,"slug":"tap-18-hop-lop-10-nam","tt":"cong-khai","tieu_de":"Họp lớp 10 năm: cú lừa 48 TRIỆU của lớp trưởng vỡ nợ","gio":"2026-11-09 19:00","link":"https://youtu.be/nhE4yzzCJFE","loi":"","cb":"","uu":false},{"tap":19,"slug":"tap-19-ke-toan-lam-sao-cho-dep","tt":"cong-khai","tieu_de":"Nghề kế toán: sếp bảo làm đẹp số và cái kết THẾ MẠNG","gio":"2026-11-10 07:00","link":"https://youtu.be/Z4BSUuEtD6s","loi":"","cb":"","uu":false},{"tap":20,"slug":"tap-20-cong-nhan-tang-ca","tt":"cong-khai","tieu_de":"Công nhân tăng ca: cày 300 giờ và cú lật SA THẢI","gio":"2026-11-10 19:00","link":"https://youtu.be/tG0R4KFkWR8","loi":"","cb":"","uu":false},{"tap":21,"slug":"tap-21-ba-nhom-chat-cong-ty","tt":"cong-khai","tieu_de":"Nhóm chat công ty có 3 nhóm: cú lật MẤT 16 TRIỆU tiền thưởng","gio":"2026-11-11 07:00","link":"https://youtu.be/hTliCcz5co0","loi":"","cb":"","uu":false},{"tap":22,"slug":"tap-22-tet-bi-hoi-47-cau","tt":"cong-khai","tieu_de":"Câu hỏi ngày Tết: bị hỏi 47 câu, hoá ra bác NỢ 800 TRIỆU","gio":"2026-11-11 19:00","link":"https://youtu.be/vxltLykCBjc","loi":"","cb":"","uu":false},{"tap":23,"slug":"tap-23-shipper-14-tieng-don-bom","tt":"cong-khai","tieu_de":"Shipper bị bom hàng: chạy 14 tiếng và cú lừa 380 NGHÌN","gio":"2026-11-12 07:00","link":"https://youtu.be/-6y22in7Jik","loi":"","cb":"","uu":false},{"tap":24,"slug":"tap-24-nguoi-yeu-tang-khoa-hoc-lam-giau","tt":"cong-khai","tieu_de":"Khoá học làm giàu người yêu tặng: cái mã KHANH41 và 30 TRIỆU","gio":"2026-11-12 19:00","link":"https://youtu.be/Mja5Um_Yu8s","loi":"","cb":"","uu":false},{"tap":25,"slug":"tap-25-de-bat-truong-nhom","tt":"cong-khai","tieu_de":"Thăng chức không tăng lương: Cái bẫy 22h đêm của sếp","gio":"2026-11-19 19:00","link":"https://youtu.be/Bmm65WWlQMw","loi":"","cb":"","uu":false},{"tap":26,"slug":"tap-26-dam-cuoi-hoan","tt":"cong-khai","tieu_de":"Phong bì đám cưới 2 triệu: Đám cưới bỗng hoãn rồi huỷ","gio":"2026-11-20 07:00","link":"https://youtu.be/AduaFVt3Ov8","loi":"","cb":"","uu":false},{"tap":27,"slug":"tap-27-mo-quan-ca-phe","tt":"da-hen","tieu_de":"Mở quán cà phê bằng tiền tiết kiệm 5 năm và CÁI KẾT","gio":"2026-11-20 19:00","link":"https://youtu.be/xeZd46RUrWU","loi":"","cb":"lúc hẹn Studio báo 'Đang chờ xử lý' — kiểm lại","uu":false},{"tap":28,"slug":"tap-28-content-creator-kol","tt":"da-hen","tieu_de":"Làm content creator cho KOL triệu view và CÁI BẪY","gio":"2026-11-21 07:00","link":"https://youtu.be/F0ZXvwLdFu0","loi":"","cb":"","uu":false},{"tap":29,"slug":"tap-29-tai-xe-san-bay-dem","tt":"da-hen","tieu_de":"Tài xế công nghệ: trả lại 50 triệu và cái kết BỊ TỐ","gio":"2026-11-21 19:00","link":"https://youtu.be/O-3NXjKiDmg","loi":"","cb":"","uu":false},{"tap":30,"slug":"tap-30-doi-viec-6-lan-2-nam","tt":"da-hen","tieu_de":"Nhảy việc liên tục: tưởng tăng lương ai ngờ ÂM 30 TRIỆU","gio":"2026-11-22 07:00","link":"https://youtu.be/sfPtYiVhi3A","loi":"","cb":"","uu":false},{"tap":31,"slug":"tap-31-group-chat-gia-dinh","tt":"da-hen","tieu_de":"Con trưởng trong gia đình gánh 84 TRIỆU và cú lật cuốn sổ họ","gio":"2026-11-22 19:00","link":"https://youtu.be/9MU9Zz3C79E","loi":"","cb":"","uu":false},{"tap":32,"slug":"tap-32-me-chong-giu-vang-cuoi","tt":"da-hen","tieu_de":"Mẹ chồng giữ hộ 8 cây vàng cưới: Mở két sắt và CÚ LẬT","gio":"2026-11-23 07:00","link":"https://youtu.be/MO0qQ2D4WRE","loi":"","cb":"","uu":false}]}],"xl":[{"kenh":"Tèo Thể Thao","slug":"tap-18-bo-u23-viet-nam","muc":"lỗi","ghi":"Bỏ đề 05/11: người dùng bỏ mọi chủ đề bóng đá Việt Nam; không render, không lên Drive, không đăng"},{"kenh":"Cọng Tóc Cuối","slug":"tap-27-mo-quan-ca-phe","muc":"cảnh báo","ghi":"lúc hẹn Studio báo 'Đang chờ xử lý' — kiểm lại"}]}</script>
+<script>
+var D = JSON.parse(document.getElementById("du-lieu").textContent);
+var SUA = location.protocol.indexOf("http")==0; // mở qua server bảng động mới sửa thứ tự được
+var NHAN = {"dang-lam":"Đang làm","dong-goi":"Đóng gói","cho-dang":"Chờ đăng","da-tai":"Đã tải","da-hen":"Đã hẹn","cong-khai":"Công khai","loi":"Lỗi"};
+var THU = ["CN","T2","T3","T4","T5","T6","T7"];
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function ngay(s){if(!s)return "";var p=s.split(" ")[0].split("-");var dt=new Date(+p[0],p[1]-1,+p[2]);return THU[dt.getDay()]+" "+p[2]+"/"+p[1];}
+function luc(s){return s?ngay(s)+" · "+s.slice(11,16):"";}
+function $(id){return document.getElementById(id);}
+function nho(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
+
+$("capnhat").textContent = "Cập nhật " + luc(D.luc);
+
+// thẻ kênh
+$("kenh").innerHTML = D.kenh.map(function(k){
+  var c=function(s){return k.tap.filter(function(r){return s.indexOf(r.tt)>=0;}).length;};
+  return '<div class="card k" style="--m:'+k.mau+'"><h3><span class="cham"></span>'+esc(k.ten)+'</h3>'+
+   '<p class="hc"><b>'+k.cho+'</b> tập chờ đăng'+(k.sapCan?'<span class="canh">Sắp cạn</span>':'')+'<br><span class="mu">'+
+   (k.du?'Đủ đăng tới '+luc(k.du):'Không còn tập nào xếp lịch')+'</span></p>'+
+   '<div class="dem"><div><b>'+c(["dang-lam","dong-goi"])+'</b><span>Đang làm</span></div><div><b>'+c(["cho-dang"])+'</b><span>Chờ đăng</span></div>'+
+   '<div><b>'+c(["da-hen","da-tai"])+'</b><span>Đã hẹn</span></div><div><b>'+c(["cong-khai"])+'</b><span>Công khai</span></div>'+
+   '<div class="loi"><b>'+c(["loi"])+'</b><span>Lỗi</span></div></div></div>';
+}).join("");
+
+// cần xử lý
+(function(){
+  var x = D.xl;
+  if(!x.length){$("xl").innerHTML='<div class="card ok-all">Mọi thứ ổn, không có việc cần xử lý.</div>';return;}
+  var lop = function(m){return m=="lỗi"?"t-loi":(m=="quá giờ hẹn"||m=="chưa hẹn")?"t-hen":"t-cb";};
+  $("xl").innerHTML='<div class="card xl"><h3>Cần xử lý ('+x.length+')</h3><ul>'+x.map(function(i){
+    return '<li><span class="tag '+lop(i.muc)+'">'+esc(i.muc)+'</span><div class="nd"><b>'+esc(i.kenh)+'</b>'+(i.slug!="-"?' · '+esc(i.slug):'')+'<small>'+esc(i.ghi).replace(/\d{4}-\d\d-\d\d \d\d:\d\d/g,function(m){return luc(m);})+'</small></div></li>';
+  }).join("")+'</ul></div>';
+})();
+
+// lịch
+(function(){
+  var hn = D.luc.slice(0,10), days = [];
+  D.kenh[0].khe.forEach(function(x){var d=x.k.slice(0,10);if(days.indexOf(d)<0)days.push(d);});
+  var h='<thead><tr><th></th>'+days.map(function(d){return '<th class="'+(d==hn?'nay':'')+'">'+ngay(d)+(d==hn?'<span>hôm nay</span>':'')+'</th>';}).join("")+'</tr></thead><tbody>';
+  D.kenh.forEach(function(k){
+    ["07:00","19:00"].forEach(function(g){
+      h+='<tr><td class="nhan" style="color:'+k.mau+'">'+esc(k.ten)+'<i>'+g+'</i></td>';
+      days.forEach(function(d){
+        var x=k.khe.filter(function(y){return y.k==d+" "+g;})[0], cls=d==hn?' class="td-nay"':'';
+        if(x&&x.dk){h+='<td'+cls+'><div class="o dk keo" draggable="'+SUA+'" data-k="'+k.k+'" data-slug="'+esc(x.dk.slug)+'" title="'+esc(x.dk.tieu_de)+'"><b>'+(SUA?'<span class="grip">⠿</span>':'')+'Tập '+x.dk.tap+'</b> <span class="pill p-dk" style="font-size:10.5px;padding:1px 7px">Dự kiến</span><p>'+esc(x.dk.tieu_de)+'</p></div></td>';return;}
+        if(!x||!x.r){var t=!x||x.qua?'qua-trong">—':x.kieu=="tin-sang"?'se-lap">Tin sáng<br><small>job 04:00 tự làm</small>':x.kieu=="khong-kip"?'trong">Trống<br><small>job không kịp lấp</small>':'trong">Trống — hết tập';
+          h+='<td'+cls+'><div class="o '+t+'</div></td>';return;}
+        h+='<td'+cls+'><div class="o b-'+x.r.tt+(x.qua?' qua':'')+(x.r.cb?' cb':'')+'" title="'+esc(x.r.tieu_de)+'"><b>Tập '+x.r.tap+'</b> <span class="pill p-'+x.r.tt+'" style="font-size:10.5px;padding:1px 7px">'+NHAN[x.r.tt]+'</span><p>'+esc(x.r.tieu_de)+'</p></div></td>';
+      });
+      h+='</tr>';
+    });
+  });
+  $("lich").innerHTML=h+'</tbody>';
+})();
+
+// thứ tự đăng hàng chờ: kéo thả (máy tính) hoặc nút ↑↓ (điện thoại); lưu qua server bảng động
+function luuXep(kk, ds, macDinh){
+  document.body.classList.add("dang-luu");
+  fetch("/xep",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({kenh:kk,ds:ds,mac_dinh:!!macDinh})})
+    .then(function(r){return r.json();}).then(function(j){if(!j.ok)throw new Error(j.loi||"lỗi");location.reload();})
+    .catch(function(e){document.body.classList.remove("dang-luu");alert("Không lưu được: "+e.message);});
+}
+function kenhCua(kk){return D.kenh.filter(function(k){return k.k==kk;})[0];}
+function thuTu(kk){return kenhCua(kk).hang.map(function(r){return r.slug;});}
+function doiCho(kk, a, b, kieu){ // kieu "doi": hoán đổi 2 tập; "chen": đưa a vào chỗ b
+  var ds=thuTu(kk), i=ds.indexOf(a), j=ds.indexOf(b); if(i<0||j<0||i==j)return;
+  if(kieu=="doi"){ds[i]=b;ds[j]=a;}else{ds.splice(i,1);ds.splice(j,0,a);}
+  luuXep(kk, ds);
+}
+$("goiy").innerHTML = SUA ? 'Kéo một ô <b>Dự kiến</b> thả lên ô <b>Dự kiến</b> khác cùng kênh để đổi chỗ hai tập. Tập đã hẹn trên YouTube thì không kéo được.'
+  : 'Muốn kéo thả đổi tập, mở bảng động <a href="http://localhost:4747">http://localhost:4747</a>.';
+(function(){
+  $("hang").innerHTML = D.kenh.map(function(k){
+    var ke=k.hang.filter(function(r){return r.nhom!="nong";}), nong=k.hang.filter(function(r){return r.nhom=="nong";});
+    return '<div class="card hk" style="--m:'+k.mau+'"><h3><span class="cham"></span>'+esc(k.ten)+' <span class="mu" style="font-weight:400;font-size:13px">· '+ke.length+' tập</span>'+
+      (SUA&&k.hang.length?'<button class="nho mac" data-k="'+k.k+'">Về thứ tự mặc định</button>':'')+'</h3>'+
+      (ke.length?'<ol class="xep">'+ke.map(function(r,i){
+        return '<li class="keo" draggable="'+SUA+'" data-k="'+k.k+'" data-slug="'+esc(r.slug)+'">'+(SUA?'<span class="grip">⠿</span>':'')+
+          '<span class="stt">'+(i+1)+'</span><div class="td"><b>Tập '+r.tap+'</b> '+esc(r.tieu_de)+(r.loi?' <small class="loi">tải lỗi lần trước, job thử lại</small>':'')+'</div>'+
+          '<span class="vao">'+(r.vao?luc(r.vao):'ngoài 60 ngày')+'</span>'+
+          (SUA?'<span class="nut"><button data-d="-1" '+(i==0?'disabled':'')+' aria-label="Lên">↑</button><button data-d="1" '+(i==ke.length-1?'disabled':'')+' aria-label="Xuống">↓</button></span>':'')+'</li>';
+      }).join("")+'</ol>':'<div class="rong">Hàng chờ trống.</div>')+
+      (nong.length?'<p class="mu" style="font-size:13px;margin:10px 0 0">Tin nóng nằm chờ (chỉ đăng qua chon-mot, không vào khe 19:00): '+nong.map(function(r){return 'Tập '+r.tap;}).join(", ")+'</p>':'')+
+      '</div>';
+  }).join("");
+  if(!SUA)return;
+  var keo=null;
+  document.addEventListener("dragstart",function(e){var el=e.target.closest&&e.target.closest(".keo");if(!el)return;keo={k:el.dataset.k,slug:el.dataset.slug,lich:el.classList.contains("o")};el.classList.add("dang-keo");try{e.dataTransfer.setData("text/plain",keo.slug);e.dataTransfer.effectAllowed="move";}catch(x){}});
+  document.addEventListener("dragend",function(e){document.querySelectorAll(".dang-keo,.tha").forEach(function(n){n.classList.remove("dang-keo","tha");});keo=null;});
+  document.addEventListener("dragover",function(e){var el=e.target.closest&&e.target.closest(".keo");if(!keo||!el||el.dataset.k!=keo.k||el.dataset.slug==keo.slug)return;e.preventDefault();
+    document.querySelectorAll(".tha").forEach(function(n){if(n!=el)n.classList.remove("tha");});el.classList.add("tha");});
+  document.addEventListener("drop",function(e){var el=e.target.closest&&e.target.closest(".keo");if(!keo||!el||el.dataset.k!=keo.k)return;e.preventDefault();
+    doiCho(keo.k,keo.slug,el.dataset.slug,(keo.lich||el.classList.contains("o"))?"doi":"chen");});
+  $("hang").addEventListener("click",function(e){
+    var m=e.target.closest(".mac");if(m){if(confirm("Bỏ thứ tự đã xếp, về thứ tự mặc định của job đăng?"))luuXep(m.dataset.k,[],true);return;}
+    var b=e.target.closest("button[data-d]");if(!b)return;var li=b.closest("li"),kk=li.dataset.k,ds=thuTu(kk),ke=kenhCua(kk).hang.filter(function(r){return r.nhom!="nong";}).map(function(r){return r.slug;});
+    var i=ke.indexOf(li.dataset.slug),j=i+(+b.dataset.d);if(j<0||j>=ke.length)return;doiCho(kk,ke[i],ke[j],"doi");
+  });
+})();
+
+// danh sách
+var LOC=[["chua","Chưa đăng",["dang-lam","dong-goi","cho-dang","da-tai","da-hen","loi"]],["cho","Chờ đăng",["cho-dang"]],["hen","Đã hẹn",["da-hen","da-tai"]],["cong","Công khai",["cong-khai"]],["loi","Lỗi",["loi"]],["lam","Đang làm",["dang-lam","dong-goi"]],["het","Tất cả",null]];
+var st={k:nho("sc-kenh")||D.kenh[0].k,loc:nho("sc-loc")||"chua",q:""};
+function ve(){
+  var k=D.kenh.filter(function(x){return x.k==st.k;})[0]||D.kenh[0];
+  $("tabs").innerHTML=D.kenh.map(function(x){return '<button data-k="'+x.k+'" class="'+(x.k==k.k?'on':'')+'">'+esc(x.ten)+'</button>';}).join("");
+  var q=$("tim")?$("tim").value:st.q;
+  $("loc").innerHTML=LOC.map(function(l){var n=k.tap.filter(function(r){return !l[2]||l[2].indexOf(r.tt)>=0;}).length;
+    return '<button data-l="'+l[0]+'" class="'+(l[0]==st.loc?'on':'')+'">'+l[1]+'<i>'+n+'</i></button>';}).join("")+'<input id="tim" placeholder="Tìm tên tập…" value="'+esc(q)+'">';
+  var f=LOC.filter(function(l){return l[0]==st.loc;})[0][2], ql=q.toLowerCase();
+  var rs=k.tap.filter(function(r){return (!f||f.indexOf(r.tt)>=0)&&(!ql||(r.tieu_de+" "+r.slug).toLowerCase().indexOf(ql)>=0);}).slice().reverse();
+  $("ds").innerHTML=rs.length?rs.map(function(r){
+    return '<div class="dong"><span class="so">#'+r.tap+'</span><span class="tt"><span class="pill p-'+r.tt+'">'+NHAN[r.tt]+'</span></span>'+
+      '<div class="td">'+esc(r.tieu_de)+(r.uu?'<span class="uu">ƯU TIÊN</span>':'')+(r.loi?'<small class="loi">'+esc(r.loi)+'</small>':r.cb&&r.tt!="cong-khai"?'<small class="cb">'+esc(r.cb)+'</small>':'')+'</div>'+
+      '<span class="gio">'+luc(r.gio)+'</span><span class="xem">'+(r.link?'<a href="'+r.link+'" target="_blank" rel="noopener">Xem ↗</a>':'')+'</span></div>';
+  }).join(""):'<div class="rong">Không có tập nào.</div>';
+  var t=$("tim");t.oninput=function(){st.q=t.value;ve();var n=$("tim");n.focus();n.setSelectionRange(n.value.length,n.value.length);};
+}
+$("tabs").onclick=function(e){var b=e.target.closest("button");if(b){st.k=b.dataset.k;nho("sc-kenh",st.k);ve();}};
+$("loc").onclick=function(e){var b=e.target.closest("button");if(b){st.loc=b.dataset.l;nho("sc-loc",st.loc);ve();}};
+ve();
+</script></body></html>

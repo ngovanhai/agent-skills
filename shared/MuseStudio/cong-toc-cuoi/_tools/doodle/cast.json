@@ -1,0 +1,82 @@
+{
+ "ban": {
+  "ten": "Bạn",
+  "hair": "strand",
+  "ao": "9cc8e8",
+  "tag": true,
+  "note": "nhân vật chính, có màu duy nhất; cọng tóc tâm trạng + urgo"
+ },
+ "to_truong": {
+  "ten": "Tổ trưởng",
+  "shape": "square",
+  "hair": "flat",
+  "glasses": true,
+  "clothes": "tie",
+  "note": "kính + cà vạt"
+ },
+ "moi_gioi": {
+  "ten": "Môi giới",
+  "shape": "square",
+  "hair": "flat",
+  "ria": true,
+  "clothes": "tie",
+  "beltbag": true,
+  "note": "ria + cà vạt + túi đeo hông"
+ },
+ "chu_tro": {
+  "ten": "Chủ trọ",
+  "shape": "square",
+  "hair": "curlers",
+  "clothes": "tank",
+  "dots": true,
+  "beltbag": true,
+  "feet": "dep",
+  "note": "lô cuốn tóc + áo bộ chấm + ví bao tử"
+ },
+ "cho_vay": {
+  "ten": "Người cho vay",
+  "shape": "square",
+  "hair": "bald",
+  "sun": true,
+  "clothes": "vest",
+  "note": "đầu trọc + kính đen + dây chuyền"
+ },
+ "me": {
+  "ten": "Mẹ",
+  "hair": "bun",
+  "clothes": "baba",
+  "feet": "dep",
+  "note": "búi tóc + áo bà ba + dép"
+ },
+ "bo": {
+  "ten": "Bố",
+  "hair": "bald",
+  "ria": true,
+  "clothes": "tank",
+  "quan_dui": true,
+  "feet": "dep",
+  "note": "ria + áo ba lỗ + quần đùi"
+ },
+ "vo": {
+  "ten": "Vợ / người yêu",
+  "hair": "dai",
+  "clothes": "shirt",
+  "skirt": true,
+  "note": "tóc dài + váy"
+ },
+ "dong_nghiep": {
+  "ten": "Đồng nghiệp",
+  "hair": "capback",
+  "clothes": "shirt",
+  "note": "mũ lưỡi trai ngược"
+ },
+ "ban_nu": {
+  "ten": "Bạn (nữ)",
+  "hair": "strand",
+  "no": true,
+  "ao": "9cc8e8",
+  "skirt": true,
+  "tag": true,
+  "note": "nhân vật chính khi story.ban_gioi = nu: vẫn đầu tròn một cọng tóc + urgo, thêm nơ hồng + váy; setup(\"ban_nu\")"
+ }
+}

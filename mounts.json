@@ -1,0 +1,34 @@
+{
+  "mounts": [
+    {
+      "id": "musestudio-kit",
+      "source": "shared/MuseStudio/kit",
+      "target": "MuseStudio/kit",
+      "profiles": ["all", "youtube"]
+    },
+    {
+      "id": "musestudio-so-cai",
+      "source": "shared/MuseStudio/_so-cai",
+      "target": "MuseStudio/_so-cai",
+      "profiles": ["all", "youtube"]
+    },
+    {
+      "id": "musestudio-avatar",
+      "source": "shared/MuseStudio/avatar",
+      "target": "MuseStudio/avatar",
+      "profiles": ["all", "youtube"]
+    },
+    {
+      "id": "musestudio-the-thao-tools",
+      "source": "shared/MuseStudio/the-thao/_tools",
+      "target": "MuseStudio/the-thao/_tools",
+      "profiles": ["all", "youtube"]
+    },
+    {
+      "id": "musestudio-ctc-tools",
+      "source": "shared/MuseStudio/cong-toc-cuoi/_tools",
+      "target": "MuseStudio/cong-toc-cuoi/_tools",
+      "profiles": ["all", "youtube"]
+    }
+  ]
+}

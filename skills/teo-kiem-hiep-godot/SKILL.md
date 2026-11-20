@@ -9,7 +9,7 @@ description: >-
 
 # Tèo Kiếm Hiệp × Godot 2D: mỗi tập một kịch bản, một khung, một bộ code hình
 
-`SKILL = thư mục chứa file này` · `KH = ~/.claude/skills/teo-kiem-hiep` · `LOCK = bash C:/Users/anhha/MuseStudio/kiem-hiep/_tools/slot.sh`
+`SKILL = thư mục chứa file này` · `KH = ~/.agent-skills/skills/teo-kiem-hiep` · `LOCK = bash C:/Users/anhha/MuseStudio/kiem-hiep/_tools/slot.sh`
 Godot 4.7.2: `C:/tool/Godot/Godot_v4.7.2-stable_win64_console.exe` · Tập mẫu (chỉ đọc để học): `kiem-hiep/tap-01-tieu-phong-vs-quach-tinh/godot/`
 
 Skill này lo **quy trình Godot**. Luật nội dung vẫn là của `teo-kiem-hiep`, phải đọc và theo:

@@ -114,7 +114,7 @@ Selector Studio đổi theo thời gian: nếu một selector không thấy, dù
 
 Ngay sau khi video (dài hoặc Short) đã tải lên YouTube xong và ghi job-log:
 ```
-node C:/Users/anhha/.claude/skills/teo-the-thao/scripts/drive-sync.mjs <thư mục tập> --xoa
+node ~/.agent-skills/skills/teo-the-thao/scripts/drive-sync.mjs <thư mục tập> --xoa
 ```
 - Chép `<tập>/youtube/` (kể cả `youtube/shorts/`) sang `G:/My Drive/TeoTheThao/<slug>/`, so SHA-256 từng file, **chỉ khi khớp hết** mới xoá mp4/avi/wav nặng trong máy (giữ project godot, kịch bản, thumbnail, file chữ).
 - Short cắt từ tập dài: chạy trên thư mục tập dài (file đã xoá trước đó vẫn còn trên Drive, chỉ file mới được chép).

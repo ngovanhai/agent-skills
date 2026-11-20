@@ -1,0 +1,1717 @@
+{
+ "kenh": "teo-the-thao",
+ "cap_nhat": "2026-11-20T02:00:02.429Z",
+ "tap": {
+  "tap-01-mbappe-phut-87-camp-nou": {
+   "tap": 1,
+   "slug": "tap-01-mbappe-phut-87-camp-nou",
+   "loai": "dai",
+   "tieu_de": "Mbappé và phút 87 khiến Camp Nou câm lặng",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-01-mbappe-phut-87-camp-nou",
+   "uu_tien": false,
+   "video_id": "xwlamTtWNLk",
+   "gio_hen": "2026-10-27 08:24",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "cong-khai",
+     "ghi": "quet: nhập lần đầu"
+    }
+   ]
+  },
+  "tap-02-istanbul-2005-sau-phut": {
+   "tap": 2,
+   "slug": "tap-02-istanbul-2005-sau-phut",
+   "loai": "dai",
+   "tieu_de": "Liverpool thua 0–3 ở Istanbul và 6 phút không ai tin",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-02-istanbul-2005-sau-phut",
+   "uu_tien": false,
+   "video_id": "v2r89Hg2F30",
+   "gio_hen": "2026-10-27 19:30",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-03-thuong-chau-2018-ba-tran-120-phut": {
+   "tap": 3,
+   "slug": "tap-03-thuong-chau-2018-ba-tran-120-phut",
+   "loai": "dai",
+   "tieu_de": "Thường Châu 2018: ba trận 120 phút của U23 Việt Nam",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-03-thuong-chau-2018-ba-tran-120-phut",
+   "uu_tien": false,
+   "video_id": "XlcweKEmcmA",
+   "gio_hen": "2026-10-28 12:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-04-harry-kane-qua-bong-vang-2026": {
+   "tap": 4,
+   "slug": "tap-04-harry-kane-qua-bong-vang-2026",
+   "loai": "dai",
+   "tieu_de": "Harry Kane: từ cậu bé bị Arsenal loại đến Quả bóng vàng",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-04-harry-kane-qua-bong-vang-2026",
+   "uu_tien": false,
+   "video_id": "v69tIiaA3Eo",
+   "gio_hen": "2026-10-28 19:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-05-man-united-phan-1-newton-heath-den-1968": {
+   "tap": 5,
+   "slug": "tap-05-man-united-phan-1-newton-heath-den-1968",
+   "loai": "dai",
+   "tieu_de": "Man United: từ đội công nhân đến đỉnh châu Âu (Phần 1)",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-05-man-united-phan-1-newton-heath-den-1968",
+   "uu_tien": false,
+   "video_id": "bBakNbG25gU",
+   "gio_hen": "2026-10-30 12:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-06-ronaldo-phan-1-madeira-den-old-trafford": {
+   "tap": 6,
+   "slug": "tap-06-ronaldo-phan-1-madeira-den-old-trafford",
+   "loai": "dai",
+   "tieu_de": "Ronaldo: từ cậu bé bị chê làm xiếc đến Quả bóng vàng",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-06-ronaldo-phan-1-madeira-den-old-trafford",
+   "uu_tien": false,
+   "video_id": "ukR8P5ihopU",
+   "gio_hen": "2026-10-30 19:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-07-park-hang-seo-phan-1": {
+   "tap": 7,
+   "slug": "tap-07-park-hang-seo-phan-1",
+   "loai": "dai",
+   "tieu_de": "Park Hang-seo: từ HLV ngủ gật đến đỉnh cao 2018 (Phần 1)",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-07-park-hang-seo-phan-1",
+   "uu_tien": false,
+   "video_id": "suw0tteI7QA",
+   "gio_hen": "2026-10-31 12:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-08-u15-viet-nam-world-cup-u15-2026": {
+   "tap": 8,
+   "slug": "tap-08-u15-viet-nam-world-cup-u15-2026",
+   "loai": "dai",
+   "tieu_de": "U15 Việt Nam vào chung kết World Cup: sự thật là gì?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-08-u15-viet-nam-world-cup-u15-2026",
+   "uu_tien": true,
+   "video_id": "1iGGMQUHkSc",
+   "gio_hen": "2026-10-30 18:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-09-qua-bong-vang-moi-thoi-dai": {
+   "tap": 9,
+   "slug": "tap-09-qua-bong-vang-moi-thoi-dai",
+   "loai": "dai",
+   "tieu_de": "Quả bóng vàng mọi thời đại: vì sao Ronaldo 2008 thắng Messi?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-09-qua-bong-vang-moi-thoi-dai",
+   "uu_tien": true,
+   "video_id": "zoXP2T4Cba4",
+   "gio_hen": "2026-10-31 19:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-10-arsenal-thang-liverpool-anfield": {
+   "tap": 10,
+   "slug": "tap-10-arsenal-thang-liverpool-anfield",
+   "loai": "dai",
+   "tieu_de": "Arsenal thắng Liverpool ở Anfield: vì sao chờ 14 năm?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-10-arsenal-thang-liverpool-anfield",
+   "uu_tien": true,
+   "video_id": "FK6e5t07VVk",
+   "gio_hen": "2026-11-03 19:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-11-asian-cup-2027-hoan-tuyen-viet-nam": {
+   "tap": 11,
+   "slug": "tap-11-asian-cup-2027-hoan-tuyen-viet-nam",
+   "loai": "dai",
+   "tieu_de": "Asian Cup 2027 bị hoãn: tuyển Việt Nam được hay mất?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-11-asian-cup-2027-hoan-tuyen-viet-nam",
+   "uu_tien": true,
+   "video_id": "pF4yRg3-bvw",
+   "gio_hen": "2026-11-04 07:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-12-ronaldo-phan-2-real-madrid": {
+   "tap": 12,
+   "slug": "tap-12-ronaldo-phan-2-real-madrid",
+   "loai": "dai",
+   "tieu_de": "Ronaldo ở Real Madrid: 4 cúp C1 và cú móc bóng (Phần 2)",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-12-ronaldo-phan-2-real-madrid",
+   "uu_tien": false,
+   "trang_thai": "cong-khai",
+   "video_id": "SsKMk1_tUAM",
+   "gio_hen": "2026-11-08 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-07 20:08",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-08 19:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-13-cahn-cup-c1-chau-a": {
+   "tap": 13,
+   "slug": "tap-13-cahn-cup-c1-chau-a",
+   "loai": "dai",
+   "tieu_de": "CAHN ở Cúp C1 châu Á: đội Việt Nam đi được bao xa?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-13-cahn-cup-c1-chau-a",
+   "uu_tien": true,
+   "video_id": "d9iaPqTDnus",
+   "gio_hen": "2026-11-04 19:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-05 09:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-14-mu-nguoc-dong-roma-3-2": {
+   "tap": 14,
+   "slug": "tap-14-mu-nguoc-dong-roma-3-2",
+   "loai": "dai",
+   "tieu_de": "MU ngược dòng Roma 3-2: Carrick được cứu?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-14-mu-nguoc-dong-roma-3-2",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "J9ffj3XLRFE",
+   "gio_hen": "2026-11-05 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-05 05:34",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-05 09:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-01-mbappe-phut-87-camp-nou/01-ba-cham-phut-87": {
+   "tap": 1,
+   "slug": "tap-01-mbappe-phut-87-camp-nou/01-ba-cham-phut-87",
+   "loai": "short",
+   "video_id": "2Fx5luDbi80",
+   "gio_hen": "2026-10-27 08:33",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-02-istanbul-2005-sau-phut/01-cuu-thua-phut-117": {
+   "tap": 2,
+   "slug": "tap-02-istanbul-2005-sau-phut/01-cuu-thua-phut-117",
+   "loai": "short",
+   "video_id": "VskJ0VUNGUw",
+   "gio_hen": "2026-10-27 15:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-02-istanbul-2005-sau-phut/02-bi-mat-phong-thay-do": {
+   "tap": 2,
+   "slug": "tap-02-istanbul-2005-sau-phut/02-bi-mat-phong-thay-do",
+   "loai": "short",
+   "video_id": "74-hqJAJ7UA",
+   "gio_hen": "2026-10-27 18:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-02-istanbul-2005-sau-phut/03-sau-phut-ba-ban": {
+   "tap": 2,
+   "slug": "tap-02-istanbul-2005-sau-phut/03-sau-phut-ba-ban",
+   "loai": "short",
+   "video_id": "JkmI2xIsliE",
+   "gio_hen": "2026-10-27 21:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-01-mbappe-phut-87-camp-nou/02-may-hay-gioi": {
+   "tap": 1,
+   "slug": "tap-01-mbappe-phut-87-camp-nou/02-may-hay-gioi",
+   "loai": "short",
+   "video_id": "xUo0NZdlV3M",
+   "gio_hen": "2026-10-30 10:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-01-mbappe-phut-87-camp-nou/03-con-so-soc": {
+   "tap": 1,
+   "slug": "tap-01-mbappe-phut-87-camp-nou/03-con-so-soc",
+   "loai": "short",
+   "video_id": "KIxkpoXypJw",
+   "gio_hen": "2026-10-30 11:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-03-thuong-chau-2018-ba-tran-120-phut/01-da-phat-trong-tuyet": {
+   "tap": 3,
+   "slug": "tap-03-thuong-chau-2018-ba-tran-120-phut/01-da-phat-trong-tuyet",
+   "loai": "short",
+   "video_id": "v_5BFOY5ye0",
+   "gio_hen": "2026-10-30 14:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-03-thuong-chau-2018-ba-tran-120-phut/02-sau-tram-ba-muoi-phut": {
+   "tap": 3,
+   "slug": "tap-03-thuong-chau-2018-ba-tran-120-phut/02-sau-tram-ba-muoi-phut",
+   "loai": "short",
+   "video_id": "p4mB9vH9OQ4",
+   "gio_hen": "2026-10-30 16:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-03-thuong-chau-2018-ba-tran-120-phut/03-hai-loat-luan-luu": {
+   "tap": 3,
+   "slug": "tap-03-thuong-chau-2018-ba-tran-120-phut/03-hai-loat-luan-luu",
+   "loai": "short",
+   "video_id": "d7MZCxcOfa4",
+   "gio_hen": "2026-10-30 20:30",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-04-harry-kane-qua-bong-vang-2026/01-cau-be-bi-arsenal-loai": {
+   "tap": 4,
+   "slug": "tap-04-harry-kane-qua-bong-vang-2026/01-cau-be-bi-arsenal-loai",
+   "loai": "short",
+   "video_id": "peX_hMLz2gM",
+   "gio_hen": "2026-10-30 22:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-04-harry-kane-qua-bong-vang-2026/02-73-ban-65-tran": {
+   "tap": 4,
+   "slug": "tap-04-harry-kane-qua-bong-vang-2026/02-73-ban-65-tran",
+   "loai": "short",
+   "video_id": "Wrzd_TKkrok",
+   "gio_hen": "2026-10-31 09:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-04-harry-kane-qua-bong-vang-2026/03-kane-mbappe-yamal": {
+   "tap": 4,
+   "slug": "tap-04-harry-kane-qua-bong-vang-2026/03-kane-mbappe-yamal",
+   "loai": "short",
+   "video_id": "d1dJtVlfnDM",
+   "gio_hen": "2026-10-31 11:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-05-man-united-phan-1-newton-heath-den-1968/01-chu-cho-major": {
+   "tap": 5,
+   "slug": "tap-05-man-united-phan-1-newton-heath-den-1968/01-chu-cho-major",
+   "loai": "short",
+   "video_id": "EoB-iEaEXJI",
+   "gio_hen": "2026-10-31 14:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-05-man-united-phan-1-newton-heath-den-1968/02-ba-ban-hiep-phu": {
+   "tap": 5,
+   "slug": "tap-05-man-united-phan-1-newton-heath-den-1968/02-ba-ban-hiep-phu",
+   "loai": "short",
+   "video_id": "e7PCjup1Gro",
+   "gio_hen": "2026-10-31 16:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-05-man-united-phan-1-newton-heath-den-1968/03-duncan-edwards": {
+   "tap": 5,
+   "slug": "tap-05-man-united-phan-1-newton-heath-den-1968/03-duncan-edwards",
+   "loai": "short",
+   "video_id": "29ZRtL_QyPQ",
+   "gio_hen": "2026-10-31 20:30",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-06-ronaldo-phan-1-madeira-den-old-trafford/01-dem-mua-moscow": {
+   "tap": 6,
+   "slug": "tap-06-ronaldo-phan-1-madeira-den-old-trafford/01-dem-mua-moscow",
+   "loai": "short",
+   "video_id": "vao_uMi3L24",
+   "gio_hen": "2026-10-31 22:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-06-ronaldo-phan-1-madeira-den-old-trafford/02-tran-giao-huu-2003": {
+   "tap": 6,
+   "slug": "tap-06-ronaldo-phan-1-madeira-den-old-trafford/02-tran-giao-huu-2003",
+   "loai": "short",
+   "video_id": "ket282X1RvE",
+   "gio_hen": "2026-11-01 09:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-06-ronaldo-phan-1-madeira-den-old-trafford/03-con-loc-42-ban": {
+   "tap": 6,
+   "slug": "tap-06-ronaldo-phan-1-madeira-den-old-trafford/03-con-loc-42-ban",
+   "loai": "short",
+   "video_id": "MqWLXp-IG9Y",
+   "gio_hen": "2026-11-01 11:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-07-park-hang-seo-phan-1/01-chung-ket-my-dinh": {
+   "tap": 7,
+   "slug": "tap-07-park-hang-seo-phan-1/01-chung-ket-my-dinh",
+   "loai": "short",
+   "video_id": "cksZlD1SZ2E",
+   "gio_hen": "2026-11-01 14:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-07-park-hang-seo-phan-1/02-nguoi-ngu-gat": {
+   "tap": 7,
+   "slug": "tap-07-park-hang-seo-phan-1/02-nguoi-ngu-gat",
+   "loai": "short",
+   "video_id": "Fyh5G-4Mma8",
+   "gio_hen": "2026-11-01 16:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-07-park-hang-seo-phan-1/03-chao-lua-bukit-jalil": {
+   "tap": 7,
+   "slug": "tap-07-park-hang-seo-phan-1/03-chao-lua-bukit-jalil",
+   "loai": "short",
+   "video_id": "XqXhBIGUo1g",
+   "gio_hen": "2026-11-01 20:30",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-08-u15-viet-nam-world-cup-u15-2026/01-con-so-189-doi": {
+   "tap": 8,
+   "slug": "tap-08-u15-viet-nam-world-cup-u15-2026/01-con-so-189-doi",
+   "loai": "short",
+   "video_id": "0vhWKlCAHjA",
+   "gio_hen": "2026-11-02 09:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-08-u15-viet-nam-world-cup-u15-2026/02-luan-luu-rwanda": {
+   "tap": 8,
+   "slug": "tap-08-u15-viet-nam-world-cup-u15-2026/02-luan-luu-rwanda",
+   "loai": "short",
+   "video_id": "SWkVGNK1xAc",
+   "gio_hen": "2026-11-02 11:00",
+   "trang_thai": "cong-khai",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 10:00",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-04 10:01",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-15-u17-viet-nam-world-cup-2026": {
+   "tap": 15,
+   "slug": "tap-15-u17-viet-nam-world-cup-2026",
+   "loai": "dai",
+   "tieu_de": "U17 Việt Nam dự World Cup: cửa đi tiếp lớn cỡ nào?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-15-u17-viet-nam-world-cup-2026",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "9TBqTp5kKZ4",
+   "gio_hen": "2026-11-05 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 15:59",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-05 05:34",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-05 19:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-16-yamal-vuot-mbappe-ky-luc-c1": {
+   "tap": 16,
+   "slug": "tap-16-yamal-vuot-mbappe-ky-luc-c1",
+   "loai": "dai",
+   "tieu_de": "Yamal vượt Mbappé: 14 bàn Champions League trước tuổi 20",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-16-yamal-vuot-mbappe-ky-luc-c1",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "be0YuYyI278",
+   "gio_hen": "2026-11-06 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-04 23:26",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-05 20:04",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-06 19:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-17-como-thang-lens-9-1": {
+   "tap": 17,
+   "slug": "tap-17-como-thang-lens-9-1",
+   "loai": "dai",
+   "tieu_de": "Como thắng Lens 9-1: Fabregas đã làm gì?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-17-como-thang-lens-9-1",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "Vlxxks_GTWY",
+   "gio_hen": "2026-11-07 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-05 09:00",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-06 20:06",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-07 19:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-18-bo-u23-viet-nam": {
+   "tap": 18,
+   "slug": "tap-18-bo-u23-viet-nam",
+   "loai": "dai",
+   "tieu_de": null,
+   "drive": null,
+   "uu_tien": false,
+   "trang_thai": "loi",
+   "video_id": null,
+   "gio_hen": null,
+   "lich_su": [
+    {
+     "luc": "2026-11-05 12:37",
+     "tu": null,
+     "sang": "dang-lam",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-05 12:38",
+     "tu": "dang-lam",
+     "sang": "loi",
+     "ghi": "Bỏ đề 05/11: người dùng bỏ mọi chủ đề bóng đá Việt Nam; không render, không lên Drive, không đăng"
+    }
+   ],
+   "loi": "Bỏ đề 05/11: người dùng bỏ mọi chủ đề bóng đá Việt Nam; không render, không lên Drive, không đăng"
+  },
+  "tap-18-messi-tam-cho-yamal": {
+   "tap": 18,
+   "slug": "tap-18-messi-tam-cho-yamal",
+   "loai": "dai",
+   "tieu_de": "Vì sao Messi tắm cho Yamal? Bức ảnh 19 năm trước",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-18-messi-tam-cho-yamal",
+   "uu_tien": false,
+   "trang_thai": "cong-khai",
+   "video_id": "SlrSwh_8vCc",
+   "gio_hen": "2026-11-09 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-05 12:37",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-08 20:06",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-09 19:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-19-tuoi-tho-messi-khan-giay": {
+   "tap": 19,
+   "slug": "tap-19-tuoi-tho-messi-khan-giay",
+   "loai": "dai",
+   "tieu_de": "Messi: mũi tiêm mỗi tối và hợp đồng khăn giấy",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-19-tuoi-tho-messi-khan-giay",
+   "uu_tien": false,
+   "trang_thai": "cong-khai",
+   "video_id": "kheKQRsZyQo",
+   "gio_hen": "2026-11-10 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-05 12:37",
+     "tu": null,
+     "sang": "dang-lam",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-05 13:07",
+     "tu": "dang-lam",
+     "sang": "cho-dang",
+     "ghi": "quet"
+    },
+    {
+     "luc": "2026-11-09 20:07",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-11 19:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-20-vi-sao-bong-da-nhat-ban-phat-trien": {
+   "tap": 20,
+   "slug": "tap-20-vi-sao-bong-da-nhat-ban-phat-trien",
+   "loai": "dai",
+   "tieu_de": "Vì sao bóng đá Nhật Bản phát triển? Kế hoạch 100 năm",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-20-vi-sao-bong-da-nhat-ban-phat-trien",
+   "uu_tien": false,
+   "trang_thai": "cong-khai",
+   "video_id": "Gk6WR_ird-Y",
+   "gio_hen": "2026-11-12 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-05 15:52",
+     "tu": null,
+     "sang": "dang-lam",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-05 23:18",
+     "tu": "dang-lam",
+     "sang": "cho-dang",
+     "ghi": "quet"
+    },
+    {
+     "luc": "2026-11-11 20:16",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-13 21:09",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    },
+    {
+     "luc": "2026-11-13 21:09",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-21-ronaldo-chia-tay-doi-tuyen-bo-dao-nha": {
+   "tap": 21,
+   "slug": "tap-21-ronaldo-chia-tay-doi-tuyen-bo-dao-nha",
+   "loai": "dai",
+   "tieu_de": "Ronaldo chia tay tuyển Bồ Đào Nha: 146 bàn và vì sao rời đi",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-21-ronaldo-chia-tay-doi-tuyen-bo-dao-nha",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "iYnh-8ZCRBk",
+   "gio_hen": "2026-11-06 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-06 05:20",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-06 05:23",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-06 07:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-22-ac-milan-thua-ferencvaros-0-2": {
+   "tap": 22,
+   "slug": "tap-22-ac-milan-thua-ferencvaros-0-2",
+   "loai": "dai",
+   "tieu_de": "AC Milan 0-2 Ferencváros: Địa chấn San Siro, bi kịch Amorim",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-22-ac-milan-thua-ferencvaros-0-2",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "dMY5eFAe0NY",
+   "gio_hen": "2026-11-07 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-07 04:59",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-07 05:03",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-07 07:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-23-real-madrid-di-stefano-5-cup-c1": {
+   "tap": 23,
+   "slug": "tap-23-real-madrid-di-stefano-5-cup-c1",
+   "loai": "dai",
+   "tieu_de": "Real Madrid và Di Stéfano: 5 Cúp C1 liên tiếp lập kỷ lục",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-23-real-madrid-di-stefano-5-cup-c1",
+   "uu_tien": false,
+   "trang_thai": "cong-khai",
+   "video_id": "2PKQAL6rtfM",
+   "gio_hen": "2026-11-14 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-08 04:50",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-13 20:59",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-16 09:10",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    },
+    {
+     "luc": "2026-11-16 09:10",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-24-nottingham-forest-thang-man-city-3-1": {
+   "tap": 24,
+   "slug": "tap-24-nottingham-forest-thang-man-city-3-1",
+   "loai": "dai",
+   "tieu_de": "Nottingham Forest 3-1 Man City: Cơn địa chấn tại City Ground",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-24-nottingham-forest-thang-man-city-3-1",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "YYBIeiRexZk",
+   "gio_hen": "2026-11-08 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-08 04:50",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-08 04:53",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-08 07:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-25-vi-sao-messi-roi-barca-2021": {
+   "tap": 25,
+   "slug": "tap-25-vi-sao-messi-roi-barca-2021",
+   "loai": "dai",
+   "tieu_de": "Messi rời Barcelona: Vì sao 21 năm kết thúc bằng nước mắt?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-25-vi-sao-messi-roi-barca-2021",
+   "uu_tien": false,
+   "trang_thai": "cong-khai",
+   "video_id": "eX257dCIfuE",
+   "gio_hen": "2026-11-17 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-08 22:05",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-16 20:08",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-17 19:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-26-man-united-hoa-aston-villa-4-4": {
+   "tap": 26,
+   "slug": "tap-26-man-united-hoa-aston-villa-4-4",
+   "loai": "dai",
+   "tieu_de": "Man United 4-4 Aston Villa: Rượt Đuổi 8 Bàn Điên Rồ Phút 96",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-26-man-united-hoa-aston-villa-4-4",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "K5cZ6gHlL5o",
+   "gio_hen": "2026-11-09 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-09 04:52",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-09 05:01",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-09 07:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-27-vi-sao-ronaldo-roi-man-united-2022": {
+   "tap": 27,
+   "slug": "tap-27-vi-sao-ronaldo-roi-man-united-2022",
+   "loai": "dai",
+   "tieu_de": "Ronaldo rời Man United: Vì sao 90 phút làm nổ tung tất cả?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-27-vi-sao-ronaldo-roi-man-united-2022",
+   "uu_tien": false,
+   "trang_thai": "cong-khai",
+   "video_id": "jeVdTmSB_Q8",
+   "gio_hen": "2026-11-18 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-09 21:58",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-17 20:15",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-18 19:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-28-barca-nguoc-dong-atletico-2-1": {
+   "tap": 28,
+   "slug": "tap-28-barca-nguoc-dong-atletico-2-1",
+   "loai": "dai",
+   "trang_thai": "cong-khai",
+   "video_id": "CLTT-bWa6M8",
+   "gio_hen": "2026-11-10 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-10 04:58",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-10 07:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ],
+   "tieu_de": "Atletico 1-2 Barcelona: Ma Thuật Yamal Và Bản Lĩnh Nhà Vua",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-28-barca-nguoc-dong-atletico-2-1",
+   "uu_tien": true
+  },
+  "tap-29-cau-thu-giau-nhat-the-gioi-la-ai": {
+   "tap": 29,
+   "slug": "tap-29-cau-thu-giau-nhat-the-gioi-la-ai",
+   "loai": "dai",
+   "tieu_de": "Ronaldo 300 triệu: ai mới là cầu thủ giàu nhất?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-29-cau-thu-giau-nhat-the-gioi-la-ai",
+   "uu_tien": false,
+   "trang_thai": "cong-khai",
+   "video_id": "g8XMmdg8M9Q",
+   "gio_hen": "2026-11-19 00:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-11 19:40",
+     "tu": null,
+     "sang": "dang-lam",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-12 07:40",
+     "tu": "dang-lam",
+     "sang": "cho-dang",
+     "ghi": "quet"
+    },
+    {
+     "luc": "2026-11-18 20:36",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-19 17:05",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "công khai lúc 00:00 19/11 (Studio ghi publishDate 2026-11-18T09:00-08:00), sớm hơn giờ hẹn 19:00; đã đăng bình luận R/M lúc 17:0x 19/11"
+    }
+   ]
+  },
+  "tap-30-mu-chon-pochettino-thay-carrick": {
+   "tap": 30,
+   "slug": "tap-30-mu-chon-pochettino-thay-carrick",
+   "loai": "dai",
+   "trang_thai": "cong-khai",
+   "video_id": "yJ8Y27ZtGs0",
+   "gio_hen": "2026-11-12 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-12 05:22",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-12 07:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ],
+   "tieu_de": "MU sa thải Carrick: Vì sao chọn Pochettino giá 10 triệu đô?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-30-mu-chon-pochettino-thay-carrick",
+   "uu_tien": true
+  },
+  "tap-31-italia-thang-phap-3-1": {
+   "tap": 31,
+   "slug": "tap-31-italia-thang-phap-3-1",
+   "loai": "dai",
+   "tieu_de": null,
+   "drive": null,
+   "uu_tien": false,
+   "trang_thai": "dang-lam",
+   "video_id": null,
+   "gio_hen": null,
+   "lich_su": [
+    {
+     "luc": "2026-11-13 21:09",
+     "tu": null,
+     "sang": "dang-lam",
+     "ghi": "quet: nhập lần đầu"
+    }
+   ]
+  },
+  "tap-32-maradona-ban-tay-cua-chua-1986": {
+   "tap": 32,
+   "slug": "tap-32-maradona-ban-tay-cua-chua-1986",
+   "loai": "dai",
+   "tieu_de": "Maradona và Bàn tay của Chúa: 4 phút điên rồ nhất World Cup",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-32-maradona-ban-tay-cua-chua-1986",
+   "uu_tien": false,
+   "trang_thai": "cong-khai",
+   "video_id": "pVP2MAxbmDU",
+   "gio_hen": "2026-11-19 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-13 22:29",
+     "tu": null,
+     "sang": "dang-lam",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-16 15:14",
+     "tu": "dang-lam",
+     "sang": "cho-dang",
+     "ghi": "quet"
+    },
+    {
+     "luc": "2026-11-19 16:50",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-19 19:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-33-tay-ban-nha-thua-anh-2-3-dut-chuoi-43-tran": {
+   "tap": 33,
+   "slug": "tap-33-tay-ban-nha-thua-anh-2-3-dut-chuoi-43-tran",
+   "loai": "dai",
+   "tieu_de": null,
+   "drive": null,
+   "uu_tien": true,
+   "trang_thai": "dang-lam",
+   "video_id": null,
+   "gio_hen": null,
+   "lich_su": [
+    {
+     "luc": "2026-11-16 09:10",
+     "tu": null,
+     "sang": "dang-lam",
+     "ghi": "quet: nhập lần đầu"
+    }
+   ]
+  },
+  "tap-34-zidane-va-cu-huc-dau-2006": {
+   "tap": 34,
+   "slug": "tap-34-zidane-va-cu-huc-dau-2006",
+   "loai": "dai",
+   "tieu_de": "Zidane và cú húc đầu 2006: Vì sao kết thúc bằng thẻ đỏ?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-34-zidane-va-cu-huc-dau-2006",
+   "uu_tien": false,
+   "trang_thai": "da-hen",
+   "video_id": "dwDNaOPs8Q8",
+   "gio_hen": "2026-11-20 19:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-16 22:47",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-19 20:06",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    }
+   ]
+  },
+  "tap-35-duc-thang-ha-lan-3-0": {
+   "tap": 35,
+   "slug": "tap-35-duc-thang-ha-lan-3-0",
+   "loai": "dai",
+   "tieu_de": "Đức 3-0 Hà Lan: Cơn Lốc Berlin Và Ma Thuật Của Klopp",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-35-duc-thang-ha-lan-3-0",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "YOa3KB47j6w",
+   "gio_hen": "2026-11-17 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-17 05:28",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-17 05:31",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-17 07:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-37-bo-dao-nha-thang-wales-3-2": {
+   "tap": 37,
+   "slug": "tap-37-bo-dao-nha-thang-wales-3-2",
+   "loai": "dai",
+   "trang_thai": "cong-khai",
+   "video_id": "oR51t1ERnoo",
+   "gio_hen": "2026-11-18 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-18 05:24",
+     "tu": null,
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-18 08:00",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ],
+   "tieu_de": "Wales 2-3 Bồ Đào Nha: 5 Bàn Điên Rồ Và 17 Phút Tử Thủ Thẻ Đỏ",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-37-bo-dao-nha-thang-wales-3-2",
+   "uu_tien": true
+  },
+  "tap-36-arsenal-49-tran-bat-bai-2004": {
+   "tap": 36,
+   "slug": "tap-36-arsenal-49-tran-bat-bai-2004",
+   "loai": "dai",
+   "tieu_de": "Arsenal và 49 trận bất bại: Vì sao 22 năm chưa ai xô đổ?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-36-arsenal-49-tran-bat-bai-2004",
+   "uu_tien": false,
+   "trang_thai": "cho-dang",
+   "video_id": null,
+   "gio_hen": null,
+   "lich_su": [
+    {
+     "luc": "2026-11-18 08:00",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    }
+   ]
+  },
+  "tap-38-argentina-1-0-peru-lautaro-messi": {
+   "tap": 38,
+   "slug": "tap-38-argentina-1-0-peru-lautaro-messi",
+   "loai": "dai",
+   "tieu_de": "Argentina 1-0 Peru: Siêu Phẩm Lautaro Và Kỷ Lục Của Messi",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-38-argentina-1-0-peru-lautaro-messi",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "NwwSTwrP2E8",
+   "gio_hen": "2026-11-19 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-19 05:08",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-19 05:14",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-19 07:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-39-ronaldo-va-con-co-giat-1998": {
+   "tap": 39,
+   "slug": "tap-39-ronaldo-va-con-co-giat-1998",
+   "loai": "dai",
+   "tieu_de": "Ronaldo và cơn co giật 1998: Bí mật ở Stade de France",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-39-ronaldo-va-con-co-giat-1998",
+   "uu_tien": false,
+   "trang_thai": "cho-dang",
+   "video_id": null,
+   "gio_hen": null,
+   "lich_su": [
+    {
+     "luc": "2026-11-19 07:40",
+     "tu": null,
+     "sang": "dang-lam",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-19 15:59",
+     "tu": "dang-lam",
+     "sang": "cho-dang",
+     "ghi": "quet"
+    }
+   ]
+  },
+  "tap-40-gerrard-va-cu-truot-chan-2014": {
+   "tap": 40,
+   "slug": "tap-40-gerrard-va-cu-truot-chan-2014",
+   "loai": "dai",
+   "tieu_de": "Gerrard và cú trượt chân 2014: 1 giây cướp đi 24 năm",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-40-gerrard-va-cu-truot-chan-2014",
+   "uu_tien": false,
+   "trang_thai": "cho-dang",
+   "video_id": null,
+   "gio_hen": null,
+   "lich_su": [
+    {
+     "luc": "2026-11-19 22:08",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    }
+   ]
+  },
+  "tap-41-brazil-1-1-uruguay-valverde-gerson": {
+   "tap": 41,
+   "slug": "tap-41-brazil-1-1-uruguay-valverde-gerson",
+   "loai": "dai",
+   "tieu_de": "Brazil 1-1 Uruguay: Siêu Phẩm Valverde Và Cơn Giận Salvador",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-41-brazil-1-1-uruguay-valverde-gerson",
+   "uu_tien": true,
+   "trang_thai": "cong-khai",
+   "video_id": "1y3AveOxpds",
+   "gio_hen": "2026-11-20 07:00",
+   "lich_su": [
+    {
+     "luc": "2026-11-20 05:10",
+     "tu": null,
+     "sang": "cho-dang",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-20 05:14",
+     "tu": "cho-dang",
+     "sang": "da-hen",
+     "ghi": "dang-tu-drive xong"
+    },
+    {
+     "luc": "2026-11-20 07:40",
+     "tu": "da-hen",
+     "sang": "cong-khai",
+     "ghi": "kiem: oEmbed 200"
+    }
+   ]
+  },
+  "tap-42-david-beckham-va-the-do-1998": {
+   "tap": 42,
+   "slug": "tap-42-david-beckham-va-the-do-1998",
+   "loai": "dai",
+   "tieu_de": "David Beckham và thẻ đỏ 1998: Vì sao cả nước Anh căm thù?",
+   "drive": "G:\\My Drive\\TeoTheThao\\tap-42-david-beckham-va-the-do-1998",
+   "uu_tien": false,
+   "trang_thai": "cho-dang",
+   "video_id": null,
+   "gio_hen": null,
+   "lich_su": [
+    {
+     "luc": "2026-11-20 07:40",
+     "tu": null,
+     "sang": "dang-lam",
+     "ghi": "quet: nhập lần đầu"
+    },
+    {
+     "luc": "2026-11-20 08:09",
+     "tu": "dang-lam",
+     "sang": "cho-dang",
+     "ghi": "quet"
+    }
+   ]
+  }
+ },
+ "thu_tu": [
+  "tap-16-yamal-vuot-mbappe-ky-luc-c1",
+  "tap-17-como-thang-lens-9-1",
+  "tap-12-ronaldo-phan-2-real-madrid",
+  "tap-18-messi-tam-cho-yamal",
+  "tap-19-tuoi-tho-messi-khan-giay"
+ ]
+}

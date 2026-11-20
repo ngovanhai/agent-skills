@@ -11,7 +11,7 @@ description: >-
 
 # Cọng Tóc Cuối × Godot 2D
 
-`SKILL = thư mục chứa file này` · `KH = ~/.gemini/config/skills/teo-kiem-hiep` (mượn gd-voice, gd-render) · `LOCK = bash C:/Users/anhha/MuseStudio/the-thao/_tools/slot.sh`
+`SKILL = thư mục chứa file này` · `KH = ~/.agent-skills/skills/teo-kiem-hiep` (mượn gd-voice, gd-render) · `LOCK = bash C:/Users/anhha/MuseStudio/the-thao/_tools/slot.sh`
 Godot 4.7.2: `C:/tool/Godot/Godot_v4.7.2-stable_win64_console.exe` · Tập: `C:/Users/anhha/MuseStudio/cong-toc-cuoi/tap-<NN>-<slug>/` (slug không dấu, gạch nối).
 Engine nhân vật: `C:/Users/anhha/MuseStudio/cong-toc-cuoi/_tools/doodle/` (`nv.gd`, `cast.json`, `README.md`: tư thế, biểu cảm, tuỳ chọn vai). new-tap chép sẵn vào tập.
 Kênh: ID `UClW6e47o_G4Jy1H0i2pBxig`, tài khoản thương hiệu dưới ngoh33889@gmail.com. Vận hành, đăng bài: `SKILL/data/van-hanh.md`.

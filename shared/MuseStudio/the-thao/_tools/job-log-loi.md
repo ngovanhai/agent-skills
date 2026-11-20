@@ -1,0 +1,2 @@
+| 2026-11-03 12:54 | teo-tt-video-dai (Task Scheduler) | phiên Claude thoát mã 1 giữa chừng, xem C:\Users\anhha\MuseStudio\the-thao\_tools\job-runs\teo-tt-video-dai-2026-11-03_0902.log; lượt sau làm nốt | |
+| 2026-11-06 14:05 | teo-tt-video-dai (Task Scheduler) | phiên Claude thoát mã 1 giữa chừng, xem C:\Users\anhha\MuseStudio\the-thao\_tools\job-runs\teo-tt-video-dai-2026-11-06_1405.log; lượt sau làm nốt | |

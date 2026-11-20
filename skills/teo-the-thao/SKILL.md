@@ -10,7 +10,7 @@ description: >-
 
 # Tèo Thể Thao × Godot 2D: bóng đá, mỗi tập một kịch bản, một khung, một bộ code hình
 
-`SKILL = thư mục chứa file này` · `KH = ~/.claude/skills/teo-kiem-hiep` (mượn script giọng/render/mặt) · `LOCK = bash C:/Users/anhha/MuseStudio/the-thao/_tools/slot.sh`
+`SKILL = thư mục chứa file này` · `KH = ~/.agent-skills/skills/teo-kiem-hiep` (mượn script giọng/render/mặt) · `LOCK = bash C:/Users/anhha/MuseStudio/the-thao/_tools/slot.sh`
 Godot 4.7.2: `C:/tool/Godot/Godot_v4.7.2-stable_win64_console.exe` · Thư mục tập: `C:/Users/anhha/MuseStudio/the-thao/tap-<NN>-<slug>/` (slug không dấu, gạch nối).
 Học cách dựng Godot từ tập mẫu kiếm hiệp `C:/Users/anhha/MuseStudio/kiem-hiep/tap-01-tieu-phong-vs-quach-tinh/godot/` (chỉ đọc).
 
@@ -117,8 +117,8 @@ Việc nặng (giọng, render) luôn chạy qua `LOCK` bằng Bash tool (Git Ba
      - Look lấy từ skill `nhan-vat-chibi` (chưa có thì tạo bằng skill đó và soi sheet): áo đấu màu đội + số áo, kiểu tóc đặc trưng, không logo. Tèo có thể mặc áo trọng tài, áo HLV, áo phóng viên… theo vai.
      - **Tèo của kênh này là nhân vật `teo-the-thao`** trong sổ nhan-vat-chibi (người dùng yêu cầu khác Tèo cũ, 2026-10-26): tóc đen mái bằng, da rám nắng, mắt nâu, áo xanh coban cổ trắng số 10, quần xanh than. **Không dùng `teo-tieu-nhi` hay preset `teo`** (kính tròn, khăn đỏ, tóc nâu gai là Tèo của kênh kiếm hiệp). Trang phục theo vai (áo trọng tài, áo HLV…) thì giữ tóc, da, mắt, chỉ đổi áo.
      - `godot/cast.json`: `{"teo": {"char": "teo-the-thao", "name": "Tèo"}, "messi": {"char": "messi", "name": "Messi"}}`.
-     - **Kiểu nhân vật của kênh: CARTOON** (người dùng chọn 2026-10-26, thay mặt anime mắt to long lanh): đầu vẽ bằng `C:/Users/anhha/MuseStudio/the-thao/_tools/ve-cartoon.mjs` (viền đậm một màu, mắt bầu dục trắng con ngươi đen, lông mày khối, mũi rõ, miệng rộng, tóc mảng phẳng), thân/tay chân là rig v2 (`chibi.gd`). Dùng chung cho mọi tập để nhận diện kênh, **không** viết ve.mjs riêng từng tập. Soi: `node ~/.claude/skills/nhan-vat-chibi/scripts/char.mjs sheet <id> --ve <ve-cartoon.mjs>`.
-     - Đưa nhân vật vào tập: trong `<tap>/godot/` chạy `node C:/Users/anhha/MuseStudio/the-thao/_tools/export-chars.mjs <id>…` (ra `chars/<id>.json` mặt cartoon) và chép `~/.claude/skills/thao-tac-chibi/engine/chibi.gd` vào `godot/`. Trong phim.gd: `var c = preload("res://chibi.gd").new(); add_child(c); c.setup(id)`, mỗi khung đặt `c.t = t` rồi `c.apply(pose, 0.0)` (tất định theo t), `c.set_expr(...)`; nói thì đổi `binh` ↔ `vui` để nhép miệng.
+     - **Kiểu nhân vật của kênh: CARTOON** (người dùng chọn 2026-10-26, thay mặt anime mắt to long lanh): đầu vẽ bằng `C:/Users/anhha/MuseStudio/the-thao/_tools/ve-cartoon.mjs` (viền đậm một màu, mắt bầu dục trắng con ngươi đen, lông mày khối, mũi rõ, miệng rộng, tóc mảng phẳng), thân/tay chân là rig v2 (`chibi.gd`). Dùng chung cho mọi tập để nhận diện kênh, **không** viết ve.mjs riêng từng tập. Soi: `node ~/.agent-skills/skills/nhan-vat-chibi/scripts/char.mjs sheet <id> --ve <ve-cartoon.mjs>`.
+     - Đưa nhân vật vào tập: trong `<tap>/godot/` chạy `node C:/Users/anhha/MuseStudio/the-thao/_tools/export-chars.mjs <id>…` (ra `chars/<id>.json` mặt cartoon) và chép `~/.agent-skills/skills/thao-tac-chibi/engine/chibi.gd` vào `godot/`. Trong phim.gd: `var c = preload("res://chibi.gd").new(); add_child(c); c.setup(id)`, mỗi khung đặt `c.t = t` rồi `c.apply(pose, 0.0)` (tất định theo t), `c.set_expr(...)`; nói thì đổi `binh` ↔ `vui` để nhép miệng.
      - Tỉ lệ đầu to thân ngắn (2–3 đầu) giữ nguyên.
 6. **Code hình.** Thay hết `phim.gd` (xoá dấu `CHUA_DUNG`) và thêm file vẽ riêng. Không chép code hình tập trước, chỉ đọc để học. Cấu trúc file do tập tự chọn.
    - main.gd gọi `phim.setup(main)` một lần (có `main.segs`, `main.lines`, `main.DUR`), `phim.at(t, seg, line)` mỗi khung, `phim.sfx()` → `[[giây, "whoosh", dB], …]`.

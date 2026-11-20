@@ -1,0 +1,4 @@
+# Tập có UU-TIEN.txt nhưng người dùng cho đăng khe 19:00 như tập kể chuyện (2026-11-05: tin nóng cũ không đăng 07:00 nữa). Mỗi dòng một tiền tố tên thư mục tập.
+tap-16-
+tap-17-
+tap-20-

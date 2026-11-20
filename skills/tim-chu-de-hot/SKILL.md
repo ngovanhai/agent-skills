@@ -13,7 +13,7 @@ Vì sao có skill này (2026-10-30): các tập chọn theo series (lịch sử 
 
 ```bash
 cd C:/Users/anhha/MuseStudio/the-thao/_hot
-node ~/.claude/skills/tim-chu-de-hot/scripts/hot.mjs --out $(date +%F).md --json $(date +%F).json
+node ~/.agent-skills/skills/tim-chu-de-hot/scripts/hot.mjs --out $(date +%F).md --json $(date +%F).json
 # thêm hạt giống khi cần đào sâu: --seed "u15 việt nam,fifa asean cup,quả bóng vàng"
 ```
 

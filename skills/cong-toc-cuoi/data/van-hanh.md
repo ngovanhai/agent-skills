@@ -25,11 +25,11 @@ Body JSON có tiếng Việt gửi bằng bytes UTF-8. `GET page/text` có lúc 
 FoxProfile chỉ nhận file dưới `C:\Users\anhha\MuseStudio\the-thao` (`FOXPROFILE_UPLOAD_ROOT` trong `foxprofile/.env`). Chép tạm vào `C:\Users\anhha\MuseStudio\the-thao\_dang_ctc\`, tải lên, rồi **xoá thư mục đó** (đừng để file kênh này lẫn vào hàng chờ của Tèo).
 
 ## Tải video lên Studio
-Selector và mẹo giống hệt kênh Tèo: đọc mục "Tải video lên Studio" và "Đổi chế độ hiển thị / hẹn giờ" trong `~/.claude/skills/teo-the-thao/data/van-hanh.md`, chỉ thay ID kênh thành `UClW6e47o_G4Jy1H0i2pBxig`:
+Selector và mẹo giống hệt kênh Tèo: đọc mục "Tải video lên Studio" và "Đổi chế độ hiển thị / hẹn giờ" trong `~/.agent-skills/skills/teo-the-thao/data/van-hanh.md`, chỉ thay ID kênh thành `UClW6e47o_G4Jy1H0i2pBxig`:
 1. `navigate https://studio.youtube.com/channel/UClW6e47o_G4Jy1H0i2pBxig/videos/upload?d=ud`
 2. `upload {selector:"input[type=file]", path:"…\_dang_ctc\<slug>.mp4"}` → tiêu đề, mô tả (`type` vào `#title-textarea #textbox`, `#description-textarea #textbox`), thumbnail `input#file-loader`, không dành cho trẻ em, thẻ, Riêng tư, Lưu.
 3. Hẹn giờ công khai, ghi job-log và sổ cái (`ctc-dang.ps1` làm hết các bước này).
-Sau khi tải xong: `node ~/.claude/skills/cong-toc-cuoi/scripts/drive-sync.mjs <tap> --xoa` (lên `G:/My Drive/CongTocCuoi/<slug>/`, chỉ xoá trong máy khi SHA-256 khớp).
+Sau khi tải xong: `node ~/.agent-skills/skills/cong-toc-cuoi/scripts/drive-sync.mjs <tap> --xoa` (lên `G:/My Drive/CongTocCuoi/<slug>/`, chỉ xoá trong máy khi SHA-256 khớp).
 
 ## Ảnh kênh
 Avatar/banner gốc: `C:/Users/anhha/MuseStudio/cong-toc-cuoi/kenh/`. Vẽ lại: trong `_tools/doodle` chạy `godot --path . -- --mode=avatar|banner --out=<png>` rồi ffmpeg (avatar: `crop=1080:1080:420:0,scale=800:800`; banner: `scale=2560:1440`, vùng an toàn 1546×423 giữa). Tải lên ở Studio → Tùy chỉnh → Hồ sơ (input file thứ 0 = banner, thứ 1 = ảnh) → Xong → Xuất bản.

@@ -11,6 +11,7 @@ const REPO_DIR = path.resolve(__dirname, '..');
 const SKILLS_DIR = path.join(REPO_DIR, 'skills');
 const HARNESSES_FILE = path.join(REPO_DIR, 'harnesses.json');
 const PROFILES_FILE = path.join(REPO_DIR, 'profiles.json');
+const MOUNTS_FILE = path.join(REPO_DIR, 'mounts.json');
 const LOCAL_CONFIG_FILE = path.join(REPO_DIR, '.local.json');
 const MANAGED_FILE = path.join(REPO_DIR, '.managed.json');
 const BACKUP_ROOT = path.join(REPO_DIR, '.backup');
@@ -46,6 +47,21 @@ function loadHarnesses() {
 
 function loadProfiles() {
   return readJson(PROFILES_FILE, { default: ['all'], profiles: { all: { skills: ['*'] } } });
+}
+
+function loadMounts() {
+  const data = readJson(MOUNTS_FILE, { mounts: [] });
+  return data.mounts || [];
+}
+
+function resolveDesiredMounts(localCfg, allMounts) {
+  const active = new Set(localCfg.profiles || ['all']);
+  return allMounts.filter((m) => {
+    const srcPath = path.join(REPO_DIR, m.source);
+    if (!fs.existsSync(srcPath)) return false;
+    if (!m.profiles || m.profiles.length === 0) return true;
+    return m.profiles.some((p) => active.has(p));
+  });
 }
 
 function detectInstalledHarnesses(harnesses) {
@@ -193,6 +209,9 @@ function cmdSync(args) {
   const managed = loadManaged();
   const prevLinks = managed.links || {};
   const nextLinks = {};
+  const prevMounts = managed.mounts || {};
+  const nextMounts = {};
+  const desiredMounts = resolveDesiredMounts(localCfg, loadMounts());
 
   const stamp = new Date().toISOString().replace(/[:.]/g, '-');
   let created = 0;
@@ -275,15 +294,77 @@ function cmdSync(args) {
     }
   }
 
+  // 3. Ensure desired shared mounts exist
+  for (const m of desiredMounts) {
+    const sourceDir = path.join(REPO_DIR, m.source);
+    const targetLink = path.join(HOME, m.target);
+    const exists = fs.existsSync(targetLink) || isSymlinkOrJunction(targetLink);
+    if (exists) {
+      if (isSymlinkOrJunction(targetLink)) {
+        const currentTarget = getLinkTarget(targetLink);
+        if (currentTarget && path.resolve(currentTarget).toLowerCase() === path.resolve(sourceDir).toLowerCase()) {
+          unchanged++;
+          nextMounts[m.id] = targetLink;
+          continue;
+        }
+        if (dryRun) {
+          console.log(`[dry-run] relink mount ${targetLink} -> ${sourceDir}`);
+        } else {
+          removeDirLink(targetLink);
+          createDirLink(sourceDir, targetLink);
+        }
+        updated++;
+        nextMounts[m.id] = targetLink;
+      } else {
+        if (dryRun) {
+          console.log(`[dry-run] backup & link mount ${targetLink} -> ${sourceDir}`);
+        } else {
+          const bak = backupRealDir(targetLink, '_mounts', m.id, stamp);
+          console.log(`[backup] ${targetLink} -> ${bak}`);
+          createDirLink(sourceDir, targetLink);
+        }
+        backedUp++;
+        created++;
+        nextMounts[m.id] = targetLink;
+      }
+    } else {
+      if (dryRun) {
+        console.log(`[dry-run] link mount ${targetLink} -> ${sourceDir}`);
+      } else {
+        createDirLink(sourceDir, targetLink);
+      }
+      created++;
+      nextMounts[m.id] = targetLink;
+    }
+  }
+
+  // 4. Clean up stale managed mounts
+  for (const [mId, oldPath] of Object.entries(prevMounts)) {
+    if (nextMounts[mId]) continue;
+    if (isSymlinkOrJunction(oldPath)) {
+      const target = getLinkTarget(oldPath);
+      const insideRepo = target && path.resolve(target).toLowerCase().startsWith(path.resolve(REPO_DIR).toLowerCase());
+      if (insideRepo || !fs.existsSync(oldPath)) {
+        if (dryRun) {
+          console.log(`[dry-run] unlink stale mount ${oldPath}`);
+        } else {
+          removeDirLink(oldPath);
+        }
+        removed++;
+      }
+    }
+  }
+
   if (!dryRun) {
     writeJson(MANAGED_FILE, {
       updatedAt: new Date().toISOString(),
       links: nextLinks,
+      mounts: nextMounts,
     });
   }
 
   console.log(
-    `[sync${dryRun ? ' dry-run' : ''}] skills=${desiredSkills.length}, harnesses=${(localCfg.harnesses || []).length} | created=${created}, relinked=${updated}, unchanged=${unchanged}, removed=${removed}, backedUp=${backedUp}`
+    `[sync${dryRun ? ' dry-run' : ''}] skills=${desiredSkills.length}, harnesses=${(localCfg.harnesses || []).length}, mounts=${desiredMounts.length} | created=${created}, relinked=${updated}, unchanged=${unchanged}, removed=${removed}, backedUp=${backedUp}`
   );
 }
 
@@ -374,6 +455,23 @@ function cmdStatus() {
     const state = enabled ? `ON  (ok=${ok}, missing=${missing}, conflict=${conflict})` : `OFF (detected=${detected})`;
     console.log(`  - ${id.padEnd(12)} ${state}  -> ~/${cfg.skillsDir}`);
   }
+
+  const desiredMounts = resolveDesiredMounts(localCfg, loadMounts());
+  if (desiredMounts.length > 0) {
+    console.log('\nShared Mounts:');
+    for (const m of desiredMounts) {
+      const p = path.join(HOME, m.target);
+      const src = path.join(REPO_DIR, m.source);
+      let st = 'MISSING';
+      if (isSymlinkOrJunction(p)) {
+        const tgt = getLinkTarget(p);
+        st = tgt && path.resolve(tgt).toLowerCase() === path.resolve(src).toLowerCase() ? 'OK' : 'WRONG';
+      } else if (fs.existsSync(p)) {
+        st = 'REAL_DIR';
+      }
+      console.log(`  - ${m.id.padEnd(26)} ${st.padEnd(8)} ~/${m.target} -> ${m.source}`);
+    }
+  }
 }
 
 function cmdDoctor() {
@@ -423,6 +521,28 @@ function cmdDoctor() {
         console.log(`  [MISS]   ${p} chua duoc link (chay: skillhub sync)`);
         issues++;
       }
+    }
+  }
+
+  console.log('\n=== 3. Kiem tra shared mounts ===');
+  for (const m of resolveDesiredMounts(localCfg, loadMounts())) {
+    const p = path.join(HOME, m.target);
+    const src = path.join(REPO_DIR, m.source);
+    if (isSymlinkOrJunction(p)) {
+      const tgt = getLinkTarget(p);
+      if (!fs.existsSync(p)) {
+        console.log(`  [BROKEN] ${p} -> ${tgt}`);
+        issues++;
+      } else if (path.resolve(tgt).toLowerCase() !== path.resolve(src).toLowerCase()) {
+        console.log(`  [WRONG]  ${p} -> ${tgt} (expected ${src})`);
+        issues++;
+      }
+    } else if (fs.existsSync(p)) {
+      console.log(`  [REAL]   ${p} dang la thu muc that, chua link (chay: skillhub sync)`);
+      issues++;
+    } else {
+      console.log(`  [MISS]   ${p} chua duoc link (chay: skillhub sync)`);
+      issues++;
     }
   }
 
