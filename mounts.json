@@ -80,6 +80,15 @@
         "all",
         "youtube"
       ]
+    },
+    {
+      "id": "musestudio-da-lam",
+      "source": "shared/MuseStudio/yt-auto/tools/da-lam.py",
+      "target": "MuseStudio/yt-auto/tools/da-lam.py",
+      "profiles": [
+        "all",
+        "youtube"
+      ]
     }
   ]
 }
