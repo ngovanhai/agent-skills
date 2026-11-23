@@ -32,6 +32,7 @@ const mmss = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart
 if (!existsSync(join(G, "loi.txt"))) { console.error("không có godot/loi.txt — chạy new-tap.mjs trước"); process.exit(1); }
 const man = existsSync(join(G, "voice/voice.json")) ? JSON.parse(read("voice/voice.json")).lines : {};
 const segs = [], lines = [], seen = new Set();
+let curL = null;
 for (const raw of read("loi.txt").split("\n")) {
   const ln = raw.trim();
   if (ln.startsWith("## ")) {
@@ -39,18 +40,26 @@ for (const raw of read("loi.txt").split("\n")) {
     const kid = name.trim().split(/\s+/)[0];
     const opt = (k, d) => { const m = note.match(new RegExp(k + "=([\\d.]+)")); return m ? +m[1] : d; };
     segs.push({ kid, pre: opt("pre", 0.6), post: opt("post", 1.0), lines: [] });
+    curL = null;
   } else if (ln.startsWith("[") && segs.length) {
     const id = ln.slice(1, ln.indexOf("]")), text = ln.slice(ln.indexOf("]") + 1).trim();
     if (!/^[a-z0-9-]+$/.test(id)) err.push(`id "${id}" chỉ được chữ thường/số/gạch`);
     if (seen.has(id)) err.push(`id "${id}" trùng`);
     seen.add(id);
-    const v = man[id];
-    if (!v) err.push(`[${id}] chưa có giọng (chạy gd-voice)`);
-    else if (v.text !== text) err.push(`[${id}] chữ đã sửa sau khi đọc giọng (chạy lại gd-voice)`);
-    else if (!existsSync(join(G, "voice", id + ".wav"))) err.push(`[${id}] thiếu voice/${id}.wav`);
-    const l = { id, text, dur: v?.dur ?? text.split(" ").length / 4.1 };
-    segs.at(-1).lines.push(l); lines.push(l);
+    curL = { id, parts: [text], seg: segs.at(-1) };
+    segs.at(-1).lines.push(curL);
+  } else if (ln && !ln.startsWith("#") && curL) {
+    curL.parts.push(ln); // dòng văn xuôi tiếp theo của cùng đoạn voice
   }
+}
+for (const l of segs.flatMap((s) => s.lines)) {
+  l.text = l.parts.join(" ");
+  const v = man[l.id];
+  if (!v) err.push(`[${l.id}] chưa có giọng (chạy gd-voice)`);
+  else if (v.text !== l.text) err.push(`[${l.id}] chữ đã sửa sau khi đọc giọng (chạy lại gd-voice)`);
+  else if (!existsSync(join(G, "voice", l.id + ".wav"))) err.push(`[${l.id}] thiếu voice/${l.id}.wav`);
+  l.dur = v?.dur ?? l.text.split(" ").length / 4.1;
+  lines.push(l);
 }
 if (!segs.length) err.push("loi.txt không có đoạn nào (## kNN …)");
 let tc = 0;

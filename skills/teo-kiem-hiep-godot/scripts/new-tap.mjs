@@ -138,6 +138,12 @@ func _build() -> void:
 			var text := ln.substr(ln.find("]") + 1).strip_edges()
 			var d: float = man[id].dur if man.has(id) else text.split(" ").size() / 4.1
 			raw[-1].lines.append({"id": id, "text": text, "dur": d})
+		elif not ln.is_empty() and not ln.begins_with("#") and not raw.is_empty() and not raw[-1].lines.is_empty():
+			# dòng văn xuôi tiếp theo của cùng đoạn voice (một đoạn = một WAV)
+			var l: Dictionary = raw[-1].lines[-1]
+			l.text = String(l.text) + " " + ln
+			if man.has(l.id): l.dur = man[l.id].dur
+			else: l.dur = String(l.text).split(" ").size() / 4.1
 	var tc := 0.0
 	for s in raw:
 		s.t0 = tc

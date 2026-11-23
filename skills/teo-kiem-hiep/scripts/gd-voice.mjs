@@ -26,16 +26,28 @@ const vdir = join(dir, "godot/voice"), manFile = join(vdir, "voice.json");
 
 const src = readFileSync(join(dir, "godot/loi.txt"), "utf8").split(/\r?\n/);
 const all = [], ids = new Set();
+let cur = null;
+// Đoạn nhiều dòng: "[id] câu đầu" mở một đoạn; các dòng văn xuôi tiếp theo thuộc cùng đoạn tới [id]/## tiếp theo.
+// Một đoạn đọc thành một WAV (không tách từng câu), đúng luật lời kể dạng đoạn văn.
 src.forEach((ln, i) => {
-  const m = ln.match(/^\s*\[([a-z0-9][a-z0-9-]*)\]\s+(.+)$/);
-  if (!m) return;
-  if (ids.has(m[1])) die(`dòng ${i + 1}: id "${m[1]}" trùng`);
-  ids.add(m[1]);
-  const t = spoken(m[2]), w = t.split(" ").length;
-  if (w < 6) console.warn(`cảnh báo: [${m[1]}] chỉ ${w} từ — câu quá ngắn dễ đọc vội/méo, nên ≥10 từ`);
-  if (/chương\s+(\d|sau|tới|trước)/i.test(t)) console.warn(`cảnh báo: [${m[1]}] nhắc "chương" — luật: không nói Chương X / Chương sau`);
-  all.push({ id: m[1], text: t, out: join(vdir, m[1] + ".wav") });
+  const s = ln.trim();
+  const m = s.match(/^\[([a-z0-9][a-z0-9-]*)\]\s+(.+)$/);
+  if (m) {
+    if (ids.has(m[1])) die(`dòng ${i + 1}: id "${m[1]}" trùng`);
+    ids.add(m[1]);
+    cur = { id: m[1], parts: [m[2]], out: join(vdir, m[1] + ".wav") };
+    all.push(cur);
+    return;
+  }
+  if (!s || s.startsWith("#")) { cur = null; return; }
+  if (cur) cur.parts.push(s);
 });
+for (const l of all) {
+  l.text = spoken(l.parts.join(" "));
+  const w = l.text.split(" ").length;
+  if (w < 6) console.warn(`cảnh báo: [${l.id}] chỉ ${w} từ — câu quá ngắn dễ đọc vội/méo, nên ≥10 từ`);
+  if (/chương\s+(\d|sau|tới|trước)/i.test(l.text)) console.warn(`cảnh báo: [${l.id}] nhắc "chương" — luật: không nói Chương X / Chương sau`);
+}
 if (!all.length) die("loi.txt không có dòng [id] lời đọc nào");
 const old = existsSync(manFile) ? JSON.parse(readFileSync(manFile, "utf8")) : { lines: {} };
 // voice.json cũ không có engine = VieNeu
