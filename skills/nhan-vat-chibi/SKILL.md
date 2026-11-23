@@ -48,6 +48,7 @@ description: >-
 | quái nhân / da tái | da `sang`, mắt lam lạnh, tóc `re-ngoi` |
 
 - **Tuổi.** Già: `age: "gia"`, tóc và râu xám `#9A9A9A` hoặc trắng `#DADADA`. Trẻ: không râu, tóc đen.
+- **Khuôn mặt.** `face: "tron" | "vuong" | "dai" | "goc"` (mặc định `tron`). `vuong` cho đại hán / võ tướng, `dai` cho mặt dài thanh tú, `goc` cho người góc cạnh / phản diện. Đặt trong `look` như các khoá khác.
 - **Tính cách qua mắt.** Mắt là chỗ duy nhất đổi màu tự do.
   - Gian, độc: đỏ hoặc tím `#B02A3A`, `#7A2A8A`.
   - Hiền: nâu hoặc lục.

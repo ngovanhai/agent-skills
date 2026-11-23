@@ -1,6 +1,6 @@
 // Rig v2 — nhân vật chibi thân ngắn đầu to (~2,3 đầu), mặt anime, 16 khớp lồng nhau (FK). Mỗi khớp là <g id="p-<khớp>" transform="translate(x y) rotate(0)">,
 // phần con vẽ trong toạ độ của khớp (khớp ở 0,0). runtime2.js xoay bằng attr transform nên không cần svgOrigin, không lệch tâm.
-// viewBox 0 0 400 620: hông ở (200,360), vai y=228, cổ y=210, chân chạm y≈590. Mặt lấy từ gen-chars.anime (300×420) thu 0,62.
+// viewBox 0 0 400 620: gốc/hông ở (200,400), vai y≈308, cổ y≈294, chân chạm y≈548 (FEET). Đầu lấy từ gen-chars.anime (300×420) thu 0,855 (~2,6 đầu).
 // Khớp: all torso head uaF faF hdF uaB faB hdB thF shF ftF thB shB ftB (+ breath, flapF flapB hairB tail = chuyển động phụ)
 const hx = (c) => { c = c.replace("#", ""); if (c.length === 3) c = [...c].map((x) => x + x).join(""); return [0, 2, 4].map((i) => parseInt(c.slice(i, i + 2), 16)); };
 const toHex = (a) => "#" + a.map((v) => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, "0")).join("");
@@ -11,7 +11,39 @@ const LINE = "#3A2420";
 export const SKIN = { sang: "#FFE3CF", vang: "#FBD3B0", nau: "#E2A578", dam: "#A86B45" };
 export const EXPRS = ["vui", "binh", "gian", "buon", "soc", "dac-y", "ngai", "quyet-tam", "ko"];
 const G = (id, x, y, inner, extra = "") => `<g id="${id}" transform="translate(${x} ${y}) rotate(0)"${extra}>${inner}</g>`;
-const limb = (len, w, c) => `<path d="M0 0 L0 ${len}" stroke="${dk(c, 0.55)}" stroke-width="${w + 5}" stroke-linecap="round"/><path d="M0 0 L0 ${len}" stroke="${c}" stroke-width="${w}" stroke-linecap="round"/>`;
+// đoạn chi thuôn: rộng w1 ở gốc, w2 ở đầu xa (dùng cho tay/chân, thay cho ống trụ)
+// đoạn gốc (đùi): fill phẳng hai đầu, chỉ viền 2 cạnh -> không còn mí ở hông/gối
+const limb = (len, w1, w2, c, extra = "") => {
+  const d = `M${-w1} 0 Q${-w1 - 2} ${len * 0.42} ${-w2} ${len} L${w2} ${len} Q${w1 + 2} ${len * 0.42} ${w1} 0 Z`;
+  const edge = `M${-w1} 0 Q${-w1 - 2} ${len * 0.42} ${-w2} ${len} M${w1} 0 Q${w1 + 2} ${len * 0.42} ${w2} ${len}`;
+  return `<path d="${d}" fill="${c}"/><path d="${edge}" fill="none" stroke="${dk(c, 0.55)}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>${extra}`;
+};
+// đoạn chi "hở" đầu trên: fill vẫn trùm lên khớp để che nét của đoạn trước,
+// nhưng KHÔNG viền mép trên -> không còn đường ngang đôi ở khuỷu/gối.
+const seg = (len, w1, w2, c, open = true, extra = "", top = 0) => {
+  const d = `M${-w1} 0 Q${-w1 - 2} ${len * 0.42} ${-w2} ${len - 6} Q0 ${len + 3} ${w2} ${len - 6} Q${w1 + 2} ${len * 0.42} ${w1} 0 Q0 ${-top} ${-w1} 0Z`;
+  const edge = `M${-w1} 0 Q${-w1 - 2} ${len * 0.42} ${-w2} ${len - 6} Q0 ${len + 3} ${w2} ${len - 6} Q${w1 + 2} ${len * 0.42} ${w1} 0${open ? "" : ` Q0 ${-top} ${-w1} 0Z`}`;
+  return `<path d="${d}" fill="${c}"/><path d="${edge}" fill="none" stroke="${dk(c, 0.55)}" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt"/>${extra}`;
+};
+// bàn tay mở: mu tay + 3 ngón + ngón cái (s = 1 tay F, -1 tay B để ngón cái hướng vào thân)
+const handOpen = (skin, s = 1) =>
+  `<g transform="scale(${s} 1)"><path d="M-9.5 -9 Q0 -13 9.5 -9 L9.5 12 Q9.5 16 6.2 15.5 Q4.4 15 4 11.5 Q3 16 0 16 Q-3.2 16 -4 11.5 Q-4.4 15 -6.2 15.5 Q-9.5 16 -9.5 12Z" fill="${skin}" ${st(skin)}/>` +
+  `<path d="M-8.5 0 Q-13.5 3 -12.5 8.5 Q-11.5 12 -8.5 9" fill="${skin}" ${st(skin, 2.6)}/>` +
+  `<path d="M-4 -2 L-4 2 M4 -2 L4 2" fill="none" stroke="${dk(skin, 0.4)}" stroke-width="1.6" stroke-linecap="round" opacity=".5"/></g>`;
+// bàn tay nắm (khi cầm vũ khí): khối nắm + gân ngón + ngón cái vắt
+const handFist = (skin, s = 1) =>
+  `<g transform="scale(${s} 1)"><rect x="-10" y="-10" width="20" height="22" rx="8" fill="${skin}" ${st(skin)}/>` +
+  `<path d="M-8 3 Q0 7 8 3" fill="none" stroke="${dk(skin, 0.4)}" stroke-width="2.2" stroke-linecap="round" opacity=".85"/>` +
+  `<path d="M-3 -2 L-3 5 M3 -2 L3 5" fill="none" stroke="${dk(skin, 0.4)}" stroke-width="1.8" stroke-linecap="round" opacity=".45"/>` +
+  `<path d="M-11 1 Q-16 4 -14 10 Q-12 13 -9 10" fill="${skin}" ${st(skin, 2.6)}/></g>`;
+// bàn chân: gót + mũi giày hướng ra ngoài; chân B lật để hai mũi chân mở ra hai bên
+const foot = (side, boots) => {
+  const m = side === "B" ? ` transform="scale(-1 1)"` : "";
+  return `<g${m}><path d="M-15 -6 Q-21 4 -16 13 Q-6 18 7 16.5 L26 15.5 Q34 12.5 29 5 L13 -3 Q-1 -10.5 -15 -6Z" fill="${boots}"/>` +
+    `<path d="M-15 -6 Q-21 4 -16 13 Q-6 18 7 16.5 L26 15.5 Q34 12.5 29 5 L13 -3" fill="none" stroke="${dk(boots, 0.55)}" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt"/>` +
+    `<path d="M-14 11.5 Q4 17 26 14" fill="none" stroke="${dk(boots, 0.45)}" stroke-width="3.5" stroke-linecap="round"/>` +
+    `<path d="M10 -2 Q20 -1 25 5" fill="none" stroke="${lt(boots, 0.25)}" stroke-width="2.5" stroke-linecap="round" opacity=".55"/></g>`;
+};
 
 // ---------------------------------------------------------------- vũ khí (tay ở 0,0; lưỡi hướng -y)
 const K = (c) => st(c, 3.5);
@@ -29,6 +61,12 @@ export const WEAPONS = Object.keys(WEAPON);
 // ---------------------------------------------------------------- mặt (toạ độ anime 300×420, tâm mắt 150,172)
 const CX = 150, EY = 172, EX = 38;
 const FACE = "M150 262 C110 262 58 232 53 170 C48 100 92 56 150 56 C208 56 252 100 247 170 C242 232 190 262 150 262Z";
+const FACES = {
+  tron: FACE,
+  vuong: "M150 260 C122 260 86 250 68 226 L56 170 L64 112 C78 74 110 54 150 54 C190 54 222 74 236 112 L244 170 L232 226 C214 250 178 260 150 260Z",
+  dai: "M150 268 C114 268 70 240 64 178 C58 108 100 58 150 58 C200 58 242 108 236 178 C230 240 186 268 150 268Z",
+  goc: "M150 258 C128 258 94 250 76 228 L58 172 L64 118 C78 78 110 56 150 56 C190 56 222 78 236 118 L242 172 L224 228 C206 250 172 258 150 258Z",
+};
 function eye(cx, o, side) {
   const { iris, expr, gid } = o, rx = 23, ry = o.age === "gia" ? 20 : 29, cy = EY;
   const tiny = expr === "soc", p = [];
@@ -97,15 +135,28 @@ function marks(expr) {
   }
 }
 const HAIR = { "mai-bang": ["bangs"], "re-ngoi": ["side"], "bom-gai": ["spiky", "spikyBack"], "duoi-ngua": ["side", "pony"], "bui-cao": ["swept", "bunHigh"], "bui-toi": ["swept", "knot"], ngan: ["short"], troc: ["none"], "tien-ong": ["swept", "knot"], "dai-thang": ["bangs", "long"] };
+// lớp tóc sau lưng: vẽ 1 lần ở SAU thân (trước vạt/chân) để không phủ lên áo.
+// Lớp sát da đầu (hairNear) vẫn nằm trong nhóm đầu để che đường nối khi đầu xoay.
+// chỉ long/pony mới thực sự phủ lên thân/áo; spikyBack/bunHigh/knot nằm trên/ngoài đầu
+// (không chạm áo) nên phải ở lại nhóm head để bám đầu khi xoay.
+const FAR_BACK = ["long", "pony"];
+const HEAD_Y = -104, FACE_Y = -92, FACE_S = 0.855;
 function hairBack(kind, c, gid) {
   const g = `fill="url(#${gid})" ${st(c)}`;
   switch (kind) {
-    case "long": return `<path d="M56 150 C40 260 52 330 80 360 L220 360 C248 330 260 260 244 150 Z" ${g}/>`;
+    case "long": return `<path d="M62 150 C42 220 32 320 40 400 Q100 422 150 412 Q200 422 260 400 C268 320 258 220 238 150 Z" ${g}/>` +
+      `<path d="M56 200 C48 280 44 350 48 394 M244 200 C252 280 256 350 252 394" fill="none" stroke="${lt(c, 0.35)}" stroke-width="4" stroke-linecap="round" opacity=".28"/>`;
     case "bunHigh": return `<circle cx="150" cy="34" r="34" ${g}/><path d="M118 40 Q150 22 182 40" fill="none" stroke="${lt(c, 0.4)}" stroke-width="4" stroke-linecap="round" opacity=".7"/>`;
     case "knot": return `<ellipse cx="150" cy="40" rx="24" ry="20" ${g}/><rect x="138" y="22" width="24" height="8" rx="3" fill="#C9A227" ${st("#C9A227")}/>`;
     case "spikyBack": return `<path d="M60 170 L30 150 L56 128 L36 96 L74 92 L70 54 L108 66 L120 28 L150 52 L180 28 L192 66 L230 54 L226 92 L264 96 L244 128 L270 150 L240 170 Z" ${g}/>`;
     default: return "";
   }
+}
+// lớp tóc sát đầu, vẽ trong nhóm đầu (xoay theo head) để che mối nối với lớp tóc sau lưng
+function hairNear(kind, c, gid) {
+  const g = `fill="url(#${gid})" ${st(c)}`;
+  if (kind === "long") return `<path d="M62 150 C50 200 56 236 80 264 Q150 278 220 264 C244 236 250 200 238 150 Z" ${g}/>`;
+  return "";
 }
 function hairFront(kind, c, gid) {
   const g = `fill="url(#${gid})" ${st(c)}`, shine = (d) => `<path d="${d}" fill="none" stroke="${lt(c, 0.6)}" stroke-width="6" stroke-linecap="round" opacity=".55"/>`;
@@ -144,8 +195,8 @@ function head(p, o) {
   const [front, back] = HAIR[o.hair.style] || HAIR.ngan;
   const h = [];
   h.push(`<defs><linearGradient id="${hg}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${lt(hc, 0.25)}"/><stop offset=".55" stop-color="${hc}"/><stop offset="1" stop-color="${dk(hc, 0.25)}"/></linearGradient><linearGradient id="${ig}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${dk(o.eyes, 0.45)}"/><stop offset="1" stop-color="${lt(o.eyes, 0.45)}"/></linearGradient></defs>`);
-  if (back) h.push(hairBack(back, hc, hg));
-  h.push(`<ellipse cx="52" cy="182" rx="12" ry="17" fill="${skin}" ${st(skin)}/><ellipse cx="248" cy="182" rx="12" ry="17" fill="${skin}" ${st(skin)}/><path d="${FACE}" fill="${skin}" ${st(skin)}/>`);
+  if (back) h.push(FAR_BACK.includes(back) ? hairNear(back, hc, hg) : hairBack(back, hc, hg));
+  h.push(`<ellipse cx="52" cy="182" rx="12" ry="17" fill="${skin}" ${st(skin)}/><ellipse cx="248" cy="182" rx="12" ry="17" fill="${skin}" ${st(skin)}/><path d="${FACES[o.face] || FACE}" fill="${skin}" ${st(skin)}/>`);
   h.push(`<path d="M70 210 C90 250 210 250 230 210 C214 244 186 258 150 258 C114 258 86 244 70 210Z" fill="${dk(skin, 0.08)}" opacity=".6"/><path d="M148 204 q3 3 6 0" fill="none" stroke="${dk(skin, 0.35)}" stroke-width="2.5" stroke-linecap="round"/>`);
   if (o.beard) h.push(beard(o.beard === true ? "rau-dai" : o.beard, o.beardColor || hc));
   h.push(hairFront(front, hc, hg));
@@ -171,33 +222,87 @@ export function figure(p, w, o = {}) {
   const hair = o.hair || { style: "ngan", color: "#3A2A22" }, eyes = o.eyes || "#6B4A3A";
   const h = Math.round((w * 620) / 400);
   const wp = (side) => (o.weapon && o.weapon !== "none" && !o.sheath && (o.hand || "F") === side ? `<g id="${p}-wp${side}" transform="translate(0 8) rotate(0)"><g transform="scale(0.8)">${WEAPON[o.weapon]()}</g></g>` : "");
-  const arm = (side, x) => G(`${p}-ua${side}`, x, -98, limb(56, 28, robe) + G(`${p}-fa${side}`, 0, 56, limb(48, 24, side === "B" ? dk(robe, 0.15) : robe) + G(`${p}-hd${side}`, 0, 48, wp(side) + `<circle cy="8" r="13" fill="${skin}" ${st(skin)}/>`)));
-  const emptySleeve = (x) => `<path d="M${x - 14} -98 Q${x - 10} -50 ${x - 6} -6 Q${x + 8} -4 ${x + 14} -10 L${x + 14} -98Z" fill="${dk(robe, 0.15)}" ${st(robe)}/>`;
-  const leg = (side, x) => G(`${p}-th${side}`, x, 0, limb(54, 38, pants) + G(`${p}-sh${side}`, 0, 54, limb(48, 32, pants) + G(`${p}-ft${side}`, 0, 48, `<path d="M-16 -4 L30 -2 Q40 6 32 14 L-14 16 Q-22 6 -16 -4Z" fill="${boots}" ${st(boots)}/>`)));
-  const flap = (side, x) => G(`${p}-flap${side}`, x, 6, `<path d="M-16 0 L16 0 L22 62 Q0 74 -22 62Z" fill="${side === "B" ? dk(robe, 0.15) : robe}" ${st(robe)}/>`);
-  const skirt = o.skirt ? `<path d="M-60 4 L60 4 L76 84 Q0 100 -76 84Z" fill="${robe}" ${st(robe)}/><path d="M-20 8 L-26 84 M20 8 L26 84" fill="none" stroke="${dk(robe, 0.25)}" stroke-width="2.5" opacity=".6"/>` : "";
+  // tay: vai xuôi (khớp lùi vào trong thân), cẳng tay hơi khoát ra ngoài để bàn tay không dính hông
+  const arm = (side, x) => {
+    const s = side === "B" ? -1 : 1, back = side === "B";
+    const cs = back ? dk(robe, 0.13) : robe, cuff = back ? dk(robe, 0.26) : dk(robe, 0.4);
+    const fold = dk(cs, 0.3);
+    const holding = !!o.weapon && o.weapon !== "none" && !o.sheath && (o.hand || "F") === side;
+    return G(`${p}-ua${side}`, x, -88, `<g transform="rotate(${-s * 3})">` +
+      `<circle cx="0" cy="57" r="11" fill="${cs}" ${st(cs, 2.5)}/>` +
+      `<path d="M-13 0 C-13 12 -17 28 -14 43 L-13 57 Q0 61 13 57 L14 43 C17 28 13 12 13 0 C13 -5.5 -13 -5.5 -13 0Z" fill="${cs}"/>` +
+        `<path d="M13 57 L14 43 C17 28 13 12 13 0 M-13 0 C-13 12 -17 28 -14 43 L-13 57" fill="none" stroke="${dk(cs, 0.55)}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>` +
+        `<path d="M13 0 C13 -5.5 -13 -5.5 -13 0" fill="none" stroke="${dk(cs, 0.45)}" stroke-width="1.8" stroke-linecap="round"/>` +
+
+        `<path d="M${-s * 9} 30 Q${-s * 11} 42 ${-s * 9} 52" fill="none" stroke="${fold}" stroke-width="2.5" stroke-linecap="round" opacity=".28"/>` +
+      G(`${p}-fa${side}`, 0, 57,
+        `<g transform="rotate(${-s * 4})">` + seg(48, 13, 16, cs, true, `<path d="M-9 2 Q0 6 9 2" fill="none" stroke="${fold}" stroke-width="2.5" stroke-linecap="round" opacity=".35"/>`, 0) + `</g>` +
+        G(`${p}-hd${side}`, s * 4, 53, wp(side) + `<g transform="rotate(${-s * 3})">${holding ? handFist(skin, s) : handOpen(skin, s)}</g>`) +
+        `<g transform="rotate(${-s * 4})"><path d="M-17 34 Q0 32 17 34 L17.5 44 Q0 47.5 -17.5 44Z" fill="${cuff}" ${st(cs)}/></g>`) + `</g>`);
+  };
+  const emptySleeve = (x) => `<g><path d="M${x - 16} -98 Q${x - 20} -40 ${x - 24} 26 Q${x - 22} 44 ${x - 10} 42 Q${x - 2} 38 ${x - 6} 10 Q${x + 7} -40 ${x + 15} -98 Q${x} -106 ${x - 16} -98Z" fill="${dk(robe, 0.15)}" ${st(robe)}/>` +
+    `<path d="M${x - 12} -68 Q${x - 16} -20 ${x - 18} 34" fill="none" stroke="${dk(robe, 0.35)}" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>` +
+    `<path d="M${x - 23} 32 Q${x - 18} 44 ${x - 8} 40 Q${x - 3} 36 ${x - 5} 29 L${x - 9} 37 Q${x - 17} 39 ${x - 20} 29Z" fill="${dk(robe, 0.3)}" ${st(robe)}/></g>`;
+  // chân: đùi có khối, đầu gối thuôn, bắp chân rồi cổ chân; giày có gót + mũi riêng
+  const leg = (side, x) => {
+    const back = side === "B", cp = back ? dk(pants, 0.12) : pants;
+    return G(`${p}-th${side}`, x, 0,
+      `<circle cx="0" cy="68" r="15" fill="${cp}" ${st(cp, 2.5)}/>` +
+      limb(68, 24, 18, cp, `<path d="M-14 10 Q-20 34 -15 56" fill="none" stroke="${dk(cp, 0.3)}" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>`) +
+      G(`${p}-sh${side}`, 0, 68,
+        seg(63.5, 18, 14, cp, true, `<path d="M-14 2 Q0 6 14 2" fill="none" stroke="${dk(cp, 0.3)}" stroke-width="2.5" stroke-linecap="round" opacity=".32"/><path d="M${back ? 9 : -9} 10 Q${back ? 14 : -14} 24 ${back ? 10 : -10} 38" fill="none" stroke="${lt(cp, 0.22)}" stroke-width="2.5" stroke-linecap="round" opacity=".35"/>`, 2) +
+        `<path d="M-17 34 Q-19 48 -12 63 L12 63 Q19 48 17 34 Q0 30 -17 34Z" fill="${boots}" ${st(boots)}/>` +
+        `<path d="M-15 36 Q0 33 15 36" fill="none" stroke="${lt(boots, 0.28)}" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>` +
+        G(`${p}-ft${side}`, 0, 63.5, foot(side, boots))));
+  };
+  // vạt hông: buông mềm, gấu có lớp lót tối; chừa khoảng trước cho đùi đọc được
+  const flap = (side, x) => G(`${p}-flap${side}`, x, 8,
+    `<path d="M-15 -6 L15 -6 Q18 18 21 40 Q11 52 1 48 Q-9 52 -21 40 Q-18 18 -15 -6Z" fill="${side === "B" ? dk(robe, 0.15) : robe}" ${st(robe)}/>` +
+    `<path d="M-21 40 Q-9 50 1 46 Q12 50 21 40 L20 48 Q10 56 0 52 Q-12 56 -21 48Z" fill="${dk(robe, 0.2)}"/>` +
+    `<path d="M-5 -4 Q-8 18 -4 40" fill="none" stroke="${dk(robe, 0.24)}" stroke-width="2.5" stroke-linecap="round" opacity=".45"/>`);
+  const skirt = o.skirt ? `<path d="M-62 -10 Q0 0 62 -10 L82 104 Q0 124 -82 104Z" fill="${robe}" ${st(robe)}/>` +
+    `<path d="M-82 104 Q0 124 82 104 L80 113 Q0 132 -80 113Z" fill="${dk(robe, 0.18)}"/>` +
+    `<path d="M-30 2 L-40 106 M30 2 L40 106 M0 30 Q3 74 0 114" fill="none" stroke="${dk(robe, 0.22)}" stroke-width="2.5" stroke-linecap="round" opacity=".45"/>` : "";
   const sheath = o.sheath && o.weapon && o.weapon !== "none" ? `<g transform="translate(-30 -40) rotate(-32)"><g transform="translate(0 -100) rotate(180) scale(0.8)">${WEAPON[o.weapon]()}</g></g>` : "";
-  const torso = sheath + `<path d="M-56 -106 Q0 -122 56 -106 L64 10 Q0 24 -64 10 Z" fill="${robe}" ${st(robe)}/>` +
-    `<path d="M-30 -112 L0 -68 L30 -112" fill="${skin}" ${st(skin)}/><path d="M-34 -112 L6 -64 L-6 -64 Z" fill="${robe2}" ${st(robe2)}/><path d="M34 -112 L-4 -64 L8 -64Z" fill="${robe2}" ${st(robe2)}/>` +
-    `<rect x="-66" y="-18" width="132" height="24" rx="4" fill="${belt}" ${st(belt)}/>` + (o.sash ? `<path d="M-46 -106 L-22 -102 L56 0 L32 8Z" fill="${o.sash}" ${st(o.sash)}/>` : "");
+  // thân áo: vai xuôi rộng, eo thắt sau đai, gấu loe; cổ chữ V viền áo lót, một mép chéo xuống hông
+  const torso = sheath + `<path d="M-70 -92 Q-36 -106 0 -106 Q36 -106 70 -92 L58 -62 Q53 -34 55 -8 L60 22 Q0 33 -60 22 L-55 -8 Q-53 -34 -58 -62 Z" fill="${robe}" ${st(robe)}/>` +
+    `<path d="M-60 13 Q0 24 60 13 L60 22 Q0 33 -60 22Z" fill="${dk(robe, 0.14)}"/>` +
+
+    // cổ chữ V: vạt trong tối hơn, viền áo lót sáng chạy theo hai mép, cổ thật nhỏ ở trên
+    `<path d="M-34 -102 L0 -62 L34 -102 Q0 -94 -34 -102Z" fill="${dk(robe, 0.12)}"/>` +
+    `<path d="M-34 -102 L0 -62 L34 -102" fill="none" stroke="${dk(robe, 0.55)}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt"/>` +
+    `<path d="M-30 -99 L0 -66 M30 -99 L0 -66" fill="none" stroke="${robe2}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt"/>` +
+    `<path d="M-14 -105 Q0 -94 14 -105 Q0 -99 -14 -105Z" fill="${skin}"/>` +
+    `<path d="M2 -67 Q7 -52 12 -38" fill="none" stroke="${dk(robe, 0.3)}" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>` +
+    (o.sash ? `<path d="M44 -96 L30 -92 L-52 -6 L-36 2Z" fill="${o.sash}" ${st(o.sash)}/>` : "") +
+    `<path d="M-57 -27 Q0 -21 57 -27 L56 0 Q0 6 -56 0Z" fill="${belt}" ${st(belt)}/>` +
+    `<path d="M0 4 L0 24" fill="none" stroke="${dk(robe, 0.26)}" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>` +
+    `<path d="M-10 -25 L-7 26 Q-4 30 -2 26 L-3 -25 Z M10 -25 L7 26 Q4 30 2 26 L3 -25 Z" fill="${dk(belt, 0.14)}" ${st(belt, 2.5)}/>` +
+    `<rect x="-13" y="-30" width="26" height="17" rx="5" fill="${belt}" ${st(belt)}/><path d="M-7 -21 Q0 -17 7 -21" fill="none" stroke="${lt(belt, 0.3)}" stroke-width="2" stroke-linecap="round" opacity=".6"/>`;
   const band = o.band ? `<path d="M50 132 Q150 96 250 132 L252 154 Q150 118 48 154 Z" fill="${o.band}" ${st(o.band)}/>` : "";
-  const tail = o.band ? G(`${p}-tail`, -90, -120, `<path d="M0 0 Q-30 10 -46 44 Q-28 36 -14 42 Q-10 20 0 0Z" fill="${o.band}" ${st(o.band)}/><path d="M0 4 Q-34 36 -40 78 Q-22 60 -8 64 Q-12 34 0 4Z" fill="${o.band}" ${st(o.band)}/>`) : "";
-  const hairB = hair.style === "duoi-ngua" ? G(`${p}-hairB`, 70, -110, `<path d="M0 0 C44 8 52 90 26 158 C34 92 20 44 -6 18Z" fill="${hair.color}" ${st(hair.color)}/><circle cx="2" cy="4" r="8" fill="#E2483D" ${st("#E2483D")}/>`) : "";
-  const headG = G(`${p}-head`, 0, -112, `<rect x="-14" y="-14" width="28" height="26" fill="${dk(skin, 0.12)}"/>` + hairB + tail +
-    `<g id="${p}-face" transform="translate(0 -92) scale(0.95) translate(-150 -172)">${(o.ve || head)(p, { id: o.id, mat: o.mat || {}, skin, hair, eyes, eyes2: o.eyes2, fem: o.fem ?? !!o.skirt, beard: o.beard, beardColor: o.beardColor, hat: o.hat, hatColor: o.hatColor, glasses: o.glasses, age: o.age, expr: o.expr }, KIT)}${band}</g>`);
-  const body = (o.oneArm ? emptySleeve(-58) : arm("B", -58)) + headG + arm("F", 58);
+  const tail = o.band ? G(`${p}-tail`, -87, -119, `<path d="M0 0 Q-30 10 -46 44 Q-28 36 -14 42 Q-10 20 0 0Z" fill="${o.band}" ${st(o.band)}/><path d="M0 4 Q-34 36 -40 78 Q-22 60 -8 64 Q-12 34 0 4Z" fill="${o.band}" ${st(o.band)}/>`) : "";
+  // tóc sau: lớp dài nằm sau thân (farHair), lớp sát đầu (ponyNear/hairNear) nằm trong nhóm đầu
+  const backStyle = (HAIR[hair.style] || [])[1], pony = backStyle === "pony";
+  const farHair = o.ve || !backStyle || !FAR_BACK.includes(backStyle) ? "" :
+    pony ? G(`${p}-hairB`, 70, -110, `<path d="M0 4 C44 12 52 90 26 158 C34 92 20 44 -6 18Z" fill="${hair.color}" ${st(hair.color)}/>`)
+      : G(`${p}-hairFar`, 0, HEAD_Y, `<g transform="translate(0 ${FACE_Y}) scale(${FACE_S}) translate(-150 -172)">${hairBack(backStyle, hair.color, `${p}-hg`)}</g>`);
+  const ponyNear = pony ? G(`${p}-hairBn`, 70, -110, `<path d="M-8 2 C8 4 14 20 6 40 C2 22 -4 12 -12 6Z" fill="${hair.color}" ${st(hair.color)}/><circle cx="0" cy="2" r="8" fill="#E2483D" ${st("#E2483D")}/>`) : "";
+  const headG = G(`${p}-head`, 0, HEAD_Y, `<path d="M-15 -14 Q0 -18 15 -14 L13 2 Q0 6 -13 2Z" fill="${skin}"/>` + ponyNear + tail +
+    `<g id="${p}-face" transform="translate(0 ${FACE_Y}) scale(${FACE_S}) translate(-150 -172)">${(o.ve || head)(p, { id: o.id, mat: o.mat || {}, skin, hair, eyes, eyes2: o.eyes2, fem: o.fem ?? !!o.skirt, beard: o.beard, beardColor: o.beardColor, hat: o.hat, hatColor: o.hatColor, glasses: o.glasses, age: o.age, face: o.face, expr: o.expr }, KIT)}${band}</g>`);
+  const body = (o.oneArm ? emptySleeve(-70) : arm("B", -70)) + headG + arm("F", 70);
   return `<svg viewBox="0 0 400 620" width="${w}" height="${h}" style="display:block;overflow:visible" data-rig="v2">
-${G(`${p}-all`, 200, 430, `<ellipse cy="118" rx="80" ry="12" fill="#000" opacity=".14"/>` +
-    (o.flaps !== false && !o.skirt ? flap("B", -48) : "") + leg("B", -26) + leg("F", 26) +
-    G(`${p}-torso`, 0, 0, `<g id="${p}-breath" transform="scale(1 1)">${skirt}${torso}${o.flaps !== false && !o.skirt ? flap("F", 48) : ""}${body}</g>`))}
+${G(`${p}-all`, 200, 400, `<ellipse cy="148" rx="80" ry="12" fill="#000" opacity=".14"/>` + farHair +
+    (o.flaps !== false && !o.skirt ? flap("B", -50) : "") + `<path d="M-24 -4 Q0 2 24 -4 L20 26 Q0 32 -20 26Z" fill="${pants}"/>` + leg("B", -26) + leg("F", 26) +
+    G(`${p}-torso`, 0, 0, `<g id="${p}-breath" transform="scale(1 1)">${skirt}${o.flaps !== false && !o.skirt ? flap("F", 50) : ""}${torso}${body}</g>`))}
 </svg>`;
 }
 // đồ nghề cho ve.mjs: màu + tóc/mũ/râu dựng sẵn (mắt, mũi, khuôn mặt, miệng thì tập tự vẽ)
 export const KIT = { dk, lt, hx, toHex, st, EXPRS, SKIN, hairBack, hairFront, HAIR, beard, hat };
-// tỉ lệ chibi ~2,3 đầu: hông (200,430), vai y=332, chân chạm y≈548 (FEET), đầu to (mặt anime thu 0,95)
+// tỉ lệ chibi ~2,3 đầu: hông (200,430), vai y=338, chân chạm y≈548 (FEET), đầu to (mặt anime thu 0,95)
+// thân kiểu "người lớn thu nhỏ": vai 140, eo 106, gấu 124; tay dài tới 1/3 đùi, chân có đùi/gối/bắp chân/cổ chân
 export const FEET = 548;
 export const JOINTS = ["all", "torso", "head", "uaF", "faF", "hdF", "uaB", "faB", "hdB", "thF", "shF", "ftF", "thB", "shB", "ftB", "wpF", "wpB", "flapF", "flapB", "hairB", "tail"];
-export const JPOS = { all: [200, 430], torso: [0, 0], head: [0, -112], uaF: [58, -98], faF: [0, 56], hdF: [0, 48], uaB: [-58, -98], faB: [0, 56], hdB: [0, 48], thF: [26, 0], shF: [0, 54], ftF: [0, 48], thB: [-26, 0], shB: [0, 54], ftB: [0, 48], wpF: [0, 8], wpB: [0, 8], flapF: [48, 6], flapB: [-48, 6], hairB: [70, -110], tail: [-90, -120] };
+export const JPOS = { all: [200, 400], torso: [0, 0], head: [0, HEAD_Y], uaF: [70, -88], faF: [3, 57], hdF: [4, 53], uaB: [-70, -88], faB: [-3, 57], hdB: [-4, 53], thF: [26, 0], shF: [0, 68], ftF: [0, 63.5], thB: [-26, 0], shB: [0, 68], ftB: [0, 63.5], wpF: [8, 58], wpB: [-8, 58], flapF: [50, 8], flapB: [-50, 8], hairB: [70, -110], tail: [-87, -119] };
 
 // ---------------------------------------------------------------- diện mạo có sẵn (tap.json: {"preset":"hiep-khach", ...ghi đè})
 export const PRESETS = {

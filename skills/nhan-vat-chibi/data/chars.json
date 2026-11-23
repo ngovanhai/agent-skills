@@ -4,6 +4,7 @@
     "truyen": "Thiên Long Bát Bộ",
     "note": "đại hán Khiết Đan, khăn đỏ, râu ngắn",
     "look": {
+      "face": "vuong",
       "skin": "#FBD3B0",
       "robe": "#3E5C8A",
       "robe2": "#E8E2D0",
@@ -34,6 +35,7 @@
     "truyen": "Thiên Long Bát Bộ",
     "note": "công tử Đại Lý áo trắng viền lục",
     "look": {
+      "face": "tron",
       "preset": "cong-tu",
       "robe": "#EEF3EA",
       "robe2": "#9CC8A8",
@@ -146,6 +148,7 @@
     "truyen": "Ỷ Thiên Đồ Long Ký",
     "note": "chưởng môn Nga Mi, ni cô già, mũ ni xám, mặt lạnh, Ỷ Thiên Kiếm",
     "look": {
+      "face": "dai",
       "preset": "nu-hiep",
       "robe": "#C9CCD2",
       "robe2": "#3A3D48",
@@ -169,6 +172,7 @@
     "truyen": "Tiếu Ngạo Giang Hồ",
     "note": "đại đệ tử Hoa Sơn, tóc xoã phóng khoáng, áo lam ngọc, dây đỏ đeo hồ lô",
     "look": {
+      "face": "vuong",
       "skin": "#FBD3B0",
       "robe": "#2F6F8F",
       "robe2": "#E8E2D0",
@@ -241,6 +245,7 @@
     "truyen": "Tiếu Ngạo Giang Hồ",
     "note": "chưởng môn Hoa Sơn, Quân Tử Kiếm, búi cao cài trâm, râu dài đen, áo lam đá",
     "look": {
+      "face": "goc",
       "skin": "#FBD3B0",
       "robe": "#3D4E6E",
       "robe2": "#E8E2D0",
@@ -818,6 +823,7 @@
     "truyen": "Sở Lưu Hương hệ liệt",
     "note": "Đạo Soái hào hoa: áo lam nhạt, cổ trắng, quạt xếp, dải tím uất kim hương",
     "look": {
+      "face": "dai",
       "preset": "cong-tu",
       "robe": "#7B9ACC",
       "robe2": "#F4F1EA",
