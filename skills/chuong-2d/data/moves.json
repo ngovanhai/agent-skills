@@ -332,5 +332,18 @@
   "lech_luat": "đối thủ không nằm (rot TAU thay PI/2): luật tôn trọng của kênh, chỉ choáng",
   "frames": 375,
   "ngay": "2026-10-24"
+ },
+ {
+  "id": "doat_trang",
+  "chieu": "Gậy Trúc Đổi Chủ (Ngao Khẩu Đoạt Trượng)",
+  "truyen": "Xạ Điêu Anh Hùng Truyện, đài Quân Sơn",
+  "hero": "hoang-dung",
+  "foe": "duong-khang",
+  "co_che": "ba lần siết cổ tay làm gậy xoay trong tay địch; lần ba gậy bật khỏi lòng bàn tay, bay theo cung vào tay Hoàng Dung",
+  "mau": "lục trúc vs trắng ngà, nền đêm xanh rêu",
+  "nen": "đài đá Quân Sơn, trăng lạnh, sương thấp",
+  "ket": "Dương Khang khuỵu xuống trong khung, gậy về tay nàng, không đánh bay xa",
+  "frames": 345,
+  "ngay": "2026-11-21"
  }
 ]
