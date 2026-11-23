@@ -135,6 +135,17 @@ function getLinkTarget(targetPath) {
 function createDirLink(sourceDir, targetLink) {
   const parent = path.dirname(targetLink);
   fs.mkdirSync(parent, { recursive: true });
+  // Mount một file lẻ (vd. một tool trong thư mục còn chứa đồ riêng của máy).
+  // Windows không có quyền tạo symlink file thì chép bản sao.
+  if (fs.statSync(sourceDir).isFile()) {
+    try {
+      fs.symlinkSync(sourceDir, targetLink, 'file');
+    } catch (e) {
+      if (!IS_WIN) throw e;
+      fs.copyFileSync(sourceDir, targetLink);
+    }
+    return;
+  }
   // Windows: 'junction' works without Admin privileges
   // macOS/Linux: 'dir' creates standard symlink
   fs.symlinkSync(sourceDir, targetLink, IS_WIN ? 'junction' : 'dir');

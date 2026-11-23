@@ -4,31 +4,82 @@
       "id": "musestudio-kit",
       "source": "shared/MuseStudio/kit",
       "target": "MuseStudio/kit",
-      "profiles": ["all", "youtube"]
+      "profiles": [
+        "all",
+        "youtube"
+      ]
     },
     {
       "id": "musestudio-so-cai",
       "source": "shared/MuseStudio/_so-cai",
       "target": "MuseStudio/_so-cai",
-      "profiles": ["all", "youtube"]
+      "profiles": [
+        "all",
+        "youtube"
+      ]
     },
     {
       "id": "musestudio-avatar",
       "source": "shared/MuseStudio/avatar",
       "target": "MuseStudio/avatar",
-      "profiles": ["all", "youtube"]
+      "profiles": [
+        "all",
+        "youtube"
+      ]
     },
     {
       "id": "musestudio-the-thao-tools",
       "source": "shared/MuseStudio/the-thao/_tools",
       "target": "MuseStudio/the-thao/_tools",
-      "profiles": ["all", "youtube"]
+      "profiles": [
+        "all",
+        "youtube"
+      ]
     },
     {
       "id": "musestudio-ctc-tools",
       "source": "shared/MuseStudio/cong-toc-cuoi/_tools",
       "target": "MuseStudio/cong-toc-cuoi/_tools",
-      "profiles": ["all", "youtube"]
+      "profiles": [
+        "all",
+        "youtube"
+      ]
+    },
+    {
+      "id": "musestudio-tieu-de-anh-bia",
+      "source": "shared/MuseStudio/ideas/TIEU-DE-ANH-BIA.md",
+      "target": "MuseStudio/ideas/TIEU-DE-ANH-BIA.md",
+      "profiles": [
+        "all",
+        "youtube"
+      ]
+    },
+    {
+      "id": "musestudio-tu-khoa",
+      "source": "shared/MuseStudio/yt-auto/tools/tu-khoa.py",
+      "target": "MuseStudio/yt-auto/tools/tu-khoa.py",
+      "profiles": [
+        "all",
+        "youtube"
+      ]
+    },
+    {
+      "id": "musestudio-kiem-hang",
+      "source": "shared/MuseStudio/yt-auto/tools/kiem-hang.py",
+      "target": "MuseStudio/yt-auto/tools/kiem-hang.py",
+      "profiles": [
+        "all",
+        "youtube"
+      ]
+    },
+    {
+      "id": "musestudio-tieu-de",
+      "source": "shared/MuseStudio/yt-auto/tools/tieu-de.mjs",
+      "target": "MuseStudio/yt-auto/tools/tieu-de.mjs",
+      "profiles": [
+        "all",
+        "youtube"
+      ]
     }
   ]
 }
